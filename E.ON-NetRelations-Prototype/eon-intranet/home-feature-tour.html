@@ -1,0 +1,149 @@
+<?php $title = "E.ON InfoNet – Intranät 2.0"; ?>
+<?php $sel = "0"; ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+<!-- Template specific style -->
+<link rel="stylesheet" href="/gui/js/vendor/joyride/css/joyride-2.0.3.css?<?php echo $version; ?>" />
+</head>
+<body class="layout-2">
+	<div id="body">
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<div class="content-1-1">
+						<div id="content-primary" role="main">
+							<h1 class="structural">E.ON InfoNet</h1>
+							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/home-news.html'); ?>
+						</div>
+					</div>
+					<div class="content-1-2">
+						<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/home-shortcuts-bookmarks.html'); ?>
+					</div>
+				</div>
+				<div class="content-2">
+					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/home-calendar.html'); ?>
+					<div class="m m-list m-status-feed m-form m-9">
+						<div class="m-h collapsable" data-collapsed="collapsed" data-collapsable-text="Inställningar" id="my-network-flow">
+							<h2>Status</h2>
+						</div>
+						<div class="m-c status-settings collapsablecontent animated">
+							<form method="post" action="/">
+								<h3 class="structural">Ändra inställning för statusuppdateringar</h3>
+								<div class="row cols-1 cf">
+									<div class="status col col-1 full">
+										<fieldset>
+											<legend class="wrap"><span>Visa statusuppdateringar från</span></legend>
+											<div class="fieldset-content">
+												<div class="radio">
+													<input type="radio" value="ett" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" />
+													<label for="radio2-<?php echo $id; ?>">Mitt nätverksflöde</label>
+												</div>
+												<div class="radio">
+													<input type="radio" value="två" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" checked />
+													<label for="radio2-<?php echo $id; ?>">Alla</label>
+												</div>
+											</div>
+										</fieldset>
+									</div>
+									<div class="col col-1 submit-area">
+										<input type="submit" class="submit" value="Spara" name="submit-<?php echo $id = uniqid('id'); ?>" />
+									</div>
+								</div>
+								<a class="form-link" href="/search-results-people.html">Lägg till personer i mitt nätverk</a>
+							</form>
+						</div>
+						<div class="m-c cf">
+							<form method="post" action="/">
+								<h3 class="structural">Skriv en uppdatering till ditt nätverksflöde.</h3>
+								<div class="row cols-1 cf">
+									<div class="status col full col-1">
+										<label for="status-update" class="structural">Statusuppdatering:</label>
+										<textarea name="status-update" id="status-update" cols="30" rows="3" maxlength="140" placeholder="Skriv en uppdatering till ditt nätverksflöde."></textarea>
+									</div>
+									<div class="submit-area col col-1">
+										<span class="char-counter">Max <strong id="status-update-counter">140</strong> tecken</span>
+										<input type="submit" class="submit" value="Skicka" />
+									</div>
+								</div>
+							</form>
+							<div class="scrollable">
+								<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/status-feed.html'); ?>
+							</div>
+						</div>
+						<div class="m-f">
+							<p class="read-more"><a href="/all-status-feeds.html">Se fler statusuppdateringar</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+	</div>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+
+	<ol class="feature-tour">
+		<li data-button="Starta guiden">
+			<h2>Välkommen till ditt nya intranät!</h2>
+			<p>Klicka dig igenom guiden så tar vi dig på en rundtur i ditt nya intranät. Du kan stänga guiden genom att klicka på krysset uppe till höger. Vill du ta den guidade turen igen så hittar du den under Om intranätet nere i sidfoten.</p>
+		</li>
+		<li data-id="feature-tour-1" data-button="Nästa" data-options="tipLocation:right;tipAnimation:fade">
+			<h2>Nyheter</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel fermentum tellus. Sed nec lacus dolor. Donec bibendum, lorem a tincidunt pretium, lectus justo vulputate sem, imperdiet hendrerit felis tortor vel risus. Sed at est sagittis nulla rutrum pharetra.</p>
+		</li>
+		<li data-id="feature-tour-2" data-button="Nästa tips" data-options="tipLocation:left">
+			<h2>Genvägar</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel fermentum tellus. Sed nec lacus dolor. Donec bibendum, lorem a tincidunt pretium, lectus justo vulputate sem, imperdiet hendrerit felis tortor vel risus. Sed at est sagittis nulla rutrum pharetra.</p>
+		</li>
+		<li data-id="feature-tour-3" data-button="Nästa tips" data-options="tipLocation:left">
+			<h2>Bokmärken</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel fermentum tellus. Sed nec lacus dolor. Donec bibendum, lorem a tincidunt pretium, lectus justo vulputate sem.</p>
+		</li>
+		<li data-id="feature-tour-4" data-button="Nästa tips" data-options="tipLocation:left">
+			<h2>Ditt nätverksflöde</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel fermentum tellus. Sed nec lacus dolor. Donec bibendum, lorem a tincidunt pretium, lectus justo vulputate sem.</p>
+		</li>
+		<li data-id="feature-tour-5" data-button="Nästa tips" data-options="tipLocation:left">
+			<h2>Ditt nätverk</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel fermentum tellus. Sed nec lacus dolor. Donec bibendum, lorem a tincidunt pretium, lectus justo vulputate sem.</p>
+		</li>
+		<li data-id="feature-tour-6" data-button="Nästa" data-options="tipLocation:bottom">
+			<h2>Navigation</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel fermentum tellus. Sed nec lacus dolor. Donec bibendum, lorem a tincidunt pretium, lectus justo vulputate sem.</p>
+		</li>
+		<li data-button="Stäng guiden" data-content-url="">
+			<h2>Tack!</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel fermentum tellus. Sed nec lacus dolor. Donec bibendum, lorem a tincidunt pretium, lectus justo vulputate sem.</p>
+		</li>
+	</ol>
+
+	<!-- Template specific scripts -->
+	<script type="text/javascript" src="/gui/js/vendor/jquery.cookie.js?<?php echo $version; ?>"></script>
+	<script type="text/javascript" src="/gui/js/vendor/joyride/js/jquery.joyride-2.0.3.js?<?php echo $version; ?>"></script>
+	<script>
+		$(window).load(function() {
+			$('.feature-tour').joyride({
+				autoStart : true,
+				postStepCallback : function (index, tip) {
+				if (index == 7) {
+					$(this).joyride('set_li', false, 1);
+				}
+			},
+			modal:true,
+			expose: true,
+				postRideCallback: function(){
+					if($('.feature-tour').find('li[data-content-url]').data('content-url')) {
+						$.ajax({
+							type: 'GET',
+							cache: true,
+							url: $('.feature-tour').find('li[data-content-url]').data('content-url'),
+							success: function (data) {
+								// No action added.
+							}
+						});
+					}
+				}
+			});
+		});
+	</script>
+</body>
+</html>

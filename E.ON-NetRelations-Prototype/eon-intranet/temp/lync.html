@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Lync test</title>    
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+    <script src="/gui/js/netr/jquery.netr.lyncStatus.js"></script> 
+ <style>
+		/* Test */
+		ul.user-list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		ul.user-list li {
+			margin-bottom: 10px;
+			list-style-image: none;
+		}
+
+        .lync-user-status {
+            width: 20px;
+            height: 20px;
+	        background-color: #999999;
+	        border-radius: 10px;
+	        float: left;
+	        margin-right: 10px;
+        }
+
+ 		.lync-user-status:hover {
+ 			cursor: pointer;
+ 		}
+        .hide-lync-link {
+            display:none;
+        }
+
+
+        /* lyncStatus.js required classes */
+        /* ****************************** */
+
+        .lync-status-available {
+	        background-color: #32CD32;
+        }
+
+        .lync-status-offline {
+	        background-color: #999999;
+        }
+        
+        .lync-status-away {
+	        background-color: #FFD700;
+        }
+                
+        .lync-status-busy, 
+		.lync-status-inacall {
+	        background-color: #8B0000;
+        }
+
+        .lync-status-donotdisturb {
+	        background-color: #8B0000;
+        }
+ </style>
+
+</head>
+<body>
+	    * Mouse-over p&aring; statusikonen ska visa Lync "egna" inforuta<br/>
+		* Klick p&aring; "konversera" ska &ouml;ppna Lync och starta en konverssation med personen i fr&aring;ga<br/>
+		<br/>
+		<ul class="user-list">
+            <li>
+                <div class="lync-user-status" data-lync-email="dan.lindeberg@netrelations.se"></div>
+                <a href="sip:dan.lindeberg@netrelations.se">Konversera med Dan</a>
+            </li>
+            <li>
+                <div class="lync-user-status" data-lync-email="kajsa.blom@netrelations.se"></div>
+                <a href="sip:kajsa.blom@netrelations.se">Konversera med Kajsa</a>
+            </li>
+			<li>
+				<div class="lync-user-status" data-lync-email="Not.a.user@eon.se"></div>
+				Saknar lync
+			</li>
+            <li>
+                <div class="lync-user-status" data-lync-email="anna.wickholm@netrelations.se"></div>
+                <a href="sip:anna.wickholm@netrelations.se">Konversera med Anna</a>
+            </li>
+		</ul>
+        Alternativa exempel:<br>
+        <div style="width:100px;height:50px" data-lync-email="dan.lindeberg@netrelations.se"></div><br>
+        <a href="sip:dan.lindeberg@netrelations.se" data-lync-email="dan.lindeberg@netrelations.se">Status och starta konversation, p&aring; samma g&aring;ng!</a>
+    <script>
+    	$(document).ready(function () {
+            // Lync integration { hideLyncHoverWindow: false, dataFieldName:'lync-email'}
+            $.lyncStatus({ hideLyncHoverWindow: false, dataFieldName:'lync-email'});
+    	});
+    </script>
+</body>
+</html>

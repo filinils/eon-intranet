@@ -1,0 +1,99 @@
+<?php $title = "E.ON InfoNet – Intranät 2.0"; ?>
+<?php $sel = "0"; ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-2">
+	<div id="body">
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div id="message-1" class="message critical m-0">
+					<h2>Krismeddelande alternativ 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nunc nibh, rutrum at hendrerit ut, pretium id libero. Aliquam pharetra ligula nec diam posuere eu congue. <a href="/netrp-<?php echo $id = uniqid('e'); ?>" class="read-more">Läs mer</a></p>
+				</div>
+				<div class="content-1">
+					<div class="content-1-1">
+						<div id="content-primary" role="main">
+							<h1 class="structural">E.ON InfoNet</h1>
+							<!--
+							<div id="message-2" class="message critical m-1 closable" data-content-url="/">
+								<h2>Krismeddelande alternativ 2</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nunc nibh, rutrum at hendrerit ut, pretium id libero. Aliquam pharetra ligula nec diam posuere eu congue. <a href="/netrp-<?php echo $id = uniqid('e'); ?>" class="read-more">Läs mer</a></p>
+								<form action="/" method="post">
+									<button class="close-button" type="submit" title="Stäng meddelanderuta">Stäng meddelanderuta</button>
+								</form>
+							</div>
+							-->
+							<div id="message-3" class="message major m-10">
+								<h2>Mobilnätet i Norrland ligger nere</h2>
+								<p>Viktigt meddelande alternativ 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nunc nibh, rutrum at hendrerit ut, pretium id libero. <a href="/netrp-<?php echo $id = uniqid('e'); ?>" class="read-more">Läs mer</a></p>
+							</div>
+							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/home-news.html'); ?>
+						</div>
+					</div>
+					<div class="content-1-2">
+						<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/home-shortcuts-bookmarks.html'); ?>
+					</div>
+				</div>
+				<div class="content-2">
+					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/home-calendar.html'); ?>
+					<div class="m m-list m-status-feed m-form m-9">
+						<div class="m-h collapsable" data-collapsed="collapsed" data-collapsable-text="Inställningar" id="my-network-flow">
+							<h2>Status</h2>
+						</div>
+						<div class="m-c status-settings collapsablecontent animated">
+							<form method="post" action="/">
+								<h3 class="structural">Ändra inställning för statusuppdateringar</h3>
+								<div class="row cols-1 cf">
+									<div class="status col col-1 full">
+										<fieldset>
+											<legend class="wrap"><span>Visa statusuppdateringar från</span></legend>
+											<div class="fieldset-content">
+												<div class="radio">
+													<input type="radio" value="ett" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" />
+													<label for="radio2-<?php echo $id; ?>">Mitt nätverksflöde</label>
+												</div>
+												<div class="radio">
+													<input type="radio" value="två" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" checked />
+													<label for="radio2-<?php echo $id; ?>">Alla</label>
+												</div>
+											</div>
+										</fieldset>
+									</div>
+									<div class="col col-1 submit-area">
+										<input type="submit" class="submit" value="Spara" name="submit-<?php echo $id = uniqid('id'); ?>" />
+									</div>
+								</div>
+								<a class="form-link" href="/search-results-people.html">Lägg till personer i mitt nätverk</a>
+							</form>
+						</div>
+						<div class="m-c cf">
+							<form method="post" action="/">
+								<h3 class="structural">Skriv en uppdatering till ditt nätverksflöde.</h3>
+								<div class="row cols-1 cf">
+									<div class="status col full col-1">
+										<label for="status-update" class="structural">Statusuppdatering:</label>
+										<textarea name="status-update" id="status-update" cols="30" rows="3" maxlength="140" placeholder="Skriv en uppdatering till ditt nätverksflöde."></textarea>
+									</div>
+									<div class="submit-area col col-1">
+										<span class="char-counter">Max <strong id="status-update-counter">140</strong> tecken</span>
+										<input type="submit" class="submit" value="Skicka" />
+									</div>
+								</div>
+							</form>
+							<div class="scrollable">
+								<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/status-feed.html'); ?>
+							</div>
+						</div>
+						<div class="m-f">
+							<p class="read-more"><a href="/all-status-feeds.html">Se fler statusuppdateringar</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+	</div>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+</body>
+</html>

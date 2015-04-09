@@ -1,0 +1,196 @@
+/* Styles for EPiServer TinyMCE Editor */
+
+/* Import resets and basic styling */
+@import '/gui/css/basic.css';
+
+
+/* SELECTABLE CLASSES
+ * These class names will show up in a dropdown in the editor
+================================================================================ */
+.clear {
+	EditMenuName:row_break;
+	clear:both;
+}
+.nowrap {
+	EditMenuName:no_row_break;
+	white-space:nowrap;
+}
+
+
+/* Text formatting
+-------------------------------------------------------------- */
+h2 {
+	ChangeElementType: true;
+	EditMenuTitle:headings;
+	EditMenuName:heading_h2;
+}
+h3 {
+	ChangeElementType: true;
+	EditMenuName:heading_h3;
+}
+h4 {
+	ChangeElementType: true;
+	EditMenuName:heading_h4;
+}
+
+
+/* Link Style
+-------------------------------------------------------------- */
+.read-more {
+	EditMenuName:eon-link;
+}
+
+
+/* Images
+-------------------------------------------------------------- */
+img.left {
+	EditMenuTitle:image;
+	EditMenuName:align_left;
+}
+img.right {
+	EditMenuName:align_right;
+}
+img.fullwidth {
+	EditMenuName:full_width;
+}
+
+
+/* Tables
+-------------------------------------------------------------- */
+table.left {
+	EditMenuTitle:Tabell;
+	EditMenuName:align_table_left;
+}
+table.right {
+	EditMenuName:align_table_right;
+}
+table.full {
+	EditMenuName:full_width_table;
+}
+table.zebra {
+	EditMenuName:zebra_table;
+}
+td.nowrap {
+	EditMenuTitle:table_cell;
+	EditMenuName:no_break_table;
+}
+
+
+/* OUTLINES
+================================================================================ */
+p,
+td {
+	padding:0.25em;
+	border:1px dotted #eee;
+}
+
+
+/* WARNINGS
+================================================================================ */
+/* Incorrectly nested elements
+-------------------------------------------------------------- */
+a a,
+strong h1,
+strong h2,
+strong h3,
+strong h4,
+strong h5,
+strong h6,
+strong table,
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p,
+p h1,
+p h2,
+p h3,
+p h4,
+p h5,
+p h6 {
+	border:3px dotted red !important;
+}
+
+
+/* Elements that should not be present in the editor
+
+-------------------------------------------------------------- */
+
+h1 {
+	border:3px dotted red !important;
+}
+
+/* Empty Attributes
+-------------------------------------------------------------- */
+*[class=""],
+a[href=""],
+*[id=""],
+*[title=""] {
+	border:3px dotted red !important;
+}
+
+
+/* Disallowed attributes
+-------------------------------------------------------------- */
+*[background],
+*[border],
+*[cellpadding],
+*[cellspacing],
+table[height],
+form[name],
+img[name],
+*[valign],
+*[alink],
+*[bgcolor],
+img[border],
+br[clear],
+*[color],
+*[compact],
+*[hspace],
+*[language],
+*[link],
+*[noshade],
+*[nowrap],
+hr[size],
+*[start],
+*[vlink],
+*[vspace],
+*[bgproperties],
+*[bordercolor],
+*[bordercolordark],
+*[bordercolorlight] {
+	border:3px dotted red !important;
+}
+
+
+/* Empty Elements
+-------------------------------------------------------------- */
+span:empty,
+div:empty,
+p:empty,
+li:empty,
+th:empty,
+ol:empty,
+ul:empty {
+	border:3px dotted red !important;
+}
+
+
+/* Disallowed elements
+-------------------------------------------------------------- */
+applet,
+basefont,
+blink,
+center,
+dir,
+font,
+isindex,
+menu,
+nobr,
+s,
+strike,
+u,
+wbr {
+	border:3px dotted red !important;
+}

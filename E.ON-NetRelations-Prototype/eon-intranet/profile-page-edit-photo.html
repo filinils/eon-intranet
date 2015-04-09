@@ -1,0 +1,112 @@
+<?php $title = "Profilsida för Jakob Holmström | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+<!-- Template specific style -->
+<link rel="stylesheet" href="/gui/js/vendor/jcrop/css/jquery.Jcrop.css?<?php echo $version; ?>" />
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/nav-sub-profile.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="edit-photo">
+						<div class="content-2-1">
+							<h1>Profilbild</h1>
+							<div class="intro">
+								<p>Ladda upp eller redigera din profilbild. Lorem ipsum dolor sit amet.</p>
+							</div>
+							<form method="post" action="/" class="form-general cms">
+								<fieldset>
+									<div class="row cols-1 cf">
+										<legend class="structural">Ladda upp en ny bild</legend>
+										<label for="upload">1. Ladda upp en ny bild</label>
+										<input id="upload" type="file" />
+									</div>
+									<div class="row cols-1 cf">
+										<div class="col col-1 submit-area">
+											<input type="submit" class="button" value="Ladda upp bild" name="submit-<?php echo $id = uniqid('id'); ?>" />
+											<span class="or">eller</span>
+											<button type="reset" class="reset" title="Avbryt dina ändringar"><span>Avbryt</span></button>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+							<form method="post" action="/" class="form-general cms">
+								<fieldset>
+									<legend>2. Redigera din bild <span>Dra i hörnen för att göra rutan större eller mindre. Sätt markören i rutan för att flytta ramen.</span></legend>
+									<div class="row cols-1 cf">
+										<div class="select full col col-1">
+											<img src="/temp/dummy-3.jpg" id="photo-crop" alt="Din uppladdade bild" data-true-width="960" data-true-height="600" />
+										</div>
+									</div>
+									<div class="row cols-1 cf">
+										<div class="col col-1 submit-area">
+											<input type="submit" class="button" value="Spara" name="submit-<?php echo $id = uniqid('id'); ?>" />
+											<span class="or">eller</span>
+											<a href="/" class="reset" title="Ångra och återgå till tidigare bild"><span>Ångra och återgå till tidigare bild</span></a>
+										</div>
+									</div>
+								</fieldset>
+								<input type="hidden" id="copping-area">
+							</form>
+						</div>
+						<div class="content-2-2">
+							<div role="complementary">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/breadcrumbs.html'); ?>
+		</div>
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+	</div>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+
+	<!-- Template specific scripts -->
+	<script type="text/javascript" src="/gui/js/vendor/jcrop/js/jquery.Jcrop.js?<?php echo $version; ?>"></script>
+	<script type="text/javascript">
+		jQuery(function($){
+
+		// Create variables (in this scope) to hold the API and image size
+		var jcrop_api,
+			boundx,
+			boundy,
+			// Grab some information about the preview pane
+			$preview = $('#preview-pane'),
+			$pcnt = $('#preview-pane .preview-container'),
+			$pimg = $('#preview-pane .preview-container img'),
+
+			xsize = $pcnt.width(),
+			ysize = $pcnt.height();
+
+		$('#photo-crop').Jcrop({
+			onChange: updateCrop,
+			onSelect: updateCrop,
+			trueSize: [$('#photo-crop').data('true-width'),$('#photo-crop').data('true-height')],
+			setSelect: [ 0, 0, 140, 140 ],
+			aspectRatio: 1
+		},function(){
+			// Use the API to get the real image size
+			var bounds = this.getBounds();
+			boundx = bounds[0];
+			boundy = bounds[1];
+			// Store the API in the jcrop_api variable
+			jcrop_api = this;
+
+			// Move the preview into the jcrop container for css positioning
+			$preview.appendTo(jcrop_api.ui.holder);
+		});
+
+		function updateCrop(c){
+			$('#copping-area').val(parseInt(c.x) + "," + parseInt(c.y) + "," + parseInt(c.x2) + "," + parseInt(c.y2));
+		}
+
+	});
+	</script>
+</body>
+</html>

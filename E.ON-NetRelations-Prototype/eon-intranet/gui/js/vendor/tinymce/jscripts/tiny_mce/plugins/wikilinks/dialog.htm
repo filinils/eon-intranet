@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#wikilinks_dlg.title}</title>
+	<link href="css/wikilinks.css" rel="stylesheet" type="text/css" />
+	<script src="/js/jquery.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+	<script type="text/javascript" src="/js/string.js"></script>
+</head>
+<body>
+
+<form onsubmit="WikilinksDialog.insert();return false;" action="#">
+	<h1 class="h1">{#wikilinks.headline}</h1>
+
+	<p>
+		<label for="wikilinksName">{#wikilinks.linkNameLabel}</label><br />
+		<input type="text" id="wikilinksName" name="wikilinksName" class="text" />
+	</p>
+
+	<p>
+		<label for="wikilinksPageLookup">{#wikilinks.linkText}</label>
+		<span id="pagefinder">
+			<input type="text" id="wikilinksPageLookup" name="wikilinksPageLookup" class="text" />
+		</span>
+	</p>
+
+	<input type="hidden" id="wikilinksPageUrl" />
+	<input type="hidden" id="wikilinksPageName" />
+	<input type="hidden" id="wikilinksResponse" />
+
+	<div class="mceActionPanel">
+		<input type="button" id="insert" name="insert" value="{#insert}" onclick="WikilinksDialog.insert();" />
+		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+	</div>
+
+</form>
+
+</body>
+</html>

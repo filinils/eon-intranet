@@ -1,0 +1,33 @@
+<?php $title = "Vanlig sida med iframe med undermeny och full bredd | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-3">
+	<div id="body">
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/nav-sub.html'); ?>
+				</div>
+				<div class="content-2">
+					<div id="content-primary" role="main">
+						<h1 class="structural">Vanlig sida med iframe med undermeny och full bredd</h1>
+						<h2>Utan någon bredd</h2>
+						<div class="iframe">
+							<a href="http://eon.se/" target="_blank" data-render="iframe" data-height="400" data-title="E.ONs webbplats">Länk till http://eon.se</a>
+						</div>
+						<h2>Med en bredd</h2>
+						<div class="iframe">
+							<a href="http://eon.se/" target="_blank" data-render="iframe" data-height="400" data-width="400" data-title="E.ONs webbplats">Länk till http://eon.se</a>
+						</div>
+					</div>
+				</div>
+				<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/breadcrumbs.html'); ?>
+			</div>
+		</div>
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+	</div>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+</body>
+</html>

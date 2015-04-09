@@ -1,0 +1,100 @@
+<?php $title = "Kontaktkort | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/nav-sub.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Kontakta Namn Namnsson</h1>
+							<form action="." method="post" class="form-general">
+								<p>Fyll i detta formulär för att skicka ett e-postmeddelande till Namn Namnsson.</p>
+								<div class="form-content">
+									<div class="row cols-1 cf">
+										<div class="text col large mandatory col-1">
+											<label for="message">Meddelande <em>Obligatoriskt</em></label>
+											<textarea name="message" id="message" required aria-required="true" rows="10" cols="30"></textarea>
+										</div>
+									</div>
+									<div class="row cols-1 cf">
+										<div class="text col medium mandatory col-1">
+											<label for="email1">Ditt namn <em>Obligatoriskt</em></label>
+											<input value="" name="email1" id="email1" required aria-required="true" />
+										</div>
+									</div>
+									<div class="row cols-1 cf">
+										<div class="text col medium col-1">
+											<label for="email">Din e-postadress</label>
+											<input value="" name="email" id="email"/>
+										</div>
+									</div>
+									<div class="row cols-1 cf">
+										<div class="col col-1 full">
+											<fieldset>
+												<legend>Skicka kopia</legend>
+												<div class="checkbox">
+													<input type="checkbox" value="1" name="send-copy" id="send-copy" checked />
+													<label for="send-copy">Skicka en kopia av meddelandet till angiven e-postadress</label>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+									<div class="row cols-1 cf">
+										<div class="text col medium col-1">
+											<div class="text">
+												<label for="phone">Ditt telefonnummer</label>
+												<input value="" name="phone" id="phone"/>
+											</div>
+										</div>
+									</div>
+									<div class="row cols-1 cf">
+										<div class="submit-area col medium col-1">
+											<input type="submit" value="Skicka meddelande" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/article-info.html'); ?>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+							<div class="m m-1">
+								<div class="m-h">
+									<h2>Namn Namnsson</h2>
+								</div>
+								<div class="m-c cf">
+									<p>Förvaltningschef<br />Barn- och utbildningsförvaltningen</p>
+									<h3>Telefon</h3>
+									<p>08-734 23 02</p>
+									<h3>E-post</h3>
+									<p><span class="hidden-email"><span class="email-text">Namn Namnsson</span>, <span class="email-address">&#x49;&#x4e;&#x47;&#x45;&#x4e;&#x5f;&#x53;&#x50;&#x41;&#x4d;&#x5f;&#x6e;&#x61;&#x6d;&#x6e;&#x2e;&#x6e;&#x61;&#x6d;&#x6e;&#x73;&#x73;&#x6f;&#x6e;&#x40;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</span></span></p>
+									<h3>Telefon</h3>
+									<p>08-470 75 80</p>
+									<h3>Fax</h3>
+									<p>08-470 75 81</p>
+									<h3>Postadress</h3>
+									<p>Lövgatan 45
+									<br/>169 32 Solna</p>
+									<h3>Besöksadress</h3>
+									<p>Lövgatan 45<br/>169 32 Solna</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/breadcrumbs.html'); ?>
+		</div>
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+	</div>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+</body>
+</html>

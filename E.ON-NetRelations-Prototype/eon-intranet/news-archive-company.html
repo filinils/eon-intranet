@@ -1,0 +1,92 @@
+<?php $title = "Visa nyheter per bolag | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/nav-sub-news.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Visa nyheter per bolag</h1>
+							<div class="intro">
+								<p>Här visas alla bolag som publicerar nyheter på hela Intranätet. Klicka på ett bolagsnamn för att komma till en lista med alla nyheter som handlar om bolaget, med den senaste först.</p>
+							</div>
+							<div class="m m-content-list m-listing">
+								<ul>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">Koncernyheter</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON Sverige</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON Danmark</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON Elnät</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON Energihandel</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON Försäljning</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON Gas</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON IT</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON Kundsupport</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON Kärnkraft</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>" >E.ON Vattenkraft</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON Vind</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON Värme</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">E.ON Värmekraft</a>
+									</li>
+									<li>
+										<a href="/netrp-<?php echo $id = uniqid('e'); ?>">OKG</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="article-actions cf">
+							<h2 class="structural">Verktyg</h2>
+							<ul>
+								<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/article-buttons-1.html'); ?>
+								<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/article-buttons-2.html'); ?>
+							</ul>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/teaser-archive.html'); ?>
+							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/teaser-tags.html'); ?>
+						</div>
+					</div>
+				</div>
+				<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/breadcrumbs.html'); ?>
+			</div>
+		</div>
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+	</div>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+</body>
+</html>

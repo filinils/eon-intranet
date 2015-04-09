@@ -1,0 +1,38 @@
+<?php
+// Change this variable to release the cache for all visitors
+$version = 1;
+?>
+<!DOCTYPE html>
+<html lang="sv" class="no-js no-img">
+<head>
+	<meta charset="utf-8" />
+
+	<title><?php echo $title; ?></title>
+
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');
+	</script>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta name="keywords" content="Relevanta nyckelord för detta dokument." />
+	<meta name="description" content="En kort beskrivning av dokumentets syfte och innehåll." />
+
+	<link rel="shortcut icon" href="/gui/i/favicon.ico?<?php echo $version; ?>" type="image/ico" />
+
+	<link rel="stylesheet" href="/gui/css/basic.css?<?php echo $version; ?>" />
+	<link rel="stylesheet" href="/gui/css/forms.css?<?php echo $version; ?>" />
+	<link rel="stylesheet" href="/gui/css/global.css?<?php echo $version; ?>" />
+	<link rel="stylesheet" href="/gui/css/print.css?<?php echo $version; ?>" />
+	<link rel="stylesheet" href="/gui/css/netr-dialog.css?<?php echo $version; ?>" />
+	<link rel="stylesheet" href="/gui/css/vendor/file-validator.css?<?php echo $version; ?>" />
+	<script src="/gui/js/vendor/modernizr.custom.js?<?php echo $version; ?>"></script>
+
+	<!--[if IE 8]>
+		<link rel="stylesheet" href="/gui/css/ie.css?<?php echo $version; ?>" />
+		<script>document.createElement('time');</script>
+		<script>document.createElement('video');</script>
+	<![endif]-->
+
+	<!--[if IE 9]>
+		<link rel="stylesheet" href="/gui/css/ie9.css?<?php echo $version; ?>" />
+	<![endif]-->

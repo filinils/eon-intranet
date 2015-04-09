@@ -6,7 +6,7 @@ dist/
 eon-styleguide/src/components/imported/
 eon-main-original/
 .ftppass
-E.ON-NetRelations-Prototype
+#E.ON-NetRelations-Prototype
 
 # Logs
 logs

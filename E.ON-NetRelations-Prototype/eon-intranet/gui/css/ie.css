@@ -1,0 +1,83 @@
+/* INTERNET EXPLORER BUGFEST WORKAROUNDS
+ * Loaded in all IE versions below 9 that understand Conditional Comments.
+ * "html > body" targets IE 7 and 8.
+================================================================================ */
+
+
+.div.tagsinput span.tag {
+	float:left;
+}
+#share-contacts_tag {min-width:100px;}
+
+.user-details button img {
+	width:auto;
+}
+
+/* Img
+-------------------------------------------------------------- */
+img {
+	width:auto;
+}
+
+/* PIE without Relative
+-------------------------------------------------------------- */
+#search,
+#searchtext,
+.ui-autocomplete,
+.sub-menu,
+.infobox-contact {
+	behavior:url(/gui/js/pie.htc);
+}
+
+/* PIE with Relative
+-------------------------------------------------------------- */
+.paging a:link,
+.paging a:visited,
+.paging .ellipsis,
+.paging .sel,
+.paging a.prev-page,
+.paging a.next-page,
+a.tag,
+a.tag:visited,
+.logo a,
+.notifications .counter,
+.nav-main li[data-selected],
+#searchtext.autocomplete-active,
+.article-actions button,
+.like-button .like,
+.m-news .m-f .read-more a,
+.submit,
+.nav-main,
+.button-alt {
+	position:relative;
+	behavior:url(/gui/js/pie.htc);
+}
+
+.user-details h2 {
+	min-width:160px;
+}
+body {
+	overflow-x:hidden;
+}
+.nav-main li {
+	min-width:12%;
+}
+
+.tag-list li a,
+.tag-list li span {
+	display:inline-block;
+	margin-bottom:2px;
+	zoom:1;
+}
+
+/* Forms
+-------------------------------------------------------------- */
+.form-general input[type=text] {
+	min-height:28px;
+}
+
+/* Cursor fixes
+-------------------------------------------------------------- */
+a span {
+	cursor:pointer;
+}

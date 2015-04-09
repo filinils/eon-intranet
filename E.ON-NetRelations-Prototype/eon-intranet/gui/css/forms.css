@@ -1,0 +1,75 @@
+/* Custom radio buttons and checkboxes
+ * Use a media query to hide custom checkbox and radio button CSS from less capable browsers
+ * See http://www.456bereastreet.com/archive/201206/using_media_queries_to_hide_css3_from_older_browsers/
+*/
+@media only screen {
+
+	.img .checkbox,
+	.img .radio {
+		position:relative;
+		line-height:22px;
+	}
+	.img fieldset :last-child {
+		margin-bottom:0;
+	}
+	.img input[type="checkbox"],
+	.img input[type="radio"] {
+		position:absolute;
+		width:22px;
+		height:22px;
+		overflow:hidden;
+		margin:0;
+		padding:0;
+		outline-width:0;
+		border:0;
+		opacity:0;
+	}
+	.img input[type="checkbox"] ~ label:before,
+	.img input[type="radio"] ~ label:before {
+		display:inline-block;
+		width:22px;
+		height:22px;
+		margin-right:3px;
+		background:url(/gui/i/radio-checkbox.png) no-repeat;
+		content:" ";
+		vertical-align:top;
+	}
+	.img input[type="radio"] ~ label:before {
+		background-position:0 2px;
+	}
+	.img input[type="radio"]:focus ~ label:before {
+		background-position:0 -126px;
+	}
+	.img input[type="radio"]:checked ~ label:before {
+		background-position:0 -30px;
+	}
+	.img input[type="radio"]:checked:focus ~ label:before {
+		background-position:0 -158px;
+	}
+	.img input[type="radio"]:disabled ~ label:before {
+		background-position:0 -62px;
+	}
+	.img input[type="radio"]:disabled:checked ~ label:before {
+		background-position:0 -94px;
+	}
+	.img input[type="checkbox"] ~ label:before {
+		background-position:0 -190px;
+	}
+	.img input[type="checkbox"]:focus ~ label:before {
+		background-position:0 -318px;
+	}
+	.img input[type="checkbox"]:checked ~ label:before {
+		background-position:0 -222px;
+	}
+	.img input[type="checkbox"]:checked:focus ~ label:before {
+		background-position:0 -350px;
+	}
+	.img input[type="checkbox"]:disabled ~ label:before {
+		background-position:0 -254px;
+	}
+	.img input[type="checkbox"]:disabled:checked ~ label:before {
+		background-position:0 -286px;
+	}
+
+/* END @media only screen */
+}

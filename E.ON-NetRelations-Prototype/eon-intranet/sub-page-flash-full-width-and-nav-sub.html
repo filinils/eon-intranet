@@ -1,0 +1,33 @@
+<?php $title = "Vanlig sida med Flash över två kolumner | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-3">
+	<div id="body">
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/nav-sub.html'); ?>
+				</div>
+				<div class="content-2">
+					<div id="content-primary" role="main">
+						<div class="flash">
+							<div data-flash='{"swf": "/temp/test.swf", "width": "780", "height": "249", "hasVersion": "9"}'>
+								<p><img src="/temp/flash.png" alt="En Flashbanner som visar något vettigt" width="780" height="200" /></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/breadcrumbs.html'); ?>
+		</div>
+		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+	</div>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+
+	<!-- Template specific scripts -->
+	<script src="/gui/js/vendor/jquery.swfobject.min.js?<?php echo $version; ?>"></script>
+
+</body>
+</html>

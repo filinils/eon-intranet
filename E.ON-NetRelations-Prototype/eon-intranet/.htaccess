@@ -1,0 +1,20 @@
+AddDefaultCharset utf-8
+
+ErrorDocument 404 /404-page-not-found.html
+ErrorDocument 500 /500-server-error.html
+
+# HTC files
+AddType text/x-component .htc
+
+# JSON files
+AddType application/json .json
+
+# MP4 video
+AddType video/mp4 .mp4
+
+# Use PHP in html files
+AddType application/x-httpd-php .html
+php_flag display_errors on
+
+# Make sure IE is in standards mode
+Header set X-UA-Compatible "IE=edge"
