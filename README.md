@@ -1,6 +1,10 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+
+Prototype code can be viewed here ->
+http://eon.share.ottoboni.se/intranet/prototype/eon-intranet/
+
+
 
 ### What is this repository for? ###
 
