@@ -1,0 +1,275 @@
+@page {
+	margin:15mm 25mm;
+	size:auto;
+}
+
+@media print {
+
+/* Viewport background and base font settings
+-------------------------------------------------------------- */
+html,
+body {
+	background:#fff;
+	color:#000;
+}
+body {
+	font:11pt/1.4 Arial, Helvetica, sans-serif;
+}
+
+/* Headings
+-------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+	color:#000;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child {
+	margin-top:1em;
+}
+h1 {
+	font-size:24pt;
+}
+h2 {
+	font-size:20pt;
+}
+h3 {
+	font-size:18pt;
+}
+h4 {
+	font-size:14pt;
+}
+h5 {
+	font-size:12pt;
+}
+h6 {
+	font-size:11pt;
+}
+
+/* Links
+-------------------------------------------------------------- */
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+	color:#000;
+}
+
+/* System messages
+-------------------------------------------------------------- */
+.error-message,
+.confirmation-message,
+.system-info
+.message,
+.outdated-message,
+.user-news-message {
+	margin:1em 0;
+	padding:1em;
+	border:2px solid #eb1503;
+}
+.system-info p,
+.message p,
+.outdated-message p,
+.user-news-message p {
+	margin:0;
+}
+.system-info h1,
+.system-info h2,
+.system-info h3,
+.message h1,
+.message h2,
+.message h3,
+.message h4 {
+	margin-top:0;
+}
+.message .read-more {
+	display:none;
+}
+
+/* Forms
+-------------------------------------------------------------- */
+.form-general {
+	margin:1em 0;
+	padding:6px;
+	border:1px solid #ccc;
+	background:#eee;
+}
+.form-general label,
+.form-general legend {
+	color:inherit;
+	font:inherit;
+}
+.form-general label {
+	display:block;
+}
+.text,
+.radio,
+.checkbox,
+.select {
+	margin:0 0 0.25em;
+}
+.text input {
+	width:95%;
+}
+.text textarea {
+	width:95%;
+	height:10em;
+}
+.pwd input {
+	width:6em;
+}
+.form-general fieldset {
+	margin:1em 0;
+	padding:0.5em;
+	border:1px solid #ccc;
+}
+.control-group {
+	margin:1em 0;
+}
+.checkbox,
+.radio {
+	white-space:nowrap;
+}
+.checkbox input,
+.radio input {
+	vertical-align:middle;
+}
+.checkbox label,
+.radio label {
+	display:inline;
+	margin-left:0.5em;
+	vertical-align:middle;
+}
+.form-general .alt {
+	display:inline;
+	margin:0 1em 0 0;
+}
+.submit-area {
+	margin:1em 0 0.5em;
+	text-align:center;
+}
+
+/* Hidden elements
+-------------------------------------------------------------- */
+#skip,
+.nav-main,
+#search,
+.nav-sub,
+.nav-supp,
+#nav-supp-2,
+#content-secondary,
+#main-search,
+#print-link,
+.flash,
+.user-details,
+.article-actions,
+.nav-tabs,
+.search-sort,
+.search-results .meta,
+.m-search-filter,
+.paging,
+.extended-information,
+button.expand,
+.m-search-help,
+.search-results .tags,
+.tools,
+.breadcrumbs,
+div[role=complementary],
+.submit-area,
+.comments-notifiction,
+.button-edit-photo,
+.button-edit,
+.vcard,
+.m-status-thread .delete,
+.m-status-thread .meta,
+.like-button,
+button.delete {
+	display:none;
+}
+
+
+/* Meta & Tag List
+-------------------------------------------------------------- */
+.meta ul {
+	margin:0;
+}
+.meta li {
+	list-style:none;
+}
+.m-content-list .meta ul,
+.m-content-list .tags,
+.m-content-list .read-more {
+	display:none;
+}
+.tag-list ul {
+	margin:0;
+	list-style:none;
+}
+.m-status-thread li {
+	list-style:none;
+}
+
+/* Search Results
+-------------------------------------------------------------- */
+.search-results {
+	margin:0;
+	list-style:none;
+}
+.search-results > li {
+	border-bottom:1px solid #000;
+}
+
+
+.m-content-list ul {
+	margin:0 0 24px;
+	list-style:none;
+}
+.m-content-list li {
+	padding:10px 0;
+	border-bottom:1px solid #000;
+}
+
+
+/* Footer
+-------------------------------------------------------------- */
+#footer {
+	clear:both;
+	padding:1em 0;
+	border-top:1px solid #999;
+}
+#address .org {
+	display:none;
+}
+
+/* CONTENT STYLING
+================================================================================ */
+
+/* Intro
+-------------------------------------------------------------- */
+.intro {
+	color:#000;
+	font-size:1.2em;
+}
+
+/* Article info
+-------------------------------------------------------------- */
+.article-info {
+	margin:1em 0;
+}
+.article-info p {
+	margin:0;
+	font-size:0.94em;
+}
+.article-info .author img {
+	width:30pt; /* Only to set dimension in print for ie8 */
+	height:30pt; /* Only to set dimension in print for ie8 */
+}
+.m-comments img,
+.m-status-thread img {
+	width:60pt; /* Only to set dimension in print for ie8 */
+	height:60pt; /* Only to set dimension in print for ie8 */
+}
+
+/* END @media print */
+}

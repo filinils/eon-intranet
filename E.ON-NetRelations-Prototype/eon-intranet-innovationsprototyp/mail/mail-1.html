@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Mail Template</title>
+		<style type="text/css">
+			/* Client-specific Styles */
+			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+			body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+
+			/* Reset Styles */
+			body{margin:0; padding:0;}
+			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+			table td{border-collapse:collapse;}
+			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+			body,
+			#backgroundTable {
+				background-color:#f5f5f5;
+			}
+			#templateContainer {
+				border:1px solid #dadbde;
+			}
+			h1,
+			.h1 {
+				color:#202020;
+				display:block;
+				font-family:Arial;
+				font-size:34px;
+				font-weight:bold;
+				line-height:120%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				text-align:left;
+			}
+			h2,
+			.h2 {
+				color:#202020;
+				display:block;
+				font-family:Arial;
+				font-size:30px;
+				font-weight:bold;
+				line-height:120%;
+				margin-top:20px;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				text-align:left;
+			}
+			h3,
+			.h3 {
+				color:#202020;
+				display:block;
+				font-family:Arial;
+				font-size:26px;
+				font-weight:bold;
+				line-height:120%;
+				margin-top:20px;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				text-align:left;
+			}
+			h4,
+			.h4 {
+				color:#202020;
+				display:block;
+				font-family:Arial;
+				font-size:22px;
+				font-weight:bold;
+				line-height:120%;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:10px;
+				margin-left:0;
+				text-align:left;
+			}
+			#templateHeader {
+				background-color:#FFFFFF;
+				border-bottom:0;
+			}
+			.headerContent {
+				color:#202020;
+				font-family:Arial;
+				font-size:34px;
+				font-weight:bold;
+				line-height:100%;
+				padding:0 0 0 20px;
+				vertical-align:middle;
+			}
+			.headerContent a:link,
+			.headerContent a:visited,
+			.headerContent a .yshortcuts {
+				color:#f21c0a;
+				font-weight:normal;
+				text-decoration:underline;
+			}
+			#headerImage {
+				height:auto;
+				max-width:600px !important;
+			}
+			#templateContainer,
+			.bodyContent {
+				background-color:#FFFFFF;
+			}
+			.bodyContent div {
+				color:#505050;
+				font-family:Arial;
+				font-size:14px;
+				line-height:150%;
+				text-align:left;
+			}
+			.bodyContent div a:link,
+			.bodyContent div a:visited,
+			.bodyContent div a .yshortcuts {
+				color:#cf1000;
+				font-weight:normal;
+				text-decoration:underline;
+			}
+			.templateDataTable {
+				background-color:#FFFFFF;
+				border:1px solid #DDDDDD;
+			}
+			.dataTableHeading {
+				background-color:#eb1503;
+				color:#fff;
+				font-family:Arial;
+				font-size:14px;
+				font-weight:bold;
+				line-height:150%;
+				text-align:left;
+			}
+			.dataTableHeading a:link,
+			.dataTableHeading a:visited,
+			.dataTableHeading a .yshortcuts {
+				color:#FFFFFF;
+				font-weight:bold;
+				text-decoration:underline;
+			}
+			.dataTableContent {
+				border-top:1px solid #DDDDDD;
+				border-bottom:0;
+				color:#202020;
+				font-family:Helvetica;
+				font-size:12px;
+				font-weight:bold;
+				line-height:150%;
+				text-align:left;
+			}
+			.dataStatusContent {
+				border-top:1px solid #DDDDDD;
+				border-bottom:0;
+				color:#202020;
+				font-family:Helvetica;
+				font-size:12px;
+				font-weight:normal;
+				line-height:150%;
+				text-align:left;
+			}
+			.dataTableImg {
+				border-top:1px solid #DDDDDD;
+				border-bottom:0;
+				color:#202020;
+				font-family:Helvetica;
+				font-size:12px;
+				font-weight:bold;
+				line-height:150%;
+				text-align:right;
+			}
+			.dataTableContent a:link,
+			.dataTableContent a:visited,
+			.dataTableContent a .yshortcuts {
+				color:#202020;
+				font-weight:bold;
+				text-decoration:underline;
+			}
+			.dataStatusContent a:link,
+			.dataStatusContent a:visited,
+			.dataStatusContent a .yshortcuts {
+				color:#202020;
+				font-weight:bold;
+				text-decoration:underline;
+			}
+			.templateButton {
+				-moz-border-radius:3px;
+				-webkit-border-radius:3px;
+				border-radius:4px;
+				background-color:#fc1c0a;
+				border:1px solid #c91508;
+				border-collapse:separate !important;
+			}
+			.templateButton,
+			.templateButton a:link,
+			.templateButton a:visited,
+			.templateButton a .yshortcuts {
+				color:#FFFFFF;
+				font-family:Arial;
+				font-size:15px;
+				font-weight:bold;
+				letter-spacing:-.5px;
+				line-height:100%;
+				text-align:center;
+				text-decoration:none;
+			}
+			.bodyContent img {
+				display:inline;
+				height:auto;
+			}
+			#templateFooter {
+				background-color:#FFFFFF;
+				border-top:0;
+			}
+			.footerContent div {
+				color:#707070;
+				font-family:Arial;
+				font-size:12px;
+				line-height:125%;
+				text-align:center;
+			}
+			.footerContent div a:link,
+			.footerContent div a:visited,
+			.footerContent div a .yshortcuts {
+				color:#cf1000;
+				font-weight:normal;
+				text-decoration:underline;
+			}
+			.footerContent img {
+				display:inline;
+			}
+			#utility {
+				background-color:#FFFFFF;
+				border:0;
+			}
+			#utility div {
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+		<center>
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
+				<tr>
+					<td align="center" valign="top" style="padding-top:20px;padding-left:10px;padding-right:10px">
+						<table border="0" cellpadding="0" cellspacing="0" style="max-width:600px; min-width:300px" id="templateContainer">
+							<tr>
+								<td valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+										<tr>
+											<td class="headerContent" style="padding-top:30px;padding-bottom:20px">
+												<img src="http://www.eon.se/images/eon2/eon.png" editable="true" width="170" height="51" id="headerImage" />
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+										<tr>
+											<td valign="top">
+												<table border="0" cellpadding="20" cellspacing="0" width="100%">
+													<tr>
+														<td valign="top" class="bodyContent">
+															<div>
+																<h1 class="h1">Huvudrubrik 1</h1>
+																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit leo at metus varius convallis. Quisque rutrum dictum ligula non semper. Proin ac egestas risus. Etiam posuere viverra augue a dictum. <a href="#">Donec ante odio</a>, condimentum vel tincidunt non, fringilla sit amet est. Duis imperdiet tortor id nisi pharetra blandit. Fusce orci libero, posuere in malesuada volutpat, consectetur ut libero.</p>
+																<h2 class="h2">Huvudrubrik 2</h2>
+																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit leo at metus varius convallis. Quisque rutrum dictum ligula non semper. Proin ac egestas risus. Etiam posuere viverra augue a dictum. Donec ante odio, condimentum vel tincidunt non, fringilla sit amet est. Duis imperdiet tortor id nisi pharetra blandit. Fusce orci libero, posuere in malesuada volutpat, consectetur ut libero.</p>
+																<h3 class="h3">Huvudrubrik 3</h3>
+																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit leo at metus varius convallis. Quisque rutrum dictum ligula non semper. Proin ac egestas risus. Etiam posuere viverra augue a dictum. Donec ante odio, condimentum vel tincidunt non, fringilla sit amet est. Duis imperdiet tortor id nisi pharetra blandit. Fusce orci libero, posuere in malesuada volutpat, consectetur ut libero.</p>
+																<h4 class="h4">Huvudrubrik 4</h4>
+																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit leo at metus varius convallis. <a href="#">Quisque rutrum dictum ligula non semper</a>. Proin ac egestas risus. Etiam posuere viverra augue a dictum. Donec ante odio, condimentum vel tincidunt non, fringilla sit amet est. Duis imperdiet tortor id nisi pharetra blandit. Fusce orci libero, posuere in malesuada volutpat, consectetur ut libero.</p>
+															</div>
+														</td>
+													</tr>
+													<tr >
+														<td valign="top" style="padding-top:0; padding-bottom:0;" class="bodyContent">
+															<table border="0" cellpadding="10" cellspacing="0" width="100%" class="templateDataTable">
+																<tr>
+																	<th scope="col" colspan="2" valign="top" width="70%" class="dataTableHeading">
+																		Statusuppdateringar
+																	</th>
+																</tr>
+																<tr>
+																	<td valign="top" class="dataStatusContent">
+																		<p><a href="#">Louise Gudmundson</a> har kommenterat din <strong>statusuppdatering</strong>.</p>
+																		<span class="time">Någon sekund sedan</span>
+																	</td>
+																	<td valign="top" class="dataTableImg">
+																		<img src="temp/notification-user-1.jpg" width="30" height="30" alt="Profilbild på Namn Namnsson" class="right">
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="top" class="dataStatusContent">
+																		<p><a href="#">Louise Gudmundson</a> har kommenterat din <strong>statusuppdatering</strong>.</p>
+																		<span class="time">Någon sekund sedan</span>
+																	</td>
+																	<td valign="top" class="dataTableImg">
+																		<img src="temp/notification-user-1.jpg" width="30" height="30" alt="Profilbild på Namn Namnsson" class="right">
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="top" class="dataStatusContent">
+																		<p><a href="#">Louise Gudmundson</a> har kommenterat din <strong>statusuppdatering</strong>.</p>
+																		<span class="time">Någon sekund sedan</span>
+																	</td>
+																	<td valign="top" class="dataTableImg">
+																		<img src="temp/notification-user-1.jpg" width="30" height="30" alt="Profilbild på Namn Namnsson" class="right">
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+													<tr>
+														<td valign="top" style="padding-top:20px; padding-bottom:0;">
+															<h4 class="h4">Sidor att granska:</h4>
+															<table border="0" cellpadding="10" cellspacing="0" width="100%" class="templateDataTable">
+																<tr>
+																	<th scope="col" valign="top" width="70%" class="dataTableHeading">
+																		Sida
+																	</th>
+																	<th scope="col" valign="top" width="30%" class="dataTableHeading">
+																		Senast granskad
+																	</th>
+																</tr>
+																<tr>
+																	<td valign="top" class="dataTableContent">
+																		<a href="" target="_blank">Namn på sida 1</a>
+																	</td>
+																	<td valign="top" class="dataTableContent">
+																		2012-12-12
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="top" class="dataTableContent">
+																		<a href="" target="_blank">Namn på sida 2</a>
+																	</td>
+																	<td valign="top" class="dataTableContent">
+																		2012-12-12
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="top" class="dataTableContent">
+																		<a href="" target="_blank">Namn på sida 3</a>
+																	</td>
+																	<td valign="top" class="dataTableContent">
+																		2012-12-12
+																	</td>
+																</tr>
+																<tr>
+																	<td valign="top" class="dataTableContent">
+																		<a href="" target="_blank">Namn på sida 4</a>
+																	</td>
+																	<td valign="top" class="dataTableContent">
+																		2012-12-12
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+													<tr>
+														<td valign="top" class="bodyContent">
+															<div>
+																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit leo at metus varius convallis. Quisque rutrum dictum ligula non semper. Proin ac egestas risus. Etiam posuere viverra augue a dictum. Donec ante odio, condimentum vel tincidunt non, fringilla sit amet est. Duis imperdiet tortor id nisi pharetra blandit. Fusce orci libero, posuere in malesuada volutpat, consectetur ut libero.</p>
+																<p>Pellentesque rutrum purus sed felis porttitor et adipiscing massa imperdiet. Vestibulum lacinia tincidunt gravida. Mauris suscipit fringilla leo, sit amet accumsan arcu gravida in. Fusce faucibus arcu a orci egestas tincidunt. Sed ultricies, est ut sodales iaculis, diam nunc vulputate ligula, nec venenatis lectus eros ut nibh. Fusce interdum ultricies est, ut consequat justo accumsan in. Vivamus at arcu nunc. In turpis libero, tempus in rutrum quis, feugiat a nunc.</p>
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="top">
+									<table border="0" cellpadding="10" cellspacing="0" width="100%" id="templateFooter">
+										<tr>
+											<td valign="top" class="footerContent">
+												<table border="0" cellpadding="10" cellspacing="0" width="100%">
+													<tr>
+														<td valign="middle" id="utility">
+															<div>
+																&nbsp;<a href=""><unsubscribe>Uppdatera dina inställningar på din profilsida</a></unsubscribe>&nbsp;
+															</div>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<br />
+					</td>
+				</tr>
+			</table>
+		</center>
+	</body>
+</html>

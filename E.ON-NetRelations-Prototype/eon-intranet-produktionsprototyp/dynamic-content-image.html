@@ -1,0 +1,130 @@
+<?php $title = "Dynamiskt innehåll | E.ON InfoNet"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+	<!-- Image Carousel specific style -->
+	<link rel="stylesheet" href="gui/components/flexslider/flexslider.css?<?php echo $version; ?>" />
+
+	<!-- Template specific style -->
+	<link rel="stylesheet" href="gui/js/vendor/fancybox/css/jquery.fancybox.css?<?php echo $version; ?>" />
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Dynamiskt innehåll</h1>
+							<div class="intro">
+								<p>Här är en lista på allt dynamiskt innehåll som kommer gå att använda i EPiServer 7.</p>
+							</div>
+							<h2>Flash</h2>
+							<div class="flash">
+								<div data-flash='{"swf": "temp/test.swf", "width": "510", "height": "300", "hasVersion": "9"}'>
+									<p><img src="temp/flash.png" alt="En Flashbanner som visar något vettigt" width="510" height="300" /></p>
+								</div>
+							</div>
+							<h2>Bildgalleri Slideshow</h2>
+							<div class="flexslider flexslider-inline" data-transition="fade" data-paginate>
+								<ul class="slides">
+									<li>
+										<img src="temp/carousel-1.jpg" width="764" height="210" alt="">
+										<div class="m m-caption m-1">
+											<p>Bildbeskrivning nummer 1</p>
+										</div>
+									</li>
+									<li>
+										<img src="temp/carousel-2.jpg" width="764" height="210" alt="">
+										<div class="m m-caption m-2">
+											<p>Bildbeskrivning nummer 2</p>
+										</div>
+									</li>
+									<li>
+										<img src="temp/carousel-3.jpg" width="764" height="210" alt="">
+										<div class="m m-caption m-2">
+											<p>Bildbeskrivning nummer 3</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<h2>Bildgalleri</h2>
+							<ul class="image-gallery cf">
+								<li>
+									<a href="temp/lightbox-1.jpg" class="fancy" title="Bildtext">
+										<img src="temp/lightbox-1-t.jpg" alt="Bildtext" width="150" height="100" />
+									</a>
+								</li>
+								<li>
+									<a href="temp/lightbox-2.jpg" class="fancy" title="Bildtext">
+										<img src="temp/lightbox-2-t.jpg" alt="Bildtext" width="150" height="100" />
+									</a>
+								</li>
+								<li>
+									<a href="temp/lightbox-3.jpg" class="fancy" title="Bildtext">
+										<img src="temp/lightbox-3-t.jpg" alt="Bildtext" width="150" height="100" />
+									</a>
+								</li>
+								<li>
+									<a href="temp/lightbox-4.jpg" class="fancy" title="Bildtext">
+										<img src="temp/lightbox-4-t.jpg" alt="Bildtext" width="150" height="100" />
+									</a>
+								</li>
+								<li>
+									<a href="temp/lightbox-5.jpg" class="fancy" title="Bildtext">
+										<img src="temp/lightbox-5-t.jpg" alt="Bildtext" width="150" height="100" />
+									</a>
+								</li>
+								<li>
+									<a href="temp/lightbox-6.jpg" class="fancy" title="Bildtext">
+										<img src="temp/lightbox-6-t.jpg" alt="Bildtext" width="150" height="100" />
+									</a>
+								</li>
+								<li>
+									<a href="temp/lightbox-1.jpg" class="fancy" title="Bildtext">
+										<img src="temp/lightbox-1-t.jpg" alt="Bildtext" width="150" height="100" />
+									</a>
+								</li>
+								<li>
+									<a href="temp/lightbox-1.jpg" class="fancy" title="Bildtext">
+										<img src="temp/lightbox-1-t.jpg" alt="Bildtext" width="150" height="100" />
+									</a>
+								</li>
+								<li>
+									<a href="temp/lightbox-1.jpg" class="fancy" title="Bildtext">
+										<img src="temp/lightbox-1-t.jpg" alt="Bildtext" width="150" height="100" />
+									</a>
+								</li>
+							</ul>
+							<h2>Bild med bildtext</h2>
+							<p><span class="caption"><img src="temp/510x392.jpg" alt="" width="510" height="392" /><em>Renewable, reliable, recycable &amp; responsible är fyra nyckelord för ESS energilösning.</em></span></p>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php include('includes/breadcrumbs.html'); ?>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+
+	<!-- Flash specific scripts -->
+	<script src="gui/js/vendor/jquery.swfobject.min.js?<?php echo $version; ?>"></script>
+
+	<!-- Image Carousel specific scripts -->
+	<script src="gui/components/flexslider/jquery.flexslider-min.js?<?php echo $version; ?>"></script>
+
+	<!-- Fancybox specific scripts -->
+	<script src="gui/js/vendor/fancybox/js/jquery.fancybox.pack.js?<?php echo $version; ?>"></script>
+	<script src="gui/js/pages/fancybox.js?<?php echo $version; ?>"></script>
+
+</body>
+</html>

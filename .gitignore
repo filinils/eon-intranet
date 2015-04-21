@@ -12,7 +12,9 @@ bower.json
 
 
 .ftppass
+.htaccess
 #E.ON-NetRelations-Prototype
+*.zip
 
 # Logs
 logs

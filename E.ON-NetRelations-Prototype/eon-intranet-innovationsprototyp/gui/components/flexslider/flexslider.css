@@ -1,0 +1,268 @@
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+	outline: none;
+}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0; 
+	padding: 0; 
+	list-style: none;
+} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {
+	position:relative;
+	margin-bottom:24px;
+	width:100%;
+}
+.flexslider .slides > li {
+	display: none; 
+	-webkit-backface-visibility: hidden;
+} 
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img { 
+	display: block;
+	width: 100%;
+}
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+.slides:after { 
+	display: block; 
+	visibility: hidden; 
+	clear: both; 
+	height: 0;
+	content: "."; 
+	line-height: 0;
+} 
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+	display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+.flex-viewport {
+	max-height: 2000px; 
+	-webkit-transition: all 1s ease; 
+	-moz-transition: all 1s ease; 
+	transition: all 1s ease;
+}
+.loading .flex-viewport {
+	max-height: 300px;
+}
+.flexslider .slides {
+	zoom: 1;
+}
+
+.carousel li {
+	margin-right: 5px;
+}
+
+
+/* Direction Nav */
+.flex-direction-nav {
+	*height: 0;
+}
+.flex-direction-nav a { 
+	position: absolute; 
+	top:40%;
+	z-index: 10; 
+	overflow:hidden; 
+	margin: 0;
+	padding:0;
+	width:30px;
+	height:28px;
+	background:transparent url(../i/carousel-button-sprite.png);
+	text-indent:200%;
+	white-space:nowrap;
+	opacity: 0; 
+	cursor: pointer; 
+	-webkit-transition: all .3s ease;
+}
+.flex-direction-nav .flex-next { 
+ 	right: 15px;
+ 	background-position:0 -78px;
+}
+.flex-direction-nav .flex-prev {
+	left: 15px;
+	background-position:0 -234px;
+}
+.flexslider:hover .flex-next { 
+	opacity: 1;
+}
+.flexslider:hover .flex-prev { 
+	opacity: 1;
+}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+	opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+	opacity: .3!important; 
+	filter:alpha(opacity=30); 
+	cursor: default;
+}
+
+/* Control Nav */
+.flex-control-nav { 
+	position:relative;
+	z-index:5;
+	padding-top:1px;
+	border:1px solid #dedede;
+	border-top:0;
+	background:#f5f5f5;
+	text-align:center;
+}
+.flex-control-nav li { 
+	display: inline-block;
+	margin: 8px 6px 1px; 
+	zoom: 1; 
+	*display: inline;
+}
+.flex-control-paging li a { 
+	display: block;
+	width: 10px; 
+	height: 10px;
+	line-height:12px;
+	-webkit-border-radius: 20px; 
+	-moz-border-radius: 20px; 
+	border-radius: 20px; 
+	background: #888; 
+	background: rgba(0,0,0,0.5); 
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+	text-indent: -9999px; 
+	cursor: pointer; 
+	-o-border-radius: 20px;
+}
+.flex-control-paging li a:hover { 
+	background: #eb1503;
+}
+.flex-control-paging li a.flex-active { 
+	background: #eb1503; 
+	cursor: default; 
+}
+
+.flex-control-thumbs { 
+	position: static; 
+	overflow: hidden;
+	margin: 5px 0 0;
+}
+.flex-control-thumbs li { 
+	float: left; 
+	margin: 0;
+	width: 25%;
+}
+.flex-control-thumbs img { 
+	display: block;
+	width: 100%; 
+	opacity: .7; 
+	cursor: pointer;
+}
+.flex-control-thumbs img:hover {
+	opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+	opacity: 1; 
+	cursor: default;
+}
+
+.flexslider .m-caption {
+	position:absolute;
+	top:20%;
+	left:75px;
+	margin-bottom:0;
+	padding:10px 12px;
+	max-width:34%;
+	max-height:80%;
+	color:#fff;
+}
+.flexslider .m-caption h2 {
+	padding:8px 0 13px;
+	word-wrap:break-word;
+	font-size:22px;
+	line-height:24px;
+}
+.m-caption .m-c p {
+	padding-top:0;
+}
+.m-caption .m-h,
+.m-caption .m-c {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:0 10px;
+}
+.m-caption .m-f {
+	background:transparent;
+}
+.m-caption .m-f p {
+	padding:0;
+}
+.m-caption .m-f a {
+	display:block;
+	padding:7px 10px 8px 26px;
+	background-position:12px 50%;
+	color:#fff;
+}
+.flexslider-inline .m-caption {
+	position:static;
+	max-width:100%;
+	background:#f5f5f5;
+	color:#333;
+	border:1px solid #dedede;
+}
+.flexslider-inline .m-caption p {
+	padding:0;
+}
+.flexslider-inline .flex-direction-nav a {
+	top:30%;
+}
+.visually-hidden {
+	display: none;
+}
+/* Layout For Screens with max-width 900px
+-------------------------------------------------------------- */
+@media only screen and (max-width:900px) {
+
+	.flexslider .m-caption {
+		padding:10px;
+		font-size:13px;
+	}
+
+}
+
+/* Layout For Screens with max-width 800px
+-------------------------------------------------------------- */
+@media only screen and (max-width:800px) {
+
+	.flexslider .m-caption {
+		position:static;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+		padding:5px;
+		max-width:100%;
+	}
+	.flex-direction-nav a {
+		display:none;
+		background-image:url(../i/carousel-button-sprite@2x.png?embed);
+		background-size:30px 262px;
+	}
+	.flexslider .m-caption h2 {
+		font-size:17px;
+	}
+	.flexslider .m-caption .m-c p {
+		font-size:13px;
+	}
+
+}

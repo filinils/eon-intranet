@@ -1,0 +1,412 @@
+<?php $title = "Nyhetskällor | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub-profile.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Mina nyhetskällor</h1>
+							<div class="intro">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis lacus, dapibus a consequat vel, ultrices ac mi. In vitae sem sit amet neque ultrices vehicula at non sem.</p>
+							</div>
+							<form method="post" action="/" class="m-news-list cf">
+								<h2>Nyheter</h2>
+								<div class="m-news-list m-company scrollable cf">
+									<h3>Bolag</h3>
+									<ul class="cf">
+										<li>
+											<input type="checkbox" value="company-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" checked="checked" />
+											<label for="checkbox1-<?php echo $id; ?>">Koncernnyheter</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-2" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" checked="checked" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Sverige</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-3" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Danmark</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-4" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Elnät</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-5" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Energihandel</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-6" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Försäljning</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-7" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Gas</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-8" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON IT</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-9" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Kundsupport</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-10" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Kärnkraft</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-11" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Vattenkraft</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-12" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Vind</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-13" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Värme</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-14" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Värmekraft</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="company-15" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">OKG</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+									</ul>
+								</div>
+								<div class="m-news-list m-subject scrollable">
+									<h3>Ämnen</h3>
+									<ul class="cf">
+										<li>
+											<input type="checkbox" value="subject-1" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>"  />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 1</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-2" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 2</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-3" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 3</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-4" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 4</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-5" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 5</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-6" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 6</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-7" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 7</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-8" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 8</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-9" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 9</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-10" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 10</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-11" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 11</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-12" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 12</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-13" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 13</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-14" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 14</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-15" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 15</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="subject-16" name="checkboxgroup2" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Ämne 16</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+									</ul>
+								</div>
+								<div class="m-location scrollable cf">
+									<h3>Ort</h3>
+									<ul class="cf">
+										<li>
+											<input type="checkbox" value="location-1" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Anderstorp</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-2" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Forsse</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-3" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Halmstad</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-4" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Halmstad</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-5" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Hässleholm</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-6" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Kalmar</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-7" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Karlshamn</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-8" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Malmö</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-9" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Norrköping</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-10" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Sollefteå</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-11" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Stockholm</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-12" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Sundsvall</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-13" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Växjö</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+										<li>
+											<input type="checkbox" value="location-14" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Örebro</label>
+											(<a href="news-archive-single-source.html">Visa</a>)
+										</li>
+									</ul>
+								</div>
+								<h2>Aktuella meddelanden</h2>
+								<div class="m-news-list m-company scrollable cf">
+									<h3>Bolag</h3>
+									<ul class="cf">
+										<li>
+											<input type="checkbox" value="company-1" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Koncernnyheter</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-2" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Sverige</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-3" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Danmark</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-4" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Elnät</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-5" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Energihandel</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-6" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Försäljning</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-7" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Gas</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-8" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON IT</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-9" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Kundsupport</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-10" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Kärnkraft</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-11" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Vattenkraft</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-12" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Vind</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-13" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Värme</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-14" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">E.ON Värmekraft</label>
+										</li>
+										<li>
+											<input type="checkbox" value="company-15" name="checkboxgroup3" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">OKG</label>
+										</li>
+									</ul>
+								</div>
+								<div class="m-location scrollable cf">
+									<h3>Ort</h3>
+									<ul class="cf">
+										<li>
+											<input type="checkbox" value="location-1" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Anderstorp</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-2" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Forsse</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-3" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Halmstad</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-4" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Halmstad</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-5" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Hässleholm</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-6" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Kalmar</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-7" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Karlshamn</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-8" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Malmö</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-9" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Norrköping</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-10" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Sollefteå</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-11" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Stockholm</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-12" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Sundsvall</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-13" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Växjö</label>
+										</li>
+										<li>
+											<input type="checkbox" value="location-14" name="checkboxgroup4" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+											<label for="checkbox1-<?php echo $id; ?>">Örebro</label>
+										</li>
+									</ul>
+								</div>
+								<div class="row cols-1 cf">
+									<div class="col col-1 submit-area">
+										<input type="submit" class="submit" value="Spara" name="submit-<?php echo $id = uniqid('id'); ?>" />
+										<span class="or">eller</span>
+										<button type="reset" class="reset confirm-button" title="Avbryt dina ändringar"><span>Ångra ändringar</span></button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+							<?php include('includes/teaser-1.html'); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php include('includes/breadcrumbs.html'); ?>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

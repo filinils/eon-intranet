@@ -1,0 +1,176 @@
+<?php $title = "XFormsformulär | E.ON InfoNet"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Formulärhantering</h1>
+							<div class="intro">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							</div>
+						</div>
+						<h2>Formulär (XForms-anpassat)</h2>
+						<div class="form-general cms">
+							<form action="/" class="form xform" method="post">
+								<table id="id_matrix">
+									<tbody>
+										<tr>
+											<td valign="top">
+												<div class="text col col-1 mandatory">
+													<fieldset class="radio alt orientationHorizontal">
+														<legend>
+															Gör ett val</legend>
+														<label title="Gör ett val">
+															<label><input checked="checked" id="radio1ett" name="radio1" type="radio" value="1">ett</label>
+															<label><input id="radio1två" name="radio1" type="radio" value="2">två</label>
+															<label><input id="radio1tre" name="radio1" type="radio" value="3">tre</label>
+														</label>
+													</fieldset>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" style="">
+												<div class="text col col-1 mandatory">
+													<fieldset class=" orientationVertical">
+														<legend>Gör ett val</legend>
+														<label title="Gör ett val">
+															<label><input checked="checked" id="Choices2ett" name="Choices2" type="radio" value="1">ett</label>
+															<label><input id="Choices2två" name="Choices2" type="radio" value="2">två</label>
+															<label><input id="Choices2tre" name="Choices2" type="radio" value="3">tre</label>
+														</label>
+													</fieldset>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<fieldset class="checkbox alt orientationHorizontal">
+													<legend>Gör minst ett val</legend>
+													<label title="Gör minst ett val">
+														<label><input checked="checked" id="Choices3ett" name="Choices3ett" type="checkbox" value="true"><input name="Choices3ett" type="hidden" value="false">ett</label>
+														<label><input id="Choices3tv_" name="Choices3två" type="checkbox" value="true"><input name="Choices3två" type="hidden" value="false">två</label>
+														<label><input id="Choices3tre" name="Choices3tre" type="checkbox" value="true"><input name="Choices3tre" type="hidden" value="false">tre</label>
+													</label>
+												</fieldset>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<fieldset class=" orientationVertical">
+													<legend>
+														Gör minst ett val (obligatoriskt)</legend>
+													<label title="Gör minst ett val (obligatoriskt)">
+														<label><input checked="checked" id="Choices4ett" name="Choices4ett" type="checkbox" value="true"><input name="Choices4ett" type="hidden" value="false">ett</label>
+														<label><input id="Choices4tv_" name="Choices4två" type="checkbox" value="true"><input name="Choices4två" type="hidden" value="false">två</label>
+														<label><input id="Choices4tre" name="Choices4tre" type="checkbox" value="true"><input name="Choices4tre" type="hidden" value="false">tre</label>
+													</label>
+												</fieldset>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" style="">
+												<div class="text col col-1 mandatory">
+													<label title="Förnamn">
+														Förnamn (obligatoriskt)
+														<input id="Fornamn" name="Fornamn" size="55" type="text" value="" data-validation="required" data-validation-error-text="Du måste ange ett förnamn">
+													</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<div class="text col col-1 mandatory">
+													<label title="Efternamn">
+														Efternamn (obligatoriskt)
+														<input id="Efternamn" name="Efternamn" size="55" type="text" value="">
+													</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" style="">
+												<div class="text col col-1 mandatory">
+													<label title="Epost">
+														E-post (obligatoriskt)
+														<input id="Epost" name="Epost" size="55" type="text" value="">
+													</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" style="">
+												<hr class="col hr col-1">
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<span class="col col-1">En underrubrik</span>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<div class="text col col-1 mandatory">
+													<label title="Entext">
+														En text
+														<textarea cols="58" id="Entext" name="Entext" rows="5"></textarea>
+													</label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<label title="Gör ett val">
+													Gör ett val
+													<select class="" id="Choices5" name="Choices5" title="Gör ett val">
+														<option value="ett">Nummer ett</option>
+														<option value="två">Nummer två</option>
+														<option value="tre">Nummer tre</option>
+													</select>
+													<span class="field-validation-valid" data-valmsg-for="Choices5" data-valmsg-replace="true"></span>
+												</label>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top">
+												<div>
+													<input type="submit" name="http://localhost/sql" title="Skicka" value="Skicka" class="button">
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+						</div>
+						<div class="article-actions cf">
+							<h2 class="structural">Verktyg</h2>
+							<ul>
+								<?php include('includes/article-buttons-1.html'); ?>
+								<?php include('includes/article-buttons-2.html'); ?>
+								<?php include('includes/article-buttons-3.html'); ?>
+							</ul>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+							<?php include('includes/teaser-1.html'); ?>
+						</div>
+					</div>
+				</div>
+				<?php include('includes/breadcrumbs.html'); ?>
+			</div>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

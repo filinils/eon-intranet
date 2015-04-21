@@ -1,0 +1,52 @@
+/* GENERAL
+============================================================================================================================ */
+
+.h1 {font-size: 1em;}
+
+#link-text,
+#linkName {width: 200px;}
+#wikilinksPageLookup,
+#wikilinksName {
+	width: 200px;
+}
+
+
+/* PAGEFINDER
+============================================================================================================================ */
+
+/* Pagefinder wrapper
+-------------------------------------------------------------- */
+#pagefinder {
+	position: relative;
+	display: block;
+}
+
+
+/* Pagefinder results
+-------------------------------------------------------------- */
+#pagefinder-results {
+	position: absolute;
+	top: 18px;
+	left: 0;
+	padding: 0 3px 3px;
+	width: 194px;
+	background: #fff;
+	border: 1px solid #808080;
+	border-width: 0 1px 1px;
+}
+#pagefinder-results h2 {font-size: 1em;}
+
+#pagefinder-results ul {
+	list-style: none;
+	margin: 3px 0 0;
+	padding: 0;
+}
+#pagefinder-results a {
+	display: block;
+	padding: 2px;
+	text-decoration: none;
+}
+#pagefinder-results a:hover,
+#pagefinder-results a:active,
+#pagefinder-results a:focus {color: #2B6FB6;}
+#pagefinder-results .odd {background: #eee;}

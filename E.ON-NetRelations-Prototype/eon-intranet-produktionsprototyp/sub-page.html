@@ -1,0 +1,290 @@
+<?php $title = "Vanlig sida | E.ON InfoNet"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Detta är en vanlig innehålls&shy;sida med lång rubriktext</h1>
+							<div class="intro">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+							</div>
+							<p><img src="temp/510x300.jpg" alt="Toppbild" width="510" height="300" /></p>
+							<p>Lorem ipsum dolor sit amet, consectetur <em>det här är en viktig text</em> och <strong>det här är en mycket viktig text</strong> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="temp/pdf.pdf" class="file pdf">En länk till ett PDF-dokument, så lång att den radbryts.</a> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<h2>Länkar</h2>
+							<p>Exempel på en länk som ska öppnas i nytt fönster: <a href="sub-page.html" target="_blank">En länk i nytt fönster</a>.</p>
+							<p>Exempel på en extern länk: <a href="http://netrelations.se">En extern länk</a></p>
+							<p>Exempel på en extern länk som ska öppnas i nytt fönster: <a href="http://netrelations.se" target="_blank">En extern länk</a></p>
+							<!-- <h2>Citat</h2>
+							<blockquote><p>Detta är ett styckecitat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></blockquote> -->
+							<p>Här kommer ett stycke text med ett <q>inline-citat av någon berömd person</q>, och här är lite mer text.</p>
+							<h2>Bildexempel</h2>
+							<p><img src="temp/dummy-1-t.jpg" width="110" height="69" alt="Dummybild" class="right" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p><!-- <span class="caption left"> --><img width="110" height="69" alt="Dummybild" src="temp/dummy-2-t.jpg" class="left" /><!-- <em>En bildtext som är mycket längre än vad bilden är.</em></span>--> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<h2>Listor</h2>
+							<h3>Punktlista (ul)</h3>
+							<ul>
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Lorem ipsum dolor sit amet
+									<ul>
+										<li>Lorem ipsum dolor sit amet</li>
+										<li>Lorem ipsum dolor sit amet</li>
+										<li>Lorem ipsum dolor sit amet</li>
+									</ul>
+								</li>
+								<li>Lorem ipsum dolor sit amet</li>
+							</ul>
+							<h3>Numrerad lista (ol)</h3>
+							<ol>
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Lorem ipsum dolor sit amet</li>
+							</ol>
+							<ol>
+								<li>Lorem ipsum dolor sit amet
+									<ol>
+										<li>Lorem ipsum dolor sit amet</li>
+										<li>Lorem ipsum dolor sit amet</li>
+										<li>Lorem ipsum dolor sit amet</li>
+									</ol>
+								</li>
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Lorem ipsum dolor sit amet</li>
+							</ol>
+							<h3>Fillista</h3>
+							<ul class="file-list">
+								<li><a href="temp/pdf.pdf" class="file xls">Fil nummer 1<span> (Excel-dokument, 340 kB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file doc">Fil nummer 2<span> (Word-dokument, 740 kB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file pdf">Fil nummer 3<span> (PDF-fil, 21 kB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file flv">Fil nummer 4<span> (FLV-fil, 21 MB)</span></a></li>
+							</ul>
+							<h3>Samtliga filformat</h3>
+							<ul class="file-list">
+								<li><a href="temp/pdf.pdf" class="file folder">Mapp</a></li>
+								<li><a href="temp/pdf.pdf" class="file ai">Fil<span> (AI-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file bmp">Fil<span> (BMP-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file chm">Fil<span> (CHM-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file db">Fil<span> (DB-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file config">Fil<span> (CONFIG-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file css">Fil<span> (CSS-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file js">Fil<span> (JS-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file xml">Fil<span> (XML-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file doc">Fil<span> (DOC-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file docx">Fil<span> (DOCX-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file asp">Fil<span> (ASP-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file htm">Fil<span> (HTM-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file html">Fil<span> (HTML-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file eps">Fil<span> (EPS-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file fla">Fil<span> (FLA-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file gif">Fil<span> (GIF-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file jpg">Fil<span> (JPG-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file jpeg">Fil<span> (JPEG-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file mmap">Fil<span> (MMAP-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file mov">Fil<span> (MOV-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file pdf">Fil<span> (PDF-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file png">Fil<span> (PNG-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file ppt">Fil<span> (PPT-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file pptx">Fil<span> (PPTX-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file psd">Fil<span> (PSD-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file rtf">Fil<span> (RTF-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file swf">Fil<span> (SWF-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file txt">Fil<span> (TXT-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file wmv">Fil<span> (WMV-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file xls">Fil<span> (XLS-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file xlsx">Fil<span> (XLSX-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file zip">Fil<span> (ZIP-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file zip download">Ladda ner fil<span> (ZIP-fil, 21 MB)</span></a></li>
+								<li><a href="temp/pdf.pdf" class="file mail">Mailadress</a></li>
+							</ul>
+							<h2>Datatabeller</h2>
+							<table>
+								<caption>En tabell</caption>
+								<thead>
+									<tr>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="zebra">
+								<caption>En randig tabell</caption>
+								<thead>
+									<tr>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="zebra">
+								<caption>En väldigt bred tabell</caption>
+								<thead>
+									<tr>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+										<th scope="col">Kolumnrubrik</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+									<tr>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+										<td>En datacell</td>
+									</tr>
+								</tbody>
+							</table>
+							<h2>Nivå 2-rubrik med lång text så att vi kan se att den radbryter korrekt</h2>
+							<p>Texter kan ofta behöva underrubriker i flera nivåer. Här visar vi hur det kan se ut.</p>
+							<h3>Nivå 3-rubrik med lång text så att vi kan se att den radbryter korrekt</h3>
+							<p>Texter kan ofta behöva underrubriker i flera nivåer. Här visar vi hur det kan se ut.</p>
+							<h4>Nivå 4-rubrik med lång text så att vi kan se att den radbryter korrekt lorem ipsum dolor sit amet</h4>
+							<p>Texter kan ofta behöva underrubriker i flera nivåer. Här visar vi hur det kan se ut.</p>
+						</div>
+						<?php include('includes/article-info.html'); ?>
+						<div class="article-actions cf">
+							<h2 class="structural">Verktyg</h2>
+							<ul>
+								<?php include('includes/article-buttons-1.html'); ?>
+								<?php include('includes/article-buttons-2.html'); ?>
+								<?php include('includes/article-buttons-3.html'); ?>
+							</ul>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+							<?php include('includes/teaser-1.html'); ?>
+							<?php include('includes/teaser-2.html'); ?>
+						</div>
+					</div>
+				</div>
+				<?php include('includes/breadcrumbs.html'); ?>
+			</div>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

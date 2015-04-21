@@ -1,0 +1,121 @@
+<?php $title = "Dynamiskt innehåll - Video | E.ON InfoNet"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+
+<!-- Video specific style -->
+<link rel="stylesheet" href="gui/js/vendor/mediaelement/css/mediaelementplayer.css?<?php echo $version; ?>" />
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Dynamiskt innehåll - Video</h1>
+							<div class="intro">
+								<p>Här är en lista på allt dynamiskt innehåll som kommer gå att använda i EPiServer 7.</p>
+							</div>
+							<h2>Videogalleri</h2>
+							<div class="video-gallery">
+								<div class="video">
+									<video id="player2" poster="temp/movie.jpg" width="510" height="286" controls="controls" preload="none" >
+										<source src="temp/movie.mp4" type="video/mp4">
+									</video>
+									<p class="video-caption">
+										<em>Så fungerar vattenkraft.</em>
+										<span>Följ med Droppen på hans eviga resa genom vattenkraftens kretslopp.</span>
+									</p>
+								</div>
+								<div class="row cols-3 cf">
+									<div class="col col-1">
+										<a href="">
+											<span class="poster"><img src="temp/video-gallery-thumbnail.png" alt="" width="150" height="84" /></span>
+											<span>Så fungerar vattenkraft</span>
+										</a>
+									</div>
+									<div class="col col-2">
+										<a href="">
+											<span class="poster"><img src="temp/video-gallery-thumbnail.png" alt="" width="150" height="84" /></span>
+											<span>Så fungerar vattenkraft</span>
+										</a>
+									</div>
+									<div class="col col-3">
+										<a href="">
+											<span class="poster"><img src="temp/video-gallery-thumbnail.png" alt="" width="150" height="84" /></span>
+											<span>Så fungerar vattenkraft</span>
+										</a>
+									</div>
+								</div>
+								<div class="row cols-3 video-list cf">
+									<div class="col col-1">
+										<a href="">
+											<span class="poster"><img src="temp/video-gallery-thumbnail.png" alt="" width="150" height="84" /></span>
+											<span>Så fungerar vattenkraft</span>
+										</a>
+									</div>
+									<div class="col col-2">
+										<a href="">
+											<span class="poster"><img src="temp/video-gallery-thumbnail.png" alt="" width="150" height="84" /></span>
+											<span>Så fungerar vattenkraft</span>
+										</a>
+									</div>
+									<div class="col col-3">
+										<a href="">
+											<span class="poster"><img src="temp/video-gallery-thumbnail.png" alt="" width="150" height="84" /></span>
+											<span>Så fungerar vattenkraft</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<h2>Video via HTML5-mediaspelare</h2>
+							<div class="video">
+								<video id="player1" poster="temp/movie.jpg" width="510" height="286" controls="controls" preload="none" >
+									<source src="temp/movie.mp4" type="video/mp4">
+									<!--<track kind="subtitles" src="temp/subtitle.srt" srclang="en" />-->
+								</video>
+							</div>
+							<h2>Video via YouTube</h2>
+							<div class="youtube">
+								<iframe src="https://www.youtube.com/embed/esnYrQGmy1Y" title="YouTube-film" width="510" height="287" frameborder="0" allowfullscreen>
+									<a href="https://www.youtube.com/esnYrQGmy1Y">Se filmen på YouTube</a>
+								</iframe>
+							</div>
+							<h2>Video via Bambuser</h2>
+							<div class="bambuser">
+								<iframe src="http://embed.bambuser.com/broadcast/2279611" width="510" height="344" title="Videoklipp från Bambuser" frameborder="0">
+									<a href="http://embed.bambuser.com/broadcast/2279611">Se filmen på Bambuser</a>
+								</iframe>
+							</div>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php include('includes/breadcrumbs.html'); ?>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+
+	<!-- Video specific scripts -->
+	<script src="gui/js/vendor/mediaelement/js/mediaelement-and-player.js?<?php echo $version; ?>"></script>
+	<script>
+		$('audio,video').mediaelementplayer({
+			videoWidth: '100%',
+			videoHeight: '100%',
+			audioWidth: '100%',
+			videoVolume: 'horizontal',
+			pauseOtherPlayers: true,
+		});
+
+	</script>
+</body>
+</html>

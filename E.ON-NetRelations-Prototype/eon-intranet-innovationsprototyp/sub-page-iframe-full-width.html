@@ -1,0 +1,32 @@
+<?php $title = "Vanlig sida med iframe utan undermeny och full bredd | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-5">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<div id="content-primary" role="main">
+						<div class="article cf">
+							<h1 class="structural">Vanlig sida med iframe utan undermeny och full bredd</h1>
+							<h2>Utan någon bredd</h2>
+							<div class="iframe">
+								<a href="http://eon.se/" target="_blank" data-render="iframe" data-height="400" data-title="E.ONs webbplats">Länk till http://eon.se</a>
+							</div>
+							<h2>Med en bredd</h2>
+							<div class="iframe">
+								<a href="http://eon.se/" target="_blank" data-render="iframe" data-height="400" data-width="400" data-title="E.ONs webbplats">Länk till http://eon.se</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php include('includes/breadcrumbs.html'); ?>
+			</div>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

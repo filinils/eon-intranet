@@ -20,7 +20,7 @@
 			// Register commands
 			ed.addCommand('mceTemplate', function(ui) {
 				ed.windowManager.open({
-					file : url + 'template.htm',
+					file : url + '/template.htm',
 					width : ed.getParam('template_popup_width', 750),
 					height : ed.getParam('template_popup_height', 600),
 					inline : 1
@@ -55,7 +55,7 @@
 				longname : 'Template plugin',
 				author : 'Moxiecode Systems AB',
 				authorurl : 'http://www.moxiecode.com',
-				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Pluginstemplate',
+				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/template',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		},

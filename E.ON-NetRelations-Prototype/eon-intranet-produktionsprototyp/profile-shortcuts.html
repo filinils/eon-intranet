@@ -1,0 +1,159 @@
+<?php $title = "Genvägar | E.ON InfoNet"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub-profile.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Mina genvägar</h1>
+							<div class="intro">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis lacus, dapibus a consequat vel, ultrices ac mi. In vitae sem sit amet neque ultrices vehicula at non sem.</p>
+							</div>
+							<div class="m m-content-list m-listing m-bookmarks">
+								<h2>Gemensamma genvägar</h2>
+								<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<ul>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 1</a>
+										</div>
+									</li>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 2</a>
+										</div>
+									</li>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 3</a>
+										</div>
+									</li>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 4</a>
+										</div>
+									</li>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 5</a>
+										</div>
+									</li>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 6</a>
+										</div>
+									</li>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 7</a>
+										</div>
+									</li>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 8</a>
+										</div>
+									</li>
+								</ul>
+								<h2>Mina genvägar</h2>
+								<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<ul>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 1</a>
+										</div>
+										<div class="tools">
+											<form action="/" method="post">
+												<input type="hidden" name="remove-shortcut" value="">
+												<button type="submit" class="delete confirm-button" title="Ta bort genvägen?"><span>Ta bort</span></button>
+											</form>
+										</div>
+									</li>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 2</a>
+										</div>
+										<div class="tools">
+											<form action="/" method="post">
+												<input type="hidden" name="remove-shortcut" value="">
+												<button type="submit" class="delete confirm-button" title="Ta bort genvägen?"><span>Ta bort</span></button>
+											</form>
+										</div>
+									</li>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 3</a>
+										</div>
+										<div class="tools">
+											<form action="/" method="post">
+												<input type="hidden" name="remove-shortcut" value="">
+												<button type="submit" class="delete confirm-button" title="Ta bort genvägen?"><span>Ta bort</span></button>
+											</form>
+										</div>
+									</li>
+									<li class="cf">
+										<div class="note">
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Genväg 4</a>
+										</div>
+										<div class="tools">
+											<form action="/" method="post">
+												<input type="hidden" name="remove-shortcut" value="">
+												<button type="submit" class="delete confirm-button" title="Ta bort genvägen?"><span>Ta bort</span></button>
+											</form>
+										</div>
+									</li>
+								</ul>
+								<h2>Lägg till ny genväg</h2>
+								<form method="post" action="/" class="form-general cms">
+									<div class="form-content">
+										<div class="row cols-1 cf">
+											<div class="text col large mandatory col-1">
+												<label for="<?php echo $id = uniqid('id'); ?>">Ge genvägen ett namn <em>(obligatoriskt)</em></label>
+												<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" required aria-required="true" placeholder="Namn" />
+											</div>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="text col full mandatory col-1">
+												<label for="<?php echo $id = uniqid('id'); ?>">Skriv eller klistra in en adress <em>(obligatoriskt)</em></label>
+												<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" required aria-required="true" placeholder="http://" />
+											</div>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="col col-1 submit-area">
+												<input type="submit" class="submit" value="Lägg till" name="submit-<?php echo $id = uniqid('id'); ?>" />
+												<span class="or">eller</span>
+												<button type="reset" class="reset confirm-button" title="Avbryt dina ändringar"><span>Avbryt</span></button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="article-actions cf">
+								<h2 class="structural">Verktyg</h2>
+								<ul>
+									<?php include('includes/article-buttons-2.html'); ?>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+							<?php include('includes/teaser-1.html'); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php include('includes/breadcrumbs.html'); ?>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

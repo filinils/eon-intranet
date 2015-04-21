@@ -1,0 +1,365 @@
+<?php $title = "Dynamiskt innehåll | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+<script type="text/javascript">
+	var is_ie8 = false;
+</script>
+<!--[if lte IE 8]>
+	<script src="gui/js/vendor/excanvas.compiled.js?<?php echo $version; ?>"></script>
+	<script type="text/javascript">
+		is_ie8 = true;
+	</script>
+<![endif]-->
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Dynamiskt innehåll</h1>
+							<div class="intro">
+								<p>Här är en lista på allt dynamiskt innehåll som kommer gå att använda i EPiServer 7.</p>
+							</div>
+							<h2>Checklista</h2>
+							<div class="m m-checklist">
+								<h2>Rutiner för rengöring av skrivare</h2>
+								<ul>
+									<li>
+										<span class="checked">Färdig</span>
+										<h3>Rubrik för punkten</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non egestas ante. Aliquam vehicula ante id nibh viverra ac condimentum neque molestie. <a href="">Läs mer om punkten</a></p>
+									</li>
+									<li>
+										<span class="checked">Färdig</span>
+										<h3>Rubrik för punkten</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non egestas ante. Aliquam vehicula ante id nibh viverra ac condimentum neque molestie.</p>
+									</li>
+									<li>
+										<span class="unchecked">Färdig</span>
+										<h3>Rubrik för punkten</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non egestas ante. Aliquam vehicula ante id nibh viverra ac condimentum neque molestie.</p>
+									</li>
+									<li>
+										<span class="unchecked">Ej påbörjad</span>
+										<h3>Rubrik för punkten</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non egestas ante. Aliquam vehicula ante id nibh viverra ac condimentum neque molestie.</p>
+									</li>
+								</ul>
+							</div>
+							<!-- Survey specific scripts -->
+							<script src="gui/js/vendor/jquery-1.9.1.min.js?<?php echo $version; ?>"></script>
+							<script src="gui/js/vendor/Chart.js?<?php echo $version; ?>"></script>
+							<script src="gui/js/pages/chartdata.js?<?php echo $version; ?>"></script>
+							<h2>Undersökning/Snabbenkät - Formulär inga svar</h2>
+							<div class="m-survey m-poll">
+								<form method="post" action="includes/survey-result.html" data-url="includes/survey-result.html" class="form-general survey cms" data-total-answers="0">
+									<fieldset>
+										<legend>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</legend>
+										<div class="row cols-1 cf">
+											<div class="radio alt">
+												<input type="radio" value="Svar 1" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+												<label for="radio1-<?php echo $id; ?>">Svar 1</label>
+											</div>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="radio alt">
+												<input type="radio" value="Svar 2" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+												<label for="radio1-<?php echo $id; ?>">Svar 2</label>
+											</div>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="radio alt">
+												<input type="radio" value="Svar 3" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+												<label for="radio1-<?php echo $id; ?>">Svar 3</label>
+											</div>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="col col-1 submit-area">
+												<input type="submit" class="button" data-url="includes/survey-result.html" value="Svara" name="submit-<?php echo $id = uniqid('id'); ?>" />
+												<span class="or">eller</span>
+												<button type="button" class="view-result" data-url="includes/survey-result.html"><span>Visa resultat</span></button>
+											</div>
+											<div class="col col-1 submit-area ie8">
+												<input type="submit" class="button" value="Svara (IE8)" name="submitie8-<?php echo $id = uniqid('id'); ?>" />
+												<span class="or">eller</span>
+												<button type="button" class="view-result"><span>Visa resultat (IE8)</span></button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<h2>Undersökning/Snabbenkät - Formulär</h2>
+							<div class="m-survey m-poll">
+								<form method="post" action="includes/survey-result.html" data-url="includes/survey-result.html" class="form-general survey cms">
+									<fieldset>
+										<legend>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</legend>
+										<div class="row cols-1 cf">
+											<div class="radio alt">
+												<input type="radio" value="Svar 1" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+												<label for="radio1-<?php echo $id; ?>">Svar 1</label>
+											</div>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="radio alt">
+												<input type="radio" value="Svar 2" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+												<label for="radio1-<?php echo $id; ?>">Svar 2</label>
+											</div>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="radio alt">
+												<input type="radio" value="Svar 3" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+												<label for="radio1-<?php echo $id; ?>">Svar 3</label>
+											</div>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="col col-1 submit-area">
+												<input type="submit" class="button" data-url="includes/survey-result.html" value="Svara" name="submit-<?php echo $id = uniqid('id'); ?>" />
+												<span class="or">eller</span>
+												<button type="button" class="view-result" data-url="includes/survey-result.html"><span>Visa resultat</span></button>
+											</div>
+											<div class="col col-1 submit-area ie8">
+												<input type="submit" class="button" value="Svara (IE8)" name="submitie8-<?php echo $id = uniqid('id'); ?>" />
+												<span class="or">eller</span>
+												<button type="button" class="view-result"><span>Visa resultat (IE8)</span></button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<div class="m-survey m-poll">
+								<form method="post" action="includes/survey-result.html" data-url="includes/survey-result.html" class="form-general survey cms" data-total-answers="4">
+									<fieldset>
+										<legend>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</legend>
+										<div class="row cols-1 cf">
+											<div class="radio alt">
+												<input type="radio" value="Svar 1" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+												<label for="radio1-<?php echo $id; ?>">Svar 1</label>
+											</div>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="radio alt">
+												<input type="radio" value="Svar 2" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+												<label for="radio1-<?php echo $id; ?>">Svar 2</label>
+											</div>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="radio alt">
+												<input type="radio" value="Svar 3" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+												<label for="radio1-<?php echo $id; ?>">Svar 3</label>
+											</div>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="col col-1 submit-area">
+												<input type="submit" class="button" data-url="includes/survey-result.html" value="Svara" name="submit-<?php echo $id = uniqid('id'); ?>" />
+												<span class="or">eller</span>
+												<button type="button" class="view-result" data-url="includes/survey-result.html"><span>Visa resultat</span></button>
+											</div>
+											<div class="col col-1 submit-area ie8">
+												<input type="submit" class="button" value="Svara (IE8)" name="submitie8-<?php echo $id = uniqid('id'); ?>" />
+												<span class="or">eller</span>
+												<button type="button" class="view-result"><span>Visa resultat (IE8)</span></button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<h2>Undersökning/Snabbenkät - Formulär – Redan röstat</h2>
+							<div class="m-survey poll-outcome">
+								<div id="survey-result" class="result m-survey">
+									<h2>Resultat</h2>
+									<div class="m-survey">
+										<div class="result">
+											<p><strong>123 personer</strong> har röstat (ajax)</p>
+											<ul class="stats cf">
+												<li data-value="12">Svarsalternativ 1 - <strong>25% (24 röster)</strong></li>
+												<li data-value="22">Svarsalternativ 2 - <strong>53% (69 röster)</strong></li>
+												<li data-value="54">Svarsalternativ 3 - <strong>22% (20 röster)</strong></li>
+												<li data-value="12">Svarsalternativ 4 har en längre text för att se hur det radbryts - <strong>25% (24 röster)</strong></li>
+												<li data-value="53">Svarsalternativ 5 - <strong>53% (69 röster)</strong></li>
+												<li data-value="67">Svarsalternativ 6 - <strong>22% (20 röster)</strong></li>
+												<li data-value="9">Svarsalternativ 7 - <strong>25% (24 röster)</strong></li>
+												<li data-value="12">Svarsalternativ 8 - <strong>53% (69 röster)</strong></li>
+												<li data-value="98">Svarsalternativ 9 - <strong>22% (20 röster)</strong></li>
+												<li data-value="32">Svarsalternativ 10 - <strong>22% (20 röster)</strong></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h2>Kontaktkort</h2>
+							<div class="list-item item-contact cf">
+								<div class="image-holder">
+									<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+								</div>
+								<div class="info">
+									<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+									<p class="expertise">Kontaktansvarig på <strong class="company">E.ON Sverige</strong></p>
+									<ul class="contact-details">
+										<li class="phone"><span>040-25 50 00</span></li>
+										<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
+									</ul>
+								</div>
+								<button class="expand"><span>Expandera kontaktkort</span></button>
+								<div class="extended-information cf">
+									<div class="address">
+										<h3>E.ON Sverige</h3>
+										<p>
+											<strong>Besöksadress</strong>
+											Carl Gustafs väg 1
+										</p>
+										<p>
+											<strong>Postadress</strong>
+											205 09, Malmö
+										</p>
+									</div>
+									<div class="additional">
+										<h3>Kontakta mig angående</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</div>
+							</div>
+							<h2>Nyhet</h2>
+							<div class="m m-content-list list-items">
+								<ul>
+									<li class="list-item cf">
+										<h2><a href="news-article.html">Två av OKG-reaktorerna nu i full produktion</a></h2>
+										<div class="meta">
+											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
+											<ul>
+												<li class="comments"><a href="news-article.html#comments"><span>15</span> kommentarer</a></li>
+												<li class="likes info-box" data-content-url="temp/likes.html"><span>12</span> gillar</li>
+											</ul>
+										</div>
+										<img src="temp/132x88.jpg" width="132" height="88" alt="" class="left" />
+										<div class="excerpt">
+											<p>Natten till söndag togs Oskarshamn 2 (O2) åter i drift efter en översyn av anläggningens reservkraftsutrustning. Därmed är två av OKG-reaktorerna i full produktion.</p>
+											<p class="read-more"><a href="netrp-<?php echo $id = uniqid('e'); ?>">Läs mer<span> om Två av OKG-reaktorerna nu i full produktion</span></a></p>
+										</div>
+										<div class="tags cf">
+											<ul>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-company">E.ON Värme</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<h2>Nyhetslista</h2>
+							<div class="m m-content-list list-items">
+								<ul>
+									<li class="list-item cf">
+										<h2><a href="news-article.html">Två av OKG-reaktorerna nu i full produktion</a></h2>
+										<div class="meta">
+											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
+											<ul>
+												<li class="comments"><a href="news-article.html#comments"><span>15</span> kommentarer</a></li>
+												<li class="likes info-box" data-content-url="temp/likes.html"><span>12</span> gillar</li>
+											</ul>
+										</div>
+										<img src="temp/132x88.jpg" width="132" height="88" alt="" class="left" />
+										<div class="excerpt">
+											<p>Natten till söndag togs Oskarshamn 2 (O2) åter i drift efter en översyn av anläggningens reservkraftsutrustning. Därmed är två av OKG-reaktorerna i full produktion.</p>
+											<p class="read-more"><a href="netrp-<?php echo $id = uniqid('e'); ?>">Läs mer<span> om Två av OKG-reaktorerna nu i full produktion</span></a></p>
+										</div>
+										<div class="tags cf">
+											<ul>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-company">E.ON Värme</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="list-item cf">
+										<h2><a href="news-article.html">På Boxholms Depå kommer tåg avisas och tvättas med förnybar fjärrvärme</a></h2>
+										<div class="meta">
+											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
+											<ul>
+												<li class="comments"><a href="news-article.html#comments"><span>15</span> kommentarer</a></li>
+												<li class="likes info-box" data-content-url="temp/likes.html"><span>12</span> gillar</li>
+											</ul>
+										</div>
+										<div class="excerpt">
+											<p>Jernhusens nya underhållsdepå i Boxholm kommer att värmas med fjärrvärme från E.ONs biobränsleeldade panna vid Rörviks Timbers gård.</p>
+											<p class="read-more"><a href="netrp-<?php echo $id = uniqid('e'); ?>">Läs mer<span> om På Boxholms Depå kommer tåg avisas och tvättas med förnybar fjärrvärme</span></a></p>
+										</div>
+										<div class="tags cf">
+											<ul>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-company">E.ON Värme</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="list-item cf">
+										<h2><a href="news-article.html">E.ON går in som ny medlem i CSR Sweden</a></h2>
+										<div class="meta">
+											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
+											<ul>
+												<li class="comments"><a href="news-article.html#comments"><span>15</span> kommentarer</a></li>
+												<li class="likes info-box" data-content-url="temp/likes.html"><span>12</span> gillar</li>
+											</ul>
+										</div>
+										<div class="excerpt">
+											<p>E.ON Sverige går in som medlem i Sveriges största företagsnätverk med fokus på samhällsansvar och samhällsengagemang, CSR Sweden.</p>
+											<p class="read-more"><a href="netrp-<?php echo $id = uniqid('e'); ?>">Läs mer<span> om E.ON går in som ny medlem i CSR Sweden</span></a></p>
+										</div>
+										<div class="tags cf">
+											<ul>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-company">E.ON Värme</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<?php include('includes/teaser-sitemap.html'); ?>
+							<h2>Flöde från extern källa via RSS</h2>
+							<div class="m m-list m-list-feed m-8">
+								<div class="m-h">
+									<h2>MyNewsdesk</h2>
+								</div>
+								<div class="m-c cf">
+									<ul>
+										<li class="cf">
+											<a href="sub-page.html">Sveriges energismartaste person bor i Halmstad</a>
+											<span class="time"><time datetime="2013-03-29">17 januari 2013</time></span>
+											<p class="excerpt">I går korades Sveriges energismartaste person; Fredrik Hamlin från Halmstad. Segraren värmeåtervinner bland annat sitt eget duschvatten så att var tredje dusch...</p>
+										</li>
+										<li class="cf">
+											<a href="sub-page.html">Unikt samarbete mellan E.ON och bostadsrättsföreningar kring energiförsörjning</a>
+											<span class="time"><time datetime="2013-03-29">17 januari 2013</time></span>
+											<p class="excerpt">E.ON har tecknat en avsiktsförklaring med bostadsrättsföreningarna Annexet, Farmen, Storstugan och Volten i Täby. Målet är att bygga en ny kraftvärmeanläggning...</p>
+										</li>
+										<li class="cf">
+											<a href="sub-page.html">I Malmös största utbyggnadsområde Hyllie gör vi hållbarhet till verklighet</a>
+											<span class="time"><time datetime="2013-03-29">17 januari 2013</time></span>
+											<p class="excerpt">I går korades Sveriges energismartaste person; Fredrik Hamlin från Halmstad. Segraren värmeåtervinner bland annat sitt eget duschvatten så att var tredje dusch...</p>
+										</li>
+										<li class="cf">
+											<a href="sub-page.html">Sveriges energismartaste person bor i Halmstad</a>
+											<span class="time"><time datetime="2013-03-29">17 januari 2013</time></span>
+											<p class="excerpt">I går korades Sveriges energismartaste person; Fredrik Hamlin från Halmstad. Segraren värmeåtervinner bland annat sitt eget duschvatten så att var tredje dusch...</p>
+										</li>
+										<li class="cf">
+											<a href="sub-page.html">Sveriges energismartaste person bor i Halmstad</a>
+											<span class="time"><time datetime="2013-03-29">17 januari 2013</time></span>
+											<p class="excerpt">I går korades Sveriges energismartaste person; Fredrik Hamlin från Halmstad. Segraren värmeåtervinner bland annat sitt eget duschvatten så att var tredje dusch...</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php include('includes/breadcrumbs.html'); ?>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

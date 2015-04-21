@@ -1,0 +1,225 @@
+<?php $title = "Undernavigering | E.ON InfoNet"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<div class="nav-sub" role="navigation" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering" data-content-url="temp/submenu.html">
+						<nav>
+							<h2>Laddar undernavigering</h2>
+							<ul>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Lorem ipsum</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a></li>
+								<li data-page-id="12"><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lorem ipsum</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Dolor consectetuer</a></li>
+								<li data-page-id="13"><a href="netrp-<?php echo $id = uniqid('e'); ?>">Adiscpiscing elit</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="nav-sub" role="navigation">
+						<nav>
+							<h2>Helt ihopfälld</h2>
+							<ul>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Lorem ipsum</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a></li>
+								<li data-has-children><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lorem ipsum</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Dolor consectetuer</a></li>
+								<li data-has-children><a href="netrp-<?php echo $id = uniqid('e'); ?>">Adiscpiscing elit</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="nav-sub" role="navigation">
+						<nav>
+							<h2>Nivå två utfälld, sida på nivå ett vald</h2>
+							<ul>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Lorem ipsum</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a></li>
+								<li data-has-children data-expanded data-selected>
+									<a href="netrp-<?php echo $id = uniqid('e'); ?>"><strong>Consectetuer sit</strong></a>
+									<ul>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Lorem ipsum</a></li>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a></li>
+									</ul>
+								</li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Dolor consectetuer</a></li>
+								<li data-has-children><a href="netrp-<?php echo $id = uniqid('e'); ?>">Adiscpiscing elit</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="nav-sub" role="navigation">
+						<nav>
+							<h2>Nivå två utfälld, sida på nivå två vald</h2>
+							<ul>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Lorem ipsum</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a></li>
+								<li data-has-children data-expanded>
+									<a href="netrp-<?php echo $id = uniqid('e'); ?>" >Consectetuer sit</a>
+									<ul>
+										<li data-selected><a href="netrp-<?php echo $id = uniqid('e'); ?>"><strong>Lorem ipsum</strong></a></li>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+										<li data-has-children><a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a></li>
+									</ul>
+								</li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Dolor consectetuer</a></li>
+								<li data-has-children><a href="netrp-<?php echo $id = uniqid('e'); ?>">Adiscpiscing elit</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="nav-sub" role="navigation">
+						<nav>
+							<h2>Nivå tre utfälld, sida på nivå två vald</h2>
+							<ul>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Lorem ipsum</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a></li>
+								<li data-has-children data-expanded>
+									<a href="netrp-<?php echo $id = uniqid('e'); ?>" >Consectetuer sit</a>
+									<ul>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lorem ipsum</a></li>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+										<li data-has-children data-expanded data-selected>
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>"><strong>Sit amet</strong></a>
+											<ul>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lorem ipsum</a></li>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Dolor consectetuer</a></li>
+								<li data-has-children><a href="netrp-<?php echo $id = uniqid('e'); ?>">Adiscpiscing elit</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="nav-sub" role="navigation">
+						<nav>
+							<h2>Nivå tre utfälld, sida på nivå tre vald</h2>
+							<ul>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Lorem ipsum</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a></li>
+								<li data-has-children data-expanded>
+									<a href="netrp-<?php echo $id = uniqid('e'); ?>" >Consectetuer sit</a>
+									<ul>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lorem ipsum</a></li>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+										<li data-has-children data-expanded>
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a>
+											<ul>
+												<li data-selected><a href="netrp-<?php echo $id = uniqid('e'); ?>"><strong>Lorem ipsum</strong></a></li>
+												<li data-has-children><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Dolor consectetuer</a></li>
+								<li data-has-children><a href="netrp-<?php echo $id = uniqid('e'); ?>">Adiscpiscing elit</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="nav-sub" role="navigation">
+						<nav>
+							<h2>Nivå fyra utfälld, sida på nivå tre vald</h2>
+							<ul>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Lorem ipsum</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a></li>
+								<li data-has-children data-expanded>
+									<a href="netrp-<?php echo $id = uniqid('e'); ?>" >Consectetuer sit</a>
+									<ul>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lorem ipsum</a></li>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+										<li data-has-children data-expanded>
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a>
+											<ul>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lorem ipsum</a></li>
+												<li data-has-children data-expanded data-selected>
+													<a href="netrp-<?php echo $id = uniqid('e'); ?>"><strong>Dolor sit amet</strong></a>
+													<ul>
+														<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lorem ipsum</a></li>
+														<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Dolor consectetuer</a></li>
+								<li data-has-children><a href="netrp-<?php echo $id = uniqid('e'); ?>">Adiscpiscing elit</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="nav-sub" role="navigation">
+						<nav>
+							<h2>Nivå fyra utfälld, sida på nivå fyra vald</h2>
+							<ul>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Lorem ipsum</a></li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a></li>
+								<li data-has-children data-expanded>
+									<a href="netrp-<?php echo $id = uniqid('e'); ?>" >Consectetuer sit</a>
+									<ul>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lorem ipsum</a></li>
+										<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+										<li data-has-children data-expanded>
+											<a href="netrp-<?php echo $id = uniqid('e'); ?>">Sit amet</a>
+											<ul>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lorem ipsum</a></li>
+												<li data-has-children data-expanded>
+													<a href="netrp-<?php echo $id = uniqid('e'); ?>">Dolor sit amet</a>
+													<ul>
+														<li data-selected><a href="netrp-<?php echo $id = uniqid('e'); ?>"><strong>Lorem ipsum</strong></a></li>
+														<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Dolor sit amet</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Dolor consectetuer</a></li>
+								<li data-has-children><a href="netrp-<?php echo $id = uniqid('e'); ?>">Adiscpiscing elit</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="nav-sub" role="navigation">
+						<nav>
+							<h2>Bara en länk</h2>
+							<ul>
+								<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" >Lorem ipsum</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="nav-sub" role="navigation">
+						<nav>
+							<h2>Bara en länk, som är vald</h2>
+							<ul>
+								<li data-selected><a href="netrp-<?php echo $id = uniqid('e'); ?>" ><strong>Lorem ipsum</strong></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Undernavigering</h1>
+							<div class="intro">
+								<p>Här visas statiska exempel på olika lägen en undernavigering kan befinna sig i.</p>
+							</div>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

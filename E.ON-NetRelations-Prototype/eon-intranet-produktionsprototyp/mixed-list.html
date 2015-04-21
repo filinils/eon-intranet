@@ -1,0 +1,267 @@
+<?php $title = "Listsida - Blandad lista | E.ON InfoNet"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub-news.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Listsida - Blandad lista</h1>
+							<div class="intro">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis lacus, dapibus a consequat vel, ultrices ac mi. In vitae sem sit amet neque ultrices vehicula at non sem.</p>
+							</div>
+							<div class="m m-content-list list-items">
+								<ul>
+									<li class="list-item item-news cf">
+										<h2><a href="news-article.html">Två av OKG-reaktorerna nu i full produktion</a></h2>
+										<div class="meta">
+											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
+											<ul>
+												<li class="comments"><a href="news-article.html#comments"><span>15</span> kommentarer</a></li>
+												<li class="likes info-box" data-content-url="temp/likes.html"><span>12</span> gillar</li>
+											</ul>
+										</div>
+										<img src="temp/132x88.jpg" width="132" height="88" alt="" class="left" />
+										<div class="excerpt">
+											<p>Natten till söndag togs Oskarshamn 2 (O2) åter i drift efter en översyn av anläggningens reservkraftsutrustning. Därmed är två av OKG-reaktorerna i full produktion.</p>
+										</div>
+										<div class="tags cf">
+											<ul>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-location">Malmö</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="list-item item-contact cf">
+										<div class="image-holder">
+											<img src="temp/profile-photo-contact-list-6.jpg" width="88" height="88" alt="" class="left" />
+										</div>
+										<div class="info">
+											<h2><a href="profile-page-coworker.html">Maria Swartling-Jung</a></h2>
+											<p class="expertise">Kommunikationschef på <strong class="company">E.ON Vind och Business Innovation</strong></p>
+											<ul class="contact-details">
+												<li class="phone"><span>040-25 50 00</span></li>
+												<li class="email"><a href="mailto:maria.swartling-jung@eon.se">maria.swartling-jung@eon.se</a></li>
+											</ul>
+										</div>
+										<button class="expand"><span>Expandera kontaktkort</span></button>
+										<div class="extended-information cf">
+											<div class="address">
+												<h3>E.ON Sverige</h3>
+												<p>
+													<strong>Besöksadress</strong>
+													Carl Gustafs väg 1
+												</p>
+												<p>
+													<strong>Postadress</strong>
+													205 09, Malmö
+												</p>
+											</div>
+											<div class="additional">
+												<h3>Kontakta mig angående</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+										</div>
+									</li>
+									<!--
+									<li class="list-item item-blog cf">
+										<h2><a href="sub-page.html"><span class="author">Martin Janssons blogg</span> Lorem ipsum dolor sit amet</a></h2>
+										<div class="meta">
+											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
+											<ul>
+												<li class="comments"><a href="news-article.html#comments"><span>1</span> har kommentarat</a></li>
+												<li class="likes info-box"><span>8</span> gillar</li>
+											</ul>
+										</div>
+										<img src="temp/132x88.jpg" width="132" height="88" alt="" class="right" />
+										<div class="excerpt">
+											<p>Duis a neque eget sem consequat dictum vitae eget risus. Pellentesque habitant morbi tristique senectus et netus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris magna dolor.</p>
+										</div>
+									</li>
+									-->
+									<li class="list-item item-page cf">
+										<h2><a href="sub-page.html">Kärnkraft</a></h2>
+										<div class="excerpt">
+											<p>I ett kärnkraftverk produceras elen genom att atomkärnor av uran klyvs. När kärnorna klyvs bildas värme, som i sin tur hettar upp vatten till ånga. Ångan driver en turbin, som i sin tur driver en generator där el alstras.</p>
+										</div>
+										<p class="meta cf">
+											<span class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Nyheter</a></span>
+											<span class="updated">Senast ändrad: <time datetime="2013-03-29">17 juli 2012</time></span>
+										</p>
+									</li>
+									<li class="list-item item-contact cf">
+										<div class="image-holder">
+											<img src="temp/profile-photo-contact-list-2.jpg" width="88" height="88" alt="" class="left" />
+										</div>
+										<div class="info">
+											<h2><a href="profile-page-coworker.html">Roger Strandahl</a></h2>
+											<p class="expertise">Kommunikationschef på <strong class="company">E.ON Sverige</strong></p>
+											<ul class="contact-details">
+												<li class="phone"><span>040-25 50 00</span></li>
+												<li class="email"><a href="mailto:roger.strandahl@eon.se">roger.strandahl@eon.se</a></li>
+											</ul>
+										</div>
+										<button class="expand"><span>Expandera kontaktkort</span></button>
+										<div class="extended-information cf">
+											<div class="address">
+												<h3>E.ON Sverige</h3>
+												<p>
+													<strong>Besöksadress</strong>
+													Carl Gustafs väg 1
+												</p>
+												<p>
+													<strong>Postadress</strong>
+													205 09, Malmö
+												</p>
+											</div>
+											<div class="additional">
+												<h3>Kontakta mig angående</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+										</div>
+									</li>
+									<li class="list-item item-page cf">
+										<h2><a href="sub-page.html">Lorem ipsum dolor sit amet</a></h2>
+										<div class="excerpt">
+											<p>Duis a neque eget sem consequat dictum vitae eget risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris magna dolor.</p>
+										</div>
+										<p class="meta cf">
+											<span class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Nyheter</a></span>
+											<span class="updated">Senast ändrad: <time datetime="2013-03-29">17 juli 2012</time></span>
+										</p>
+									</li>
+									<li class="list-item item-page cf">
+										<h2><a href="news-article.html">Inbjudan: Nu laddar vi Malmö med fotbollsfest!</a></h2>
+										<div class="meta">
+											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
+											<ul>
+												<li class="comments"><a href="news-article.html#comments"><span>15</span> kommentarer</a></li>
+												<li class="likes info-box" data-content-url="temp/likes.html"><span>12</span> gillar</li>
+											</ul>
+										</div>
+										<div class="excerpt">
+											<p>Inför VM-kvalmatchen mot Kazakstan den 11 september tar vi fotbollsyran ut på stan - kom och häng med när landslagsspelarna spelar mot ungdomar från landsortsklubbar eller se dem tävla mot allmänheten på Gustav Adolfs torg!</p>
+										</div>
+										<div class="tags cf">
+											<ul>
+												<li><a href="" class="tag tag-location">Malmö</a></li>
+												<li><a href="" class="tag tag-subject">Energi</a></li>
+												<li><a href="" class="tag tag-company">E.ON Värme</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="list-item item-contact cf">
+										<div class="image-holder">
+											<img src="temp/profile-photo-contact-list-7.jpg" width="88" height="88" alt="" class="left" />
+										</div>
+										<div class="info">
+											<h2><a href="profile-page-coworker.html">Mattias Hennius</a></h2>
+											<p class="expertise">Presschef på <strong class="company">E.ON Sverige</strong></p>
+											<ul class="contact-details">
+												<li class="phone"><span>040-25 50 00</span></li>
+												<li class="email"><a href="mailto:mattias.hennius@eon.se">mattias.hennius@eon.se</a></li>
+											</ul>
+										</div>
+										<button class="expand"><span>Expandera kontaktkort</span></button>
+										<div class="extended-information cf">
+											<div class="address">
+												<h3>E.ON Sverige</h3>
+												<p>
+													<strong>Besöksadress</strong>
+													Carl Gustafs väg 1
+												</p>
+												<p>
+													<strong>Postadress</strong>
+													205 09, Malmö
+												</p>
+											</div>
+											<div class="additional">
+												<h3>Kontakta mig angående</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+										</div>
+									</li>
+									<li class="list-item item-page cf">
+										<h2><a href="sub-page.html">E.ON gör allt för en stabil elproduktion i vinter</a></h2>
+										<img src="temp/132x88.jpg" width="132" height="88" alt="" class="right">
+										<div class="excerpt">
+											<p>- Vi gör allt som står i vår makt för att vi ska uppnå en stabil elproduktion i vinter, sade E.ON Nordics koncernchef, Jonas Abrahamsson, när han idag träffade Sveriges närings- och energiminister Maud Olofsson.</p>
+										</div>
+										<p class="meta cf">
+											<span class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Nyheter</a></span>
+											<span class="updated">Senast ändrad: <time datetime="2013-03-29">17 juli 2012</time></span>
+										</p>
+									</li>
+									<li class="list-item item-news cf">
+										<h2><a href="news-article.html">På Boxholms Depå kommer tåg avisas och tvättas med förnybar fjärrvärme</a></h2>
+										<div class="meta">
+											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
+											<ul>
+												<li class="comments"><a href="news-article.html#comments"><span>15</span> kommentarer</a></li>
+												<li class="likes info-box" data-content-url="temp/likes.html"><span>12</span> gillar</li>
+											</ul>
+										</div>
+										<div class="excerpt">
+											<p>Jernhusens nya underhållsdepå i Boxholm kommer att värmas med fjärrvärme från E.ONs biobränsleeldade panna vid Rörviks Timbers gård.</p>
+										</div>
+										<div class="tags cf">
+											<ul>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-group">Koncern</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<?php include('includes/paging.html'); ?>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+							<div class="m m-list m-9">
+								<div class="m-h">
+									<h2>Relaterade artiklar</h2>
+								</div>
+								<div class="m-c cf">
+									<ul>
+										<li class="cf">
+											<a href="sub-page.html">En nyhet</a>
+											<span class="time"><time datetime="2013-03-29">17 januari 2013</time></span>
+										</li>
+										<li class="cf">
+											<a href="sub-page.html">En nyhet</a>
+											<span class="time"><time datetime="2013-03-29">13 februari 2013</time></span>
+										</li>
+										<li class="cf">
+											<a href="sub-page.html">En nyhet</a>
+											<span class="time"><time datetime="2013-03-29">9 januari 2013</time></span>
+										</li>
+										<li class="cf">
+											<a href="sub-page.html">En nyhet</a>
+											<span class="time"><time datetime="2013-03-29">23 december 2012</time></span>
+										</li>
+										<li class="cf">
+											<a href="sub-page.html">En nyhet</a>
+											<span class="time"><time datetime="2013-03-29">27 december 2012</time></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<?php include('includes/teaser-archive.html'); ?>
+							<?php include('includes/teaser-tags.html'); ?>
+						</div>
+					</div>
+				</div>
+				<?php include('includes/breadcrumbs.html'); ?>
+			</div>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

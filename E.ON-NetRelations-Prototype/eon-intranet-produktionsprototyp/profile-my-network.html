@@ -1,0 +1,364 @@
+<?php $title = "Mitt nätverk | E.ON InfoNet"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub-profile.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Mitt nätverk</h1>
+							<!-- <div class="search-container">
+								<form method="get" action="/search-results.html" id="main-search" role="search" data-content-url="temp/querycompletion-people.json">
+									<div class="cf">
+										<label for="searchtext2" class="structural">Filtrera bland kontakter</label>
+										<input type="search" id="searchtext2" name="searchtext" value="<?php echo $searchtext; ?>" placeholder="Filtrera" />
+										<button type="submit" class="submit" title="Filtrera">Filtrera</button>
+									</div>
+								</form>
+							</div> -->
+							<div class="m m-content-list list-items">
+								<ul>
+									<li class="list-item item-contact cf">
+										<div class="image-holder">
+											<img src="temp/profile-photo-contact-list-1.jpg" width="88" height="88" alt="" class="left" />
+										</div>
+										<div class="info">
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Jörgen Lindström</a></h2>
+											<p class="expertise">Produktchef på <strong class="company">E.ON Sverige</strong></p>
+											<ul class="contact-details">
+												<li class="phone"><span>040-25 50 00</span></li>
+												<li class="email"><a href="mailto:jorgen.lindstrom@eon.se">jorgen.lindstrom@eon.se</a></li>
+											</ul>
+											<div class="tools">
+												<form action="/" method="post">
+													<input type="hidden" name="remove-coverage" value="">
+													<button type="submit" class="delete confirm-button" title="Ta bort från ditt nätverk?"><span>Ta bort från mitt nätverk</span></button>
+												</form>
+											</div>
+										</div>
+										<button class="expand"><span>Expandera kontaktkort</span></button>
+										<div class="extended-information cf">
+											<div class="address">
+												<h3>E.ON Sverige</h3>
+												<p>
+													<strong>Besöksadress</strong>
+													Carl Gustafs väg 1
+												</p>
+												<p>
+													<strong>Postadress</strong>
+													205 09, Malmö
+												</p>
+											</div>
+											<div class="additional">
+												<h3>Kontakta mig angående</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+										</div>
+									</li>
+									<li class="list-item item-contact cf">
+										<div class="image-holder">
+											<img src="temp/profile-photo-contact-list-2.jpg" width="88" height="88" alt="" class="left" />
+										</div>
+										<div class="info">
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Roger Strandahl</a></h2>
+											<p class="expertise">Kommunikationschef på <strong class="company">E.ON Sverige</strong></p>
+											<ul class="contact-details">
+												<li class="phone"><span>040-25 50 00</span></li>
+												<li class="email"><a href="mailto:roger.strandahl@eon.se">roger.strandahl@eon.se</a></li>
+											</ul>
+											<div class="tools">
+												<form action="/" method="post">
+													<input type="hidden" name="remove-coverage" value="">
+													<button type="submit" class="delete confirm-button" title="Ta bort från ditt nätverk?"><span>Ta bort från mitt nätverk</span></button>
+												</form>
+											</div>
+										</div>
+										<button class="expand"><span>Expandera kontaktkort</span></button>
+										<div class="extended-information cf">
+											<div class="address">
+												<h3>E.ON Sverige</h3>
+												<p>
+													<strong>Besöksadress</strong>
+													Carl Gustafs väg 1
+												</p>
+												<p>
+													<strong>Postadress</strong>
+													205 09, Malmö
+												</p>
+											</div>
+											<div class="additional">
+												<h3>Kontakta mig angående</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+										</div>
+									</li>
+									<li class="list-item item-contact cf">
+										<div class="image-holder">
+											<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+										</div>
+										<div class="info">
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+											<p class="expertise">Press Officer på <strong class="company">E.ON Sverige</strong></p>
+											<ul class="contact-details">
+												<li class="phone"><span>040-25 50 00</span></li>
+												<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
+											</ul>
+											<div class="tools">
+												<form action="/" method="post">
+													<input type="hidden" name="remove-coverage" value="">
+													<button type="submit" class="delete confirm-button" title="Ta bort från ditt nätverk?"><span>Ta bort från mitt nätverk</span></button>
+												</form>
+											</div>
+										</div>
+										<button class="expand"><span>Expandera kontaktkort</span></button>
+										<div class="extended-information cf">
+											<div class="address">
+												<h3>E.ON Sverige</h3>
+												<p>
+													<strong>Besöksadress</strong>
+													Carl Gustafs väg 1
+												</p>
+												<p>
+													<strong>Postadress</strong>
+													205 09, Malmö
+												</p>
+											</div>
+											<div class="additional">
+												<h3>Kontakta mig angående</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+										</div>
+									</li>
+									<li class="list-item item-contact cf">
+										<div class="image-holder">
+											<img src="temp/profile-photo-contact-list-4.jpg" width="88" height="88" alt="" class="left" />
+										</div>
+										<div class="info">
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Melinda Frigyesi Almström</a></h2>
+											<p class="expertise">Kommunikationschef på <strong class="company">E.ON Värme</strong></p>
+											<ul class="contact-details">
+												<li class="phone"><span>040-25 50 00</span></li>
+												<li class="email"><a href="mailto:melinda.frigyesi.almstrom@eon.se">melinda.frigyesi.almstrom@eon.se</a></li>
+											</ul>
+											<div class="tools">
+												<form action="/" method="post">
+													<input type="hidden" name="remove-coverage" value="">
+													<button type="submit" class="delete confirm-button" title="Ta bort från ditt nätverk?"><span>Ta bort från mitt nätverk</span></button>
+												</form>
+											</div>
+										</div>
+										<button class="expand"><span>Expandera kontaktkort</span></button>
+										<div class="extended-information cf">
+											<div class="address">
+												<h3>E.ON Sverige</h3>
+												<p>
+													<strong>Besöksadress</strong>
+													Carl Gustafs väg 1
+												</p>
+												<p>
+													<strong>Postadress</strong>
+													205 09, Malmö
+												</p>
+											</div>
+											<div class="additional">
+												<h3>Kontakta mig angående</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+										</div>
+									</li>
+									<li class="list-item item-contact cf">
+										<div class="image-holder">
+											<img src="temp/profile-photo-contact-list-5.jpg" width="88" height="88" alt="" class="left" />
+										</div>
+										<div class="info">
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Torbjörn Larsson</a></h2>
+											<p class="expertise">Kommunikationschef på <strong class="company">E.ON Kärnkraft</strong></p>
+											<ul class="contact-details">
+												<li class="phone"><span>040-25 50 00</span></li>
+												<li class="email"><a href="mailto:torbjorn.larsson@eon.se">torbjorn.larsson@eon.se</a></li>
+											</ul>
+											<div class="tools">
+												<form action="/" method="post">
+													<input type="hidden" name="remove-coverage" value="">
+													<button type="submit" class="delete confirm-button" title="Ta bort från ditt nätverk?"><span>Ta bort från mitt nätverk</span></button>
+												</form>
+											</div>
+										</div>
+										<button class="expand"><span>Expandera kontaktkort</span></button>
+										<div class="extended-information cf">
+											<div class="address">
+												<h3>E.ON Sverige</h3>
+												<p>
+													<strong>Besöksadress</strong>
+													Carl Gustafs väg 1
+												</p>
+												<p>
+													<strong>Postadress</strong>
+													205 09, Malmö
+												</p>
+											</div>
+											<div class="additional">
+												<h3>Kontakta mig angående</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+										</div>
+									</li>
+									<li class="list-item item-contact cf">
+										<div class="image-holder">
+											<img src="temp/profile-photo-contact-list-6.jpg" width="88" height="88" alt="" class="left" />
+										</div>
+										<div class="info">
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Maria Swartling-Jung</a></h2>
+											<p class="expertise">Kommunikationschef på <strong class="company">E.ON Vind och Business Innovation</strong></p>
+											<ul class="contact-details">
+												<li class="phone"><span>040-25 50 00</span></li>
+												<li class="email"><a href="mailto:maria.swartling-jung@eon.se">maria.swartling-jung@eon.se</a></li>
+											</ul>
+											<div class="tools">
+												<form action="/" method="post">
+													<input type="hidden" name="remove-coverage" value="">
+													<button type="submit" class="delete confirm-button" title="Ta bort från ditt nätverk?"><span>Ta bort från mitt nätverk</span></button>
+												</form>
+											</div>
+										</div>
+										<button class="expand"><span>Expandera kontaktkort</span></button>
+										<div class="extended-information cf">
+											<div class="address">
+												<h3>E.ON Sverige</h3>
+												<p>
+													<strong>Besöksadress</strong>
+													Carl Gustafs väg 1
+												</p>
+												<p>
+													<strong>Postadress</strong>
+													205 09, Malmö
+												</p>
+											</div>
+											<div class="additional">
+												<h3>Kontakta mig angående</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+										</div>
+									</li>
+									<li class="list-item item-contact cf">
+										<div class="image-holder">
+											<img src="temp/profile-photo-contact-list-7.jpg" width="88" height="88" alt="" class="left" />
+										</div>
+										<div class="info">
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Mattias Hennius</a></h2>
+											<p class="expertise">Presschef på <strong class="company">E.ON Sverige</strong></p>
+											<ul class="contact-details">
+												<li class="phone"><span>040-25 50 00</span></li>
+												<li class="email"><a href="mailto:mattias.hennius@eon.se">mattias.hennius@eon.se</a></li>
+											</ul>
+											<div class="tools">
+												<form action="/" method="post">
+													<input type="hidden" name="remove-coverage" value="">
+													<button type="submit" class="delete confirm-button" title="Ta bort från ditt nätverk?"><span>Ta bort från mitt nätverk</span></button>
+												</form>
+											</div>
+										</div>
+										<button class="expand"><span>Expandera kontaktkort</span></button>
+										<div class="extended-information cf">
+											<div class="address">
+												<h3>E.ON Sverige</h3>
+												<p>
+													<strong>Besöksadress</strong>
+													Carl Gustafs väg 1
+												</p>
+												<p>
+													<strong>Postadress</strong>
+													205 09, Malmö
+												</p>
+											</div>
+											<div class="additional">
+												<h3>Kontakta mig angående</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<?php include('includes/paging.html'); ?>
+							<div class="article-actions cf">
+								<h2 class="structural">Verktyg</h2>
+								<ul>
+									<?php include('includes/article-buttons-1.html'); ?>
+									<?php include('includes/article-buttons-2.html'); ?>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+							<div class="m m-form status-filter cf">
+								<form method="post" action="/">
+									<h2 class="structural">Ändra inställning för statusuppdateringar</h2>
+									<div class="row cols-1 cf">
+										<div class="col col-1 full">
+											<fieldset>
+												<legend class="wrap"><span>Visa statusuppdateringar från</span></legend>
+												<div class="fieldset-content">
+													<div class="radio">
+														<input type="radio" value="ett" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" />
+														<label for="radio2-<?php echo $id; ?>">Mitt nätverksflöde</label>
+													</div>
+													<div class="radio">
+														<input type="radio" value="två" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" checked />
+														<label for="radio2-<?php echo $id; ?>">Alla</label>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="row cols-1 cf">
+											<div class="col col-1 submit-area">
+												<input type="submit" class="submit" value="Spara" name="submit-<?php echo $id = uniqid('id'); ?>" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="m m-list m-status-feed m-form m-9">
+								<div class="m-h" id="my-network-flow">
+									<h2>Mitt nätverksflöde</h2>
+								</div>
+								<div class="m-c collapsablecontent cf">
+									<form method="post" action="/">
+										<h3 class="structural">Skriv en uppdatering till ditt nätverksflöde.</h3>
+										<div class="row cols-1 cf">
+											<div class="status col full col-1">
+												<label for="status-update" class="structural">Statusuppdatering:</label>
+												<textarea name="status-update" id="status-update" cols="30" rows="3" placeholder="Skriv en uppdatering till ditt nätverksflöde."></textarea>
+											</div>
+											<div class="submit-area col col-1">
+												<span class="char-counter">Max <strong id="status-update-counter">140</strong> tecken</span>
+												<input type="submit" class="submit" value="Skicka" />
+											</div>
+										</div>
+									</form>
+									<div class="scrollable">
+										<?php include('includes/status-feed.html'); ?>
+									</div>
+								</div>
+								<div class="m-f">
+									<p class="read-more"><a href="all-status-feeds.html">Se fler statusuppdateringar</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php include('includes/breadcrumbs.html'); ?>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

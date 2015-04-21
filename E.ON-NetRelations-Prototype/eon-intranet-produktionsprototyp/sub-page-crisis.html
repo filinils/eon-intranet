@@ -1,0 +1,49 @@
+<?php $title = "Vanlig sida med krismeddelande | E.ON InfoNet"; ?>
+<?php $sel = "1"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div id="message-1" class="message critical m-0">
+					<h2>Krismeddelande 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nunc nibh, rutrum at hendrerit ut, pretium id libero. Aliquam pharetra ligula nec diam posuere eu congue. <a href="netrp-<?php echo $id = uniqid('e'); ?>" class="read-more">Läs mer</a></p>
+				</div>
+				<div class="content-1">
+					<?php include('includes/nav-sub.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Innehållssida</h1>
+							<div class="intro">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, maxime, quod, nam animi dolore fuga repellat sapiente iusto ducimus autem ex inventore saepe quia modi culpa tenetur eum aut ratione.</p>
+						</div>
+						<?php include('includes/article-info.html'); ?>
+						<div class="article-actions cf">
+							<h2 class="structural">Verktyg</h2>
+							<ul>
+								<?php include('includes/article-buttons-1.html'); ?>
+								<?php include('includes/article-buttons-2.html'); ?>
+								<?php include('includes/article-buttons-3.html'); ?>
+							</ul>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+							<?php include('includes/teaser-1.html'); ?>
+						</div>
+					</div>
+				</div>
+				<?php include('includes/breadcrumbs.html'); ?>
+			</div>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>
