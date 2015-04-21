@@ -49,7 +49,7 @@ $(function () {
 			document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-img(\s|$)/, '$1img$2');
 		}
 	};
-	image.src = '../i/logo.png';
+	image.src = 'gui/i/logo.png';
 
 
 	// Mega menu

@@ -20,41 +20,41 @@
 	font-weight:400;
 	font-style:normal;
 	font-family:"Polo";
-	src: url("gui/fonts/polo.eot");
-	src: url("gui/fonts/polo.eot?#iefix") format("embedded-opentype"),
-		url("gui/fonts/polo.woff") format("woff"),
-		url("gui/fonts/polo.ttf") format("truetype"),
-		url("gui/fonts/polo.svg#polo") format("svg");
+	src: url("../fonts/polo.eot");
+	src: url("../fonts/polo.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/polo.woff") format("woff"),
+		url("../fonts/polo.ttf") format("truetype"),
+		url("../fonts/polo.svg#polo") format("svg");
 }
 @font-face {
 	font-weight:400;
 	font-style:italic;
 	font-family:"Polo";
-	src: url("gui/fonts/poloi.eot");
-	src: url("gui/fonts/poloi.eot?#iefix") format("embedded-opentype"),
-		url("gui/fonts/poloi.woff") format("woff"),
-		url("gui/fonts/poloi.ttf") format("truetype"),
-		url("gui/fonts/poloi.svg#polo") format("svg");
+	src: url("../fonts/poloi.eot");
+	src: url("../fonts/poloi.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/poloi.woff") format("woff"),
+		url("../fonts/poloi.ttf") format("truetype"),
+		url("../fonts/poloi.svg#polo") format("svg");
 }
 @font-face {
 	font-weight:700;
 	font-style:normal;
 	font-family:"Polo";
-	src: url("gui/fonts/polob.eot");
-	src: url("gui/fonts/polob.eot?#iefix") format("embedded-opentype"),
-		url("gui/fonts/polob.woff") format("woff"),
-		url("gui/fonts/polob.ttf") format("truetype"),
-		url("gui/fonts/polob.svg#polo") format("svg");
+	src: url("../fonts/polob.eot");
+	src: url("../fonts/polob.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/polob.woff") format("woff"),
+		url("../fonts/polob.ttf") format("truetype"),
+		url("../fonts/polob.svg#polo") format("svg");
 }
 @font-face {
 	font-weight:700;
 	font-style:italic;
 	font-family:"Polo";
-	src: url("gui/fonts/polobi.eot");
-	src: url("gui/fonts/polobi.eot?#iefix") format("embedded-opentype"),
-		url("gui/fonts/polobi.woff") format("woff"),
-		url("gui/fonts/polobi.ttf") format("truetype"),
-		url("gui/fonts/polobi.svg#polo") format("svg");
+	src: url("../fonts/polobi.eot");
+	src: url("../fonts/polobi.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/polobi.woff") format("woff"),
+		url("../fonts/polobi.ttf") format("truetype"),
+		url("../fonts/polobi.svg#polo") format("svg");
 }
 
 
