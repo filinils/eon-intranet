@@ -1,25 +1,25 @@
 <?php $title = "Redigera uppgifter för Jakob Holmström | E.ONs intranät Elin"; ?>
 <?php $sel = "2"; ?>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+<?php include('includes/doctype-and-head.html'); ?>
 </head>
 <body class="layout-1">
 	<div id="body">
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<?php include('includes/header.html'); ?>
 		<div id="main" class="cf">
 			<div id="content">
 				<div class="content-1">
-					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/nav-sub-profile.html'); ?>
+					<?php include('includes/nav-sub-profile.html'); ?>
 				</div>
 				<div class="content-2">
 					<div id="content-primary" class="article cf" role="main">
 							<div class="content-2-0 profile-details cf">
 								<div class="profile-photo">
-									<img src="/temp/profile-photo-1.jpg" alt="Jakob Holmströms profilbild" width="150" height="150" />
-									<a href="/profile-page-edit-photo.html" class="button button-alt button-edit-photo">Ändra din profilbild</a>
+									<img src="temp/profile-photo-1.jpg" alt="Jakob Holmströms profilbild" width="150" height="150" />
+									<a href="profile-page-edit-photo.html" class="button button-alt button-edit-photo">Ändra din profilbild</a>
 								</div>
 								<div class="info">
 									<h1>Jakob Holmström</h1>
-									<a href="/profile-page-user-edit.html" class="button button-alt button-edit">Redigera mina uppgifter</a>
+									<a href="profile-page-user-edit.html" class="button button-alt button-edit">Redigera mina uppgifter</a>
 									<div class="company-info">
 										<p class="expertise">Kommunikationschef</p>
 										<dl>
@@ -89,7 +89,7 @@
 								<div class="text col full col-1">
 									<h3>Språk</h3>
 									<label for="autocomplete-language" class="structural">Språk</label>
-									<input name="autocomplete-language" id="autocomplete-language" value="Svenska,Danska,Engelska" data-enter="true" data-content-url="/includes/user-languages.html" data-default-text="Lägg till språk" />
+									<input name="autocomplete-language" id="autocomplete-language" value="Svenska,Danska,Engelska" data-enter="true" data-content-url="includes/user-languages.html" data-default-text="Lägg till språk" />
 								</div>
 							</div>
 							<!--
@@ -168,7 +168,7 @@
 									<h3>Intressen</h3>
 									<p class="description">Om du vill kan du skriva in särskilda intressen. Tryck enter efter varje ord innan du skriver in nästa intresse.</p>
 									<label for="autocomplete-interest" class="structural">Intressen</label>
-									<input name="autocomplete-interest" id="autocomplete-interest" value="Hemkunskap,Träslöjd,Energi" data-enter="false" data-content-url="/includes/user-interests.html" data-default-text="Lägg till intresse"/>
+									<input name="autocomplete-interest" id="autocomplete-interest" value="Hemkunskap,Träslöjd,Energi" data-enter="false" data-content-url="includes/user-interests.html" data-default-text="Lägg till intresse"/>
 								</div>
 							</div>
 
@@ -223,11 +223,11 @@
 										</div>
 									</form>
 									<div class="scrollable">
-										<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/status-feed.html'); ?>
+										<?php include('includes/status-feed.html'); ?>
 									</div>
 								</div>
 								<div class="m-f">
-									<p class="read-more"><a href="/all-status-feeds.html">Se fler statusuppdateringar</a></p>
+									<p class="read-more"><a href="all-status-feeds.html">Se fler statusuppdateringar</a></p>
 								</div>
 							</div>
 							<div class="m m-gamification">
@@ -237,7 +237,7 @@
 								<p class="amount"><strong>80%</strong> av din profil är färdig.</p>
 								<ul>
 									<li><span class="checked">Färdig </span>Ladda upp en profilbild</li>
-									<li><span class="checked">Färdig </span>Se <a href="/">informationsfilmen</a> om det nya Intranätet</li>
+									<li><span class="checked">Färdig </span>Se <a href="">informationsfilmen</a> om det nya Intranätet</li>
 									<li><span class="checked">Färdig </span>Fyll i en kort presentation om dig själv</li>
 									<li><span class="checked">Färdig </span>Fyll i dina kompetensområden</li>
 									<li><span class="unchecked">Ej påbörjad </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
@@ -268,11 +268,11 @@
 					</div>
 				</div>
 			</div>
-			<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/breadcrumbs.html'); ?>
+			<?php include('includes/breadcrumbs.html'); ?>
 		</div>
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+		<?php include('includes/footer.html'); ?>
 	</div>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+	<?php include('includes/scripts.html'); ?>
 
 </body>
 </html>

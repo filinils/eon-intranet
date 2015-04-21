@@ -83,7 +83,7 @@
 	padding:0;
 	width:30px;
 	height:28px;
-	background:transparent url(/gui/i/carousel-button-sprite.png);
+	background:transparent url(../i/carousel-button-sprite.png);
 	text-indent:200%;
 	white-space:nowrap;
 	opacity: 0; 
@@ -255,7 +255,7 @@
 	}
 	.flex-direction-nav a {
 		display:none;
-		background-image:url(/gui/i/carousel-button-sprite@2x.png?embed);
+		background-image:url(../i/carousel-button-sprite@2x.png?embed);
 		background-size:30px 262px;
 	}
 	.flexslider .m-caption h2 {

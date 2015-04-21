@@ -1,14 +1,14 @@
 <?php $title = "Listsida - Blandad lista | E.ONs intranät Elin"; ?>
 <?php $sel = "2"; ?>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+<?php include('includes/doctype-and-head.html'); ?>
 </head>
 <body class="layout-1">
 	<div id="body">
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<?php include('includes/header.html'); ?>
 		<div id="main" class="cf">
 			<div id="content">
 				<div class="content-1">
-					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/nav-sub-news.html'); ?>
+					<?php include('includes/nav-sub-news.html'); ?>
 				</div>
 				<div class="content-2">
 					<div class="content-2-1">
@@ -20,30 +20,30 @@
 							<div class="m m-content-list list-items">
 								<ul>
 									<li class="list-item item-news cf">
-										<h2><a href="/news-article.html">Två av OKG-reaktorerna nu i full produktion</a></h2>
+										<h2><a href="news-article.html">Två av OKG-reaktorerna nu i full produktion</a></h2>
 										<div class="meta">
 											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
 											<ul>
-												<li class="comments"><a href="/news-article.html#comments"><span>15</span> kommentarer</a></li>
+												<li class="comments"><a href="news-article.html#comments"><span>15</span> kommentarer</a></li>
 												<li class="likes info-box" data-content-url="temp/likes.html"><span>12</span> gillar</li>
 											</ul>
 										</div>
-										<img src="/temp/132x88.jpg" width="132" height="88" alt="" class="left" />
+										<img src="temp/132x88.jpg" width="132" height="88" alt="" class="left" />
 										<div class="excerpt">
 											<p>Natten till söndag togs Oskarshamn 2 (O2) åter i drift efter en översyn av anläggningens reservkraftsutrustning. Därmed är två av OKG-reaktorerna i full produktion.</p>
 										</div>
 										<div class="tags cf">
 											<ul>
-												<li><a href="/netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-location">Malmö</a></li>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-location">Malmö</a></li>
 											</ul>
 										</div>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-6.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-6.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/profile-page-coworker.html">Maria Swartling-Jung</a></h2>
+											<h2><a href="profile-page-coworker.html">Maria Swartling-Jung</a></h2>
 											<p class="expertise">Kommunikationschef på <strong class="company">E.ON Vind och Business Innovation</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
@@ -71,36 +71,36 @@
 									</li>
 									<!--
 									<li class="list-item item-blog cf">
-										<h2><a href="/sub-page.html"><span class="author">Martin Janssons blogg</span> Lorem ipsum dolor sit amet</a></h2>
+										<h2><a href="sub-page.html"><span class="author">Martin Janssons blogg</span> Lorem ipsum dolor sit amet</a></h2>
 										<div class="meta">
 											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
 											<ul>
-												<li class="comments"><a href="/news-article.html#comments"><span>1</span> har kommentarat</a></li>
+												<li class="comments"><a href="news-article.html#comments"><span>1</span> har kommentarat</a></li>
 												<li class="likes info-box"><span>8</span> gillar</li>
 											</ul>
 										</div>
-										<img src="/temp/132x88.jpg" width="132" height="88" alt="" class="right" />
+										<img src="temp/132x88.jpg" width="132" height="88" alt="" class="right" />
 										<div class="excerpt">
 											<p>Duis a neque eget sem consequat dictum vitae eget risus. Pellentesque habitant morbi tristique senectus et netus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris magna dolor.</p>
 										</div>
 									</li>
 									-->
 									<li class="list-item item-page cf">
-										<h2><a href="/sub-page.html">Kärnkraft</a></h2>
+										<h2><a href="sub-page.html">Kärnkraft</a></h2>
 										<div class="excerpt">
 											<p>I ett kärnkraftverk produceras elen genom att atomkärnor av uran klyvs. När kärnorna klyvs bildas värme, som i sin tur hettar upp vatten till ånga. Ångan driver en turbin, som i sin tur driver en generator där el alstras.</p>
 										</div>
 										<p class="meta cf">
-											<span class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Nyheter</a></span>
+											<span class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Nyheter</a></span>
 											<span class="updated">Senast ändrad: <time datetime="2013-03-29">17 juli 2012</time></span>
 										</p>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-2.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-2.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/profile-page-coworker.html">Roger Strandahl</a></h2>
+											<h2><a href="profile-page-coworker.html">Roger Strandahl</a></h2>
 											<p class="expertise">Kommunikationschef på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
@@ -127,21 +127,21 @@
 										</div>
 									</li>
 									<li class="list-item item-page cf">
-										<h2><a href="/sub-page.html">Lorem ipsum dolor sit amet</a></h2>
+										<h2><a href="sub-page.html">Lorem ipsum dolor sit amet</a></h2>
 										<div class="excerpt">
 											<p>Duis a neque eget sem consequat dictum vitae eget risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris magna dolor.</p>
 										</div>
 										<p class="meta cf">
-											<span class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Nyheter</a></span>
+											<span class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Nyheter</a></span>
 											<span class="updated">Senast ändrad: <time datetime="2013-03-29">17 juli 2012</time></span>
 										</p>
 									</li>
 									<li class="list-item item-page cf">
-										<h2><a href="/news-article.html">Inbjudan: Nu laddar vi Malmö med fotbollsfest!</a></h2>
+										<h2><a href="news-article.html">Inbjudan: Nu laddar vi Malmö med fotbollsfest!</a></h2>
 										<div class="meta">
 											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
 											<ul>
-												<li class="comments"><a href="/news-article.html#comments"><span>15</span> kommentarer</a></li>
+												<li class="comments"><a href="news-article.html#comments"><span>15</span> kommentarer</a></li>
 												<li class="likes info-box" data-content-url="temp/likes.html"><span>12</span> gillar</li>
 											</ul>
 										</div>
@@ -150,18 +150,18 @@
 										</div>
 										<div class="tags cf">
 											<ul>
-												<li><a href="/" class="tag tag-location">Malmö</a></li>
-												<li><a href="/" class="tag tag-subject">Energi</a></li>
-												<li><a href="/" class="tag tag-company">E.ON Värme</a></li>
+												<li><a href="" class="tag tag-location">Malmö</a></li>
+												<li><a href="" class="tag tag-subject">Energi</a></li>
+												<li><a href="" class="tag tag-company">E.ON Värme</a></li>
 											</ul>
 										</div>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-7.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-7.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/profile-page-coworker.html">Mattias Hennius</a></h2>
+											<h2><a href="profile-page-coworker.html">Mattias Hennius</a></h2>
 											<p class="expertise">Presschef på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
@@ -188,22 +188,22 @@
 										</div>
 									</li>
 									<li class="list-item item-page cf">
-										<h2><a href="/sub-page.html">E.ON gör allt för en stabil elproduktion i vinter</a></h2>
-										<img src="/temp/132x88.jpg" width="132" height="88" alt="" class="right">
+										<h2><a href="sub-page.html">E.ON gör allt för en stabil elproduktion i vinter</a></h2>
+										<img src="temp/132x88.jpg" width="132" height="88" alt="" class="right">
 										<div class="excerpt">
 											<p>- Vi gör allt som står i vår makt för att vi ska uppnå en stabil elproduktion i vinter, sade E.ON Nordics koncernchef, Jonas Abrahamsson, när han idag träffade Sveriges närings- och energiminister Maud Olofsson.</p>
 										</div>
 										<p class="meta cf">
-											<span class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Nyheter</a></span>
+											<span class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Nyheter</a></span>
 											<span class="updated">Senast ändrad: <time datetime="2013-03-29">17 juli 2012</time></span>
 										</p>
 									</li>
 									<li class="list-item item-news cf">
-										<h2><a href="/news-article.html">På Boxholms Depå kommer tåg avisas och tvättas med förnybar fjärrvärme</a></h2>
+										<h2><a href="news-article.html">På Boxholms Depå kommer tåg avisas och tvättas med förnybar fjärrvärme</a></h2>
 										<div class="meta">
 											<p class="time"><span class="structural">Publicerat</span> <time datetime="2013-03-29">17 juli 2012</time></p>
 											<ul>
-												<li class="comments"><a href="/news-article.html#comments"><span>15</span> kommentarer</a></li>
+												<li class="comments"><a href="news-article.html#comments"><span>15</span> kommentarer</a></li>
 												<li class="likes info-box" data-content-url="temp/likes.html"><span>12</span> gillar</li>
 											</ul>
 										</div>
@@ -212,13 +212,13 @@
 										</div>
 										<div class="tags cf">
 											<ul>
-												<li><a href="/netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-group">Koncern</a></li>
+												<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-group">Koncern</a></li>
 											</ul>
 										</div>
 									</li>
 								</ul>
 							</div>
-							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/paging.html'); ?>
+							<?php include('includes/paging.html'); ?>
 						</div>
 					</div>
 					<div class="content-2-2">
@@ -230,38 +230,38 @@
 								<div class="m-c cf">
 									<ul>
 										<li class="cf">
-											<a href="/sub-page.html">En nyhet</a>
+											<a href="sub-page.html">En nyhet</a>
 											<span class="time"><time datetime="2013-03-29">17 januari 2013</time></span>
 										</li>
 										<li class="cf">
-											<a href="/sub-page.html">En nyhet</a>
+											<a href="sub-page.html">En nyhet</a>
 											<span class="time"><time datetime="2013-03-29">13 februari 2013</time></span>
 										</li>
 										<li class="cf">
-											<a href="/sub-page.html">En nyhet</a>
+											<a href="sub-page.html">En nyhet</a>
 											<span class="time"><time datetime="2013-03-29">9 januari 2013</time></span>
 										</li>
 										<li class="cf">
-											<a href="/sub-page.html">En nyhet</a>
+											<a href="sub-page.html">En nyhet</a>
 											<span class="time"><time datetime="2013-03-29">23 december 2012</time></span>
 										</li>
 										<li class="cf">
-											<a href="/sub-page.html">En nyhet</a>
+											<a href="sub-page.html">En nyhet</a>
 											<span class="time"><time datetime="2013-03-29">27 december 2012</time></span>
 										</li>
 									</ul>
 								</div>
 							</div>
-							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/teaser-archive.html'); ?>
-							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/teaser-tags.html'); ?>
+							<?php include('includes/teaser-archive.html'); ?>
+							<?php include('includes/teaser-tags.html'); ?>
 						</div>
 					</div>
 				</div>
-				<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/breadcrumbs.html'); ?>
+				<?php include('includes/breadcrumbs.html'); ?>
 			</div>
 		</div>
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+		<?php include('includes/footer.html'); ?>
 	</div>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+	<?php include('includes/scripts.html'); ?>
 </body>
 </html>

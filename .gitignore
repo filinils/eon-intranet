@@ -5,6 +5,12 @@ _dev/
 dist/
 eon-styleguide/src/components/imported/
 eon-main-original/
+
+eon-main/
+eon-styleguide/
+bower.json
+
+
 .ftppass
 #E.ON-NetRelations-Prototype
 

@@ -30,7 +30,7 @@
 		width:22px;
 		height:22px;
 		margin-right:3px;
-		background:url(/gui/i/radio-checkbox.png) no-repeat;
+		background:url(../i/radio-checkbox.png) no-repeat;
 		content:" ";
 		vertical-align:top;
 	}

@@ -1,14 +1,14 @@
 <?php $title = "Mina aviseringar | E.ONs intranät Elin"; ?>
 <?php $sel = "2"; ?>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+<?php include('includes/doctype-and-head.html'); ?>
 </head>
 <body class="layout-1">
 	<div id="body">
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<?php include('includes/header.html'); ?>
 		<div id="main" class="cf">
 			<div id="content">
 				<div class="content-1">
-					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/nav-sub-profile.html'); ?>
+					<?php include('includes/nav-sub-profile.html'); ?>
 				</div>
 				<div class="content-2">
 					<div class="content-2-1">
@@ -146,7 +146,7 @@
 										</li>
 										<li class="cf">
 											<div class="note">
-												Ändrar en sida som jag <a href="/netrp-<?php echo $id = uniqid('e'); ?>">bevakar ändringar</a> på
+												Ändrar en sida som jag <a href="netrp-<?php echo $id = uniqid('e'); ?>">bevakar ändringar</a> på
 											</div>
 											<div class="tools">
 												<div class="notification">
@@ -318,22 +318,22 @@
 							<div class="article-actions cf">
 								<h2 class="structural">Verktyg</h2>
 								<ul>
-									<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/article-buttons-2.html'); ?>
+									<?php include('includes/article-buttons-2.html'); ?>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="content-2-2">
 						<div role="complementary">
-							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/teaser-1.html'); ?>
+							<?php include('includes/teaser-1.html'); ?>
 						</div>
 					</div>
 				</div>
 			</div>
-			<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/breadcrumbs.html'); ?>
+			<?php include('includes/breadcrumbs.html'); ?>
 		</div>
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+		<?php include('includes/footer.html'); ?>
 	</div>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+	<?php include('includes/scripts.html'); ?>
 </body>
 </html>

@@ -21,19 +21,19 @@ module.exports = {
 			dirs : {
 				scripts: {
 					in: 'src/assets/scripts',
-					out: 'assets/scripts'
+					out: 'gui/js'
 				},
 				styles: {
 					in: 'src/assets/styles',
-					out: 'assets/styles'
+					out: 'gui/css'
 				},
 				images: {
 					in: 'src/assets/images',
-					out: 'assets/images'
+					out: 'gui/i'
 				},
 				fonts: {
 					in: 'src/assets/fonts',
-					out: 'assets/fonts'
+					out: 'gui/fonts'
 				}
 			},
 			/* Deploy config

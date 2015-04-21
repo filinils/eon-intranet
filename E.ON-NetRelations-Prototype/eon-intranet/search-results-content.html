@@ -1,16 +1,16 @@
 <?php $searchtext = isset($_GET["searchtext"]) && ($_GET["searchtext"] != "") ? $_GET['searchtext'] : "kontakt"; ?>
 <?php $title = "82 träffar på ”".$searchtext."” inom Innehåll | E.ONs intranät Elin"; ?>
 <?php $sel = "0"; ?>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+<?php include('includes/doctype-and-head.html'); ?>
 </head>
 <body class="layout-6">
 	<div id="body" data-off-canvas-text="filtering">
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<?php include('includes/header.html'); ?>
 		<div id="main" class="cf">
 			<div id="content">
 				<div class="content-0 cf">
 					<div class="search-container">
-						<form method="get" action="/search-results.html" id="main-search" role="search" data-content-url="/temp/querycompletion.json">
+						<form method="get" action="/search-results.html" id="main-search" role="search" data-content-url="temp/querycompletion.json">
 							<div class="cf">
 								<label for="searchtext2" class="structural">Sök på InfoNet:</label>
 								<input type="search" id="searchtext2" name="searchtext" value="<?php echo $searchtext; ?>" placeholder="Ange sökord eller fras" />
@@ -25,12 +25,12 @@
 							<div class="nav-tabs cf" role="navigation">
 								<h2 class="structural">Visa sökträffar inom:</h2>
 								<ul class="cf">
-									<li><a href="/search-results.html">Allt (207)</a></li>
-									<li><a href="/search-results-people.html">Medarbetare (31)</a></li>
-									<li data-selected><a href="/search-results-content.html"><strong>Innehåll (82)</strong></a></li>
-									<li><a href="/search-results-news.html">Nyheter (12)</a></li>
-									<li><a href="/search-results-hr-information.html">HR-information (9)</a></li>
-									<li><a href="/search-results-workspace.html">Workspace (13)</a></li>
+									<li><a href="search-results.html">Allt (207)</a></li>
+									<li><a href="search-results-people.html">Medarbetare (31)</a></li>
+									<li data-selected><a href="search-results-content.html"><strong>Innehåll (82)</strong></a></li>
+									<li><a href="search-results-news.html">Nyheter (12)</a></li>
+									<li><a href="search-results-hr-information.html">HR-information (9)</a></li>
+									<li><a href="search-results-workspace.html">Workspace (13)</a></li>
 								</ul>
 							</div>
 						</div>
@@ -41,8 +41,8 @@
 									<div class="search-sort">
 										<h2>Sortera efter:</h2>
 										<ul>
-											<li><a class="sel" href="/search-results.html"><strong>Relevans</strong></a></li>
-											<li><a href="/search-results.html">Datum</a></li>
+											<li><a class="sel" href="search-results.html"><strong>Relevans</strong></a></li>
+											<li><a href="search-results.html">Datum</a></li>
 										</ul>
 									</div>
 									<p class="search-amount">
@@ -53,93 +53,93 @@
 							<div class="m m-content-list list-items">
 								<ul class="search-results">
 									<li class="list-item cf">
-										<h2><a href="/sub-section.html">Lorem ipsum dolor</a></h2>
+										<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
 										<div class="meta cf">
-											<p class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Sida</a></p>
+											<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
 											<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
 										</div>
 									</li>
 									<li class="list-item cf">
-										<h2><a href="/sub-section.html">Lorem ipsum dolor</a></h2>
+										<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
 										<div class="meta cf">
-											<p class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Sida</a></p>
+											<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
 											<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
 										</div>
 									</li>
 									<li class="list-item cf">
-										<h2><a href="/sub-section.html">Lorem ipsum dolor</a></h2>
+										<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
 										<div class="meta cf">
-											<p class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Sida</a></p>
+											<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
 											<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
 										</div>
 									</li>
 									<li class="list-item cf">
-										<h2><a href="/sub-section.html">Lorem ipsum dolor</a></h2>
+										<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
 										<div class="meta cf">
-											<p class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Sida</a></p>
+											<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
 											<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
 										</div>
 									</li>
 									<li class="list-item cf">
-										<h2><a href="/sub-section.html">Lorem ipsum dolor</a></h2>
+										<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
 										<div class="meta cf">
-											<p class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Sida</a></p>
+											<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
 											<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
 										</div>
 									</li>
 									<li class="list-item cf">
-										<h2><a href="/sub-section.html">Lorem ipsum dolor</a></h2>
+										<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
 										<div class="meta cf">
-											<p class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Sida</a></p>
+											<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
 											<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
 										</div>
 									</li>
 									<li class="list-item cf">
-										<h2><a href="/sub-section.html">Lorem ipsum dolor</a></h2>
+										<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
 										<div class="meta cf">
-											<p class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Sida</a></p>
+											<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
 											<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
 										</div>
 									</li>
 									<li class="list-item cf">
-										<h2><a href="/sub-section.html">Lorem ipsum dolor</a></h2>
+										<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
 										<div class="meta cf">
-											<p class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Sida</a></p>
+											<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
 											<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
 										</div>
 									</li>
 									<li class="list-item cf">
-										<h2><a href="/sub-section.html">Lorem ipsum dolor</a></h2>
+										<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
 										<div class="meta cf">
-											<p class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Sida</a></p>
+											<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
 											<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
 										</div>
 									</li>
 									<li class="list-item cf">
-										<h2><a href="/sub-section.html">Lorem ipsum dolor</a></h2>
+										<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
 										<div class="meta cf">
-											<p class="path"><a href="/home.html">Hem</a> / <a href="/sub-section.html">Sida</a></p>
+											<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
 											<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
 										</div>
 									</li>
 								</ul>
 							</div>
-							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/paging.html'); ?>
+							<?php include('includes/paging.html'); ?>
 							<div class="article-actions cf">
 								<h2 class="structural">Verktyg</h2>
 								<ul>
-									<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/article-buttons-1.html'); ?>
-									<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/article-buttons-2.html'); ?>
+									<?php include('includes/article-buttons-1.html'); ?>
+									<?php include('includes/article-buttons-2.html'); ?>
 								</ul>
 							</div>
 						</div>
@@ -148,13 +148,13 @@
 						<div role="complementary">
 							<div class="m m-search-help">
 								<div class="m-h">
-									<h2><a href="/sub-page.html">Tips &amp; hjälp</a></h2>
+									<h2><a href="sub-page.html">Tips &amp; hjälp</a></h2>
 								</div>
 								<div class="m-f">
-									<p class="read-more"><a href="/sub-page.html">Få tips och hjälp med din sökning</a></p>
+									<p class="read-more"><a href="sub-page.html">Få tips och hjälp med din sökning</a></p>
 								</div>
 							</div>
-							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/teaser-1.html'); ?>
+							<?php include('includes/teaser-1.html'); ?>
 						</div>
 					</div>
 				</div>
@@ -166,11 +166,11 @@
 						<div class="m-c">
 							<ul>
 								<li class="sel"><strong>När som helst (207)</strong></li>
-								<li><a href="/search-results.html">Idag (4)</a></li>
-								<li><a href="/search-results.html">Igår (4)</a></li>
-								<li><a href="/search-results.html">Den senaste veckan (43)</a></li>
-								<li><a href="/search-results.html">Den senaste månaden (67)</a></li>
-								<li><a href="/search-results.html">Det senaste året (95)</a></li>
+								<li><a href="search-results.html">Idag (4)</a></li>
+								<li><a href="search-results.html">Igår (4)</a></li>
+								<li><a href="search-results.html">Den senaste veckan (43)</a></li>
+								<li><a href="search-results.html">Den senaste månaden (67)</a></li>
+								<li><a href="search-results.html">Det senaste året (95)</a></li>
 							</ul>
 						</div>
 					</div>
@@ -182,9 +182,9 @@
 						<div class="m-c">
 							<ul>
 								<li class="sel"><strong>Artikel (112)</strong></li>
-								<li><a href="/search-results.html">FAQ (4)</a></li>
-								<li><a href="/search-results.html">Organisation (4)</a></li>
-								<li><a href="/search-results.html">Fillista (43)</a></li>
+								<li><a href="search-results.html">FAQ (4)</a></li>
+								<li><a href="search-results.html">Organisation (4)</a></li>
+								<li><a href="search-results.html">Fillista (43)</a></li>
 							</ul>
 						</div>
 					</div>
@@ -196,20 +196,20 @@
 						<div class="m-c">
 							<ul>
 								<li class="sel"><strong>Alla (112)</strong></li>
-								<li class="file image"><a href="/search-results.html">Bilder (16)</a></li>
-								<li class="file mov"><a href="/search-results.html">Video (4)</a></li>
-								<li class="file pdf"><a href="/search-results.html">PDF (18)</a></li>
-								<li class="file ppt"><a href="/search-results.html">PPT (12)</a></li>
-								<li class="file doc"><a href="/search-results.html">DOC (9)</a></li>
-								<li class="file xls"><a href="/search-results.html">XLS (3)</a></li>
+								<li class="file image"><a href="search-results.html">Bilder (16)</a></li>
+								<li class="file mov"><a href="search-results.html">Video (4)</a></li>
+								<li class="file pdf"><a href="search-results.html">PDF (18)</a></li>
+								<li class="file ppt"><a href="search-results.html">PPT (12)</a></li>
+								<li class="file doc"><a href="search-results.html">DOC (9)</a></li>
+								<li class="file xls"><a href="search-results.html">XLS (3)</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+		<?php include('includes/footer.html'); ?>
 	</div>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+	<?php include('includes/scripts.html'); ?>
 </body>
 </html>

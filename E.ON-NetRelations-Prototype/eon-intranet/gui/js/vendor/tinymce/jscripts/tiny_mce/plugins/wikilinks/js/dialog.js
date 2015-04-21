@@ -19,7 +19,7 @@ var WikilinksDialog = {
 		if(tinyMCEPopup.editor.dom.win.wiki.epi_page_context.searchURL) {
 			var wikiSearchURL = tinyMCEPopup.editor.dom.win.wiki.epi_page_context.searchURL;
 		} else {
-			var wikiSearchURL = '/Templates/Wiki/LiveSearch.aspx';
+			var wikiSearchURL = 'templates/Wiki/LiveSearch.aspx';
 		}
 
 		if (selectedText) {

@@ -1,41 +1,41 @@
 <?php $title = "Vanlig sida med Flash över en kolumn | E.ONs intranät Elin"; ?>
 <?php $sel = "2"; ?>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+<?php include('includes/doctype-and-head.html'); ?>
 </head>
 <body class="layout-1">
 	<div id="body">
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<?php include('includes/header.html'); ?>
 		<div id="main" class="cf">
 			<div id="content">
 				<div class="content-1">
-					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/nav-sub.html'); ?>
+					<?php include('includes/nav-sub.html'); ?>
 				</div>
 				<div class="content-2">
 					<div class="content-2-1">
 						<div id="content-primary" class="article cf" role="main">
 							<h1 class="structural">Vanlig sida med Flash över en kolumn</h1>
 							<div class="flash">
-								<div data-flash='{"swf": "/temp/test.swf", "width": "510", "height": "400", "hasVersion": "9"}'>
-									<p><img src="/temp/flash.png" alt="En Flashbanner som visar något vettigt" width="510" height="400" /></p>
+								<div data-flash='{"swf": "temp/test.swf", "width": "510", "height": "400", "hasVersion": "9"}'>
+									<p><img src="temp/flash.png" alt="En Flashbanner som visar något vettigt" width="510" height="400" /></p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="content-2-2">
 						<div role="complementary">
-							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/teaser-1.html'); ?>
+							<?php include('includes/teaser-1.html'); ?>
 						</div>
 					</div>
 				</div>
 			</div>
-			<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/breadcrumbs.html'); ?>
+			<?php include('includes/breadcrumbs.html'); ?>
 		</div>
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+		<?php include('includes/footer.html'); ?>
 	</div>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+	<?php include('includes/scripts.html'); ?>
 
 	<!-- Template specific scripts -->
-	<script src="/gui/js/vendor/jquery.swfobject.min.js?<?php echo $version; ?>"></script>
+	<script src="gui/js/vendor/jquery.swfobject.min.js?<?php echo $version; ?>"></script>
 
 </body>
 </html>

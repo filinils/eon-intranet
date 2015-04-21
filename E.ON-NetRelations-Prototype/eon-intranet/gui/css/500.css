@@ -14,7 +14,7 @@ body {
 	display:block;
 	width:102px;
 	height:30px;
-	background:url(/gui/i/logo-inverted.png) no-repeat;
+	background:url(../i/logo-inverted.png) no-repeat;
 }
 .logo img {
 	position:absolute;
@@ -31,7 +31,7 @@ h1 {
 }
 .read-more a {
 	padding-left:15px;
-	background:url(/gui/i/arrow-default.png) 0 50% no-repeat;
+	background:url(../i/arrow-default.png) 0 50% no-repeat;
 }
 
 /* BEGIN @media screen, device-pixel-ratio */
@@ -40,11 +40,11 @@ only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1) {
 	.logo a {
-		background-image:url(/gui/i/logo-inverted@2x.png);
+		background-image:url(../i/logo-inverted@2x.png);
 		background-size:102px 30px;
 	}
 	.read-more a {
-		background-image:url(/gui/i/arrow-default@2x.png);
+		background-image:url(../i/arrow-default@2x.png);
 		background-size:10px 9px;
 	}
 }

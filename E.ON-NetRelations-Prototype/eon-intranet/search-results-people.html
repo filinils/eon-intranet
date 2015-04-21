@@ -1,16 +1,16 @@
 <?php $searchtext = isset($_GET["searchtext"]) && ($_GET["searchtext"] != "") ? $_GET['searchtext'] : "kontakt"; ?>
 <?php $title = "31 träffar på ”".$searchtext."” inom Medarbetare | E.ONs intranät Elin"; ?>
 <?php $sel = "0"; ?>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+<?php include('includes/doctype-and-head.html'); ?>
 </head>
 <body class="layout-6">
 	<div id="body" data-off-canvas-text="filtering">
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/header.html'); ?>
+		<?php include('includes/header.html'); ?>
 		<div id="main" class="cf">
 			<div id="content">
 				<div class="content-0 cf">
 					<div class="search-container">
-						<form method="get" action="/search-results.html" id="main-search" role="search" data-content-url="/temp/querycompletion.json">
+						<form method="get" action="/search-results.html" id="main-search" role="search" data-content-url="temp/querycompletion.json">
 							<div class="cf">
 								<label for="searchtext2" class="structural">Sök på InfoNet:</label>
 								<input type="search" id="searchtext2" name="searchtext" value="<?php echo $searchtext; ?>" placeholder="Ange sökord eller fras" />
@@ -25,12 +25,12 @@
 							<div class="nav-tabs cf" role="navigation">
 								<h2 class="structural">Visa sökträffar inom:</h2>
 								<ul class="cf">
-									<li><a href="/search-results.html">Allt (207)</a></li>
-									<li data-selected><a href="/search-results-people.html"><strong>Medarbetare (31)</strong></a></li>
-									<li><a href="/search-results-content.html">Innehåll (82)</a></li>
-									<li><a href="/search-results-news.html">Nyheter (12)</a></li>
-									<li><a href="/search-results-hr-information.html">HR-information (9)</a></li>
-									<li><a href="/search-results-workspace.html">Workspace (13)</a></li>
+									<li><a href="search-results.html">Allt (207)</a></li>
+									<li data-selected><a href="search-results-people.html"><strong>Medarbetare (31)</strong></a></li>
+									<li><a href="search-results-content.html">Innehåll (82)</a></li>
+									<li><a href="search-results-news.html">Nyheter (12)</a></li>
+									<li><a href="search-results-hr-information.html">HR-information (9)</a></li>
+									<li><a href="search-results-workspace.html">Workspace (13)</a></li>
 								</ul>
 							</div>
 						</div>
@@ -41,9 +41,9 @@
 									<div class="search-sort">
 										<h2>Sortera personer efter:</h2>
 										<ul>
-											<li><a class="sel" href="/search-results.html"><strong>Förnamn</strong></a></li>
-											<li><a href="/search-results.html">Efternamn</a></li>
-											<li><a href="/search-results.html">Titel</a></li>
+											<li><a class="sel" href="search-results.html"><strong>Förnamn</strong></a></li>
+											<li><a href="search-results.html">Efternamn</a></li>
+											<li><a href="search-results.html">Titel</a></li>
 										</ul>
 									</div>
 									<p class="search-amount">
@@ -55,152 +55,152 @@
 								<ul class="search-results">
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
 											<p class="expertise"><strong>Kontakt</strong>ansvarig på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
 												<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
-												<li><a href="/" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
+												<li><a href="" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
 											</ul>
 										</div>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
 											<p class="expertise"><strong>Kontakt</strong>ansvarig på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
 												<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
-												<li><a href="/" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
+												<li><a href="" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
 											</ul>
 										</div>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
 											<p class="expertise"><strong>Kontakt</strong>ansvarig på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
 												<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
-												<li><a href="/" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
+												<li><a href="" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
 											</ul>
 										</div>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
 											<p class="expertise"><strong>Kontakt</strong>ansvarig på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
 												<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
-												<li><a href="/" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
+												<li><a href="" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
 											</ul>
 										</div>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
 											<p class="expertise"><strong>Kontakt</strong>ansvarig på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
 												<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
-												<li><a href="/" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
+												<li><a href="" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
 											</ul>
 										</div>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
 											<p class="expertise"><strong>Kontakt</strong>ansvarig på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
 												<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
-												<li><a href="/" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
+												<li><a href="" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
 											</ul>
 										</div>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
 											<p class="expertise"><strong>Kontakt</strong>ansvarig på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
 												<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
-												<li><a href="/" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
+												<li><a href="" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
 											</ul>
 										</div>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
 											<p class="expertise"><strong>Kontakt</strong>ansvarig på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
 												<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
-												<li><a href="/" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
+												<li><a href="" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
 											</ul>
 										</div>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
 											<p class="expertise"><strong>Kontakt</strong>ansvarig på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
 												<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
-												<li><a href="/" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
+												<li><a href="" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
 											</ul>
 										</div>
 									</li>
 									<li class="list-item item-contact cf">
 										<div class="image-holder">
-											<img src="/temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
+											<img src="temp/profile-photo-contact-list-3.jpg" width="88" height="88" alt="" class="left" />
 										</div>
 										<div class="info">
-											<h2><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
+											<h2><a href="netrp-<?php echo $id = uniqid('e'); ?>">Louise Gudmundson</a></h2>
 											<p class="expertise"><strong>Kontakt</strong>ansvarig på <strong class="company">E.ON Sverige</strong></p>
 											<ul class="contact-details">
 												<li class="phone"><span>040-25 50 00</span></li>
 												<li class="email"><a href="mailto:louise-gudmundson@eon.se">louise.gudmundson@eon.se</a></li>
-												<li><a href="/" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
+												<li><a href="" class="button button-alt button-edit button-network" data-add-url="/search-results-people.html" data-remove-url="/search-results-people.html" data-state="">Lägg till i mitt nätverk</a></li>
 											</ul>
 										</div>
 									</li>
 								</ul>
 							</div>
-							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/paging.html'); ?>
+							<?php include('includes/paging.html'); ?>
 							<div class="article-actions cf">
 								<h2 class="structural">Verktyg</h2>
 								<ul>
-									<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/article-buttons-1.html'); ?>
-									<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/article-buttons-2.html'); ?>
+									<?php include('includes/article-buttons-1.html'); ?>
+									<?php include('includes/article-buttons-2.html'); ?>
 								</ul>
 							</div>
 						</div>
@@ -209,13 +209,13 @@
 						<div role="complementary">
 							<div class="m m-search-help">
 								<div class="m-h">
-									<h2><a href="/sub-page.html">Tips &amp; hjälp</a></h2>
+									<h2><a href="sub-page.html">Tips &amp; hjälp</a></h2>
 								</div>
 								<div class="m-f">
-									<p class="read-more"><a href="/sub-page.html">Få tips och hjälp med din sökning</a></p>
+									<p class="read-more"><a href="sub-page.html">Få tips och hjälp med din sökning</a></p>
 								</div>
 							</div>
-							<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/teaser-1.html'); ?>
+							<?php include('includes/teaser-1.html'); ?>
 						</div>
 					</div>
 				</div>
@@ -227,11 +227,11 @@
 						<div class="m-c">
 							<ul>
 								<li class="sel"><strong>Alla orter (112)</strong></li>
-								<li><a href="/search-results.html">Oskarshamn (4)</a></li>
-								<li><a href="/search-results.html">Sollefteå (4)</a></li>
-								<li><a href="/search-results.html">Stockholm (43)</a></li>
-								<li><a href="/search-results.html">Sundsvall (67)</a></li>
-								<li><a href="/search-results.html">Växjö (95)</a></li>
+								<li><a href="search-results.html">Oskarshamn (4)</a></li>
+								<li><a href="search-results.html">Sollefteå (4)</a></li>
+								<li><a href="search-results.html">Stockholm (43)</a></li>
+								<li><a href="search-results.html">Sundsvall (67)</a></li>
+								<li><a href="search-results.html">Växjö (95)</a></li>
 							</ul>
 						</div>
 					</div>
@@ -242,19 +242,19 @@
 						<div class="m-c">
 							<ul>
 								<li class="sel"><strong>Alla bolag (112)</strong></li>
-								<li><a href="/search-results.html">E.ON Kundsupport (4)</a></li>
-								<li><a href="/search-results.html">E.ON Kärnkraft (4)</a></li>
-								<li><a href="/search-results.html">E.ON Vattenkraft (43)</a></li>
-								<li><a href="/search-results.html">E.ON Vind (67)</a></li>
-								<li><a href="/search-results.html">E.ON Värme (95)</a></li>
+								<li><a href="search-results.html">E.ON Kundsupport (4)</a></li>
+								<li><a href="search-results.html">E.ON Kärnkraft (4)</a></li>
+								<li><a href="search-results.html">E.ON Vattenkraft (43)</a></li>
+								<li><a href="search-results.html">E.ON Vind (67)</a></li>
+								<li><a href="search-results.html">E.ON Värme (95)</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+		<?php include('includes/footer.html'); ?>
 	</div>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+	<?php include('includes/scripts.html'); ?>
 </body>
 </html>

@@ -10,7 +10,7 @@
 
 	/* Hardware acceleration */
 	width:100%;
-	background:url(/gui/i/overlay.png);
+	background:url(../i/overlay.png);
 	-webkit-transform:translateZ(0);
 	-webkit-perspective:1000;
 	-webkit-backface-visibility:hidden;
@@ -77,7 +77,7 @@
 
 	-webkit-box-shadow: none;
 	        box-shadow: none;
-	background: url(/gui/i/dialog-close.png) 50% 50% no-repeat;
+	background: url(../i/dialog-close.png) 50% 50% no-repeat;
 	background-size: 38px 38px;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -106,7 +106,7 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
 	.dialog-close {
-		background-image: url(/gui/i/dialog-close@2x.png);
+		background-image: url(../i/dialog-close@2x.png);
 	}
 }
 

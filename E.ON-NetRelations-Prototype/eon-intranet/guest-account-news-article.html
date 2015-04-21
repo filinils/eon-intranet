@@ -1,14 +1,14 @@
 <?php $title = "Nyhetssida | E.ONs intranät Elin"; ?>
 <?php $sel = "2"; ?>
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/doctype-and-head.html'); ?>
+<?php include('includes/doctype-and-head.html'); ?>
 </head>
 <body class="layout-1">
 	<div id="body">
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/guest-account-header.html'); ?>
+		<?php include('includes/guest-account-header.html'); ?>
 		<div id="main" class="cf">
 			<div id="content">
 				<div class="content-1">
-					<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/nav-sub-news.html'); ?>
+					<?php include('includes/nav-sub-news.html'); ?>
 				</div>
 				<div class="content-2">
 					<div class="content-2-1">
@@ -26,39 +26,39 @@
 							</div>
 							<p>En kärnkraftsreaktors reservkraft har samma funktion som motsvarigheterna vid våra sjukhus. Det innebär att dessa aggregat ska kunna träda in som strömförsörjare till i första hand reaktorns säkerhetssystem i händelse av att elnätet slås ut samtidigt som den egna produktionen är ur funktion. De dieselmotorer och gasturbiner som utgör reservkraft är således en viktig del av anläggningens konstruktion.</p>
 							<p>Efter den aktuella översynen av reservkraftskapaciteten vid O2 godkände Strålsäkerhetsmyndigheten OKGs ansökan om återstart. OKG har därmed också fullföljt de åtgärder som sattes upp som villkor för företagets dispens avseende elproduktionen under första halvåret 2013.</p>
-							<p>Vid Oskarshamn 1 fortsätter arbetet med att komma till rätta med startmotorproblemen på dieselaggregaten och därefter återupptas intrimningen av turbinutrustningen i syfte att kunna säkra elleveranserna. Oskarshamn 3 levererar el enligt plan. För information om eventuella förändringar hänvisas till nordiska elbörsens hemsida, <a href="/netrp-<?php echo $id = uniqid('e'); ?>">nordpoolspot.com</a>.</p>
+							<p>Vid Oskarshamn 1 fortsätter arbetet med att komma till rätta med startmotorproblemen på dieselaggregaten och därefter återupptas intrimningen av turbinutrustningen i syfte att kunna säkra elleveranserna. Oskarshamn 3 levererar el enligt plan. För information om eventuella förändringar hänvisas till nordiska elbörsens hemsida, <a href="netrp-<?php echo $id = uniqid('e'); ?>">nordpoolspot.com</a>.</p>
 							<!-- Hide fuction for guests -->
 							<!-- <div class="like-button">
-								<button type="submit" class="like call-back" data-content-url="/temp/like.html" data-after-postback-action="netr.updateLike('like-article-button|likes-article')" id="like-article-button"><span>Gilla</span></button>
+								<button type="submit" class="like call-back" data-content-url="temp/like.html" data-after-postback-action="netr.updateLike('like-article-button|likes-article')" id="like-article-button"><span>Gilla</span></button>
 							</div> -->
 							<div class="tag-list">
 								<dl>
 									<dt>Ort</dt>
 									<dd>
 										<ul class="cf">
-											<li><a href="/netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-location">Malmö</a></li>
+											<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-location">Malmö</a></li>
 										</ul>
 									</dd>
 									<dt>Bolag</dt>
 									<dd>
 										<ul class="cf">
-											<li><a href="/netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-company">E.ON Sverige</a></li>
+											<li><a href="netrp-<?php echo $id = uniqid('e'); ?>" class="tag tag-company">E.ON Sverige</a></li>
 										</ul>
 									</dd>
 								</dl>
 							</div>
 						</div>
-						<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/article-info.html'); ?>
+						<?php include('includes/article-info.html'); ?>
 						<div class="m-comments" id="comments">
 							<h2>Kommentarer</h2>
 							<ol>
 								<li id="comment1" class="cf">
 									<div class="profile-photo">
-										<img src="/temp/profile-picture-60x60-1.png" width="60" height="60" alt="Profilbild på Jonas Andrén" />
+										<img src="temp/profile-picture-60x60-1.png" width="60" height="60" alt="Profilbild på Jonas Andrén" />
 									</div>
 									<div class="comment">
 										<div class="head">
-											<span title="Kommentar 1"><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Jonas Andrén</a></span> skrev den <span class="time"><time datetime="2013-03-29">23 juni 2012 kl 15:52</time></span>
+											<span title="Kommentar 1"><a href="netrp-<?php echo $id = uniqid('e'); ?>">Jonas Andrén</a></span> skrev den <span class="time"><time datetime="2013-03-29">23 juni 2012 kl 15:52</time></span>
 										</div>
 										<!-- Hide function for guests -->
 										<!-- <form action="/" method="post">
@@ -70,43 +70,43 @@
 										</div>
 										<div class="like-comment">
 											<!-- Hide function for guests -->
-											<!-- <button type="submit" class="like call-back" data-content-url="/temp/like.html" data-after-postback-action="netr.updateLike('like-article-button|likes-article')" id="like-article-button-1"><span>Gilla</span></button> -->
+											<!-- <button type="submit" class="like call-back" data-content-url="temp/like.html" data-after-postback-action="netr.updateLike('like-article-button|likes-article')" id="like-article-button-1"><span>Gilla</span></button> -->
 											<div class="nr-of-likes likes info-box" data-content-url="temp/likes.html" id="likes-comment-1"><span>7</span> gillar</div>
 										</div>
 									</div>
 								</li>
 								<li id="comment2" class="cf">
 									<div class="profile-photo">
-										<img src="/temp/profile-picture-60x60-2.png" width="60" height="60" alt="Profilbild på Mattias Hennius" />
+										<img src="temp/profile-picture-60x60-2.png" width="60" height="60" alt="Profilbild på Mattias Hennius" />
 									</div>
 									<div class="comment">
 										<div class="head">
-											<span title="Kommentar 2"><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Mattias Hennius</a></span> skrev den <span class="time"><time datetime="2013-03-29">23 juni 2012 kl 15:52</time></span>
+											<span title="Kommentar 2"><a href="netrp-<?php echo $id = uniqid('e'); ?>">Mattias Hennius</a></span> skrev den <span class="time"><time datetime="2013-03-29">23 juni 2012 kl 15:52</time></span>
 										</div>
 										<div class="body">
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin scelerisque enim, eu aliquam leo lacinia at. Suspendisse a lorem sed urna viverra sodales vel sit amet nibh.</p>
 										</div>
 										<div class="like-comment">
 											<!-- Hide function for guests -->
-											<!-- <button type="submit" class="like call-back" data-content-url="/temp/like.html" data-after-postback-action="netr.updateLike('like-article-button|likes-article')" id="like-article-button-2"><span>Gilla</span></button> -->
+											<!-- <button type="submit" class="like call-back" data-content-url="temp/like.html" data-after-postback-action="netr.updateLike('like-article-button|likes-article')" id="like-article-button-2"><span>Gilla</span></button> -->
 											<div class="nr-of-likes likes info-box" data-content-url="temp/likes.html" id="likes-comment-2"><span>7</span> gillar</div>
 										</div>
 									</div>
 								</li>
 								<li id="comment3" class="cf">
 									<div class="profile-photo">
-										<img src="/temp/profile-picture-60x60-3.png" width="60" height="60" alt="Profilbild på Melinda Frigyesi Almström" />
+										<img src="temp/profile-picture-60x60-3.png" width="60" height="60" alt="Profilbild på Melinda Frigyesi Almström" />
 									</div>
 									<div class="comment">
 										<div class="head">
-											<span title="Kommentar 1"><a href="/netrp-<?php echo $id = uniqid('e'); ?>">Melinda Frigyesi Almström</a></span> skrev den <span class="time"><time datetime="2013-03-29">23 juni 2012 kl 15:52</time></span>
+											<span title="Kommentar 1"><a href="netrp-<?php echo $id = uniqid('e'); ?>">Melinda Frigyesi Almström</a></span> skrev den <span class="time"><time datetime="2013-03-29">23 juni 2012 kl 15:52</time></span>
 										</div>
 										<div class="body">
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin scelerisque enim, eu aliquam leo lacinia at. Suspendisse a lorem sed urna viverra sodales vel sit amet nibh.</p>
 										</div>
 										<!-- Hide section for guests -->
 										<!-- <div class="like-comment">
-											<button type="submit" class="like call-back" data-content-url="/temp/like.html" data-after-postback-action="netr.updateLike('like-article-button|likes-article')" id="like-article-button-3"><span>Gilla</span></button>
+											<button type="submit" class="like call-back" data-content-url="temp/like.html" data-after-postback-action="netr.updateLike('like-article-button|likes-article')" id="like-article-button-3"><span>Gilla</span></button>
 										</div> -->
 									</div>
 								</li>
@@ -183,21 +183,21 @@
 										</div>
 									</form> -->
 									<div class="scrollable">
-										<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/status-feed.html'); ?>
+										<?php include('includes/status-feed.html'); ?>
 									</div>
 								</div>
 								<div class="m-f">
-									<p class="read-more"><a href="/netrp-32948">Se alla statusuppdateringar</a></p>
+									<p class="read-more"><a href="netrp-32948">Se alla statusuppdateringar</a></p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/breadcrumbs.html'); ?>
+				<?php include('includes/breadcrumbs.html'); ?>
 			</div>
 		</div>
-		<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/footer.html'); ?>
+		<?php include('includes/footer.html'); ?>
 	</div>
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/scripts.html'); ?>
+	<?php include('includes/scripts.html'); ?>
 </body>
 </html>

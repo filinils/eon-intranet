@@ -26,7 +26,7 @@ img {
 .ui-autocomplete,
 .sub-menu,
 .infobox-contact {
-	behavior:url(/gui/js/pie.htc);
+	behavior:url(../i/js/pie.htc);
 }
 
 /* PIE with Relative
@@ -50,7 +50,7 @@ a.tag:visited,
 .nav-main,
 .button-alt {
 	position:relative;
-	behavior:url(/gui/js/pie.htc);
+	behavior:url(../i/js/pie.htc);
 }
 
 .user-details h2 {

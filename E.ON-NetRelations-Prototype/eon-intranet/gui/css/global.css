@@ -14,7 +14,7 @@
 	z-index:500;
 	width:100%;
 	height:100%;
-	background:url(/temp/disabled-for-production.png);
+	background:url(temp/disabled-for-production.png);
 	background:rgba(0,0,0,.5);
 	content:" ";
 }
@@ -40,7 +40,7 @@
 #footer {
 	clear:both;
 	padding-top:123px;
-	background:url(/gui/i/footer-illustration.png) repeat-x 50% 0;
+	background:url(../i/footer-illustration.png) repeat-x 50% 0;
 }
 .inner {
 	margin:0 auto;
@@ -188,7 +188,7 @@
 	margin:20px 0 15px;
 	padding:8px 5px 9px 49px;
 	border-bottom:2px solid #d30d01;
-	background:#eb1503 url(/gui/i/icons/system-info-warning.png);
+	background:#eb1503 url(../i/icons/system-info-warning.png);
 	background-position:15px 50%;
 	background-repeat:no-repeat;
 	color:#fff;
@@ -205,17 +205,17 @@
 
 /* Error message */
 .error-message {
-	background-image:url(/gui/i/icons/system-info-error.png);
+	background-image:url(../i/icons/system-info-error.png);
 }
 /* Confirmation */
 .confirmation-message {
 	border-color:#5d5d5d;
 	background-color:#737373;
-	background-image:url(/gui/i/icons/system-info-confirmation.png);
+	background-image:url(../i/icons/system-info-confirmation.png);
 }
 /* Notification */
 .notification-message {
-	background-image:url(/gui/i/icons/system-info-notification.png);
+	background-image:url(../i/icons/system-info-notification.png);
 	background-position:15px 8px;
 }
 .notification-message h2 {
@@ -239,14 +239,14 @@
 	color:#fff;
 }
 .message a.read-more {
-	background-image:url(/gui/i/arrow-inverted.png);
+	background-image:url(../i/arrow-inverted.png);
 }
 .m-0 {
 	background:#ffc905;
 	color:#393939;
 }
 .m-0 a.read-more {
-	background-image:url(/gui/i/arrow-inverted-dark.png);
+	background-image:url(../i/arrow-inverted-dark.png);
 }
 .m-10 {
 	background:#737373;
@@ -298,20 +298,20 @@
 -------------------------------------------------------------- */
 .compact-subnav {
 	padding:9px 15px 9px 36px;
-	background-image:url(/gui/i/icon-compact-subnav.png);
+	background-image:url(../i/icon-compact-subnav.png);
 	background-position:8px 50%;
 	background-repeat:no-repeat;
 	text-align:left;
 }
 .off-canvas .compact-subnav {
-	background-image:url(/gui/i/icon-compact-subnav-open.png);
+	background-image:url(../i/icon-compact-subnav-open.png);
 }
 .layout-2 .compact-subnav {
 	min-width:100%;
-	background-image:url(/gui/i/icon-compact-subnav-open.png);
+	background-image:url(../i/icon-compact-subnav-open.png);
 }
 .off-canvas .layout-2 .compact-subnav {
-	background-image:url(/gui/i/icon-compact-subnav.png);
+	background-image:url(../i/icon-compact-subnav.png);
 }
 
 /* Closable
@@ -325,7 +325,7 @@
 	width:26px;
 	height:24px;
 	border:0;
-	background:transparent url(/gui/i/close-button.png);
+	background:transparent url(../i/close-button.png);
 	text-indent:200%;
 	white-space:nowrap;
 }
@@ -347,14 +347,14 @@
 	width:26px;
 	height:24px;
 	border:0;
-	background:transparent url(/gui/i/collapse-button.png) no-repeat top right;
+	background:transparent url(../i/collapse-button.png) no-repeat top right;
 	text-indent:-9999px;
 	white-space:nowrap;
 	-webkit-transition:background .25s linear;
 	transition:background .25s linear;
 }
 .collapsable-button.open {
-	background-image:url(/gui/i/collapse-button-open.png);
+	background-image:url(../i/collapse-button-open.png);
 }
 
 .m-status-feed .collapsable-button {
@@ -468,10 +468,10 @@ a:lang(en)[target=_blank]:after {
 	display:block;
 	width:38px;
 	height:36px;
-	background:url(/gui/i/arrow-default.png) 50% no-repeat;
+	background:url(../i/arrow-default.png) 50% no-repeat;
 }
 .paging a.prev-page span {
-	background-image:url(/gui/i/arrow-default-reverted.png);
+	background-image:url(../i/arrow-default-reverted.png);
 }
 .paging a.prev-page:hover,
 .paging a.prev-page:focus,
@@ -484,11 +484,11 @@ a:lang(en)[target=_blank]:after {
 .paging a.prev-page:focus span,
 .paging a.next-page:hover span,
 .paging a.next-page:focus span {
-	background-image:url(/gui/i/arrow-default-hover.png);
+	background-image:url(../i/arrow-default-hover.png);
 }
 .paging a.prev-page:hover span,
 .paging a.prev-page:focus span {
-	background-image:url(/gui/i/arrow-default-reverted-hover.png);
+	background-image:url(../i/arrow-default-reverted-hover.png);
 }
 
 
@@ -503,24 +503,24 @@ a:lang(en)[target=_blank]:after {
 	background-repeat:no-repeat;
 }
 .paging a.prev-week {
-	background-image:url(/gui/i/arrow-default-reverted.png);
+	background-image:url(../i/arrow-default-reverted.png);
 	background-position:8px 50%;
 }
 .paging a.prev-week:hover,
 .paging a.prev-week:focus {
-	background-image:url(/gui/i/arrow-default-reverted-hover.png);
+	background-image:url(../i/arrow-default-reverted-hover.png);
 }
 .paging a.next-week {
 	float:right;
 	padding:0 22px 0 12px;
-	background-image:url(/gui/i/arrow-default.png);
+	background-image:url(../i/arrow-default.png);
 	background-position:92% 50%;
 	background-position:-webkit-calc(100% - 8px) 50%;
 	background-position:calc(100% - 8px) 50%;
 }
 .paging a.next-week:hover,
 .paging a.next-week:focus {
-	background-image:url(/gui/i/arrow-default-hover.png);
+	background-image:url(../i/arrow-default-hover.png);
 }
 .paging a.next-week:hover,
 .paging a.next-week:focus,
@@ -669,7 +669,7 @@ button.link span {
 	padding:2px 0 0 20px;
 	border:0;
 	background:transparent;
-	background:transparent url(/gui/i/icons/delete.png) no-repeat;
+	background:transparent url(../i/icons/delete.png) no-repeat;
 	color:#eb1503;
 	text-decoration:underline;
 	font:inherit;
@@ -834,7 +834,7 @@ button.link span {
 .m-5 .read-more a,
 .m-6 .read-more a,
 .m-7 .read-more a {
-	background-image:url(/gui/i/arrow-inverted.png);
+	background-image:url(../i/arrow-inverted.png);
 }
 .m-teaser h2 {
 	padding:8px 0 7px;
@@ -1100,7 +1100,7 @@ button.link span {
 }
 .m-hr-search-info h2 {
 	padding:2px 0 10px 33px;
-	background:url(/gui/i/icons/icon-info.png) 0 0 no-repeat;
+	background:url(../i/icons/icon-info.png) 0 0 no-repeat;
 	font-weight:bold;
 	font-size:18px;
 }
@@ -1150,7 +1150,7 @@ button.link span {
 .m-search-filter span {
 	display:block;
 	padding-left:15px;
-	background:url(/gui/i/arrow-default.png) 0 3px no-repeat;
+	background:url(../i/arrow-default.png) 0 3px no-repeat;
 	text-decoration:none;
 }
 .m-list .m-c a:hover,
@@ -1208,13 +1208,13 @@ button.link span {
 	padding-bottom:10px;
 }
 .m-comments .counter {
-	background:url(/gui/i/icons/meta-comments-list.png) 50% 17px no-repeat;
+	background:url(../i/icons/meta-comments-list.png) 50% 17px no-repeat;
 }
 .m-likes .counter {
-	background:url(/gui/i/icons/meta-like-list.png) 50% 17px no-repeat;
+	background:url(../i/icons/meta-like-list.png) 50% 17px no-repeat;
 }
 .m-share .counter {
-	background:url(/gui/i/icons/meta-share-list.png) 50% 17px no-repeat;
+	background:url(../i/icons/meta-share-list.png) 50% 17px no-repeat;
 }
 
 /* Coworkers module
@@ -1279,10 +1279,10 @@ button.link span {
 	text-decoration:underline;
 }
 .m-social-feed .m-c li.twitter {
-	background:url(/gui/i/twitter.png) no-repeat 0 11px;
+	background:url(../i/twitter.png) no-repeat 0 11px;
 }
 .m-social-feed .m-c li.facebook {
-	background:url(/gui/i/facebook.png) no-repeat 0 11px;
+	background:url(../i/facebook.png) no-repeat 0 11px;
 }
 .m-social-feed .read-more:first-child {
 	border-bottom:1px solid #e6e6e6;
@@ -1398,7 +1398,7 @@ button.link span {
 	background-position:12px 50%;
 }
 .m-fact .read-more a {
-	background-image:url(/gui/i/arrow-default.png);
+	background-image:url(../i/arrow-default.png);
 }
 
 /* Comments
@@ -1432,7 +1432,7 @@ button.link span {
 	margin:-3px 0 0 0;
 	padding:2px 0 0 20px;
 	border:0;
-	background:transparent url(/gui/i/icons/delete.png) no-repeat;
+	background:transparent url(../i/icons/delete.png) no-repeat;
 	color:#999;
 	font-size:12px;
 }
@@ -1617,7 +1617,7 @@ button.link span {
 	margin:0;
 	padding:0 0 0 10px;
 	border:0;
-	background:url(/gui/i/accordion-arrow.png) no-repeat 2px 50%;
+	background:url(../i/accordion-arrow.png) no-repeat 2px 50%;
 	color:#eb1503;
 	font-weight:400;
 	font-size:16px;
@@ -1626,7 +1626,7 @@ button.link span {
 	cursor:pointer;
 }
 .js .m-accordion .m-c button.open {
-	background:url(/gui/i/accordion-arrow-open.png) 0 50% no-repeat;
+	background:url(../i/accordion-arrow-open.png) 0 50% no-repeat;
 }
 
 
@@ -1666,11 +1666,11 @@ button.link span {
 	height:24px;
 	height:24px;
 	border:0;
-	background:url(/gui/i/collapse-nav-button.png) no-repeat 2px 50%;
+	background:url(../i/collapse-nav-button.png) no-repeat 2px 50%;
 	cursor:pointer;
 }
 .js .m-accordion.sitemap button.expanded {
-	background:url(/gui/i/collapse-nav-button-expanded.png) no-repeat 2px 50%;
+	background:url(../i/collapse-nav-button-expanded.png) no-repeat 2px 50%;
 }
 .js .m-accordion.sitemap .m-c li li button {
 	margin-left:15px;
@@ -1748,7 +1748,7 @@ button.link span {
 -------------------------------------------------------------- */
 .m-listing li a {
 	padding-left:15px;
-	background:url(/gui/i/arrow-default.png) 0 50% no-repeat;
+	background:url(../i/arrow-default.png) 0 50% no-repeat;
 	text-decoration:none;
 	font-weight:700;
 }
@@ -1799,13 +1799,13 @@ button.link span {
 	color:#767676;
 }
 .list-item .meta .time {
-	background-image:url(/gui/i/icons/meta-date-list.png);
+	background-image:url(../i/icons/meta-date-list.png);
 }
 .list-item .meta .comments a {
-	background-image:url(/gui/i/icons/meta-comments-list.png);
+	background-image:url(../i/icons/meta-comments-list.png);
 }
 .list-item .meta .likes {
-	background-image:url(/gui/i/icons/meta-like-list.png);
+	background-image:url(../i/icons/meta-like-list.png);
 }
 .list-item .meta .time,
 .list-item .meta a {
@@ -1908,7 +1908,7 @@ button.link span {
 }
 .contact-details .phone span {
 	padding:0 0 0 25px;
-	background:url(/gui/i/icon-phone-small.png) 2px 50% no-repeat;
+	background:url(../i/icon-phone-small.png) 2px 50% no-repeat;
 }
 /* Override Lync hijacking */
 .contact-details .phone span.baec5a81-e4d6-4674-97f3-e9220f0136c1 {
@@ -1917,7 +1917,7 @@ button.link span {
 }
 .contact-details .email a {
 	padding:0 0 0 25px;
-	background:url(/gui/i/icon-email-small.png) 0 50% no-repeat;
+	background:url(../i/icon-email-small.png) 0 50% no-repeat;
 }
 .contact-details .kid span {
 	font-weight:700;
@@ -1947,10 +1947,10 @@ button.link span {
 }
 .item-contact button.expand span {
 	padding-left:13px;
-	background:url(/gui/i/expand-triangle-down.png) no-repeat 0 50%;
+	background:url(../i/expand-triangle-down.png) no-repeat 0 50%;
 }
 .item-contact button.expanded span {
-	background-image:url(/gui/i/expand-triangle-up.png);
+	background-image:url(../i/expand-triangle-up.png);
 }
 .item-contact button.expand:hover {
 	background-color:#eee;
@@ -2038,13 +2038,13 @@ h1 + .create-news-btn {
 	top:-5px; /* Position to compensate for hidden overflow on tags in list */
 	margin-left:3px;
 	padding-left:13px;
-	background:url(/gui/i/show-more.png) 0 44% no-repeat;
+	background:url(../i/show-more.png) 0 44% no-repeat;
 	color:#eb1503;
 	vertical-align:bottom;
 	font-size:12px;
 }
 .news-criterias li a.expanded {
-	background-image:url(/gui/i/show-less.png);
+	background-image:url(../i/show-less.png);
 }
 .news-criterias .button-edit {
 	float:right;
@@ -2211,7 +2211,7 @@ h1 + .create-news-btn {
 .meta .calendar {
 	display:inline;
 	padding:4px 13px 4px 19px;
-	background:url(/gui/i/icons/meta-calendar.png) 0 4px no-repeat;
+	background:url(../i/icons/meta-calendar.png) 0 4px no-repeat;
 }
 
 /* News Page
@@ -2273,7 +2273,7 @@ h1 + .create-news-btn {
 	display:block;
 	padding-left:35px;
 	border-color:#dedede #dedede #ccc;
-	background:url(/gui/i/icons/icon-cal.png) no-repeat 5% 50% #e6e6e6;
+	background:url(../i/icons/icon-cal.png) no-repeat 5% 50% #e6e6e6;
 }
 .weekly-summary a:hover {
 	text-decoration:none;
@@ -2454,17 +2454,17 @@ span.tag-coworker {
 .m button.delete {
 	margin:-2px 0 0 0;
 	padding:2px 0 0 20px;
-	background:transparent url(/gui/i/icons/delete.png) no-repeat;
+	background:transparent url(../i/icons/delete.png) no-repeat;
 }
 .m button.show {
 	margin:-2px 0 0 0;
 	padding:2px 0 0 20px;
-	background:transparent url(/gui/i/icons/show.png) 0 5px no-repeat;
+	background:transparent url(../i/icons/show.png) 0 5px no-repeat;
 }
 .m button.hide {
 	margin:-2px 0 0 0;
 	padding:2px 0 0 20px;
-	background:transparent url(/gui/i/icons/hide.png) 0 3px no-repeat;
+	background:transparent url(../i/icons/hide.png) 0 3px no-repeat;
 }
 .tools label {
 	display:inline;
@@ -2696,7 +2696,7 @@ span.tag-coworker {
 	margin-right:8px;
 	width:21px;
 	height:21px;
-	background:url(/gui/i/checklist-sprite.png) 0 -164px no-repeat;
+	background:url(../i/checklist-sprite.png) 0 -164px no-repeat;
 	text-indent:100%;
 	white-space:nowrap;
 }
@@ -2726,7 +2726,7 @@ span.tag-coworker {
 	overflow:hidden;
 	width:43px;
 	height:43px;
-	background:url(/gui/i/checklist-sprite.png) 0 -235px no-repeat;
+	background:url(../i/checklist-sprite.png) 0 -235px no-repeat;
 	text-indent:100%;
 	white-space:nowrap;
 }
@@ -2919,7 +2919,7 @@ span.tag-coworker {
 	width:102px;
 	height:30px;
 	border-radius:4px;
-	background:url(/gui/i/logo-inverted.png) 50% no-repeat;
+	background:url(../i/logo-inverted.png) 50% no-repeat;
 }
 .logo img {
 	position:absolute;
@@ -2945,7 +2945,7 @@ span.tag-coworker {
 .nav-user li a {
 	display:block;
 	padding:1px 0 0 16px;
-	background:url(/gui/i/arrow-default.png) 2px 50% no-repeat;
+	background:url(../i/arrow-default.png) 2px 50% no-repeat;
 	color:#393939;
 	font-size:13px;
 }
@@ -3041,7 +3041,7 @@ span.tag-coworker {
 .js .user-details button {
 	padding-right:31px;
 	min-height:29px;
-	background:#de1709 url(/gui/i/icon-header-user-arrow.png) no-repeat;
+	background:#de1709 url(../i/icon-header-user-arrow.png) no-repeat;
 	background-position:94% 13px;
 	background-position:-webkit-calc(100% - 12px) -webkit-calc(50% + 1px);
 	background-position:calc(100% - 12px) calc(50% + 1px);
@@ -3454,7 +3454,7 @@ span.tag-coworker {
 	padding:3px 8px 3px 22px;
 	border:1px solid #dad7d7;
 	border-radius:15px;
-	background:url(/gui/i/icons/meta-date.png) 2px 50% no-repeat;
+	background:url(../i/icons/meta-date.png) 2px 50% no-repeat;
 	color:#5d5d5d;
 	font-weight:700;
 	font-size:11px;
@@ -3500,17 +3500,17 @@ span.tag-coworker {
 }
 .m-status-feed .meta .comments a {
 	padding:4px 7px 4px 16px;
-	background:url(/gui/i/icons/meta-comments-feed.png) 0 5px no-repeat;
+	background:url(../i/icons/meta-comments-feed.png) 0 5px no-repeat;
 }
 .m-status-feed .meta .likes {
 	padding:4px 0 4px 13px;
-	background:url(/gui/i/icons/meta-like-feed.png) 0 2px no-repeat;
+	background:url(../i/icons/meta-like-feed.png) 0 2px no-repeat;
 }
 
 .m-status-feed .meta .likes-link a {
 	display:inline-block;
 	padding:4px 0 4px 13px;
-	background:url(/gui/i/icons/meta-like-feed.png) 0 5px no-repeat;
+	background:url(../i/icons/meta-like-feed.png) 0 5px no-repeat;
 }
 
 
@@ -3522,7 +3522,7 @@ span.tag-coworker {
 .m-filter input[type="search"] {
 	padding-left:28px;
 	border:1px solid #adadad;
-	background:#fff url(/gui/i/icons/icon-filter.png) 7px 8px no-repeat;
+	background:#fff url(../i/icons/icon-filter.png) 7px 8px no-repeat;
 	box-shadow:inset 0 1px 0 1px #e5e5e5;
 }
 .m-filter li > div {
@@ -3553,10 +3553,10 @@ span.tag-coworker {
 	font-size:11px;
 }
 .m-filter .m-c .online {
-	background-image:url(/gui/i/status-online.png);
+	background-image:url(../i/status-online.png);
 }
 .m-filter .m-c .away {
-	background-image:url(/gui/i/status-away.png);
+	background-image:url(../i/status-away.png);
 }
 .m-filter .scrollable > ul > li {
 	margin-right:0;
@@ -3640,7 +3640,7 @@ span.tag-coworker {
 	height:24px;
 	outline:0;
 	border:0;
-	background:url(/gui/i/icon-header-megamenu.png) 50% no-repeat;
+	background:url(../i/icon-header-megamenu.png) 50% no-repeat;
 	text-indent:200%;
 	white-space:nowrap;
 	-webkit-transition:background .15s linear;
@@ -3650,10 +3650,10 @@ span.tag-coworker {
 	padding:0;
 }
 .nav-main li.active .mega-button {
-	background-image:url(/gui/i/icon-header-megamenu-active.png);
+	background-image:url(../i/icon-header-megamenu-active.png);
 }
 .nav-main li .mega-button {
-	background-image:url(/gui/i/icon-header-megamenu.png);
+	background-image:url(../i/icon-header-megamenu.png);
 }
 .nav-main li.active {
 	position:relative;
@@ -3785,7 +3785,7 @@ span.tag-coworker {
 .sub-information dd {
 	margin:0;
 	padding:0 0 0 18px;
-	background:url(/gui/i/sub-information-arrow.png) 0 50% no-repeat;
+	background:url(../i/sub-information-arrow.png) 0 50% no-repeat;
 	font-size:14px;
 }
 .sub-information dd span {
@@ -3825,12 +3825,12 @@ span.tag-coworker {
 }
 .nav-supp a {
 	padding-left:15px;
-	background:url(/gui/i/arrow-default.png) 0 50% no-repeat;
+	background:url(../i/arrow-default.png) 0 50% no-repeat;
 	text-decoration:none;
 }
 .nav-supp .top a {
 	padding-left:15px;
-	background:url(/gui/i/arrow-top.png) 0 50% no-repeat;
+	background:url(../i/arrow-top.png) 0 50% no-repeat;
 }
 
 /* TAB NAVIGATION
@@ -3936,7 +3936,7 @@ span.tag-coworker {
 	width:41px;
 	height:32px;
 	border:0;
-	background:transparent url(/gui/i/icon-header-search.png);
+	background:transparent url(../i/icon-header-search.png);
 	text-indent:200%;
 	white-space:nowrap;
 }
@@ -4140,12 +4140,12 @@ span.tag-coworker {
 }
 .breadcrumbs span {
 	width:20px;
-	background-image:url(/gui/i/breadcrumbs-divider.png);
+	background-image:url(../i/breadcrumbs-divider.png);
 }
 .breadcrumbs .home {
 	width:16px;
 	height:22px;
-	background-image:url(/gui/i/icons/breadcrumbs-home.png);
+	background-image:url(../i/icons/breadcrumbs-home.png);
 }
 
 
@@ -4185,7 +4185,7 @@ span.tag-coworker {
 .nav-sub li a {
 	display:block;
 	padding:10px 0 9px 16px;
-	background:url(/gui/i/arrow-default.png) 2px 50% no-repeat;
+	background:url(../i/arrow-default.png) 2px 50% no-repeat;
 	color:#393939;
 	text-decoration:none;
 	font-size:13px;
@@ -4250,7 +4250,7 @@ a.level-up {
 	display:block;
 	margin-bottom:0;
 	padding:8px 0 8px 25px;
-	background:#600 url(/gui/i/arrow-top-inverted.png) 10px 50% no-repeat;
+	background:#600 url(../i/arrow-top-inverted.png) 10px 50% no-repeat;
 	color:#fff;
 	text-decoration:none;
 }
@@ -4279,7 +4279,7 @@ a.level-up:active {
 	width:26px;
 	height:24px;
 	border:0;
-	background:url(/gui/i/collapse-nav-button.png);
+	background:url(../i/collapse-nav-button.png);
 	text-indent:200%;
 	white-space:nowrap;
 }
@@ -4289,7 +4289,7 @@ a.level-up:active {
 	white-space:nowrap;
 }
 .collapsable-nav-button.expanded {
-	background:url(/gui/i/collapse-nav-button-expanded.png);
+	background:url(../i/collapse-nav-button-expanded.png);
 }
 
 /* Microformats
@@ -4348,15 +4348,15 @@ a.level-up:active {
 .meta .time {
 	display:inline;
 	padding:4px 13px 4px 19px;
-	background:url(/gui/i/icons/meta-date.png) 0 50% no-repeat;
+	background:url(../i/icons/meta-date.png) 0 50% no-repeat;
 }
 .meta .comments a {
 	padding:4px 10px 4px 22px;
-	background:url(/gui/i/icons/meta-comments.png) 0 50% no-repeat;
+	background:url(../i/icons/meta-comments.png) 0 50% no-repeat;
 }
 .meta .likes {
 	padding:4px 0 4px 19px;
-	background:url(/gui/i/icons/meta-like.png) 0 40% no-repeat;
+	background:url(../i/icons/meta-like.png) 0 40% no-repeat;
 }
 .js .meta .likes {
 	position:relative;
@@ -4470,7 +4470,7 @@ a.level-up:active {
 	margin-top:1px;
 	padding:11px 15px 10px 50px;
 	border:1px solid #dadbde;
-	background:url(/gui/i/icons/outdated.png) 13px 50% no-repeat;
+	background:url(../i/icons/outdated.png) 13px 50% no-repeat;
 	color:#eb1503;
 	font-size:13px;
 	line-height:16px;
@@ -4541,7 +4541,7 @@ a.level-up:active {
 }
 #share button {
 	padding-left:35px;
-	background-image:url(/gui/i/icon-share.png);
+	background-image:url(../i/icon-share.png);
 }
 #share button.active-top:before {
 	position:absolute;
@@ -4556,15 +4556,15 @@ a.level-up:active {
 }
 #print button {
 	padding-left:35px;
-	background-image:url(/gui/i/icon-print.png);
+	background-image:url(../i/icon-print.png);
 }
 #subscribe button {
 	padding-left:35px;
-	background-image:url(/gui/i/icon-subscribe.png);
+	background-image:url(../i/icon-subscribe.png);
 }
 #bookmark button {
 	padding-left:35px;
-	background-image:url(/gui/i/icon-bookmark.png);
+	background-image:url(../i/icon-bookmark.png);
 }
 .share-box {
 	position:absolute;
@@ -4666,7 +4666,7 @@ a.level-up:active {
 	margin:2px 5px 0 5px;
 	width:14px;
 	height:14px;
-	background:url(/gui/i/tagsinput-close.png) no-repeat;
+	background:url(../i/tagsinput-close.png) no-repeat;
 	color:#fff;
 	text-decoration:none;
 	text-indent:200%;
@@ -4717,7 +4717,7 @@ div.tagsinput span.tag a {
 	margin:2px 0 0 5px;
 	width:14px;
 	height:14px;
-	background:url(/gui/i/tagsinput-close.png) no-repeat;
+	background:url(../i/tagsinput-close.png) no-repeat;
 	color:#fff;
 	text-decoration:none;
 	text-indent:200%;
@@ -4770,7 +4770,7 @@ div.tagsinput div {
 	border:0;
 	border-bottom:1px solid #c91508;
 	border-radius:4px;
-	background:#fc1c0a url(/gui/i/icons/like-button.png) 13px 50% no-repeat;
+	background:#fc1c0a url(../i/icons/like-button.png) 13px 50% no-repeat;
 	color:#fff;
 	text-transform:uppercase;
 	font-size:14px;
@@ -4786,7 +4786,7 @@ div.tagsinput div {
 	border:0;
 	border-bottom:1px solid #dbdbdb;
 	background-color:#f5f5f5;
-	background-image:url(/gui/i/icons/like-button-selected.png);
+	background-image:url(../i/icons/like-button-selected.png);
 	color:#737373;
 }
 
@@ -4828,7 +4828,7 @@ div.tagsinput div {
 
 .like-comment .nr-of-likes {
 	padding:2px 0 0 20px;
-	background:url(/gui/i/icons/meta-like.png) 0 2px no-repeat;
+	background:url(../i/icons/meta-like.png) 0 2px no-repeat;
 	color:#737373;
 	font-size:12px;
 	display:inline-block;
@@ -4909,7 +4909,7 @@ video {
 	margin-left:-30px;
 	width:60px;
 	height:60px;
-	background:url(/gui/i/play-icon.png) no-repeat;
+	background:url(../i/play-icon.png) no-repeat;
 	content:"";
 }
 
@@ -5078,18 +5078,18 @@ video {
 /* Generic files */
 li a.file {
 	padding:5px 0 5px 20px;
-	background-image:url(/gui/i/file-types/generic.png);
+	background-image:url(../i/file-types/generic.png);
 	background-position:0 50%;
 	background-repeat:no-repeat;
 }
 .m-search-filter .file a,
 .m-search-filter .file strong,
 .m-search-filter .file span {
-	background-image:url(/gui/i/file-types/generic.png);
+	background-image:url(../i/file-types/generic.png);
 }
 /* Folders */
 li a.folder {
-	background-image:url(/gui/i/file-types/folder.png);
+	background-image:url(../i/file-types/folder.png);
 }
 /* Images */
 li a.bmp,
@@ -5101,12 +5101,12 @@ li a.psd,
 .m-search-filter .image a,
 .m-search-filter .image strong,
 .m-search-filter .image span {
-	background-image:url(/gui/i/file-types/image.png);
+	background-image:url(../i/file-types/image.png);
 }
 /* Vector graphics */
 li a.ai,
 li a.eps {
-	background-image:url(/gui/i/file-types/vector.png);
+	background-image:url(../i/file-types/vector.png);
 }
 /* Text */
 li a.asp,
@@ -5119,7 +5119,7 @@ li a.html,
 li a.js,
 li a.txt,
 li a.xml {
-	background-image:url(/gui/i/file-types/text.png);
+	background-image:url(../i/file-types/text.png);
 }
 /* Word */
 li a.doc,
@@ -5127,11 +5127,11 @@ li a.docx,
 .m-search-filter .doc a,
 .m-search-filter .doc strong,
 .m-search-filter .doc span {
-	background-image:url(/gui/i/file-types/word.png);
+	background-image:url(../i/file-types/word.png);
 }
 /* Rich text */
 li a.rtf {
-	background-image:url(/gui/i/file-types/rich-text.png);
+	background-image:url(../i/file-types/rich-text.png);
 }
 /* Powerpoint */
 li a.ppt,
@@ -5139,12 +5139,12 @@ li a.pptx,
 .m-search-filter .ppt a,
 .m-search-filter .ppt strong,
 .m-search-filter .ppt span {
-	background-image:url(/gui/i/file-types/ppt.png);
+	background-image:url(../i/file-types/ppt.png);
 }
 /* Flash */
 li a.fla,
 li a.swf {
-	background-image:url(/gui/i/file-types/flash.png);
+	background-image:url(../i/file-types/flash.png);
 }
 /* Video */
 li a.mov,
@@ -5152,18 +5152,18 @@ li a.wmv,
 .m-search-filter .mov a,
 .m-search-filter .mov strong,
 .m-search-filter .mov span {
-	background-image:url(/gui/i/file-types/video.png);
+	background-image:url(../i/file-types/video.png);
 }
 /* PDF */
 li a.pdf,
 .m-search-filter .pdf a,
 .m-search-filter .pdf strong,
 .m-search-filter .pdf span {
-	background-image:url(/gui/i/file-types/pdf.png);
+	background-image:url(../i/file-types/pdf.png);
 }
 /* Mail */
 li a.mail {
-	background-image:url(/gui/i/file-types/mail.png);
+	background-image:url(../i/file-types/mail.png);
 }
 /* Spreadsheet */
 li a.xls,
@@ -5171,11 +5171,11 @@ li a.xlsx,
 .m-search-filter .xls a,
 .m-search-filter .xls strong,
 .m-search-filter .xls span {
-	background-image:url(/gui/i/file-types/excel.png);
+	background-image:url(../i/file-types/excel.png);
 }
 /* Compressed */
 li a.zip {
-	background-image:url(/gui/i/file-types/zip.png);
+	background-image:url(../i/file-types/zip.png);
 }
 /* Powerpoint */
 li a.download,
@@ -5183,7 +5183,7 @@ li a.download,
 .m-search-filter .download a,
 .m-search-filter .download strong,
 .m-search-filter .download span {
-	background-image:url(/gui/i/file-types/download.png);
+	background-image:url(../i/file-types/download.png);
 }
 /* File meta */
 li a.file span {
@@ -5243,26 +5243,26 @@ li a.file span {
 	position:relative;
 	margin-bottom:8px;
 	padding-left:25px;
-	background:url(/gui/i/icons/lync-no-status.png) no-repeat 1.5% 50%;
+	background:url(../i/icons/lync-no-status.png) no-repeat 1.5% 50%;
 	white-space:nowrap;
 	font-size:13px;
 }
 .no-js .lync-user-status { display:none;}
 .lync-status-available {
-	background-image:url(/gui/i/icons/lync-online.png);
+	background-image:url(../i/icons/lync-online.png);
 }
 .lync-status-offline {
-	background-image:url(/gui/i/icons/lync-offline.png);
+	background-image:url(../i/icons/lync-offline.png);
 }
 .lync-status-brb,
 .lync-status-away,
 .lync-status-offwork {
-	background-image:url(/gui/i/icons/lync-away.png);
+	background-image:url(../i/icons/lync-away.png);
 }
 .lync-status-busy,
 .lync-status-inacall,
 .lync-status-donotdisturb {
-	background-image:url(/gui/i/icons/lync-busy.png);
+	background-image:url(../i/icons/lync-busy.png);
 }
 
 /* End Media */
@@ -5568,7 +5568,7 @@ li a.file span {
 		min-width:100%;
 		border:0;
 		border-radius:0;
-		background:#8a0b07 url(/gui/i/icon-compact-menu.png) no-repeat;
+		background:#8a0b07 url(../i/icon-compact-menu.png) no-repeat;
 		background-position:98% 50%;
 		background-position:-webkit-calc(100% - 8px) 50%;
 		background-position:calc(100% - 8px) 50%;
@@ -5580,7 +5580,7 @@ li a.file span {
 		border:0;
 	}
 	.compact-menu.expanded {
-		background-image:url(/gui/i/icon-compact-menu-expanded.png);
+		background-image:url(../i/icon-compact-menu-expanded.png);
 	}
 
 	/* Sub Menu
@@ -5626,10 +5626,10 @@ li a.file span {
 	.compact-subnav {
 		margin:0 0 24px;
 		min-width:100%;
-		background-image:url(/gui/i/icon-compact-menu.png);
+		background-image:url(../i/icon-compact-menu.png);
 	}
 	.compact-subnav.expanded {
-		background-image:url(/gui/i/icon-compact-menu-expanded.png);
+		background-image:url(../i/icon-compact-menu-expanded.png);
 	}
 	.nav-sub nav > ul {
 		margin-top:-25px;
@@ -5711,44 +5711,44 @@ li a.file span {
 /* BEGIN @media screen, device-pixel-ratio */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
 	.logo a {
-		background-image:url(/gui/i/logo-inverted@2x.png);
+		background-image:url(../i/logo-inverted@2x.png);
 		background-size:102px 30px;
 	}
 	#search .submit {
-		background-image:url(/gui/i/icon-header-search@2x.png);
+		background-image:url(../i/icon-header-search@2x.png);
 		background-size:41px 32px;
 	}
 	.nav-user:before {
-		background-image:url(/gui/i/dropdown-arrow@2x.png);
+		background-image:url(../i/dropdown-arrow@2x.png);
 		background-size:18px 8px;
 	}
 	.nav-main li .mega-button {
-		background-image:url(/gui/i/icon-header-megamenu@2x.png);
+		background-image:url(../i/icon-header-megamenu@2x.png);
 		background-size:26px 24px;
 	}
 	.nav-main li.active .mega-button {
-		background-image:url(/gui/i/icon-header-megamenu-active@2x.png);
+		background-image:url(../i/icon-header-megamenu-active@2x.png);
 	}
 	.compact-menu,
 	.compact-subnav {
-		background-image:url(/gui/i/icon-compact-menu@2x.png);
+		background-image:url(../i/icon-compact-menu@2x.png);
 		background-size:22px 22px;
 	}
 	.compact-menu.expanded,
 	.compact-subnav.expanded {
 		background-size:22px 22px;
-		background-image:url(/gui/i/icon-compact-menu-expanded@2x.png);
+		background-image:url(../i/icon-compact-menu-expanded@2x.png);
 	}
 	.sub-information dd {
-		background-image:url(/gui/i/sub-information-arrow@2x.png);
+		background-image:url(../i/sub-information-arrow@2x.png);
 		background-size:10px 9px;
 	}
 	#footer {
-		background-image:url(/gui/i/footer-illustration@2x.png);
+		background-image:url(../i/footer-illustration@2x.png);
 		background-size:700px 123px;
 	}
 	blockquote {
-		background-image:url(/gui/i/icon-blockquote@2x.png);
+		background-image:url(../i/icon-blockquote@2x.png);
 		background-size:28px 23px;
 	}
 	.read-more a,
@@ -5759,7 +5759,7 @@ li a.file span {
 	.nav-user li a,
 	.paging a.next-page span,
 	.paging a.next-week {
-		background-image:url(/gui/i/arrow-default@2x.png);
+		background-image:url(../i/arrow-default@2x.png);
 		background-size:10px 9px;
 	}
 	.m-coworkers .m-c a {
@@ -5767,16 +5767,16 @@ li a.file span {
 	}
 	.paging a.prev-page span,
 	.paging a.prev-week {
-		background-image:url(/gui/i/arrow-default-reverted@2x.png);
+		background-image:url(../i/arrow-default-reverted@2x.png);
 		background-size:10px 9px;
 	}
 	.m-social-feed .m-c a {background:transparent;}
 	.m-social-feed .m-c li.twitter {
-		background-image:url(/gui/i/twitter@2.png);
+		background-image:url(../i/twitter@2.png);
 		background-size:24px 24px;
 	}
 	.m-social-feed .m-c li.facebook {
-		background-image:url(/gui/i/facebook@2.png);
+		background-image:url(../i/facebook@2.png);
 		background-size:24px 24px;
 	}
 	.paging a.prev-page:hover span,
@@ -5785,18 +5785,18 @@ li a.file span {
 	.paging a.next-page:focus span,
 	.paging a.next-week:hover,
 	.paging a.next-week:focus {
-		background-image:url(/gui/i/arrow-default-hover@2x.png);
+		background-image:url(../i/arrow-default-hover@2x.png);
 		background-size:10px 9px;
 	}
 	.paging a.prev-page:hover span,
 	.paging a.prev-page:focus span,
 	.paging a.prev-week:hover,
 	.paging a.prev-week:focus {
-		background-image:url(/gui/i/arrow-default-reverted-hover@2x.png);
+		background-image:url(../i/arrow-default-reverted-hover@2x.png);
 		background-size:10px 9px;
 	}
 	a.level-up {
-		background-image:url(/gui/i/arrow-top-inverted@2x.png);
+		background-image:url(../i/arrow-top-inverted@2x.png);
 		background-size:9px 10px;
 	}
 	.m-2 .read-more a,
@@ -5806,219 +5806,219 @@ li a.file span {
 	.m-6 .read-more a,
 	.m-7 .read-more a,
 	.message a.read-more {
-		background-image:url(/gui/i/arrow-inverted@2x.png);
+		background-image:url(../i/arrow-inverted@2x.png);
 		background-size:10px 9px;
 	}
 	.m-0 a.read-more {
-		background-image:url(/gui/i/arrow-inverted-dark@2x.png);
+		background-image:url(../i/arrow-inverted-dark@2x.png);
 		background-size:10px 9px;
 	}
 	.nav-supp .top a {
-		background-image:url(/gui/i/arrow-top@2x.png);
+		background-image:url(../i/arrow-top@2x.png);
 		background-size:9px 10px;
 	}
 	.breadcrumbs span {
-		background-image:url(/gui/i/breadcrumbs-divider@2x.png);
+		background-image:url(../i/breadcrumbs-divider@2x.png);
 		background-size:4px 8px;
 	}
 	.breadcrumbs .home {
-		background-image:url(/gui/i/icons/breadcrumbs-home@2x.png);
+		background-image:url(../i/icons/breadcrumbs-home@2x.png);
 		background-size:16px 14px;
 	}
 	.meta .time,
 	.m-status-feed .time span {
-		background-image:url(/gui/i/icons/meta-date@2x.png);
+		background-image:url(../i/icons/meta-date@2x.png);
 		background-size:16px 16px;
 	}
 	.list-item .meta .time {
-		background-image:url(/gui/i/icons/meta-date-list@2x.png);
+		background-image:url(../i/icons/meta-date-list@2x.png);
 		background-size:16px 16px;
 	}
 	.meta .calendar {
-		background-image:url(/gui/i/icons/meta-calendar@2x.png);
+		background-image:url(../i/icons/meta-calendar@2x.png);
 		background-size:16px 16px;
 	}
 	.meta .comments a {
-		background-image:url(/gui/i/icons/meta-comments@2x.png);
+		background-image:url(../i/icons/meta-comments@2x.png);
 		background-size:18px 16px;
 	}
 	.meta .likes {
-		background-image:url(/gui/i/icons/meta-like@2x.png);
+		background-image:url(../i/icons/meta-like@2x.png);
 		background-size:14px 16px;
 	}
 	.list-item .meta .comments a,
 	.m-comments .counter {
-		background-image:url(/gui/i/icons/meta-comments-list@2x.png);
+		background-image:url(../i/icons/meta-comments-list@2x.png);
 		background-size:18px 16px;
 	}
 	.list-item .meta .likes,
 	.m-likes .counter {
-		background-image:url(/gui/i/icons/meta-like-list@2x.png);
+		background-image:url(../i/icons/meta-like-list@2x.png);
 		background-size:14px 16px;
 	}
 	.m-share .counter {
-		background-image:url(/gui/i/icons/meta-share-list@2x.png);
+		background-image:url(../i/icons/meta-share-list@2x.png);
 		background-size:20px 16px;
 	}
 	.close-button {
-		background-image:url(/gui/i/close-button@2x.png);
+		background-image:url(../i/close-button@2x.png);
 		background-size:26px 24px;
 	}
 	.collapsable-button {
-		background-image:url(/gui/i/collapse-button@2x.png);
+		background-image:url(../i/collapse-button@2x.png);
 		background-size:26px 24px;
 	}
 	.collapsable-button.open {
-		background-image:url(/gui/i/collapse-button-open@2x.png);
+		background-image:url(../i/collapse-button-open@2x.png);
 		background-size:26px 24px;
 	}
 	.collapsable-nav-button,
 	.js .m-accordion.sitemap .m-c button {
-		background-image:url(/gui/i/collapse-nav-button@2x.png);
+		background-image:url(../i/collapse-nav-button@2x.png);
 		background-size:26px 24px;
 	}
 	.collapsable-nav-button.expanded,
 	.js .m-accordion.sitemap .m-c button.expanded {
 		background-size:26px 24px;
-		background-image:url(/gui/i/collapse-nav-button-expanded@2x.png);
+		background-image:url(../i/collapse-nav-button-expanded@2x.png);
 	}
 	.outdated-message {
-		background-image:url(/gui/i/icons/outdated@2x.png);
+		background-image:url(../i/icons/outdated@2x.png);
 		background-size:24px 24px;
 	}
 	#share button {
-		background-image:url(/gui/i/icon-share@2x.png);
+		background-image:url(../i/icon-share@2x.png);
 		background-size:20px 16px;
 	}
 	#print button {
-		background-image:url(/gui/i/icon-print@2x.png);
+		background-image:url(../i/icon-print@2x.png);
 		background-size:20px 20px;
 	}
 	#subscribe button {
-		background-image:url(/gui/i/icon-subscribe@2x.png);
+		background-image:url(../i/icon-subscribe@2x.png);
 		background-size:20px 20px;
 	}
 	#bookmark button {
-		background-image:url(/gui/i/icon-bookmark@2x.png);
+		background-image:url(../i/icon-bookmark@2x.png);
 		background-size:16px 20px;
 	}
 	.js .m-accordion .m-c button {
-		background-image:url(/gui/i/accordion-arrow@2x.png);
+		background-image:url(../i/accordion-arrow@2x.png);
 		background-size:4px 8px;
 	}
 	.js .m-accordion .m-c button.open {
-		background-image:url(/gui/i/accordion-arrow-open@2x.png);
+		background-image:url(../i/accordion-arrow-open@2x.png);
 		background-size:8px 4px;
 	}
 	.like-button .like {
-		background-image:url(/gui/i/icons/like-button.png);
+		background-image:url(../i/icons/like-button.png);
 		background-size:14px 16px;
 	}
 	.contact-details .phone span {
-		background-image:url(/gui/i/icon-phone-small@2x.png);
+		background-image:url(../i/icon-phone-small@2x.png);
 		background-size:16px 16px;
 	}
 	.contact-details .email a {
-		background-image:url(/gui/i/icon-email-small@2x.png);
+		background-image:url(../i/icon-email-small@2x.png);
 		background-size:19px 12px;
 	}
 	.m button.delete {
-		background-image:url(/gui/i/icons/delete@2x.png);
+		background-image:url(../i/icons/delete@2x.png);
 		background-size:14px 16px;
 	}
 	.m button.show {
-		background-image:url(/gui/i/icons/show@2x.png);
+		background-image:url(../i/icons/show@2x.png);
 		background-size:16px 11px;
 	}
 	.m button.hide {
-		background-image:url(/gui/i/icons/hide@2x.png);
+		background-image:url(../i/icons/hide@2x.png);
 		background-size:16px 15px;
 	}
 	.m-status-feed .meta .comments a {
-		background-image:url(/gui/i/icons/meta-comments-feed@2x.png);
+		background-image:url(../i/icons/meta-comments-feed@2x.png);
 		background-size:12px 11px;
 	}
 	.m-status-feed .meta .likes {
-		background-image:url(/gui/i/icons/meta-like-feed@2x.png);
+		background-image:url(../i/icons/meta-like-feed@2x.png);
 		background-size:10px 12px;
 	}
 	.m-filter input[type="search"] {
-		background-image:url(/gui/i/icons/icon-filter@2x.png);
+		background-image:url(../i/icons/icon-filter@2x.png);
 		background-size:16px 16px;
 	}
 	.m-filter p.online {
-		background-image:url(/gui/i/status-online@2x.png);
+		background-image:url(../i/status-online@2x.png);
 		background-size:8px 8px;
 	}
 	.m-filter p.away {
-		background-image:url(/gui/i/status-away@2x.png);
+		background-image:url(../i/status-away@2x.png);
 		background-size:8px 8px;
 	}
 	.system-info {
-		background-image:url(/gui/i/icons/system-info-warning@2x.png);
+		background-image:url(../i/icons/system-info-warning@2x.png);
 		background-size:24px 24px;
 	}
 	.confirmation-message {
-		background-image:url(/gui/i/icons/system-info-confirmation@2x.png);
+		background-image:url(../i/icons/system-info-confirmation@2x.png);
 		background-size:24px 24px;
 	}
 	.confirmation-error {
-		background-image:url(/gui/i/icons/system-info-error@2x.png);
+		background-image:url(../i/icons/system-info-error@2x.png);
 		background-size:25px 24px;
 	}
 	.notification-message {
-		background-image:url(/gui/i/icons/system-info-notification@2x.png);
+		background-image:url(../i/icons/system-info-notification@2x.png);
 		background-size:24px 24px;
 	}
 	.img input[type="checkbox"] + label:before,
 	.img input[type="radio"] + label:before,
 	.m-gamification .checked,
 	.m-gamification .unchecked {
-		background-image:url(/gui/i/radio-checkbox@2x.png);
+		background-image:url(../i/radio-checkbox@2x.png);
 		background-size:21px 372px;
 	}
 	.compact-subnav {
-		background-image:url(/gui/i/icon-compact-subnav@2x.png);
+		background-image:url(../i/icon-compact-subnav@2x.png);
 		background-size:22px 22px;
 	}
 	.off-canvas .compact-subnav {
-		background-image:url(/gui/i/icon-compact-subnav-open@2x.png);
+		background-image:url(../i/icon-compact-subnav-open@2x.png);
 		background-size:22px 22px;
 	}
 	.layout-2 .compact-subnav {
-		background-image:url(/gui/i/icon-compact-subnav-open@2x.png);
+		background-image:url(../i/icon-compact-subnav-open@2x.png);
 		background-size:22px 22px;
 	}
 	.off-canvas .layout-2 .compact-subnav {
-		background-image:url(/gui/i/icon-compact-subnav@2x.png);
+		background-image:url(../i/icon-compact-subnav@2x.png);
 		background-size:22px 22px;
 	}
 	div.tagsinput span.tag a {
-		background-image:url(/gui/i/tagsinput-close@2x.png);
+		background-image:url(../i/tagsinput-close@2x.png);
 		background-size:14px 14px;
 	}
 	.video-gallery .row .poster:after,
 	.mejs-overlay-button {
-		background-image:url(/gui/i/play-icon@2x.png);
+		background-image:url(../i/play-icon@2x.png);
 		background-size:60px 60px;
 	}
 	.lync-user-status {
-		background-image:url(/gui/i/icons/lync-no-status@2x.png);
+		background-image:url(../i/icons/lync-no-status@2x.png);
 		background-size:10px 10px;
 	}
 	.lync-status-available {
-		background-image:url(/gui/i/icons/lync-online@2x.png);
+		background-image:url(../i/icons/lync-online@2x.png);
 	}
 	.lync-status-offline {
-		background-image:url(/gui/i/icons/lync-offline@2x.png);
+		background-image:url(../i/icons/lync-offline@2x.png);
 	}
 	.lync-status-away {
-		background-image:url(/gui/i/icons/lync-away@2x.png);
+		background-image:url(../i/icons/lync-away@2x.png);
 	}
 	.lync-status-busy,
 	.lync-status-inacall,
 	.lync-status-donotdisturb {
-		background-image:url(/gui/i/icons/lync-busy@2x.png);
+		background-image:url(../i/icons/lync-busy@2x.png);
 	}
 
 
