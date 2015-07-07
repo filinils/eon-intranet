@@ -890,12 +890,14 @@ $(window).load(function() {
         e.preventDefault(); 
         $("#" + $(this).data("field"))
             .parents("li")
-            .toggle(300)
+            .toggle(300, function(){
+                $(".user-social input:not(:visible)").each(function(){
+                    $(this).val(null);
+                });            
+            })
             .toggleClass("expanded"); 
         $(this).toggleClass("expanded");
-        $(".user-social input:not(:visible)").each(function(){
-            $(this).val(null);
-        });
+
     });
     $(".user-social input").each(function(){
         if($(this).val().length) {

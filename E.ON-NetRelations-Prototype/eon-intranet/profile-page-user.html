@@ -63,14 +63,14 @@
 								<div class="bar" style="width:80%"></div>
 							</div>
 							<p class="amount"><strong>80%</strong> av din profil är färdig.</p>
-							<ul>
-								<li><span class="checked">Färdig </span>Profilbild</li>
-								<li><span class="checked">Färdig </span>Titel</li>
-								<li><span class="checked">Färdig </span>Besök mig i rum</li>
-								<li><span class="checked">Färdig </span>Kontakta mig angående</li>
-								<li><span class="checked">Färdig </span>Språk</li>
-								<li><span class="unchecked">Ej påbörjad </span>Intressen</li>
-								<li><span class="unchecked">Ej påbörjad </span>Om mig</li>
+							<ul class="m-gamification progress-steps">
+                                <li><span class="checked">Färdig </span><h2>Profilbild</h2></li>
+								<li><span class="checked">Färdig </span><h2>Titel</h2></li>
+								<li><span class="checked">Färdig </span><h2>Besök mig i rum</h2></li>
+								<li><span class="checked">Färdig </span><h2>Mina kompetensområden</h2></li>
+								<li><span class="checked">Färdig </span><h2>Språk</h2></li>
+								<li><span class="unchecked">Ej påbörjad </span><h2>Intressen</h2></li>
+								<li><span class="unchecked">Ej påbörjad </span><h2>Om mig</h2></li>
 							</ul>
 						</div>
 						<div class="m-user-details">
@@ -78,7 +78,7 @@
 							<div class="intro">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, voluptatum, iusto, suscipit, officia excepturi impedit alias maiores voluptas ipsam laboriosam quis aliquam accusantium culpa. Ipsum laudantium odit beatae optio laboriosam.</p>
 							</div>
-							<h3>Kontakta mig angående</h3>
+							<h3>Mina kompetensområden</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, illo, explicabo, ant.</p>
 							<h3>Språk</h3>
 							<div class="tag-list user-tags cf">
@@ -104,15 +104,101 @@
 							<h3>Externa nätverk</h3>
 							<div class="tag-list user-tags cf user-social">
 								<ul>
-									<li><a href="#"><img title="Facebook" src="gui/i/socicon/png/socicon-facebook.png"></a></li>
-									<li><a href="#"><img title="Flickr" src="gui/i/socicon/png/socicon-flickr.png"></a></li>
-									<li><a href="#"><img title="Goodreads" src="gui/i/socicon/png/socicon-goodreads.png"></a></li>
-									<li><a href="#"><img title="Google" src="gui/i/socicon/png/socicon-google.png"></a></li>
-									<li><a href="#"><img title="Instagram" src="gui/i/socicon/png/socicon-instagram.png"></a></li>
-									<li><a href="#"><img title="Linkedin" src="gui/i/socicon/png/socicon-linkedin.png"></a></li>
-									<li><a href="#"><img title="Skype" src="gui/i/socicon/png/socicon-skype.png"></a></li>
-									<li><a href="#"><img title="Tumblr" src="gui/i/socicon/png/socicon-tumblr.png"></a></li>
-									<li><a href="#"><img title="Twitter" src="gui/i/socicon/png/socicon-twitter.png"></a></li>
+<?php
+    $social = [
+"500px",
+"8tracks",
+"airbnb",
+"amazon",
+"android",
+"apple",
+"appnet",
+"bebo",
+"behance",
+"blogger",
+"buffer",
+"chimein",
+"coderwall",
+"dailymotion",
+"delicious",
+"deviantart",
+"digg",
+"disqus",
+"dribbble",
+"drupal",
+"ello",
+"envato",
+"facebook",
+"feedburner",
+"flattr",
+"flickr",
+"forrst",
+"foursquare",
+"friendfeed",
+"github",
+"goodreads",
+"google",
+"grooveshark",
+"houzz",
+"identica",
+"instagram",
+"lanyrd",
+"lastfm",
+"linkedin",
+"mail",
+"meetup",
+"mixloud",
+"myspace",
+"newsvine",
+"odnoklassniki",
+"outlook",
+"patreon",
+"paypal",
+"persona",
+"pinterest",
+"play",
+"playstation",
+"pocket",
+"reddit",
+"rss",
+"skype",
+"slideshare",
+"smugmug",
+"soundcloud",
+"spotify",
+"stackoverflow",
+"steam",
+"stumbleupon",
+"swarm",
+"technorati",
+"tripadvisor",
+"tripit",
+"triplej",
+"tumblr",
+"twitch",
+"twitter",
+"viadeo",
+"vimeo",
+"vine",
+"vkontakte",
+"wikipedia",
+"windows",
+"wordpress",
+"xbox",
+"xing",
+"yahoo",
+"yammer",
+"yelp",
+"youtube",
+"zerply",
+"zynga"
+    ];
+    foreach ($social as $network) { ?>
+                                    <li>
+                                        <a href="#"><img title="<?php echo ucfirst($network); ?>" 
+                                                         src="gui/i/socicon/png/socicon-<?php echo $network; ?>.png"></a>
+                                    </li>
+<?php } ?>
 								</ul>
 							</div>                            
 						</div>

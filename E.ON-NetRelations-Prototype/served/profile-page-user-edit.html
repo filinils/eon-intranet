@@ -78,7 +78,7 @@
 							</div>
 							<div class="row cols-1 cf">
 								<div class="text col full col-1">
-									<h3>Kontakta mig angående</h3>
+									<h3>Mina kompetensområden</h3>
 									<p class="description">Här kan du skriva in vad du arbetar med, vilken specialkompetens du har. Om du arbetar med något särskilt projekt och så vidare.</p>
 									<label for="user-contact-about" class="structural">Kontakta mig angående</label>
 									<textarea name="user-contact-about" id="user-contact-about" cols="30" rows="5" maxlength="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, illo, explicabo, ant.</textarea>
@@ -197,104 +197,102 @@
                                     <legend class="wrap"><span>Lägg till länkar till externa nätverk som du vill ska synas på din profil.</span></legend>
 <?php
     $social = [
-"500px" => null,
-"8tracks" => null,
-"airbnb" => null,
-"amazon" => null,
-"android" => null,
-"apple" => null,
-"appnet" => null,
-"bebo" => null,
-"behance" => null,
-"blogger" => null,
-"buffer" => null,
-"chimein" => null,
-"coderwall" => null,
-"dailymotion" => null,
-"delicious" => null,
-"deviantart" => null,
-"digg" => null,
-"disqus" => null,
-"dribbble" => null,
-"drupal" => null,
-"ello" => null,
-"envato" => null,
-"facebook" => null,
-"feedburner" => null,
-"flattr" => null,
-"flickr" => null,
-"forrst" => null,
-"foursquare" => null,
-"friendfeed" => null,
-"github" => null,
-"goodreads" => null,
-"google" => null,
-"grooveshark" => null,
-"houzz" => null,
-"identica" => null,
-"instagram" => null,
-"lanyrd" => null,
-"lastfm" => null,
-"linkedin" => null,
-"mail" => null,
-"meetup" => null,
-"mixloud" => null,
-"myspace" => null,
-"newsvine" => null,
-"odnoklassniki" => null,
-"outlook" => null,
-"patreon" => null,
-"paypal" => null,
-"persona" => null,
-"pinterest" => null,
-"play" => null,
-"playstation" => null,
-"pocket" => null,
-"reddit" => null,
-"rss" => null,
-"skype" => null,
-"slideshare" => null,
-"smugmug" => null,
-"soundcloud" => null,
-"spotify" => null,
-"stackoverflow" => null,
-"steam" => null,
-"stumbleupon" => null,
-"swarm" => null,
-"technorati" => null,
-"tripadvisor" => null,
-"tripit" => null,
-"triplej" => null,
-"tumblr" => null,
-"twitch" => null,
-"twitter" => null,
-"viadeo" => null,
-"vimeo" => null,
-"vine" => null,
-"vkontakte" => null,
-"wikipedia" => null,
-"windows" => null,
-"wordpress" => null,
-"xbox" => null,
-"xing" => null,
-"yahoo" => null,
-"yammer" => null,
-"yelp" => null,
-"youtube" => null,
-"zerply" => null,
-"zynga" => null
+"500px",
+"8tracks",
+"airbnb",
+"amazon",
+"android",
+"apple",
+"appnet",
+"bebo",
+"behance",
+"blogger",
+"buffer",
+"chimein",
+"coderwall",
+"dailymotion",
+"delicious",
+"deviantart",
+"digg",
+"disqus",
+"dribbble",
+"drupal",
+"ello",
+"envato",
+"facebook",
+"feedburner",
+"flattr",
+"flickr",
+"forrst",
+"foursquare",
+"friendfeed",
+"github",
+"goodreads",
+"google",
+"grooveshark",
+"houzz",
+"identica",
+"instagram",
+"lanyrd",
+"lastfm",
+"linkedin",
+"mail",
+"meetup",
+"mixloud",
+"myspace",
+"newsvine",
+"odnoklassniki",
+"outlook",
+"patreon",
+"paypal",
+"persona",
+"pinterest",
+"play",
+"playstation",
+"pocket",
+"reddit",
+"rss",
+"skype",
+"slideshare",
+"smugmug",
+"soundcloud",
+"spotify",
+"stackoverflow",
+"steam",
+"stumbleupon",
+"swarm",
+"technorati",
+"tripadvisor",
+"tripit",
+"triplej",
+"tumblr",
+"twitch",
+"twitter",
+"viadeo",
+"vimeo",
+"vine",
+"vkontakte",
+"wikipedia",
+"windows",
+"wordpress",
+"xbox",
+"xing",
+"yahoo",
+"yammer",
+"yelp",
+"youtube",
+"zerply",
+"zynga",
     ];
-    function setSocialData(&$item, $key) { $item = uniqid($key); }
-    array_walk($social, 'setSocialData');
 ?>
                                     
                                     <fieldset>
                                         <div class="social-list cf user-social">
                                             <ul>
-                                                <?php foreach ($social as $network => $id) { ?>
-                                                <li data-field="<?php echo $id; ?>">
-                                                    <a href="#"><img class="small" title="<?php echo ucfirst($network); ?>" 
-                                                             src="gui/i/socicon/png/socicon-<?php echo $network; ?>.png"/></a>
+                                                <?php foreach ($social as $network) { ?>
+                                                <li data-field="<?= $network; ?>-link">
+                                                    <a href="#"><img class="small" title="<?= ucfirst($network); ?>" 
+                                                             src="gui/i/socicon/png/socicon-<?= $network; ?>.png"/></a>
                                                 </li>
                                                 <?php } ?>
                                             </ul>
@@ -302,13 +300,13 @@
                                         
                                         <div class="row cols-1 cf user-social">
                                             <ul class="edit-user-social">
-                                                <?php foreach ($social as $network => $id) { ?>
+                                                <?php foreach ($social as $network) { ?>
                                                 <li>
-                                                    <label for="<?= $id; ?>" class="">
-                                                        <img class="small" title="<?php echo $network; ?>" 
-                                                             src="gui/i/socicon/png/socicon-<?php echo $network; ?>.png"/>
+                                                    <label for="<?= $network; ?>-link" class="<?= $network; ?>">
+                                                        <img class="small" title="<?= $network; ?>" 
+                                                             src="gui/i/socicon/png/socicon-<?= $network; ?>.png"/>
                                                     </label>
-                                                    <input type="text" name="<?php echo $id; ?>" value="" id="<?php echo $id; ?>" />
+                                                    <input type="text" name="<?= $network; ?>-link" value="" id="<?= $network; ?>-link" />
                                                 </li>                                                
                                                 <?php } ?>
                                             </ul>

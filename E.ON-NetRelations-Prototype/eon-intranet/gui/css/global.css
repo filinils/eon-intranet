@@ -2740,6 +2740,9 @@ span.tag-coworker {
 .m-gamification a {
 	text-decoration:underline;
 }
+.m-gamification.progress-steps {
+	border: none;
+}
 
 /* Checklist
 -------------------------------------------------------------- */
@@ -3650,6 +3653,7 @@ span.tag-coworker {
 	text-align:center;
 	text-decoration:none;
 	font:15px/1 "Polo", Arial, sans-serif;
+    font-weight: bold;
 }
 .nav-main li a:hover {
 	text-decoration:underline;
@@ -6017,6 +6021,16 @@ li a.file span {
 		background-image:url(../i/radio-checkbox@2x.png);
 		background-size:21px 372px;
 	}
+	.m-gamification.progress-steps .checked,
+	.m-gamification.progress-steps .unchecked {
+        background-image: url(../i/checklist-sprite.png);
+        background-size: auto;
+        background-color: #fff;
+	}    
+    
+	.m-gamification.progress-steps .unchecked + h2 {
+        opacity: .5;
+	}      
 	.compact-subnav {
 		background-image:url(../i/icon-compact-subnav@2x.png);
 		background-size:22px 22px;

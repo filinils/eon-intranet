@@ -189,8 +189,134 @@
 										</div>
 									</fieldset>
 								</div>
-							</div>
+							</div>     
 
+							<div class="row cols-1 cf">
+								<div class="col col-1">
+									<h3>Externa nätverk</h3>
+                                    <legend class="wrap"><span>Lägg till länkar till externa nätverk som du vill ska synas på din profil.</span></legend>
+<?php
+    $social = [
+"500px" => null,
+"8tracks" => null,
+"airbnb" => null,
+"amazon" => null,
+"android" => null,
+"apple" => null,
+"appnet" => null,
+"bebo" => null,
+"behance" => null,
+"blogger" => null,
+"buffer" => null,
+"chimein" => null,
+"coderwall" => null,
+"dailymotion" => null,
+"delicious" => null,
+"deviantart" => null,
+"digg" => null,
+"disqus" => null,
+"dribbble" => null,
+"drupal" => null,
+"ello" => null,
+"envato" => null,
+"facebook" => null,
+"feedburner" => null,
+"flattr" => null,
+"flickr" => null,
+"forrst" => null,
+"foursquare" => null,
+"friendfeed" => null,
+"github" => null,
+"goodreads" => null,
+"google" => null,
+"grooveshark" => null,
+"houzz" => null,
+"identica" => null,
+"instagram" => null,
+"lanyrd" => null,
+"lastfm" => null,
+"linkedin" => null,
+"mail" => null,
+"meetup" => null,
+"mixloud" => null,
+"myspace" => null,
+"newsvine" => null,
+"odnoklassniki" => null,
+"outlook" => null,
+"patreon" => null,
+"paypal" => null,
+"persona" => null,
+"pinterest" => null,
+"play" => null,
+"playstation" => null,
+"pocket" => null,
+"reddit" => null,
+"rss" => null,
+"skype" => null,
+"slideshare" => null,
+"smugmug" => null,
+"soundcloud" => null,
+"spotify" => null,
+"stackoverflow" => null,
+"steam" => null,
+"stumbleupon" => null,
+"swarm" => null,
+"technorati" => null,
+"tripadvisor" => null,
+"tripit" => null,
+"triplej" => null,
+"tumblr" => null,
+"twitch" => null,
+"twitter" => null,
+"viadeo" => null,
+"vimeo" => null,
+"vine" => null,
+"vkontakte" => null,
+"wikipedia" => null,
+"windows" => null,
+"wordpress" => null,
+"xbox" => null,
+"xing" => null,
+"yahoo" => null,
+"yammer" => null,
+"yelp" => null,
+"youtube" => null,
+"zerply" => null,
+"zynga" => null
+    ];
+    function setSocialData(&$item, $key) { $item = uniqid($key); }
+    array_walk($social, 'setSocialData');
+?>
+                                    
+                                    <fieldset>
+                                        <div class="social-list cf user-social">
+                                            <ul>
+                                                <?php foreach ($social as $network => $id) { ?>
+                                                <li data-field="<?php echo $id; ?>">
+                                                    <a href="#"><img class="small" title="<?php echo ucfirst($network); ?>" 
+                                                             src="gui/i/socicon/png/socicon-<?php echo $network; ?>.png"/></a>
+                                                </li>
+                                                <?php } ?>
+                                            </ul>
+                                        </div>                                        
+                                        
+                                        <div class="row cols-1 cf user-social">
+                                            <ul class="edit-user-social">
+                                                <?php foreach ($social as $network => $id) { ?>
+                                                <li>
+                                                    <label for="<?= $id; ?>" class="">
+                                                        <img class="small" title="<?php echo $network; ?>" 
+                                                             src="gui/i/socicon/png/socicon-<?php echo $network; ?>.png"/>
+                                                    </label>
+                                                    <input type="text" name="<?php echo $id; ?>" value="" id="<?php echo $id; ?>" />
+                                                </li>                                                
+                                                <?php } ?>
+                                            </ul>
+                                        </div>
+                                    </fieldset>
+                                </div>
+							</div>
+                            
 							<div class="row cols-1 cf">
 								<div class="col col-1 submit-area">
 									<div class="col col-1 submit-area">

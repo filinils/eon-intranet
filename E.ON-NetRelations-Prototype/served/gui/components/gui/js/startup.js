@@ -884,4 +884,23 @@ $(window).load(function() {
 			caption.css('max-width', img.outerWidth() || '');
 		}
 	});
+    
+    //Profile-page social linking
+    $(".social-list li").on('click', function(e){ 
+        e.preventDefault(); 
+        $("#" + $(this).data("field"))
+            .parents("li")
+            .toggle(300)
+            .toggleClass("expanded"); 
+        $(this).toggleClass("expanded");
+        $(".user-social input:not(:visible)").each(function(){
+            $(this).val(null);
+        });
+    });
+    $(".user-social input").each(function(){
+        if($(this).val().length) {
+            $(this).parents("li").addClass("expanded");
+            $(".social-list li").filter("[data-field='" + $(this).attr("id") + "']").addClass("expanded");
+        }
+    });    
 });
