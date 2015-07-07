@@ -1,0 +1,27 @@
+/* INTERNET EXPLORER BUGFEST WORKAROUNDS
+ * Loaded in IE 9 ONLY.
+================================================================================ */
+.paging a.next-week {
+	background-position:92% 50% !important;
+}
+.js .user-details button {
+	background-position:94% 13px !important;
+}
+
+
+/* Forms
+-------------------------------------------------------------- */
+.form-general input[type=text] {
+	min-height:28px;
+}
+.ui-autocomplete-input {
+	min-height:23px;
+}
+
+/* Layout For Screens with max-width 640px
+-------------------------------------------------------------- */
+@media only screen and (max-width:640px) {
+	.compact-menu {
+		background-position:98% 50% !important;
+	}
+}

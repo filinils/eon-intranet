@@ -1,0 +1,242 @@
+/* Client-specific Styles */
+#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+
+/* Reset Styles */
+body{margin:0; padding:0;}
+img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+table td{border-collapse:collapse;}
+#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+body,
+#backgroundTable {
+	background-color:#fff;
+	box-shadow:inset 0 1px 0 1px #e5e5e5;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:1px 4px;
+}
+#templateContainer {
+	border:1px solid #dadbde;
+}
+h1,
+.h1 {
+	color:#202020;
+	display:block;
+	font-family:Arial;
+	font-size:34px;
+	font-weight:bold;
+	line-height:120%;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:10px;
+	margin-left:0;
+	text-align:left;
+}
+h2,
+.h2 {
+	color:#202020;
+	display:block;
+	font-family:Arial;
+	font-size:30px;
+	font-weight:bold;
+	line-height:120%;
+	margin-top:20px;
+	margin-right:0;
+	margin-bottom:10px;
+	margin-left:0;
+	text-align:left;
+}
+h3,
+.h3 {
+	color:#202020;
+	display:block;
+	font-family:Arial;
+	font-size:26px;
+	font-weight:bold;
+	line-height:120%;
+	margin-top:20px;
+	margin-right:0;
+	margin-bottom:10px;
+	margin-left:0;
+	text-align:left;
+}
+h4,
+.h4 {
+	color:#202020;
+	display:block;
+	font-family:Arial;
+	font-size:22px;
+	font-weight:bold;
+	line-height:120%;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:10px;
+	margin-left:0;
+	text-align:left;
+}
+#templateHeader {
+	background-color:#FFFFFF;
+	border-bottom:0;
+}
+.headerContent {
+	color:#202020;
+	font-family:Arial;
+	font-size:34px;
+	font-weight:bold;
+	line-height:100%;
+	padding:0 0 0 20px;
+	vertical-align:middle;
+}
+.headerContent a:link,
+.headerContent a:visited,
+.headerContent a .yshortcuts {
+	color:#f21c0a;
+	font-weight:normal;
+	text-decoration:underline;
+}
+#headerImage {
+	height:auto;
+	max-width:600px !important;
+}
+#templateContainer,
+.bodyContent {
+	background-color:#FFFFFF;
+}
+.bodyContent div,
+p {
+	color:#333;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:25px;
+	text-align:left;
+}
+.bodyContent div a:link,
+.bodyContent div a:visited,
+.bodyContent div a .yshortcuts,
+a:link,
+a:visited {
+	color:#cf1000;
+	font-weight:normal;
+	text-decoration:underline;
+}
+.templateDataTable {
+	background-color:#FFFFFF;
+	border:1px solid #DDDDDD;
+}
+.dataTableHeading {
+	background-color:#eb1503;
+	color:#fff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	line-height:150%;
+	text-align:left;
+}
+.dataTableHeading a:link,
+.dataTableHeading a:visited,
+.dataTableHeading a .yshortcuts {
+	color:#FFFFFF;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.dataTableContent {
+	border-top:1px solid #DDDDDD;
+	border-bottom:0;
+	color:#202020;
+	font-family:Helvetica;
+	font-size:12px;
+	font-weight:bold;
+	line-height:150%;
+	text-align:left;
+}
+.dataStatusContent {
+	border-top:1px solid #DDDDDD;
+	border-bottom:0;
+	color:#202020;
+	font-family:Helvetica;
+	font-size:12px;
+	font-weight:normal;
+	line-height:150%;
+	text-align:left;
+}
+.dataTableImg {
+	border-top:1px solid #DDDDDD;
+	border-bottom:0;
+	color:#202020;
+	font-family:Helvetica;
+	font-size:12px;
+	font-weight:bold;
+	line-height:150%;
+	text-align:right;
+}
+.dataTableContent a:link,
+.dataTableContent a:visited,
+.dataTableContent a .yshortcuts {
+	color:#202020;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.dataStatusContent a:link,
+.dataStatusContent a:visited,
+.dataStatusContent a .yshortcuts {
+	color:#202020;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.templateButton {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:4px;
+	background-color:#fc1c0a;
+	border:1px solid #c91508;
+	border-collapse:separate !important;
+}
+.templateButton,
+.templateButton a:link,
+.templateButton a:visited,
+.templateButton a .yshortcuts {
+	color:#FFFFFF;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	letter-spacing:-.5px;
+	line-height:100%;
+	text-align:center;
+	text-decoration:none;
+}
+.bodyContent img,
+img {
+	display:inline;
+	height:auto;
+}
+#templateFooter {
+	background-color:#FFFFFF;
+	border-top:0;
+}
+.footerContent div {
+	color:#707070;
+	font-family:Arial;
+	font-size:12px;
+	line-height:125%;
+	text-align:center;
+}
+.footerContent div a:link,
+.footerContent div a:visited,
+.footerContent div a .yshortcuts {
+	color:#cf1000;
+	font-weight:normal;
+	text-decoration:underline;
+}
+.footerContent img {
+	display:inline;
+}
+#utility {
+	background-color:#FFFFFF;
+	border:0;
+}
+#utility div {
+	text-align:center;
+}

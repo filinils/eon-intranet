@@ -1,0 +1,33 @@
+<li id="share">
+	<form action="/" method="post">
+		<button type="submit"><span>Dela</span></button>
+	</form>
+	<div class="share-box share-popup cf">
+		<form method="post" action="/" class="form-general cms">
+			<fieldset>
+				<legend class="structural">Dela med andra inom InfoNet</legend>
+				<div class="cols-1 share-list cf">
+					<ul id="share-contacts-list"></ul>
+				</div>
+				<div class="row cols-1 cf">
+					<div class="text col full col-1">
+						<label for="share-contacts">Skicka länk i e-post till dina kollegor:</label>
+						<input type="text" name="share-contacts" id="share-contacts" value="" data-enter="false" data-content-url="includes/share-contacts.html" data-default-text="Lägg till kontakt" />
+						<input type="hidden" id="share-contacts-emails">
+					</div>
+				</div>
+				<div class="row cols-1 cf">
+					<div class="text col full col-1">
+						<label for="<?php echo $id = uniqid('id'); ?>">Lägg till ett meddelande</label>
+						<textarea name="<?php echo $id; ?>" id="<?php echo $id; ?>" cols="30" rows="5"></textarea>
+					</div>
+				</div>
+				<div class="row cols-1 cf">
+					<div class="col col-1 submit-area">
+						<input type="submit" class="button" value="Skicka" name="submit-<?php echo $id = uniqid('id'); ?>" />
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</li>

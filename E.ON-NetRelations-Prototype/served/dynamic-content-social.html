@@ -1,0 +1,67 @@
+<?php $title = "Dynamiskt innehåll | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+
+<!-- Video specific style -->
+<link rel="stylesheet" href="gui/js/vendor/mediaelement/css/mediaelementplayer.css?<?php echo $version; ?>" />
+<link rel="stylesheet" href="gui/js/vendor/mediaelement/css/mejs-skins.css?<?php echo $version; ?>" />
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Dynamiskt innehåll</h1>
+							<div class="intro">
+								<p>Här är en lista på allt dynamiskt innehåll som kommer gå att använda i EPiServer 7.</p>
+							</div>
+							<h2>Twitter, ett användarnamn</h2>
+							<div class="twitter-feed">
+								<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/EON_Energy" data-widget-id="335063751193661440">Tweets av @EON_Energy</a>
+							</div>
+							<h2>Twitter, en sökning</h2>
+							<div class="twitter-feed">
+								<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23eon" data-widget-id="335064106941960193">Tweets om "#eon"</a>
+							</div>
+							<h2>Facebook Likebox</h2>
+							<div class="facebook-like-box">
+								<div class="fb-like-box" data-href="https://www.facebook.com/eonsverige" data-width="510" data-show-faces="false" data-stream="true" data-header="false"></div>
+								<div id="fb-root"></div>
+							</div>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php include('includes/breadcrumbs.html'); ?>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+
+	<!-- Twitter specific scripts -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	</script>
+
+	<!-- Facebook specific scripts -->
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+</body>
+</html>

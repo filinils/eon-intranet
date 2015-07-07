@@ -1,0 +1,110 @@
+<?php $searchtext = isset($_GET["searchtext"]) && ($_GET["searchtext"] != "") ? $_GET['searchtext'] : "kontakt"; ?>
+<?php $title = "20 träffar på ”".$searchtext."” inom intranätet | E.ONs intranät Elin"; ?>
+<?php $sel = "0"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-6">
+	<div id="body" data-off-canvas-text="filtering">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-0 cf">
+					<div class="search-container">
+						<form method="get" action="/search-results.html" id="main-search" role="search" data-content-url="temp/querycompletion.json">
+							<div class="cf">
+								<label for="searchtext2" class="structural">Sök på InfoNet:</label>
+								<input type="search" id="searchtext2" name="searchtext" value="<?php echo $searchtext; ?>" placeholder="Ange sökord eller fras" />
+								<button type="submit" class="submit" title="Sök">Sök</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="content-1">
+					<div id="content-primary" role="main">
+						<div class="content-1-0">
+							<div class="nav-tabs cf" role="navigation">
+								<h2 class="structural">Visa sökträffar inom:</h2>
+								<ul class="cf">
+									<li><a href="search-results.html">Allt (207)</a></li>
+									<li><a href="search-results-people.html">Medarbetare (31)</a></li>
+									<li><a href="search-results-content.html">Innehåll (82)</a></li>
+									<li><a href="search-results-news.html">Nyheter (12)</a></li>
+									<li data-selected><a href="search-results-hr-information.html"><strong>HR-information (9)</a></li>
+									<li><a href="search-results-workspace.html">Workspace (13)</a></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<div class="search-header">
+								<h1><strong>20 träffar</strong> på ”<strong><?php echo $searchtext; ?></strong>” inom <strong>HR-Online</strong></h1>
+								<!--<p class="read-more">
+									<a href="search-results.html">Tillbaka till sök på hela intranätet</a>
+								</p>-->
+								<div class="cf">
+									<p class="search-amount">
+										Visar träff <strong>1 - 10</strong>
+									</p>
+								</div>
+							</div>
+							<div class="m m-content-list list-items">
+								<ul class="search-results">
+									<li class="list-item cf">
+										<h2><a href="sub-page.html">Eiusmod tempor incididunt ut labore</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetur <strong><?php echo $searchtext; ?></strong> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									</li>
+									<li class="list-item cf">
+										<h2><a href="sub-page.html">Eiusmod tempor incididunt ut labore</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetur <strong><?php echo $searchtext; ?></strong> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									</li>
+									<li class="list-item cf">
+										<h2><a href="sub-page.html">Eiusmod tempor incididunt ut labore</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetur <strong><?php echo $searchtext; ?></strong> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									</li>
+									<li class="list-item cf">
+										<h2><a href="sub-page.html">Eiusmod tempor incididunt ut labore</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetur <strong><?php echo $searchtext; ?></strong> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									</li>
+									<li class="list-item cf">
+										<h2><a href="sub-page.html">Eiusmod tempor incididunt ut labore</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetur <strong><?php echo $searchtext; ?></strong> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									</li>
+									<li class="list-item cf">
+										<h2><a href="sub-page.html">Eiusmod tempor incididunt ut labore</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetur <strong><?php echo $searchtext; ?></strong> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									</li>
+									<li class="list-item cf">
+										<h2><a href="sub-page.html">Eiusmod tempor incididunt ut labore</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetur <strong><?php echo $searchtext; ?></strong> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									</li>
+									<li class="list-item cf">
+										<h2><a href="sub-page.html">Eiusmod tempor incididunt ut labore</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetur <strong><?php echo $searchtext; ?></strong> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									</li>
+									<li class="list-item cf">
+										<h2><a href="sub-page.html">Eiusmod tempor incididunt ut labore</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetur <strong><?php echo $searchtext; ?></strong> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									</li>
+									<li class="list-item cf">
+										<h2><a href="sub-page.html">Eiusmod tempor incididunt ut labore</a></h2>
+										<p>Lorem ipsum dolor sit amet, consectetur <strong><?php echo $searchtext; ?></strong> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									</li>
+								</ul>
+							</div>
+							<?php include('includes/paging.html'); ?>
+							<div class="article-actions cf">
+								<h2 class="structural">Verktyg</h2>
+								<ul>
+									<?php include('includes/article-buttons-1.html'); ?>
+									<?php include('includes/article-buttons-2.html'); ?>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

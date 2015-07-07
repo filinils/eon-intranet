@@ -1,0 +1,18 @@
+{
+	"result1": {
+		"name": "resultName1",
+		"url": "resultUrl1"
+	},
+	"result2": {
+		"name": "resultName2",
+		"url": "resultUrl2"
+	},
+	"result3": {
+		"name": "resultName3",
+		"url": "resultUrl3"
+	},
+	"new_page": {
+		"name": "Ny sida: query",
+		"url": "ny-sida"
+	}
+}

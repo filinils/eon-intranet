@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>E.ON tabell</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.gridCreator.js"></script>
+	<script type="text/javascript" src="js/eontable.js"></script>
+	<link href="css/eontable.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header"><span>E.ON tabellgenerator</span></div>
+		<div class="content">
+			<span>
+				<input type="checkbox" id="hideheader" name="hideheader" /><label for="hideheader">D&ouml;lj tabellhuvudet</label><br>
+			</span>
+		</div>
+		<div class="content">
+			<div id="grid"></div>
+			<div id="preview"></div>
+		</div>
+		<div class="footer">
+			<input type="hidden" id="tableValue">
+			<input type="button" onclick="JavaScript:InsertTable();" value="L&auml;gg till tabell" class="thisbutton"/>
+		</div>
+	</div>
+</body>
+</html>

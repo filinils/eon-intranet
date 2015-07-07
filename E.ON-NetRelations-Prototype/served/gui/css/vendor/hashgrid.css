@@ -1,0 +1,25 @@
+#grid{
+	position:absolute;
+	top:0;
+	left:-webkit-calc(50% - 1px);
+	z-index:1 !important;
+	width:1080px;
+	margin-left:-540px;
+	border:solid rgba(74,255,255, 0.5);
+	border-width:0 1px;
+}
+#grid div.vert{
+	position:relative;
+	left:14px;
+	width:59px;
+	margin-right:29px;
+	border:solid rgba(74,255,255, 0.5);
+	border-width:0 1px;
+	background:rgba(74,255,255, 0.1);
+}
+#grid div.horiz {
+	height:7px;
+	margin:0;
+	padding:0;
+	border-bottom:1px solid rgba(74,255,255, 0.5);
+}

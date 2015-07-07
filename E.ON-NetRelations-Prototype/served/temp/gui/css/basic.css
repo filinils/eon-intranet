@@ -1,0 +1,646 @@
+/* Viewport settings for IE10 and Opera Mobile 11+ */
+@-ms-viewport {
+	width:device-width;
+	zoom:1.0;
+}
+@-o-viewport {
+	width:device-width;
+	zoom:1.0;
+}
+@viewport {
+	width:device-width;
+	zoom:1.0;
+}
+
+
+/* FONTS
+ * Default typeface for E.ON
+================================================================================ */
+@font-face {
+	font-weight:400;
+	font-style:normal;
+	font-family:"Polo";
+	src: url("../fonts/polo.eot");
+	src: url("../fonts/polo.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/polo.woff") format("woff"),
+		url("../fonts/polo.ttf") format("truetype"),
+		url("../fonts/polo.svg#polo") format("svg");
+}
+@font-face {
+	font-weight:400;
+	font-style:italic;
+	font-family:"Polo";
+	src: url("../fonts/poloi.eot");
+	src: url("../fonts/poloi.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/poloi.woff") format("woff"),
+		url("../fonts/poloi.ttf") format("truetype"),
+		url("../fonts/poloi.svg#polo") format("svg");
+}
+@font-face {
+	font-weight:700;
+	font-style:normal;
+	font-family:"Polo";
+	src: url("../fonts/polob.eot");
+	src: url("../fonts/polob.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/polob.woff") format("woff"),
+		url("../fonts/polob.ttf") format("truetype"),
+		url("../fonts/polob.svg#polo") format("svg");
+}
+@font-face {
+	font-weight:700;
+	font-style:italic;
+	font-family:"Polo";
+	src: url("../fonts/polobi.eot");
+	src: url("../fonts/polobi.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/polobi.woff") format("woff"),
+		url("../fonts/polobi.ttf") format("truetype"),
+		url("../fonts/polobi.svg#polo") format("svg");
+}
+
+
+@media all {
+
+/* RESET
+ * Resets and basic typography and colors
+================================================================================ */
+blockquote,body,caption,div,dl,dt,dd,form,fieldset,h1,h2,h3,h4,h5,h6,html,li,ul,ol,p,pre,textarea,table,td,th {
+	margin:0;
+	padding:0;
+}
+address,dl,fieldset,p,pre,ul,ol,table {
+	margin:0 0 24px;
+}
+ul,ol,dd {
+	margin-left:24px;
+}
+td ul,td ol {
+	margin-left:10px;
+}
+ol ul,ul ol,ul ul,ol ol,td ul,td ol {
+	margin-bottom:0;
+}
+blockquote {
+	min-height:38px;
+	padding:0 0 0 60px;
+	background:url(../i/icon-blockquote.png) no-repeat 6px 8px;
+	font-style:italic;
+}
+dt {
+	font-weight:700;
+}
+table {
+	width:100%;
+	border-spacing:0;
+	border-collapse:collapse;
+	font-size:13px;
+}
+th,td {
+	padding:5px;
+	vertical-align:top;
+}
+tbody td {
+	padding:6px 10px 5px;
+	border-bottom:1px solid #dedede;
+	font-size:13px;
+}
+tfoot td {
+	background:#f5f5f5;
+	font-size:11px;
+	line-height:16px;
+}
+caption,th {
+	font-weight:700;
+	font-size:14px;
+	text-align:left;
+}
+thead th {
+	background:#eb1503;
+	color:#fff;
+}
+img {
+	max-width:100%;
+	height:auto;
+	border:none;
+}
+html,
+body {
+	background:#fff;
+	color:#393939;
+}
+/* Avoid line-height issues causes by default rendering of sub and sup elements */
+sup,sub {
+	position:relative;
+	height:0;
+	line-height:1;
+	vertical-align:baseline;
+}
+sup {
+	bottom:1ex;
+}
+sub {
+	top:.5ex;
+}
+body {
+	font:93.75%/1.6 Arial, Helvetica, sans-serif;
+}
+
+code,
+kbd,
+pre {
+	font-family:Monaco, Courier, "Courier New", Tahoma;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin:1em 0 15px;
+	font-weight:400;
+	font-size:1em;
+	font-family:"Polo", Arial, sans-serif;
+	-moz-hyphens:auto;
+	-ms-hyphens:auto;
+	-webkit-hyphens:auto;
+	hyphens:auto;
+	-epub-hyphens:auto;
+	text-rendering:optimizeLegibility;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child {
+	margin-top:0;
+}
+h1 {
+	margin-bottom:.375em;
+	font-size:40px;
+	line-height:40px;
+}
+h2 {
+	margin:35px 0 7px;
+	font-size:1.6em;
+	line-height:1.25;
+}
+h2 + h3 {
+	margin-top:0;
+}
+h3 {
+	margin:32px 0 0;
+	color:#eb1503;
+	font-size:19px;
+	line-height:20px;
+}
+h4 {
+	margin:32px 0 0;
+	font-size:16px;
+	line-height:18px;
+}
+h5 {
+	margin:32px 0 0;
+	color:#eb1503;
+	font-weight:400;
+	font-size:15px;
+	line-height:18px;
+}
+h6 {
+	margin:32px 0 0;
+	font-size:14px;
+	line-height:18px;
+}
+legend {
+	display:table; /* Enable line-wrapping in IE8+ */
+	color:#333;
+	white-space:normal; /* Enable line-wrapping in other browsers */
+}
+label {
+	display:block;
+}
+a:link {
+	color:#393939;
+	text-decoration:none;
+	transition:color .1s linear;
+}
+a:visited {
+	color:#393939;
+}
+a:link:hover,
+a:visited:hover,
+a:focus,
+a:active {
+	color:#eb1503;
+	text-decoration:underline;
+}
+.article a {
+	text-decoration:underline;
+}
+
+b,strong {
+	font-weight:700;
+}
+i,em {
+	font-style:italic;
+}
+input,button,textarea,select {
+	font:inherit;
+
+}
+/* Reset search input look in webkit, making it possible to style it as a normal text input */
+input[type=search] {
+	-webkit-box-sizing:content-box;
+	-webkit-appearance:textfield;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display:none;
+}
+/* Placeholder styling for gecko */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color:#aaa;
+}
+/* Placeholder styling for webkit */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color:#aaa;
+}
+/* Placeholder styling for browser without native support */
+input.placeholder,
+textarea.placeholder {
+	color:#aaa;
+}
+/* Reset extra padding on gecko buttons */
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+	padding:0;
+	border:0;
+}
+
+/* COLUMNS
+================================================================================ */
+.col {
+	float:left;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	width:100%; /* The default width of a column corresponds to the .full width */
+	padding:0 2.9411765%;
+}
+.col.col-1 {
+	padding-left:0;
+}
+
+.row .small {
+	width:25%;
+}
+.row .medium {
+	width:50%;
+}
+.row .large {
+	width:75%;
+}
+.row .hr,
+.row .full {
+	width:100%;
+	padding:0;
+}
+.cols-1 .col-1,
+.cols-2 .col-2,
+.cols-3 .col-3,
+.cols-4 .col-4,
+.cols-5 .col-5,
+.cols-6 .col-6 {
+	padding-right:0;
+}
+
+.cols-2 .col {
+	width:50%;
+}
+.cols-3 .col {
+	width:32.3529412%;
+}
+.cols-3 .col-2 {
+	width:35.2941176%;
+}
+
+/* Form structure: rows and columns
+-------------------------------------------------------------- */
+
+form .col {
+	padding-right:5px; /* Different gutter width than for general columns */
+	padding-left:5px;
+}
+.row .text input,
+.row textarea,
+.row fieldset {
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.row .text input,
+.row textarea {
+	width:100%;
+}
+.row .submit-area {
+	margin-top:1.5385em;
+}
+.cols-1 .submit-area {
+	margin:0;
+}
+.hr hr {
+	height:1px;
+	overflow:hidden;
+	border:0;
+	background:#969696;
+}
+.submit {
+	margin:0;
+	padding:9px 20px 10px;
+	border:0;
+	border-bottom:1px solid #c91508;
+	border-radius:4px;
+	background:#fc1c0a;
+	color:#fff;
+	transition:background .15s linear;
+	-webkit-appearance:none;
+}
+.submit.small {
+	padding:4px 20px 5px;
+}
+.submit-area .submit:hover {
+	background:#c91508;
+}
+.submit-area .submit:focus,
+.submit-area .submit:active {
+	border-bottom:1px solid #870e05;
+	background:#870e05;
+}
+.submit-area .or {
+	color:#737373;
+	font-size:13px;
+}
+.submit-area button[type=reset],
+.submit-area button.view-result {
+	margin:0;
+	padding:0;
+	border:0;
+	background:transparent;
+	color:#ec1200;
+	font:inherit;
+	font-size:13px;
+	line-height:normal;
+	text-decoration:underline;
+	cursor:pointer;
+	-moz-user-select:text;
+}
+.submit-area button[type=reset]:hover,
+.submit-area button[type=reset]:focus,
+.submit-area button.view-result:hover,
+.submit-area button.view-result:focus {
+	color:#000;
+}
+.submit-area a.reset {
+	color:#ec1200;
+	font-size:13px;
+	text-decoration:underline;
+}
+.button {
+	margin:0;
+	padding:7px 17px 8px;
+	border:0;
+	border-bottom:1px solid #c91508;
+	border-radius:4px;
+	background-color:#fc1c0a;
+	color:#fff;
+	transition:color .15s linear,background-color .15s linear;
+	-webkit-appearance:none;
+}
+.button:hover,
+.button:focus,
+.button:active {
+	border-bottom:1px solid #870e05;
+	background-color:#870e05;
+}
+.button[disabled=disabled] {
+	border-bottom:1px solid #870e05;
+	background-color:#870e05;
+	opacity:0.6;
+}
+.button-alt {
+	border:1px solid #dedede;
+	border-bottom-color:#ccc;
+	background-color:#e6e6e6;
+	color:#393939;
+	-webkit-appearance:none;
+}
+.button-alt:hover,
+.button-alt:focus,
+.button-alt:active {
+	border-color:#919191;
+	background-color:#b3b3b3;
+	color:#fff;
+	text-decoration:none;
+}
+.button-alt:hover,
+.button-alt:focus,
+.button-alt:active {
+	border-color:#919191;
+	background-color:#b3b3b3;
+}
+.news-criterias .button-alt:hover,
+.news-criterias .button-alt:focus,
+.news-criterias .button-alt:active {
+	color:#333;
+	text-decoration:none;
+}
+.compact-subnav {
+	margin-bottom:24px;
+}
+
+/* GLOBAL CLASSES
+================================================================================ */
+/* Easy clearing of floats
+ * See http://www.css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+-------------------------------------------------------------- */
+.cf:after {
+	display:table;
+	clear:both;
+	content:"";
+}
+
+/* Clearfix for tables
+-------------------------------------------------------------- */
+table.left:after,
+table.right:after {
+	display:table;
+	clear:both;
+	width:100%;
+	content:"";
+}
+
+
+/* Structural elements
+ * Not visible when CSS is enabled but visible for screen readers
+-------------------------------------------------------------- */
+.structural,
+.structural > *,
+.js .js-structural {
+	position:absolute;
+	left:-9999px;
+}
+
+
+
+/* Hidden elements
+ * Hidden even for screen readers
+-------------------------------------------------------------- */
+.hidden {
+	display:none;
+	visibility:hidden;
+}
+
+/* Clear elements
+ * Used by content editors in TinyMCE
+-------------------------------------------------------------- */
+.clear {
+	clear:both;
+}
+
+/* Nowrap
+ * Prevent line breaking, used by content editors in TinyMCE
+-------------------------------------------------------------- */
+.nowrap {
+	white-space:nowrap;
+}
+
+/* Zebra background.
+-------------------------------------------------------------- */
+.zebra tbody tr:nth-child(even) {
+	background:#f7f7f7;
+}
+tr.even {
+	background:#f7f7f7;
+}
+
+/* Scrollable tables
+-------------------------------------------------------------- */
+.scroll-table {
+	position:relative;
+	width:100%;
+	overflow:hidden;
+}
+.scroll-table.active:after {
+	position:absolute;
+	top:0;
+	left:100%;
+	width:50px;
+	height:100%;
+	border-radius:15px 0 0 15px / 125px 0 0 125px;
+	box-shadow:-6px 0 5px rgba(0, 0, 0, 0.32);
+	content:'';
+}
+.scroll-table-inner.active:before {
+	position:absolute;
+	top:0;
+	left:-50px;
+	width:50px;
+	height:100%;
+	border-radius:0 15px 15px 0 / 0 125px 125px 0;
+	box-shadow:6px 0 5px rgba(0, 0, 0, 0.32);
+	content:'';
+}
+.scroll-table > .scroll-table-inner {
+	width:100%;
+	overflow:scroll;
+	overflow-x:scroll;
+	overflow-y:visible;
+	margin:0 0 24px;
+	padding:15px 0 0;
+}
+.scroll-table table {
+	margin:0;
+}
+
+/* Images
+-------------------------------------------------------------- */
+.left,
+.right,
+.left-dec,
+.right-dec {
+	float:left;
+	width:auto;
+	margin:5px 18px 6px 0;
+}
+.right,
+.right-dec {
+	float:right;
+	margin:5px 0 6px 18px;
+}
+img.fullwidth,
+img.fullwidth-dec,
+span.fullwidth img,
+span.fullwidth-dec img {
+	display:block;
+	margin:3px 0 6px;
+}
+img.dec,
+img.left-dec,
+img.right-dec,
+img.fullwidth-dec,
+span.dec img,
+span.left-dec img,
+span.right-dec img,
+span.fullwidth-dec img {
+	padding:4px;
+	border:1px solid #cfcfcf;
+	background:#fff;
+}
+.caption,
+.caption em {
+	display:block;
+	background:#f5f5f5;
+}
+.caption em {
+	font-style:normal;
+	font-size:13px;
+	line-height:16px;
+}
+.caption p,
+.caption em {
+	margin-bottom:0;
+	padding:5px 8px 12px;
+}
+.caption sup {
+	bottom:3px;
+}
+
+
+/* Article
+-------------------------------------------------------------- */
+.article {
+	-moz-hyphens:auto;
+	-ms-hyphens:auto;
+	-webkit-hyphens:auto;
+	hyphens:auto;
+}
+
+/* Read more-links
+-------------------------------------------------------------- */
+.read-more a {
+	padding-left:15px;
+	background:url(../i/arrow-default.png) 0 50% no-repeat;
+	text-decoration:none;
+}
+.read-more a span {
+	position:absolute;
+	left:-9999px;
+}
+a.read-more {
+	padding-left:15px;
+	background:url(../i/arrow-default.png) 0 50% no-repeat;
+	text-decoration:none;
+}
+
+/* END @media all */
+}

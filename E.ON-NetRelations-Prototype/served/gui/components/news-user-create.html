@@ -1,0 +1,87 @@
+<?php $title = "Skriv en nyhet | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub-news.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Skriv en nyhet</h1>
+							<div class="intro">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus facilisis porta. Donec mauris risus, laoreet vitae faucibus quis, dapibus in lectus.</p>
+							</div>
+							<form action="subpage-editor.html" method="get" class="form-general cms" id="user-article">
+								<div class="row cols-1 cf">
+									<div class="col text full col-1 mandatory">
+										<label for="headline">Rubrik <em>Obligatoriskt</em></label>
+										<input type="text" id="headline" name="headline" value="" data-validation="required" data-validation-error-text="Du måste fylla i en rubrik" maxlength="55" />
+										<span class="char-counter">Max <strong id="headline-update-counter">55</strong> tecken</span>
+									</div>
+								</div>
+								<div class="row cols-1 cf">
+									<div class="col text full col-1">
+										<label for="intro">Ingress</label>
+										<textarea name="intro" id="intro" cols="30" rows="3" maxlength="260" ></textarea>
+										<span class="char-counter">Max <strong id="intro-update-counter">260</strong> tecken</span>
+									</div>
+								</div>
+								<div class="row cols-1 cf">
+									<div class="file col full col-1">
+										<label for="file">Bifoga bild</label>
+										<input type='file' id="file" name='small images file' data-max-size='2mb' data-type='image' class="file"/>
+									</div>
+								</div>
+								<div class="row cols-1 cf">
+									<div class="text col full col-1 mandatory">
+										<label for="article">Text <em>Obligatoriskt</em></label>
+										<textarea name="article" id="article" cols="30" rows="5" class="wysiwyg" data-validation="required" data-validation-error-text="Du måste skriva en text"></textarea>
+									</div>
+								</div>
+								<div class="row cols-1 cf">
+									<div class="col col-1 submit-area">
+										<input type="submit" class="submit" value="Publicera din nyhet" name="submit-<?php echo $id = uniqid('id'); ?>" />
+										<span class="or">eller</span>
+										<button type="reset" class="reset confirm-button" title="Avbryt dina ändringar"><span>Avbryt</span></button>
+									</div>
+								</div>
+								<div class="row cols-1 cf">
+									<div class="col col-1 submit-area">
+										<input type="hidden" name="remove-bookmark" value="">
+										<button type="submit" class="delete confirm-button" title="Ta bort nyhet"><span>Ta bort nyhet</span></button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="article-actions cf">
+							<h2 class="structural">Verktyg</h2>
+							<ul>
+								<?php include('includes/article-buttons-1.html'); ?>
+								<?php include('includes/article-buttons-2.html'); ?>
+								<?php include('includes/article-buttons-3.html'); ?>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<?php include('includes/breadcrumbs.html'); ?>
+			</div>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+
+	<!-- Template specific scripts -->
+	<script src="gui/js/vendor/tinymce/jscripts/tiny_mce/tiny_mce.js?<?php echo $version; ?>"></script>
+	<script src="gui/js/tinymce.basic.js?<?php echo $version; ?>"></script>
+	<script>
+
+	</script>
+
+</body>
+</html>
