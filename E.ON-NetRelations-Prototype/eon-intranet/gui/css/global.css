@@ -5193,7 +5193,6 @@ li a.file span {
 	font-size:14px;
 }
 
-
 /* TAG CLOUD
 ================================================================================ */
 .tag-cloud {
@@ -6021,4 +6020,10 @@ li a.file span {
 
 
 /* End @media evice-pixel-ratio */
+}
+
+/* JOYRIDE OVERRIDES
+================================================================================ */
+.joyride-expose-wrapper {
+	background-color: transparent !important;
 }
