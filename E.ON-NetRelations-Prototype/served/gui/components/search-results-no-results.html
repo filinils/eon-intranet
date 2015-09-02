@@ -1,0 +1,110 @@
+<?php $searchtext = isset($_GET["searchtext"]) && ($_GET["searchtext"] != "") ? $_GET['searchtext'] : "kontatt"; ?>
+<?php $title = "0 träffar på ”".$searchtext."” inom intranätet | E.ONs intranät Elin"; ?>
+<?php $sel = "0"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-6">
+	<div id="body" data-off-canvas-text="filtering">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-0 cf">
+					<div class="search-container">
+						<form method="get" action="/search-results.html" id="main-search" role="search" data-content-url="temp/querycompletion.json">
+							<div class="cf">
+								<label for="searchtext2" class="structural">Sök på InfoNet:</label>
+								<input type="search" id="searchtext2" name="searchtext" value="<?php echo $searchtext; ?>" placeholder="Ange sökord eller fras" />
+								<button type="submit" class="submit" title="Sök">Sök</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="content-1">
+					<div id="content-primary" role="main">
+						<div class="content-1-0">
+							<div class="nav-tabs cf" role="navigation">
+								<h2 class="structural">Visa sökträffar inom:</h2>
+								<ul class="cf">
+									<li data-selected><a href="search-results.html"><strong>Allt (0)</strong></a></li>
+									<li><a href="search-results-people.html">Medarbetare (0)</a></li>
+									<li><a href="search-results-content.html">Innehåll (0)</a></li>
+									<li><a href="search-results-news.html">Nyheter (0)</a></li>
+									<li><a href="search-results-hr-information.html">HR-information (0)</a></li>
+									<li><a href="search-results-workspace.html">Workspace (0)</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="content-1-1">
+							<div class="search-header">
+								<h1><strong>0 träffar</strong> på ”<strong><?php echo $searchtext; ?></strong>” inom <strong>hela intranätet</strong></h1>
+							</div>
+							<div class="article">
+								<h2>Din sökning gav inga träffar</h2>
+								<div class="intro">
+									<p>Sökfrågan kan vara felstavad, menade du: <a href="">kontakt</a>?</p>
+								</div>
+								<p>Om du har gjort en avgränsning av sökningen, prova att ta bort den. Du kan också prova att ta bort sökord (om du har skrivit flera) eller formulera om sökfrågan.</p>
+							</div>
+							<div class="article-actions cf">
+								<h2 class="structural">Verktyg</h2>
+								<ul>
+									<?php include('includes/article-buttons-1.html'); ?>
+									<?php include('includes/article-buttons-2.html'); ?>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="content-1-2">
+						<div role="complementary">
+							<div class="m m-search-help">
+								<div class="m-h">
+									<h2><a href="sub-page.html">Tips &amp; hjälp</a></h2>
+								</div>
+								<div class="m-f">
+									<p class="read-more"><a href="sub-page.html">Få tips och hjälp med din sökning</a></p>
+								</div>
+							</div>
+							<?php include('includes/teaser-1.html'); ?>
+						</div>
+					</div>
+				</div>
+				<div class="content-2">
+					<div class="m m-list m-search-filter m-1">
+						<div class="m-h">
+							<h2>Ändrat</h2>
+						</div>
+						<div class="m-c">
+							<ul>
+								<li class="sel"><strong>När som helst (0)</strong></li>
+								<li><a href="search-results.html">Idag (0)</a></li>
+								<li><a href="search-results.html">Igår (0)</a></li>
+								<li><a href="search-results.html">Den senaste veckan (0)</a></li>
+								<li><a href="search-results.html">Den senaste månaden (0)</a></li>
+								<li><a href="search-results.html">Det senaste året (0)</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="m m-list m-search-filter m-1">
+						<div class="m-h">
+							<h2>Filformat</h2>
+						</div>
+						<div class="m-c">
+							<ul>
+								<li class="sel"><strong>Alla (112)</strong></li>
+								<li class="file image"><a href="search-results.html">Bilder (0)</a></li>
+								<li class="file mov"><a href="search-results.html">Video (0)</a></li>
+								<li class="file pdf"><a href="search-results.html">PDF (0)</a></li>
+								<li class="file ppt"><a href="search-results.html">PPT (0)</a></li>
+								<li class="file doc"><a href="search-results.html">DOC (0)</a></li>
+								<li class="file xls"><a href="search-results.html">XLS (0)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

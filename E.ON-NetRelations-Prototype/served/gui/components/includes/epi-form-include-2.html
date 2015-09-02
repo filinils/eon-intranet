@@ -1,0 +1,140 @@
+<form method="post" action="/" class="form-general cms">
+	<div class="form-content">
+		<div class="row cols-1 cf">
+			<div class="col col-1">
+				<fieldset>
+					<legend class="wrap"><span>Gör ett val</span></legend>
+					<div class="fieldset-content">
+						<div class="radio alt">
+							<input type="radio" value="ett" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" data-validation="required" data-validation-error-text="Du måste göra ett val" />
+							<label for="radio1-<?php echo $id; ?>">ett</label>
+						</div>
+						<div class="radio alt">
+							<input type="radio" value="två" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="radio1-<?php echo $id; ?>">två</label>
+						</div>
+						<div class="radio alt">
+							<input type="radio" value="tre" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="radio1-<?php echo $id; ?>">tre</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="col col-1">
+				<fieldset>
+					<legend class="wrap"><span>Gör ett val</span></legend>
+					<div class="fieldset-content">
+						<div class="radio">
+							<input type="radio" value="ett" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" data-validation="required" data-validation-error-text="Du måste göra ett val" />
+							<label for="radio2-<?php echo $id; ?>">ett</label>
+						</div>
+						<div class="radio">
+							<input type="radio" value="två" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" />
+							<label for="radio2-<?php echo $id; ?>">två</label>
+						</div>
+						<div class="radio">
+							<input type="radio" value="tre" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" />
+							<label for="radio2-<?php echo $id; ?>">tre</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="col col-1">
+				<fieldset>
+					<legend class="wrap"><span>Gör minst ett val</span></legend>
+					<div class="fieldset-content">
+						<div class="checkbox alt">
+							<input type="checkbox" value="ett" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" data-validation="required" data-validation-error-text="Du måste göra minst ett val" />
+							<label for="checkbox1-<?php echo $id; ?>">ett</label>
+						</div>
+						<div class="checkbox alt">
+							<input type="checkbox" value="två" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox1-<?php echo $id; ?>">två</label>
+						</div>
+						<div class="checkbox alt">
+							<input type="checkbox" value="tre" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox1-<?php echo $id; ?>">tre</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="col col-1">
+				<fieldset>
+					<legend class="wrap"><span>Gör minst ett val</span> <em>(obligatoriskt)</em></legend>
+					<div class="fieldset-content">
+						<div class="checkbox">
+							<input type="checkbox" value="ett" name="checkboxgroup2" id="checkbox2-<?php echo $id = uniqid('id'); ?>" data-validation="required" data-validation-error-text="Du måste göra minst ett val" />
+							<label for="checkbox2-<?php echo $id; ?>">ett</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" value="två" name="checkboxgroup2" id="checkbox2-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox2-<?php echo $id; ?>">två</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" value="tre" name="checkboxgroup2" id="checkbox2-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox2-<?php echo $id; ?>">tre</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="text col col-1 mandatory">
+				<label for="<?php echo $id = uniqid('id'); ?>">Förnamn <em>(obligatoriskt)</em></label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" aria-required="true" data-validation="required" data-validation-error-text="Du måste ange ett förnamn" />
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="text col col-1 mandatory">
+				<label for="<?php echo $id = uniqid('id'); ?>">Efternamn <em>(obligatoriskt)</em></label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" aria-required="true" data-validation="required" data-validation-error-text="Du måste ange ett efternamn" />
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="text col col-1 mandatory">
+				<label for="<?php echo $id = uniqid('id'); ?>">E-post <em>(obligatoriskt)</em></label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" aria-required="true" data-validation="validate_email" data-validation-error-text="E-postadressen är felaktig eller saknas"/>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="col hr col-1">
+				<hr />
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="col col-1">
+				<h2>En underrubrik</h2>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="text col col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">En text</label>
+				<textarea name="<?php echo $id; ?>" id="<?php echo $id; ?>" cols="30" rows="5" data-validation="validate_min_length length10" data-validation-error-text="Du måste skriva en text som är längre än 10 tecken"></textarea>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="text col col-1 mandatory">
+				<label for="<?php echo $id = uniqid('id'); ?>">Gör ett val</label>
+				<select id="<?php echo $id; ?>" name="<?php echo $id; ?>" data-validation="required" data-validation-error-text="Du måste göra ett val">
+					<option value=""></option>
+					<option value="ett">Nummer ett</option>
+					<option value="två">Nummer två</option>
+					<option value="tre">Nummer tre</option>
+				</select>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="col col-1 submit-area">
+				<input type="submit" class="button" value="Skicka" name="submit-<?php echo $id = uniqid('id'); ?>" />
+				<span class="or">eller</span>
+				<button type="reset" class="reset confirm-button" title="Avbryt dina ändringar"><span>Avbryt</span></button>
+			</div>
+		</div>
+	</div>
+</form>

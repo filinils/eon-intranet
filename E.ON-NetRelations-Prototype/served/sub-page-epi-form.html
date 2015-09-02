@@ -1,0 +1,57 @@
+<?php $title = "EPiServerformulär | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub.html'); ?>
+				</div>
+				<div class="content-2">
+					<div class="content-2-1">
+						<div id="content-primary" class="article cf" role="main">
+							<h1>Formulärhantering</h1>
+							<div class="intro">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							</div>
+							<div class="system-info">
+								<h2>Varning!</h2>
+								<p>Du kan max beställa fyra backar åt gången.</p>
+							</div>
+							<div class="system-info confirmation-message">
+								<h2>Meddelande!</h2>
+								<p>Ditt lösenord har ändrats.</p>
+							</div>
+							<div class="system-info error-message">
+								<h2>Fel!</h2>
+								<p>Ditt användarnamn stämmer inte.</p>
+							</div>
+						</div>
+						<h2>Rubrik för formulär</h2>
+						<?php include('includes/epi-form-include.html'); ?>
+						<div class="article-actions cf">
+							<h2 class="structural">Verktyg</h2>
+							<ul>
+								<?php include('includes/article-buttons-1.html'); ?>
+								<?php include('includes/article-buttons-2.html'); ?>
+								<?php include('includes/article-buttons-3.html'); ?>
+							</ul>
+						</div>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+							<?php include('includes/teaser-1.html'); ?>
+						</div>
+					</div>
+				</div>
+				<?php include('includes/breadcrumbs.html'); ?>
+			</div>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

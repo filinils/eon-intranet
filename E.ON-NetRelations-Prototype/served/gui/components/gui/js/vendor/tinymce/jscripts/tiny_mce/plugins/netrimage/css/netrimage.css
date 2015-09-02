@@ -1,0 +1,13 @@
+#netrimage {font-size:100%;}
+#netrimage * {font-size:11px;}
+#src_list {width:280px;}
+.mceActionPanel {margin-top:7px;}
+.panel_wrapper {border-top:1px solid #919B9C;}
+.panel_wrapper div.current {height:auto;}
+.alignPreview {border:1px solid #000; width:140px; height:140px; overflow:hidden; padding:5px;}
+#prev {margin:0; border:1px solid #000; width:428px; height:150px; overflow:auto;}
+#classlist {width:150px;}
+#class_list {width:180px;}
+input {width: 280px;}
+#longdesc {width:200px;}
+#general {margin-bottom:12px;}

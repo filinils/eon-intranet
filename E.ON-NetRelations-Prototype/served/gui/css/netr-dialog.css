@@ -1,0 +1,124 @@
+/* DIALOGS
+================================================================================ */
+
+#dialogs {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2000;
+
+	/* Hardware acceleration */
+	width:100%;
+	background:url(../i/overlay.png);
+	-webkit-transform:translateZ(0);
+	-webkit-perspective:1000;
+	-webkit-backface-visibility:hidden;
+}
+.dialog {
+	position:absolute;
+	right:18px;
+	left:18px;
+	margin:30px auto;
+	max-width:700px;
+	padding:5px;
+	outline:none;
+	-webkit-box-shadow:0 0 4px #000;
+	box-shadow:0 0 4px #000;
+
+	/* Hardware acceleration */
+	background:#fff;
+	color:#231f20;
+	-webkit-transform:translateZ(0);
+	-webkit-perspective:1000;
+	-webkit-backface-visibility:hidden;
+}
+
+.dialog.prepare-for-show {
+	opacity: 0;
+
+	-webkit-transition: all 0.4s ease-out;
+	        transition: all 0.4s ease-out;
+	    -ms-transform: translateY(-400px);
+
+	-webkit-transform: translateY(-400px);
+	        transform: translateY(-400px);
+}
+
+.dialog.show {
+	opacity: 1;
+	-ms-transform: translateY(0);
+
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.dialog-content {
+	padding: 12px;
+}
+
+.dialog-content form {
+	margin-bottom:0;
+}
+
+.dialog-close,
+.dialog-close:hover,
+.dialog-close:focus,
+.dialog-close:active {
+	position: absolute;
+	top: -14px;
+	right: -14px;
+	width: 38px;
+	height: 38px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border: none;
+
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	background: url(../i/dialog-close.png) 50% 50% no-repeat;
+	background-size: 38px 38px;
+	text-indent: 200%;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.dialog-close:focus {
+	outline: 1px dotted #fff;
+}
+
+.dialog-close img {
+	display: block;
+}
+
+@media screen and (min-width: 700px) {
+	.dialog {
+		margin-top: 100px;
+		padding: 10px;
+	}
+
+	.dialog-content {
+		padding: 25px 30px;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+	.dialog-close {
+		background-image: url(../i/dialog-close@2x.png);
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.dialog {
+		position: relative;
+		right: auto;
+		left: auto;
+		width: 700px;
+	}
+
+	.dialog-content {
+		padding: 24px 40px;
+	}
+}

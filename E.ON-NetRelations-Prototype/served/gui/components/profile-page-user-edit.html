@@ -1,0 +1,404 @@
+<?php $title = "Redigera uppgifter för Jakob Holmström | E.ONs intranät Elin"; ?>
+<?php $sel = "2"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-1">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<?php include('includes/nav-sub-profile.html'); ?>
+				</div>
+				<div class="content-2">
+					<div id="content-primary" class="article cf" role="main">
+							<div class="content-2-0 profile-details cf">
+								<div class="profile-photo">
+									<img src="temp/profile-photo-1.jpg" alt="Jakob Holmströms profilbild" width="150" height="150" />
+									<a href="profile-page-edit-photo.html" class="button button-alt button-edit-photo">Ändra din profilbild</a>
+								</div>
+								<div class="info">
+									<h1>Jakob Holmström</h1>
+									<a href="profile-page-user-edit.html" class="button button-alt button-edit">Redigera mina uppgifter</a>
+									<div class="company-info">
+										<p class="expertise">Kommunikationschef</p>
+										<dl>
+											<dt class="structural">Bolag</dt>
+											<dd>E.ON Sverige</dd>
+											<dt class="structural">Avdelning</dt>
+											<dd>Stakeholder Management</dd>
+											<dt class="structural">Enhet</dt>
+											<dd>Brand & Marketing</dd>
+											<dt class="structural">Grupp</dt>
+											<dd>Digital</dd>
+										</dl>
+									</div>
+									<div class="contact-wrap">
+										<ul class="contact-details">
+											<li class="phone"><span>040-25 50 00</span></li>
+											<li class="email"><a href="mailto:jakob.holmstrom@eon.se">jakob.holmstrom@eon.se</a></li>
+											<li class="kid"><span>KID:</span> 78314546</li>
+										</ul>
+										<div class="address">
+											<h2 class="structural">E.ON Sverige</h2>
+											<p>
+												<strong>Besöksadress</strong>
+												Carl Gustafs väg 1
+											</p>
+											<p>
+												<strong>Postadress</strong>
+												205 09, Malmö
+											</p>
+											<p class="room-number">
+												Besök mig i rum <span>520</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<div class="content-2-1">
+						<h2>Redigera dina uppgifter</h2>
+						<form action="/" class="m-user-details form-general cms user-details-edit" method="post">
+							<div class="row cols-1 cf">
+								<div class="text col full col-1">
+									<h3>Om mig</h3>
+									<p class="description">Här kan du fylla i mer information om dig som person, kanske någon hobby eller ett intresse?</p>
+									<label for="user-about" class="structural">Om mig</label>
+									<textarea name="user-about" id="user-about" cols="30" rows="5" maxlength="500"></textarea>
+									<span class="char-counter">Max <strong id="user-about-counter">500</strong> tecken</span>
+								</div>
+							</div>
+							<div class="row cols-1 cf">
+								<div class="text col full col-1">
+									<h3>Titel</h3>
+									<label for="<?php echo $id = uniqid('id'); ?>" class="structural">Titel</label>
+									<input type="text" name="<?php echo $id; ?>" value="Kommunikationschef" id="<?php echo $id; ?>" />
+								</div>
+							</div>
+							<div class="row cols-1 cf">
+								<div class="text col full col-1">
+									<h3>Kontakta mig angående</h3>
+									<p class="description">Här kan du skriva in vad du arbetar med, vilken specialkompetens du har. Om du arbetar med något särskilt projekt och så vidare.</p>
+									<label for="user-contact-about" class="structural">Kontakta mig angående</label>
+									<textarea name="user-contact-about" id="user-contact-about" cols="30" rows="5" maxlength="500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, illo, explicabo, ant.</textarea>
+									<span class="char-counter">Max <strong id="user-contact-about-counter">500</strong> tecken</span>
+								</div>
+							</div>
+							<div class="row cols-1 cf">
+								<div class="text col full col-1">
+									<h3>Språk</h3>
+									<label for="autocomplete-language" class="structural">Språk</label>
+									<input name="autocomplete-language" id="autocomplete-language" value="Svenska,Danska,Engelska" data-enter="true" data-content-url="includes/user-languages.html" data-default-text="Lägg till språk" />
+								</div>
+							</div>
+							<!--
+							<div class="row cols-1 cf">
+								<h3>Födelsedatum</h3>
+								<div class="select small col col-1">
+									<label for="user-month">Månad</label>
+									<select id="user-month" name="user-month">
+										<option value="jan">Januari</option>
+										<option value="feb">Februari</option>
+										<option value="mar">Mars</option>
+										<option value="apr" selected="selected">April</option>
+										<option value="maj">Maj</option>
+										<option value="jun">Juni</option>
+										<option value="jul">Juli</option>
+										<option value="aug">Augusti</option>
+										<option value="sep">September</option>
+										<option value="okt">Oktober</option>
+										<option value="nov">November</option>
+										<option value="dec">December</option>
+									</select>
+								</div>
+								<div class="select small col col-1">
+									<label for="user-day">Dag</label>
+									<select id="user-day" name="user-day">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19" selected="selected">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+									</select>
+								</div>
+								<div class="checkbox full col col-1">
+									<div class="checkbox alt">
+										<input type="checkbox" value="hide" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+										<label for="checkbox1-<?php echo $id; ?>">Visa inte ditt födelsedatum för andra</label>
+									</div>
+								</div>
+							</div>
+							-->
+							<div class="row cols-1 cf">
+								<div class="text col small col-1">
+									<h3>Rumsnummer</h3>
+									<label for="<?php echo $id = uniqid('id'); ?>" class="structural">Rumsnummer</label>
+									<input type="text" name="<?php echo $id; ?>" value="520" id="<?php echo $id; ?>" />
+								</div>
+							</div>
+							<div class="row cols-1 cf">
+								<div class="text col full col-1">
+									<h3>Intressen</h3>
+									<p class="description">Om du vill kan du skriva in särskilda intressen. Tryck enter efter varje ord innan du skriver in nästa intresse.</p>
+									<label for="autocomplete-interest" class="structural">Intressen</label>
+									<input name="autocomplete-interest" id="autocomplete-interest" value="Hemkunskap,Träslöjd,Energi" data-enter="false" data-content-url="includes/user-interests.html" data-default-text="Lägg till intresse"/>
+								</div>
+							</div>
+
+							<div class="row cols-1 cf">
+								<div class="col col-1">
+									<h3>Lync</h3>
+									<fieldset>
+										<legend class="wrap"><span>Visa Lync-status i min profil</span></legend>
+										<div class="fieldset-content">
+											<div class="radio alt">
+												<input type="radio" value="ja" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" checked />
+												<label for="radio1-<?php echo $id; ?>">Ja</label>
+											</div>
+											<div class="radio alt">
+												<input type="radio" value="nej" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+												<label for="radio1-<?php echo $id; ?>">Nej</label>
+											</div>
+										</div>
+									</fieldset>
+								</div>
+							</div>     
+
+							<div class="row cols-1 cf">
+								<div class="col col-1">
+									<h3>Externa nätverk</h3>
+                                    <legend class="wrap"><span>Lägg till länkar till externa nätverk som du vill ska synas på din profil.</span></legend>
+<?php
+    $social = [
+"500px" => null,
+"8tracks" => null,
+"airbnb" => null,
+"amazon" => null,
+"android" => null,
+"apple" => null,
+"appnet" => null,
+"bebo" => null,
+"behance" => null,
+"blogger" => null,
+"buffer" => null,
+"chimein" => null,
+"coderwall" => null,
+"dailymotion" => null,
+"delicious" => null,
+"deviantart" => null,
+"digg" => null,
+"disqus" => null,
+"dribbble" => null,
+"drupal" => null,
+"ello" => null,
+"envato" => null,
+"facebook" => null,
+"feedburner" => null,
+"flattr" => null,
+"flickr" => null,
+"forrst" => null,
+"foursquare" => null,
+"friendfeed" => null,
+"github" => null,
+"goodreads" => null,
+"google" => null,
+"grooveshark" => null,
+"houzz" => null,
+"identica" => null,
+"instagram" => null,
+"lanyrd" => null,
+"lastfm" => null,
+"linkedin" => null,
+"mail" => null,
+"meetup" => null,
+"mixloud" => null,
+"myspace" => null,
+"newsvine" => null,
+"odnoklassniki" => null,
+"outlook" => null,
+"patreon" => null,
+"paypal" => null,
+"persona" => null,
+"pinterest" => null,
+"play" => null,
+"playstation" => null,
+"pocket" => null,
+"reddit" => null,
+"rss" => null,
+"skype" => null,
+"slideshare" => null,
+"smugmug" => null,
+"soundcloud" => null,
+"spotify" => null,
+"stackoverflow" => null,
+"steam" => null,
+"stumbleupon" => null,
+"swarm" => null,
+"technorati" => null,
+"tripadvisor" => null,
+"tripit" => null,
+"triplej" => null,
+"tumblr" => null,
+"twitch" => null,
+"twitter" => null,
+"viadeo" => null,
+"vimeo" => null,
+"vine" => null,
+"vkontakte" => null,
+"wikipedia" => null,
+"windows" => null,
+"wordpress" => null,
+"xbox" => null,
+"xing" => null,
+"yahoo" => null,
+"yammer" => null,
+"yelp" => null,
+"youtube" => null,
+"zerply" => null,
+"zynga" => null
+    ];
+    function setSocialData(&$item, $key) { $item = uniqid($key); }
+    array_walk($social, 'setSocialData');
+?>
+                                    
+                                    <fieldset>
+                                        <div class="social-list cf user-social">
+                                            <ul>
+                                                <?php foreach ($social as $network => $id) { ?>
+                                                <li data-field="<?php echo $id; ?>">
+                                                    <a href="#"><img class="small" title="<?php echo ucfirst($network); ?>" 
+                                                             src="gui/i/socicon/png/socicon-<?php echo $network; ?>.png"/></a>
+                                                </li>
+                                                <?php } ?>
+                                            </ul>
+                                        </div>                                        
+                                        
+                                        <div class="row cols-1 cf user-social">
+                                            <ul class="edit-user-social">
+                                                <?php foreach ($social as $network => $id) { ?>
+                                                <li>
+                                                    <label for="<?= $id; ?>" class="">
+                                                        <img class="small" title="<?php echo $network; ?>" 
+                                                             src="gui/i/socicon/png/socicon-<?php echo $network; ?>.png"/>
+                                                    </label>
+                                                    <input type="text" name="<?php echo $id; ?>" value="" id="<?php echo $id; ?>" />
+                                                </li>                                                
+                                                <?php } ?>
+                                            </ul>
+                                        </div>
+                                    </fieldset>
+                                </div>
+							</div>
+                            
+							<div class="row cols-1 cf">
+								<div class="col col-1 submit-area">
+									<div class="col col-1 submit-area">
+										<input type="submit" class="submit" value="Spara" name="submit-<?php echo $id = uniqid('id'); ?>" />
+										<span class="or">eller</span>
+										<button type="reset" class="reset confirm-button" title="Avbryt dina ändringar"><span>Avbryt</span></button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="content-2-2">
+						<div role="complementary">
+							<div class="m m-list m-status-feed m-form m-9">
+								<div class="m-h" data-collapsable-text="Dölj nätverksflöde" id="my-network-flow">
+									<h2>Mitt nätverksflöde</h2>
+								</div>
+								<div class="m-c cf">
+									<form method="post" action="/">
+										<h3 class="structural">Skriv en uppdatering till ditt nätverksflöde.</h3>
+										<div class="row cols-1 cf">
+											<div class="status col full col-1">
+												<label for="status-update" class="structural">Statusuppdatering:</label>
+												<textarea name="status-update" id="status-update" cols="30" rows="3" placeholder="Skriv en uppdatering till ditt nätverksflöde."></textarea>
+											</div>
+											<div class="submit-area col col-1">
+												<span class="char-counter">Max <strong id="status-update-counter">140</strong> tecken</span>
+												<input type="submit" class="submit" value="Skicka" />
+											</div>
+										</div>
+									</form>
+									<div class="scrollable">
+										<?php include('includes/status-feed.html'); ?>
+									</div>
+								</div>
+								<div class="m-f">
+									<p class="read-more"><a href="all-status-feeds.html">Se fler statusuppdateringar</a></p>
+								</div>
+							</div>
+							<div class="m m-gamification">
+								<div class="progress">
+									<div class="bar" style="width:80%"></div>
+								</div>
+								<p class="amount"><strong>80%</strong> av din profil är färdig.</p>
+								<ul>
+									<li><span class="checked">Färdig </span>Ladda upp en profilbild</li>
+									<li><span class="checked">Färdig </span>Se <a href="">informationsfilmen</a> om det nya Intranätet</li>
+									<li><span class="checked">Färdig </span>Fyll i en kort presentation om dig själv</li>
+									<li><span class="checked">Färdig </span>Fyll i dina kompetensområden</li>
+									<li><span class="unchecked">Ej påbörjad </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+								</ul>
+							</div>
+							<div class="m m-teaser-form m-1">
+								<div class="m-h">
+									<h2>Hittat något fel i din profil?</h2>
+								</div>
+								<form method="post" action="/" class="m-c cf">
+									<div class="row cols-1 cf">
+										<div class="text col full col-1">
+											<label for="<?php echo $id = uniqid('id'); ?>">Beskriv felet nedan</label>
+											<textarea name="<?php echo $id; ?>" id="<?php echo $id; ?>" cols="30" rows="5"></textarea>
+										</div>
+									</div>
+									<div class="row cols-1 cf">
+										<div class="col col-1 submit-area">
+											<div class="col col-1 submit-area">
+												<input type="submit" class="submit" value="Skicka" name="submit-<?php echo $id = uniqid('id'); ?>" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php include('includes/breadcrumbs.html'); ?>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+
+</body>
+</html>

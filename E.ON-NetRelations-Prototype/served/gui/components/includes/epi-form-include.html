@@ -1,0 +1,312 @@
+<form method="post" action="/" class="form-general cms">
+	<p>Här kan du göra en felanmälan</p>
+	<div class="form-content">
+		<div class="row cols-1 cf">
+			<div class="col col-1">
+				<fieldset>
+					<legend class="wrap"><span>En legendtext som är alldeles på tok för lång, men det är bara för att man ska se att den radbryts om det behövs</span></legend>
+					<div class="fieldset-content">
+						<div class="radio alt">
+							<input type="radio" value="ett" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" checked />
+							<label for="radio1-<?php echo $id; ?>">ett</label>
+						</div>
+						<div class="radio alt">
+							<input type="radio" value="två" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="radio1-<?php echo $id; ?>">två</label>
+						</div>
+						<div class="radio alt">
+							<input type="radio" value="tre" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="radio1-<?php echo $id; ?>">tre</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row cols-2 cf">
+			<div class="col col-1 medium">
+				<fieldset>
+					<legend class="wrap"><span>Radio2</span></legend>
+					<div class="fieldset-content">
+						<div class="radio">
+							<input type="radio" value="ett" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" />
+							<label for="radio2-<?php echo $id; ?>">ett</label>
+						</div>
+						<div class="radio">
+							<input type="radio" value="två" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" checked />
+							<label for="radio2-<?php echo $id; ?>">två</label>
+						</div>
+						<div class="radio">
+							<input type="radio" value="tre" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" />
+							<label for="radio2-<?php echo $id; ?>">tre</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+			<div class="col col-2 medium">
+				<fieldset>
+					<legend class="wrap"><span>Radio3</span></legend>
+					<div class="fieldset-content">
+						<div class="radio">
+							<input type="radio" value="ett" name="radiogroup3" id="radio3-<?php echo $id = uniqid('id'); ?>" />
+							<label for="radio3-<?php echo $id; ?>">ett</label>
+						</div>
+						<div class="radio">
+							<input type="radio" value="två" name="radiogroup3" id="radio3-<?php echo $id = uniqid('id'); ?>" checked />
+							<label for="radio3-<?php echo $id; ?>">två</label>
+						</div>
+						<div class="radio">
+							<input type="radio" value="tre" name="radiogroup3" id="radio3-<?php echo $id = uniqid('id'); ?>" />
+							<label for="radio3-<?php echo $id; ?>">tre</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="col col-1">
+				<fieldset>
+					<legend class="wrap"><span>Check1</span></legend>
+					<div class="fieldset-content">
+						<div class="checkbox alt">
+							<input type="checkbox" value="ett" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox1-<?php echo $id; ?>">ett</label>
+						</div>
+						<div class="checkbox alt">
+							<input type="checkbox" value="två" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox1-<?php echo $id; ?>">två</label>
+						</div>
+						<div class="checkbox alt">
+							<input type="checkbox" value="tre" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox1-<?php echo $id; ?>">tre</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="col col-1">
+				<fieldset>
+					<legend class="wrap"><span>Check2</span></legend>
+					<div class="fieldset-content">
+						<div class="checkbox">
+							<input type="checkbox" value="ett" name="checkboxgroup2" id="checkbox2-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox2-<?php echo $id; ?>">ett</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" value="två" name="checkboxgroup2" id="checkbox2-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox2-<?php echo $id; ?>">två</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" value="tre" name="checkboxgroup2" id="checkbox2-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox2-<?php echo $id; ?>">tre</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row cols-2 cf">
+			<div class="col col-1 medium">
+				<fieldset>
+					<legend class="wrap"><span>Radioknappar</span></legend>
+					<div class="fieldset-content">
+						<div class="radio">
+							<input type="radio" value="ett" name="radiogroup4" id="radio4-<?php echo $id = uniqid('id'); ?>" />
+							<label for="radio4-<?php echo $id; ?>">Omarkerad</label>
+						</div>
+						<div class="radio">
+							<input type="radio" value="två" name="radiogroup4" id="radio4-<?php echo $id = uniqid('id'); ?>" checked />
+							<label for="radio4-<?php echo $id; ?>">Markerad</label>
+						</div>
+						<div class="radio">
+							<input type="radio" value="tre" name="radiogroup5" id="radio4-<?php echo $id = uniqid('id'); ?>" disabled />
+							<label for="radio4-<?php echo $id; ?>">Inaktiv</label>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend class="wrap structural"><span>Radioknappar</span></legend>
+					<div class="fieldset-content">
+						<div class="radio">
+							<input type="radio" value="tre" name="radiogroup5" id="radio5-<?php echo $id = uniqid('id'); ?>" checked disabled />
+							<label for="radio5-<?php echo $id; ?>">Markerad inaktiv</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+			<div class="col col-2 medium">
+				<fieldset>
+					<legend class="wrap"><span>Checkbox</span></legend>
+					<div class="fieldset-content">
+						<div class="checkbox">
+							<input type="checkbox" value="ett" name="checkboxgroup3" id="checkbox3-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox3-<?php echo $id; ?>">Omarkerad</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" value="två" name="checkboxgroup3" id="checkbox3-<?php echo $id = uniqid('id'); ?>" checked />
+							<label for="checkbox3-<?php echo $id; ?>">Markerad</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" value="tre" name="checkboxgroup3" id="checkbox3-<?php echo $id = uniqid('id'); ?>" disabled />
+							<label for="checkbox3-<?php echo $id; ?>">Inaktiv</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" value="tre" name="checkboxgroup3" id="checkbox3-<?php echo $id = uniqid('id'); ?>" checked disabled />
+							<label for="checkbox3-<?php echo $id; ?>">Markerad inaktiv</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="text col large mandatory col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Förnamn <em>(obligatoriskt)</em></label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" required aria-required="true" />
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="text col col-1 mandatory error">
+				<label for="<?php echo $id = uniqid('id'); ?>">Efternamn <em>(obligatoriskt)</em> <strong>Du har glömt att fylla i Efternamn</strong></label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" required aria-required="true" />
+			</div>
+		</div>
+		<div class="row cols-2 cf">
+			<div class="text col mandatory large col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Gatuadress <em>(obligatoriskt)</em></label>
+				<input type="text" id="<?php echo $id; ?>" name="<?php echo $id; ?>" required aria-required="true" />
+			</div>
+			<div class="text col small col-2">
+				<label for="<?php echo $id = uniqid('id'); ?>">Postnummer</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+		</div>
+		<div class="row cols-2 cf">
+			<div class="text medium col col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Postort</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="col col-2 small submit-area">
+				<input type="submit" class="submit small" value="Spara" name="submit-<?php echo $id = uniqid('id'); ?>" />
+			</div>
+		</div>
+		<div class="row cols-4 cf">
+			<div class="text col small col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 1</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="text col small col-2">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 2</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="text col small col-3">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 3</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="text col small col-4">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 4</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+		</div>
+		<div class="row cols-3 cf">
+			<div class="text col small col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 1</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="text col small col-2">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 2</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="text col medium col-3">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 3</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+		</div>
+		<div class="row cols-3 cf">
+			<div class="text col small col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 1</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="text col medium col-2">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 2</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="text col small col-3">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 3</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+		</div>
+		<div class="row cols-3 cf">
+			<div class="text col medium col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 1</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="text col small col-2">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 2</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="text col small col-3">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 3</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+
+		</div>
+		<div class="row cols-2 cf">
+			<div class="text col small col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 1</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="text col large col-2">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 2</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+		</div>
+		<div class="row cols-2 cf">
+			<div class="text col large col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 1</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+			<div class="text col small col-2">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 2</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="text col full col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Kolumn 1</label>
+				<input type="text" name="<?php echo $id; ?>" id="<?php echo $id; ?>" />
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="col hr col-1">
+				<hr />
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="col col-1">
+				<h2>En underrubrik</h2>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="text col full col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Textarea</label>
+				<textarea name="<?php echo $id; ?>" id="<?php echo $id; ?>" cols="30" rows="5"></textarea>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="select medium col col-1">
+				<label for="<?php echo $id = uniqid('id'); ?>">Select</label>
+				<select id="<?php echo $id; ?>" name="<?php echo $id; ?>">
+					<option value="ett">Nummer ett</option>
+					<option value="två">Nummer två</option>
+					<option value="tre">Nummer tre</option>
+				</select>
+			</div>
+		</div>
+		<div class="row cols-1 cf">
+			<div class="col col-1 submit-area">
+				<input type="submit" class="button" value="Skicka" name="submit-<?php echo $id = uniqid('id'); ?>" />
+				<span class="or">eller</span>
+				<button type="reset" class="reset confirm-button" title="Avbryt dina ändringar"><span>Avbryt</span></button>
+			</div>
+		</div>
+	</div>
+</form>

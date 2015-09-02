@@ -2427,6 +2427,48 @@ span.tag-coworker {
 	padding:0;
 	background:#fff;
 }
+.user-social img {
+	width: 40px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.user-social img.small { 
+    width: 20px;
+}
+
+.social-list {
+	margin:0 0 .25em;
+	padding:6px 10px;
+	background:#f5f5f5;
+}
+.social-list ul {
+	margin:0;
+}
+.social-list li {
+	display:inline;
+	list-style:none;
+}
+.social-list li.expanded {
+    opacity: .25;
+}
+.edit-user-social { 
+    list-style: none;
+    margin: 0;
+}
+.edit-user-social li { 
+    padding: .25em 0;
+    display: none;
+}
+.edit-user-social li.expanded { 
+    display: block;
+}
+.edit-user-social label { 
+    display: inline-block;
+}
+.edit-user-social label img {
+  vertical-align: top;
+}
+
 
 /* Tools
 -------------------------------------------------------------- */
@@ -2697,6 +2739,9 @@ span.tag-coworker {
 }
 .m-gamification a {
 	text-decoration:underline;
+}
+.m-gamification.progress-steps {
+	border: none;
 }
 
 /* Checklist
@@ -3608,6 +3653,7 @@ span.tag-coworker {
 	text-align:center;
 	text-decoration:none;
 	font:15px/1 "Polo", Arial, sans-serif;
+    font-weight: bold;
 }
 .nav-main li a:hover {
 	text-decoration:underline;
@@ -5974,6 +6020,16 @@ li a.file span {
 		background-image:url(../i/radio-checkbox@2x.png);
 		background-size:21px 372px;
 	}
+	.m-gamification.progress-steps .checked,
+	.m-gamification.progress-steps .unchecked {
+        background-image: url(../i/checklist-sprite.png);
+        background-size: auto;
+        background-color: #fff;
+	}    
+    
+	.m-gamification.progress-steps .unchecked + h2 {
+        opacity: .5;
+	}      
 	.compact-subnav {
 		background-image:url(../i/icon-compact-subnav@2x.png);
 		background-size:22px 22px;

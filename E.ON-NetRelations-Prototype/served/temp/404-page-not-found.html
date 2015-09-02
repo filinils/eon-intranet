@@ -1,0 +1,77 @@
+<?php $title = "Sidan kan inte hittas | E.ONs intranät Elin"; ?>
+<?php $sel = "0"; ?>
+<?php include('includes/doctype-and-head.html'); ?>
+</head>
+<body class="layout-2">
+	<div id="body">
+		<?php include('includes/header.html'); ?>
+		<div id="main" class="cf">
+			<div id="content">
+				<div class="content-1">
+					<div id="content-primary" class="article cf" role="main">
+						<h1>Sidan kan inte hittas</h1>
+						<div class="intro">
+							<p>Sidan du försökte nå kunde tyvärr inte hittas.</p>
+						</div>
+						<h2>Här är några sidor som verkar handla om det du letade efter:</h2>
+						<div class="m m-content-list list-items">
+							<ul class="search-results">
+								<li class="list-item cf">
+									<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									<div class="meta cf">
+										<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
+										<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
+									</div>
+								</li>
+								<li class="list-item cf">
+									<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									<div class="meta cf">
+										<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
+										<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
+									</div>
+								</li>
+								<li class="list-item cf">
+									<h2><a href="sub-section.html">Lorem ipsum dolor</a></h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <strong><?php echo $searchtext; ?></strong> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut… </p>
+									<div class="meta cf">
+										<p class="path"><a href="home.html">Hem</a> / <a href="sub-section.html">Sida</a></p>
+										<p class="updated"><time datetime="2013-03-29">Uppdaterad 2 augusti 2012</time></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<p>För att komma tillbaka till föregående sida kan du använda din webbläsares tillbakaknapp. Klickar du på eon-loggan så kommer du till intranätets startsida.</p>
+						<p>Om du vill får du gärna skicka ett meddelande till intranätansvariga för att låta oss veta att du har stött på ett problem på intranätet.</p>
+						<div id="form-kontakt">
+							<form action="/sidan-kan-inte-hittas/#form-kontakt" method="post" class="form-general">
+								<div class="form-content">
+									<div class="row cols-1 cf">
+										<div class="col text mandatory full col-1">
+											<label for="<?php echo $id = uniqid('id'); ?>">Ditt meddelande <em>(obligatoriskt)</em></label>
+											<textarea id="<?php echo $id; ?>" name="<?php echo $id; ?>" required aria-required="true" cols="30" rows="5" data-validation="required" data-validation-error-text="Du måste ange en text"></textarea>
+										</div>
+									</div>
+									<div class="row cols-1 cf">
+										<div class="col submit-area col-1">
+											<input type="submit" class="submit" value="Skicka" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="content-2">
+					<div role="complementary">
+					</div>
+				</div>
+				<?php include('includes/breadcrumbs.html'); ?>
+			</div>
+		</div>
+		<?php include('includes/footer.html'); ?>
+	</div>
+	<?php include('includes/scripts.html'); ?>
+</body>
+</html>

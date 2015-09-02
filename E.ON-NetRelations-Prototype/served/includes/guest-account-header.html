@@ -1,0 +1,352 @@
+<div id="header" role="banner">
+	<div id="skip">
+		<a href="#content-primary">Hoppa till innehåll</a>
+	</div>
+	<div class="inner cf">
+		<div class="logo">
+			<a href="home.html" title="Gå till Intranätets startsida">
+				<img src="gui/i/logo.png" alt="E.ON InfoNet" width="102" height="30" />
+			</a>
+		</div>
+		<div class="user-details">
+			<h2 class="structural">Inloggad som Gäst</h2>
+			<button data-position="bottom" data-responsive-position="inline" id="user-details"><img src="temp/user-photo-profile.jpg" alt="Profilbild Jakob Holmström" width="30" height="30" /> Gäst</button>
+			<div class="nav-user cf">
+				<ul>
+					<li>
+						<form action="/">
+							<label for="user-shortcuts">Genvägar</label>
+							<select id="user-shortcuts">
+								<optgroup label="Genvägar">
+									<option value="/sub-page.html">Facebook</option>
+									<option value="/sub-page.html">Aftonbladet</option>
+									<option value="/sub-page.html">Sydsvenskan</option>
+									<option value="/sub-page.html">Tidrapportering</option>
+									<option value="/sub-page.html">Basecamp</option>
+									<option value="/sub-page.html">NetRelations ett väldigt långt bokmärke som ska radbryta</option>
+									<option value="/sub-page.html">Energieffektivisering</option>
+									<option value="/sub-page.html">Mina sidor</option>
+									<option value="/sub-page.html">Extranet</option>
+									<option value="/sub-page.html">Gasinstallation</option>
+									<option value="/sub-page.html">Web-PM</option>
+								</optgroup>
+								<!-- Hide section for guests -->
+								<!-- <optgroup label="Mina genvägar">
+									<option value="/sub-page.html">NetRelations</option>
+									<option value="/sub-page.html">Capgemini</option>
+									<option value="/sub-page.html">Aktuella strömavbrott</option>
+									<option value="/sub-page.html">E prize</option>
+									<option value="/sub-page.html">Kundombudsmannen</option>
+									<option value="/sub-page.html">Teckna elavtal</option>
+									<option value="/sub-page.html">Miljömärkt el</option>
+									<option value="/sub-page.html">Fordonsgas</option>
+									<option value="/sub-page.html">Naturgas</option>
+									<option value="/sub-page.html">Fjärrvärme</option>
+									<option value="/sub-page.html">Standbyguiden</option>
+								</optgroup> -->
+							</select>
+							<button type="submit">Gå till genvägen</button>
+						</form>
+					</li>
+					<!-- Hide section for guests -->
+					<!-- <li>
+						<form action="/">
+							<label for="user-bookmark">Bokmärken</label>
+							<select id="user-bookmark">
+								<optgroup label="Bokmärken">
+									<option value="/sub-page.html">Min anställning</option>
+									<option value="/sub-page.html">IT-Support</option>
+									<option value="/sub-page.html">Lokal service</option>
+									<option value="/sub-page.html">Lediga jobb</option>
+									<option value="/sub-page.html">Policies och riktlinjer</option>
+									<option value="/sub-page.html">Riskhantering</option>
+									<option value="/sub-page.html">Miljöarbete</option>
+									<option value="/sub-page.html">Koncernnyheter</option>
+									<option value="/sub-page.html">Omvärldsbevakning</option>
+									<option value="/sub-page.html">Samarbete</option>
+									<option value="/sub-page.html">Hitta kollegor</option>
+								</optgroup>
+							</select>
+							<button type="submit">Gå till bokmärket</button>
+						</form>
+					</li> -->
+					<!-- <li class="user-settings">
+						<a href="profile-page-user.html">Min profilsida</a>
+					</li> -->
+				</ul>
+			</div>
+			<!-- Hide section for guests -->
+			<!-- <div class="notifications new-notifications">
+				<a href="notifications.html" class="counter" data-content-url="includes/notifications.html">2 <span class="structural">nya notifieringar</span></a>
+				<div class="m m-notifications m-list m-8">
+					<div class="m-h">
+						<h3>Aviseringar</h3>
+						<span class="cf">
+							<a href="notifications.html" class="mark-as-read">Markera alla som lästa</a>
+							<a href="profile-notifications.html" class="settings">Inställningar</a>
+						</span>
+					</div>
+					<div class="m-c overthrow">
+					</div>
+					<div class="m-f">
+						<p class="read-more"><a href="notifications.html">Visa alla aviseringar</a></p>
+					</div>
+				</div>
+			</div> -->
+		</div>
+		<form method="get" action="/search-results.html" id="search" role="search" data-content-url="temp/querycompletion.json">
+			<div class="cf">
+				<label for="searchtext" class="structural">Sök på InfoNet:</label>
+				<input type="search" id="searchtext" name="searchtext" placeholder="Ange sökord eller fras" />
+				<button type="submit" class="submit" title="Sök">Sök</button>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="nav-main cf" role="navigation" data-text-show="Visa huvudnavigering" data-text-hide="Dölj huvudnavigering">
+	<h2 class="structural">Huvudnavigering</h2>
+	<ul class="inner cf" id="feature-tour-6">
+		<?php if ($sel == "1"): ?>
+		<li data-selected class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="news-page.html"><strong>Aktuellt</strong></a>
+		<?php else: ?>
+		<li class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="news-page.html">Aktuellt</a>
+		<?php endif; ?>
+			<div class="sub-menu cf">
+				<div class="m-h cf">
+					<h3><a href="sub-page.html">Aktuellt</a></h3>
+				</div>
+				<div class="m-c cf">
+					<div class="nav-sub">
+						<ul>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Nyheter</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Status just nu</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Driftstörningar</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Koncernnyheter</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">VDs kommentarer</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Pågående &amp; planerade projekt</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Omvärldsbevakning</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Ledningsgruppen</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Kalendarium</a></li>
+						</ul>
+					</div>
+					<div class="sub-information">
+						<img src="temp/sub-menu-2.jpg" alt="" width="368" height="110" />
+						<h4>Snabbinformation</h4>
+						<dl>
+							<dt>Viktiga nummer</dt>
+							<dd><span>Sjukanmälan:</span> 040-25 50 01</dd>
+							<dd><span>HR Support:</span> 040-25 50 02</dd>
+							<dd><span>IT Support:</span> 040-25 50 03</dd>
+						</dl>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis blandit viverra. Sed malesuada orci nec nibh lobortis posuere. Nulla sed augue quis lorem lacinia tincidunt ut et metus.</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<?php if ($sel == "2"): ?>
+		<li data-selected class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="sub-page.html"><strong>Våra arbetssätt</strong></a>
+		<?php else: ?>
+		<li class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="sub-page.html">Våra arbetssätt</a>
+		<?php endif; ?>
+			<div class="sub-menu cf">
+				<div class="m-h cf">
+					<h3><a href="sub-page.html">Våra arbetssätt</a></h3>
+				</div>
+				<div class="m-c cf">
+					<div class="nav-sub">
+						<ul>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Verksamhetsspecifika handböcker, rutiner och portaler</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Mallar och blanketter</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Förbättringsförslag</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Processer: Våra sätt att arbeta</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Policies och riktlinjer</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Arbetsmiljö och -säkerhet</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Incidentrapportering</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Beredskap och kris</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Förändringsarbete</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Riskhantering</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Kompetensförsörjning</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Rekrytering och anställning</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Miljöarbete</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Introducera nyanställd eller konsult</a></li>
+						</ul>
+					</div>
+					<div class="sub-information">
+						<img src="temp/sub-menu-3.jpg" alt="" width="368" height="110" />
+						<h4>Snabbinformation</h4>
+						<dl>
+							<dt>Viktiga nummer</dt>
+							<dd><span>Sjukanmälan:</span> 040-25 50 01</dd>
+							<dd><span>HR Support:</span> 040-25 50 02</dd>
+							<dd><span>IT Support:</span> 040-25 50 03</dd>
+						</dl>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis blandit viverra. Sed malesuada orci nec nibh lobortis posuere. Nulla sed augue quis lorem lacinia tincidunt ut et metus.</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<?php if ($sel == "3"): ?>
+		<li data-selected class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="sub-page-1.html"><strong>Kund &amp; marknad</strong></a>
+		<?php else: ?>
+		<li class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="sub-page-1.html">Kund &amp; marknad</a>
+		<?php endif; ?>
+			<div class="sub-menu cf">
+				<div class="m-h cf">
+					<h3><a href="sub-page.html">Kund &amp; marknad</a></h3>
+				</div>
+				<div class="m-c cf">
+					<div class="nav-sub">
+						<ul>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">E.ONs produkter och tjänster</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Kunskap om kunden</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Aktuella kampanjer</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Så fungerar energibranschen</a></li>
+						</ul>
+					</div>
+					<div class="sub-information">
+						<img src="temp/sub-menu-4.jpg" alt="" width="368" height="110" />
+						<h4>Snabbinformation</h4>
+						<dl>
+							<dt>Viktiga nummer</dt>
+							<dd><span>Sjukanmälan:</span> 040-25 50 01</dd>
+							<dd><span>HR Support:</span> 040-25 50 02</dd>
+							<dd><span>IT Support:</span> 040-25 50 03</dd>
+						</dl>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis blandit viverra. Sed malesuada orci nec nibh lobortis posuere. Nulla sed augue quis lorem lacinia tincidunt ut et metus.</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<?php if ($sel == "4"): ?>
+		<li data-selected class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="sub-page-2.html"><strong>Min anställning</strong></a>
+		<?php else: ?>
+		<li class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="sub-page-2.html">Min anställning</a>
+		<?php endif; ?>
+			<div class="sub-menu cf">
+				<div class="m-h cf">
+					<h3><a href="sub-page.html">Min anställning</a></h3>
+				</div>
+				<div class="m-c cf">
+					<div class="nav-sub">
+						<ul>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Arbetstid och frånvaro</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lön</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Förmåner och erbjudande</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Utvecklingssamtal</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Utbildning och kurser</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lediga jobb</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Karriärutveckling</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Fackliga organisationer</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Fritidsklubbar</a></li>
+						</ul>
+					</div>
+					<div class="sub-information">
+						<img src="temp/sub-menu-5.jpg" alt="" width="368" height="110" />
+						<h4>Snabbinformation</h4>
+						<dl>
+							<dt>Viktiga nummer</dt>
+							<dd><span>Sjukanmälan:</span> 040-25 50 01</dd>
+							<dd><span>HR Support:</span> 040-25 50 02</dd>
+							<dd><span>IT Support:</span> 040-25 50 03</dd>
+						</dl>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis blandit viverra. Sed malesuada orci nec nibh lobortis posuere. Nulla sed augue quis lorem lacinia tincidunt ut et metus.</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<?php if ($sel == "5"): ?>
+		<li data-selected class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="sub-page.html"><strong>Stöd &amp; support</strong></a>
+		<?php else: ?>
+		<li class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="sub-page.html">Stöd &amp; support</a>
+		<?php endif; ?>
+			<div class="sub-menu cf">
+				<div class="m-h cf">
+					<h3><a href="sub-page.html">Stöd &amp; support</a></h3>
+				</div>
+				<div class="m-c cf">
+					<div class="nav-sub">
+						<ul>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Arbeta hemifrån och på resa</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Resor</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Möten</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">IT-support</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Leverantörsfakturor</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Budgetera och rapportera ekonomiskt utfall</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lokal service</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Distansmöten</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Köpa in varor och tjänster</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Ekonomiska befogenheter</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Behörigheter</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Datorer, mobiltelefoner</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Programvaror</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lokala resor</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Språk</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Ta emot besök</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Beställa profilvaror</a></li>
+						</ul>
+					</div>
+					<div class="sub-information">
+						<img src="temp/sub-menu-6.jpg" alt="" width="368" height="110" />
+						<h4>Snabbinformation</h4>
+						<dl>
+							<dt>Viktiga nummer</dt>
+							<dd><span>Sjukanmälan:</span> 040-25 50 01</dd>
+							<dd><span>HR Support:</span> 040-25 50 02</dd>
+							<dd><span>IT Support:</span> 040-25 50 03</dd>
+						</dl>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis blandit viverra. Sed malesuada orci nec nibh lobortis posuere. Nulla sed augue quis lorem lacinia tincidunt ut et metus.</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<?php if ($sel == "6"): ?>
+		<li data-selected class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="sub-page.html"><strong>Om E.ON</strong></a>
+		<?php else: ?>
+		<li class="mega-top-level" data-text-show="Visa undernavigering" data-text-hide="Dölj undernavigering">
+			<a href="sub-page.html">Om E.ON</a>
+		<?php endif; ?>
+			<div class="sub-menu cf">
+				<div class="m-h cf">
+					<h3><a href="sub-page.html">Om E.ON</a></h3>
+				</div>
+				<div class="m-c cf">
+					<div class="nav-sub">
+						<ul>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Arbetstid och frånvaro</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lön</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Förmåner och erbjudande</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Utvecklingssamtal</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Utbildning och kurser</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Lediga jobb</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Karriärutveckling</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Fackliga organisationer</a></li>
+							<li><a href="netrp-<?php echo $id = uniqid('e'); ?>">Fritidsklubbar</a></li>
+						</ul>
+					</div>
+					<div class="sub-information">
+						<img src="temp/sub-menu-7.jpg" alt="" width="368" height="110" />
+						<h4>Snabbinformation</h4>
+						<dl>
+							<dt>Viktiga nummer</dt>
+							<dd><span>Sjukanmälan:</span> 040-25 50 01</dd>
+							<dd><span>HR Support:</span> 040-25 50 02</dd>
+							<dd><span>IT Support:</span> 040-25 50 03</dd>
+						</dl>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis blandit viverra. Sed malesuada orci nec nibh lobortis posuere. Nulla sed augue quis lorem lacinia tincidunt ut et metus.</p>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
