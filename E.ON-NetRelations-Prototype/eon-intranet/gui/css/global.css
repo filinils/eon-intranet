@@ -27,12 +27,12 @@
 	position:relative;
 	margin:0 auto;
 	max-width:95%;
-	width:1050px;
+	width:1190px;
 }
 #header {
 	position:relative;
 	margin:0;
-	padding:8px 0;
+	padding:9px 0 3px 0;
 	border-bottom:1px solid #d30d01;
 	background:#eb1503;
 	box-shadow:0 0 3px rgba(206,206,206,04);
@@ -45,7 +45,7 @@
 .inner {
 	margin:0 auto;
 	max-width:95%;
-	width:1050px;
+	width:1190px;
 }
 
 /* Layout-1
@@ -2951,7 +2951,7 @@ span.tag-coworker {
 .logo a {
 	position:relative;
 	display:block;
-	margin:0 0 0 -4px;
+	margin:6px 0 0 -4px;
 	padding:4px;
 	width:102px;
 	height:30px;
@@ -3054,35 +3054,58 @@ span.tag-coworker {
 	position:relative;
 	float:right;
 	overflow:hidden;
-	margin:3px 0 6px 8px;
-	padding:1px 12px 0 0;
-	max-width:220px;
+	/*margin:3px 0 6px 8px;*/
+	padding:0px 12px 0 0;
+	/*max-width:220px;*/
 	border:1px solid #aa0602;
-	border-radius:4px;
-	background-color:#de1709;
+	/*border-radius:4px;
+	background-color:#de1709;*/
 	color:#fff;
 	text-overflow:ellipsis;
 	white-space:nowrap;
 	font:400 13px Arial, Helvetica, sans-serif;
+
+    margin: 2px 0 7px 17px;
+    max-width: 240px;
+    background-color: #eb1503;
 }
 .user-details button img {
 	position:relative;
-	margin:-1px 5px 0 0;
-	width:30px;
-	height:30px;
+	/*margin:-1px 5px 0 0;*/
+	width:39px;
+	height:39px;
 	vertical-align:middle;
+
+    border-right: 1px solid #aa0602;
+    margin:-1px 23px 0 0;
+    float: left;
 }
 .no-js .user-details {
 	float:none;
 }
 .js .user-details button {
-	padding-right:31px;
+	/*padding-right:31px;*/
 	min-height:29px;
-	background:#de1709 url(../i/icon-header-user-arrow.png) no-repeat;
+	/*background:#de1709 url(../i/icon-header-user-arrow.png) no-repeat;
 	background-position:94% 13px;
 	background-position:-webkit-calc(100% - 12px) -webkit-calc(50% + 1px);
-	background-position:calc(100% - 12px) calc(50% + 1px);
+	background-position:calc(100% - 12px) calc(50% + 1px);*/
 	cursor:pointer;
+
+    position: relative;
+    padding-right: 61px;
+    line-height: 38px;
+}
+.js .user-details button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 38px;
+    height: 100%;
+    border-left: 1px solid #aa0602;
+    background: url(../i/icon-header-user-arrow.png) center center no-repeat;
 }
 .js .user-details button:hover {
 	background-color:#aa0602;
@@ -3109,20 +3132,25 @@ span.tag-coworker {
 .notifications .counter {
 	position:relative;
 	display:block;
-	min-width:27px;
-	height:24px;
-	border-radius:4px;
+	/*min-width:27px;
+	height:24px;*/
+	border-radius:50%;
 	background:#d30d01;
 	color:#fff;
 	font-weight:700;
-	line-height:24px;
+	/*line-height:24px;*/
+
+    height: 28px;
+    width: 28px;
+    line-height:28px;
+    margin:6px 0 0 0;
 }
 .notifications .counter:hover,
 .notifications .counter:focus,
 .notifications .counter:active {
 	text-decoration:none;
 }
-.notifications .counter:after {
+/*.notifications .counter:after {
 	position:absolute;
 	top:50%;
 	left:100%;
@@ -3133,7 +3161,7 @@ span.tag-coworker {
 	border:3px solid transparent;
 	border-left-color:#d30d01;
 	content:" ";
-}
+}*/
 .notifications a.active-bottom:before {
 	position:absolute;
 	bottom:-8px;
@@ -3618,28 +3646,35 @@ span.tag-coworker {
 ================================================================================ */
 .nav-main {
 	margin-bottom:20px;
-	border-bottom:1px solid #cecece;
+	/*border-bottom:1px solid #cecece;
 	background:#fff;
-	box-shadow:0 0 3px rgba(206,206,206,04);
+	box-shadow:0 0 3px rgba(206,206,206,04);*/
+
+    border-bottom: 1px solid #e8e8e8;
+	background: #f4f4f4;
 }
 .nav-main ul {
-	padding:7px 0 6px;
+	/*padding:7px 0 6px;*/
 	list-style:none;
 	font-weight:400;
+
+    padding: 21px 0 15px;
 }
 .nav-main li {
 	float:left;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
-	padding:0 10px;
-	min-width:14%;
+	/*padding:0 10px;
+	min-width:14%;*/
 	border-right:1px solid #e6e6e6;
-	background:#fff;
+	/*background:#fff;*/
+
+    padding: 0 15px;
 }
 .nav-main li:first-child {
 	margin:0;
-	padding-left:0;
+	padding-left: 4px;
 }
 .nav-main li:last-child {
 	margin:0;
@@ -3648,12 +3683,15 @@ span.tag-coworker {
 }
 .nav-main li a {
 	display:block;
-	padding:10px 6.66666667% 9px 3.33333333%;
+	/*padding:10px 6.66666667% 9px 3.33333333%;
 	color:#393939;
-	text-align:center;
+	text-align:center;*/
 	text-decoration:none;
 	font:15px/1 "Polo", Arial, sans-serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
+
+    color: #767676;
+    padding: 5px 0 4px 0;
 }
 .nav-main li a:hover {
 	text-decoration:underline;
@@ -3914,20 +3952,45 @@ span.tag-coworker {
 
 /* SEARCH
 ================================================================================ */
+
 /* Main search form
 -------------------------------------------------------------- */
+
+#search-trigger {
+    display: block;
+    float: right;
+    width: 61px;
+    height: 62px;
+    margin: -9px 15px -8px 0;
+    border-left: 1px solid #a7231c;
+    border-right: 1px solid #a7231c;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjNBQjgxODUyNEZFNTExRTVBQzg1RjgzMThBNDI1ODkyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjNBQjgxODUzNEZFNTExRTVBQzg1RjgzMThBNDI1ODkyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6M0FCODE4NTA0RkU1MTFFNUFDODVGODMxOEE0MjU4OTIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6M0FCODE4NTE0RkU1MTFFNUFDODVGODMxOEE0MjU4OTIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4U3dd7AAABx0lEQVR42mL4//8/AzL+WZTi8mfX5sn/Pn28COTf/w+k/+zcNPlHYYoLulpsGM74aqnE9O/qpc1gQ7CD+3+PH1r8zUqZhaCBYEUQF0E0Hju48Gdfc8r3MBeVn71NSf+uXtwIswjk8m+eJiJ4DYS67P+/jx8u/kgJNcOmECQOkgerg6jHbiA0bEC23/+eEmKCzzsgF8PU/gL6AKuBoAAH2QoKH2IC/feqxc1g9Y8fHsRqIDQ2//9qLA0jxsDv4QhXYosgJkZePj4GIPh79fw5BiIAx4rdd6BMBQYZRQV0eSZg7H4CM7QNDIgx8LunqQiU+YCREVOe6d+JQ4dADBZ3P39iDGTWAlusgOZaBADlDHgsQ8IHbxj+g0TG/39XwGkTRzqESBJMtL9Xg2MYnMBxZUVEtoMmWpCG33Mnl3z1MBZBzt//rqFmS7wGgrMf0GV/H9/fj6TpPhrGyNs/ijANxbABlAP+Pn5wEN3g3zs2TgTllN+rFjUjy6EbijPwQS7+HuqiAs1uaLkF1dCfSIYyEJM7CEUQsqFkGwgugRBJDhKZ/S0pTAwUAPbe2Xt+FaemgnINiP+fj1+AIhciJ6tfcyYVgdgAAQYAssrt5T2PChYAAAAASUVORK5CYII=") center 23px no-repeat;
+    /*-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;*/
+}
+#search-trigger:hover {
+    background-color: #a7231c;
+}
+
 #search {
-	position:absolute;
+    display: none;
+	/*position:absolute;
 	left:50%;
 	z-index:1;
 	display:block;
-	clear:both;
+	clear:both;*/
 	margin:0 0 8px -193px;
 	width:388px;
 	border:1px solid #dc1104;
 	border-radius:4px;
 	background:#fff;
 	line-height:24px;
+
+    float: right;
+    position: relative;
+}
+#search.open {
+    display: block;
 }
 .search-container {
 	margin:0 0 24px;
@@ -5333,7 +5396,7 @@ li a.file span {
 		width:300px;
 	}
 	.user-details button {
-		max-width:125px;
+		max-width:175px;
 	}
 
 /* End @media only screen and (max-width:900px) */
@@ -5352,13 +5415,13 @@ li a.file span {
 		width:280px;
 	}
 	.user-details button {
-		max-width:80px;
+		max-width:115px;
 	}
 	.js .user-details button {
-		padding-right:28px;
+		padding-right:45px;
 	}
 	.user-details button img {
-		margin-right:0;
+		margin-right: 5px;
 	}
 	.user-details button.active-bottom:after {
 		left:39px;
@@ -5468,10 +5531,23 @@ li a.file span {
 	}
 	.user-details button {
 		max-width:0;
+
+        padding-right: 39px!important; /* FIX THIS */
+        margin-left: 5px!important; /* FIX THIS */
 	}
 	.user-details button img {
-		min-width:28px;
+		min-width: 39px;
+
+        margin-right: 0;
 	}
+
+    .user-details button:after {
+		display: none!important;
+	}
+    #search-trigger {
+        width: 40px;
+    }
+
 	#main {
 		max-width:90%;
 	}

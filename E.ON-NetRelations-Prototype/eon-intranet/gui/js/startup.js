@@ -809,6 +809,12 @@ $(function () {
 		});
 		$("#epi-quickNavigator").remove();
 	});
+
+    // Top search
+	$('#search-trigger').on('click', function () {
+	    $('#search').toggleClass('open');
+	});
+
 });
 
 $(window).bind('load resize orientationchange', function() {
