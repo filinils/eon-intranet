@@ -71,5 +71,43 @@
 		background-position:0 -286px;
 	}
 
+    /* Special */
+    .img .m-news .radio {
+        display: inline-block;
+    }
+    .img .m-news input[type="radio"] {
+        /*right: 0;*/
+    }
+    .img .m-news input[type="radio"] ~ label:before {
+        display: none;
+    }
+    .img .m-news input[type="radio"] ~ label:after {
+        display:inline-block;
+		width:22px;
+		height:22px;
+		margin-left:3px;
+		background:url(../i/radio-checkbox.png) no-repeat;
+		content:" ";
+		vertical-align:top;
+    }
+    .img .m-news input[type="radio"] ~ label:after {
+        background-position: 0 -374px;
+    }
+    .img .m-news input[type="radio"]:focus ~ label:before {
+		background-position:0 -374px;
+	}
+	.img .m-news input[type="radio"]:checked ~ label:before {
+		background-position:0 -402px;
+	}
+	.img .m-news input[type="radio"]:checked:focus ~ label:before {
+		background-position:0 -402px;
+	}
+	.img .m-news input[type="radio"]:disabled ~ label:before {
+		
+	}
+	.img .m-news input[type="radio"]:disabled:checked ~ label:before {
+		
+	}
+
 /* END @media only screen */
 }

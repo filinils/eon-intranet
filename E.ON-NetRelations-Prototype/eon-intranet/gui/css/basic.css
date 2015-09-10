@@ -57,6 +57,28 @@
 		url("../fonts/polobi.svg#polo") format("svg");
 }
 
+/* L - Light, Polo-Leicht */
+@font-face {
+	font-weight: 200;
+	font-family: "Polo";
+	src: url("../fonts/polol.eot");
+	src: url("../fonts/polol.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/polol.woff") format("woff"),
+		url("../fonts/polol.ttf") format("truetype")/*,
+		url("../fonts/polol.svg#polo") format("svg")*/;
+}
+
+/* M - Medium, Polo-Krftg */
+@font-face {
+	font-weight: 600;
+	font-family: "Polo";
+	src: url("../fonts/polom.eot");
+	src: url("../fonts/polom.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/polom.woff") format("woff"),
+		url("../fonts/polom.ttf") format("truetype")/*,
+		url("../fonts/polom.svg#polo") format("svg")*/;
+}
+
 
 @media all {
 
@@ -124,7 +146,7 @@ img {
 }
 html,
 body {
-	background:#fff;
+	background: #fafafa;
 	color:#393939;
 }
 /* Avoid line-height issues causes by default rendering of sub and sup elements */

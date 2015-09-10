@@ -17,7 +17,7 @@
 *********************************/ 
 .flexslider {
 	position:relative;
-	margin-bottom:24px;
+	margin-bottom: 8px;
 	width:100%;
 }
 .flexslider .slides > li {
@@ -118,9 +118,9 @@
 	position:relative;
 	z-index:5;
 	padding-top:1px;
-	border:1px solid #dedede;
+	/*border:1px solid #dedede;*/
 	border-top:0;
-	background:#f5f5f5;
+	/*background:#f5f5f5;*/
 	text-align:center;
 }
 .flex-control-nav li { 
@@ -131,24 +131,24 @@
 }
 .flex-control-paging li a { 
 	display: block;
-	width: 10px; 
-	height: 10px;
+	width: 7px; 
+	height: 7px;
 	line-height:12px;
-	-webkit-border-radius: 20px; 
-	-moz-border-radius: 20px; 
-	border-radius: 20px; 
-	background: #888; 
-	background: rgba(0,0,0,0.5); 
-	box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+	-webkit-border-radius: 14px; 
+	-moz-border-radius: 14px; 
+	border-radius: 14px; 
+	background: #767676; 
+	background: rgba(0,0,0,0.25); 
+	/*box-shadow: inset 0 0 3px rgba(0,0,0,0.3);*/ 
 	text-indent: -9999px; 
 	cursor: pointer; 
-	-o-border-radius: 20px;
+	-o-border-radius: 14px;
 }
 .flex-control-paging li a:hover { 
-	background: #eb1503;
+	background: #eb1503; 
 }
 .flex-control-paging li a.flex-active { 
-	background: #eb1503; 
+    background: rgba(0,0,0,1);
 	cursor: default; 
 }
 
@@ -230,6 +230,58 @@
 .visually-hidden {
 	display: none;
 }
+
+.m-slider h3 {
+    font-family: "Polo", Arial, sans-serif;
+    color: #767676;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 200;
+    margin-bottom: 11px;
+}
+.m-slider p {
+    font-family: "Polo", Arial, sans-serif;
+    color: #444;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+.m-slider .time {
+    font-family: "Polo", Arial, sans-serif;
+    color: #767676;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.m-slider a,
+.m-slider a:hover {
+    color: #767676;
+}
+.m-slider a:hover {
+    text-decoration: underline;
+}
+.m-slider .meta {
+    background: none;
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.m-slider .meta .likes {
+    margin-right: 10px;
+}
+.m-slider .tags {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.m-slider .tags li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
 /* Layout For Screens with max-width 900px
 -------------------------------------------------------------- */
 @media only screen and (max-width:900px) {
@@ -265,4 +317,18 @@
 		font-size:13px;
 	}
 
+    .m-slider .meta,
+    .m-slider .tags {
+        width: 100%;
+        max-width: 100%;
+        float: left;
+        text-align: left;
+    }
+    .m-slider .tags {
+        margin-top: 10px;
+    }
+    .m-slider .tags li {
+        margin-left: 0;
+        margin-right: 10px;
+    }
 }

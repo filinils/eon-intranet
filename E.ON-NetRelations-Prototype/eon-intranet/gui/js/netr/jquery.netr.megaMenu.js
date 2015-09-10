@@ -143,7 +143,7 @@
 
 				self.addClass('active');
 
-				megaContent.css("top", self.outerHeight() + 6).attr('aria-hidden', 'false');
+				megaContent.css("top", self.outerHeight() + 0).attr('aria-hidden', 'false');
 
 				// Adjust left placement
 				if (self.position().left + megaContent.outerWidth() > $(window).width()) {
