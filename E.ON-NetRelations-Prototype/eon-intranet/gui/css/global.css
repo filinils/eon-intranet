@@ -40,8 +40,9 @@
 }
 #footer {
 	clear:both;
-	padding-top:123px;
-	background:url(../i/footer-illustration.png) repeat-x 50% 0;
+	padding-top: 16px;
+    padding-bottom: 26px;
+    background: #f4f4f4;
 }
 .inner {
 	margin:0 auto;
@@ -89,8 +90,11 @@
 	float:right;
 	width:22.8571429%;
 }
-.layout-2 .start-page .content-1-2,
-.layout-2 .start-page .content-2 {
+.layout-2.start-page #footer {
+    padding-top: 43px;
+}
+.layout-2.start-page .content-1-2,
+.layout-2.start-page .content-2 {
     padding-top: 45px;
 }
 
@@ -1153,6 +1157,9 @@ button.link span {
 	border: solid #dedede;
 	border-width:  1px 0 0;
 	background: #fff;
+}
+.m-10.m-list .m-c {
+    border: none;
 }
 
 /* About E.ON */
@@ -2390,11 +2397,15 @@ h1 + .create-news-btn {
     margin: 11px 0 0 0;
     padding: 15px 0;
 }
+.m-news .m-c .filter .radio {
+    margin-left: 20px;
+}
 .m-news .m-c .filter span {
     display: inline-block;
     color: #767676;
     font-size: 14px;
     vertical-align: middle;
+    margin-right: 5px;
 }
 .m-news .m-c .filter input,
 .m-news .m-c .filter label {
@@ -3813,6 +3824,17 @@ span.tag-coworker {
 	padding:0;
 	border:none;
 }
+.m-status-feed .fieldset-content {
+    text-align: center;
+}
+.m-status-feed .radio {
+    display: inline-block;
+    font-size: 14px;
+}
+.m-status-feed .radio:first-child {
+    margin-right: 29px;
+    /*margin-left: 13px;*/
+}
 .form-link {margin:20px 0 10px}
 .m-status-feed img {
 	margin:2px 12px 3px 0;
@@ -3820,17 +3842,22 @@ span.tag-coworker {
 	height:30px;
 }
 .m-status-feed li:first-child {
-	padding-top:9px;
+	padding-top: 12px;
+}
+.m-status-feed li {
+    padding: 24px 25px 4px 25px;
 }
 .m-status-feed li > div {
 	position:relative;
 	overflow:hidden;
 	word-wrap:break-word;
 }
-.m-status-feed .time {
+.m.m-status-feed .time {
 	margin:0;
 	padding:0 0 5px;
-	font-size:11px;
+    color: #767676;
+    font-size: 12px;
+    line-height: 14px;
 }
 .m-status-feed .time:first-child {
 	padding-top:15px;
@@ -3848,9 +3875,13 @@ span.tag-coworker {
 	font-family:Arial, sans-serif;
 }
 .m-status-feed li p {
-	font-size:12px;
-	line-height:16px;
+    color: #767676;
+    font-size: 14px;
+    line-height: 19px;
 }
+.m-status-feed li > p {
+    margin-top: 10px;
+} 
 .m-status-feed .m-c p a {
 	display:inline;
 	padding:0;
@@ -3869,7 +3900,12 @@ span.tag-coworker {
 .m-status-feed .user {
 	display:block;
 	text-decoration:none;
-	line-height:16px;
+    color: #7fc3b4;
+    font-size: 16px;
+    line-height: 18px;
+}
+.m-status-feed .user:hover {
+    color: #7fc3b4;
 }
 
 .m-status-feed .meta {
@@ -3885,19 +3921,72 @@ span.tag-coworker {
 	display:inline;
 	color:inherit;
 }
+.m-status-feed .meta .comments {
+    padding: 0;
+}
 .m-status-feed .meta .comments a {
-	padding:4px 7px 4px 16px;
-	background:url(../i/icons/meta-comments-feed.png) 0 5px no-repeat;
+	padding: 4px 10px 4px 22px;
+    font-size: 14px;
+    color: #767676;
 }
 .m-status-feed .meta .likes {
-	padding:4px 0 4px 13px;
-	background:url(../i/icons/meta-like-feed.png) 0 2px no-repeat;
+	padding: 4px 0 4px 19px;
+    margin-right: 14px;
+    font-size: 14px;
+    color: #767676;
 }
-
+/*
 .m-status-feed .meta .likes-link a {
 	display:inline-block;
 	padding:4px 0 4px 13px;
 	background:url(../i/icons/meta-like-feed.png) 0 5px no-repeat;
+}*/
+
+.m-status-feed .meta .likes         { background-image: url(../i/icons/meta-like-list2.png); }
+.m-status-feed .meta .comments a    { background-image: url(../i/icons/meta-comment-list2.png); }
+.m-status-feed .meta .likes.liked           { background-image: url(../i/icons/meta-like-list2-active.png); }
+.m-status-feed .meta .comments.commented a  { background-image: url(../i/icons/meta-comment-list2-active.png); }
+
+.m-status-feed h2 {
+    text-align: center;
+}
+
+.m-status-feed.m-form form {
+    background: #fff;
+    border-bottom: 1px solid #e7e7e7;
+}
+.m-status-feed textarea {
+    border: 1px solid #e7e7e7;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+    margin: 6px 0 11px 0;
+}
+.m-status-feed textarea::-webkit-input-placeholder {
+   font-style: italic;
+}
+.m-status-feed textarea:-moz-placeholder {
+   font-style: italic;  
+}
+.m-status-feed textarea::-moz-placeholder {
+   font-style: italic;  
+}
+.m-status-feed textarea:-ms-input-placeholder {  
+   font-style: italic;  
+}
+.m-status-feed .submit-area {
+    text-align: center;
+}
+.m-status-feed .submit {
+    display: inline-block;
+    background: #7fc3b4;
+    border: none;
+    border-radius: 0;
+    min-width: 84%;
+    font-family: "Polo", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
 }
 
 
@@ -4316,6 +4405,19 @@ span.tag-coworker {
 }
 
 
+/* FOOTER
+================================================================================ */
+
+#footer li {
+    list-style: none;
+    margin: 0 0 14px 0;
+}
+#footer li a {
+    color: #767676;
+    font-size: 14px;
+    line-height: 24px;
+}
+
 /* SUPPLEMENTAL NAVIGATION
 ================================================================================ */
 .nav-supp {
@@ -4695,11 +4797,20 @@ span.tag-coworker {
 ================================================================================ */
 .breadcrumbs {
 	clear:both;
-	padding:11px 0 0;
-	border-top:1px solid #dedede;
+	padding: 43px 0 0;
+	background: #f4f4f4;
 	word-wrap: break-word;
-	font-size:13px;
-	line-height:24px;
+	color: #767676;
+    font-size: 14px;
+    line-height: 24px;
+}
+.breadcrumbs a {
+    color: #767676;
+    font-size: 14px;
+    line-height: 24px;
+}
+.breadcrumbs a:hover {
+    color: #767676;
 }
 .breadcrumbs span,
 .breadcrumbs .home {
@@ -4714,7 +4825,7 @@ span.tag-coworker {
 }
 .breadcrumbs span {
 	width:20px;
-	background-image:url(../i/breadcrumbs-divider.png);
+	background-image:url(../i/arrow-simple-grey.png);
 }
 .breadcrumbs .home {
 	width:16px;
@@ -6327,6 +6438,9 @@ li a.file span {
 		padding-top:0;
 		padding-bottom:4px;
 	}
+   .m-status-feed .meta ul li {
+       display: inline-block;
+   }
 
 	.item-contact img {
 		width:44px;
@@ -6411,8 +6525,8 @@ li a.file span {
 		background-size:10px 9px;
 	}
 	#footer {
-		background-image:url(../i/footer-illustration@2x.png);
-		background-size:700px 123px;
+		/*background-image:url(../i/footer-illustration@2x.png);*/
+		/*background-size:700px 123px;*/
 	}
 	blockquote {
 		background-image:url(../i/icon-blockquote@2x.png);

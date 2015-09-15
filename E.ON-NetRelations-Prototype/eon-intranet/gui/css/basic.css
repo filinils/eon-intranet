@@ -163,7 +163,8 @@ sub {
 	top:.5ex;
 }
 body {
-	font:93.75%/1.6 Arial, Helvetica, sans-serif;
+	/*font:93.75%/1.6 Arial, Helvetica, sans-serif;*/
+    font: 93.75%/1.6 "Polo", Arial, Helvetica, sans-serif;
 }
 
 code,

@@ -10,11 +10,11 @@
 
 </head>
 
-<body class="layout-2">
-	<div id="body" data-off-canvas-text="mitt nätverk">
-		<?php include('includes/header.html'); ?>
+<body class="layout-2 start-page">
+    <div id="body" data-off-canvas-text="mitt nätverk">
+        <?php include('includes/header.html'); ?>
 
-        <div id="main" class="cf start-page">
+        <div id="main" class="cf">
             <div id="content">
                 <div class="content-1">
                     <div class="content-1-1">
@@ -77,19 +77,19 @@
 
                             <!-- Teasers -->
                             <!--<div class="m m-teaser m-9">
-                            <div class="m-i">
-                                <img src="temp/teaser-4.jpg" alt="" width="510" height="286" />
-                            </div>
-                            <div class="m-h">
-                                <h2><a href="sub-page.html">Koncernyta</a></h2>
-                            </div>
-                            <div class="m-c cf">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis nulla eu ligula.</p>
-                            </div>
-                            <div class="m-f">
-                                <p class="read-more"><a href="sub-page.html">Länk</a></p>
-                            </div>
-                        </div>-->
+                                <div class="m-i">
+                                    <img src="temp/teaser-4.jpg" alt="" width="510" height="286" />
+                                </div>
+                                <div class="m-h">
+                                    <h2><a href="sub-page.html">Koncernyta</a></h2>
+                                </div>
+                                <div class="m-c cf">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis nulla eu ligula.</p>
+                                </div>
+                                <div class="m-f">
+                                    <p class="read-more"><a href="sub-page.html">Länk</a></p>
+                                </div>
+                            </div>-->
                             <!-- Slider -->
                             <div class="m m-slider cf">
                                 <div class="flexslider flexslider-inline" data-transition="fade" data-paginate>
@@ -123,21 +123,21 @@
                             </div>
 
                             <!--
-                        <div class="m m-teaser m-9">
-                            <div class="m-v">
-                                <video id="player1" width="510" height="300" poster="temp/movie.jpg" preload="none">
-                                    <source src="temp/movie.mp4" type="video/mp4">
-                                </video>
+                            <div class="m m-teaser m-9">
+                                <div class="m-v">
+                                    <video id="player1" width="510" height="300" poster="temp/movie.jpg" preload="none">
+                                        <source src="temp/movie.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="m-c">
+                                    <h2>Bolagsyta</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis nulla eu ligula.</p>
+                                </div>
+                                <div class="m-f">
+                                    <p class="read-more"><a href="sub-page.html">Länk</a></p>
+                                </div>
                             </div>
-                            <div class="m-c">
-                                <h2>Bolagsyta</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis nulla eu ligula.</p>
-                            </div>
-                            <div class="m-f">
-                                <p class="read-more"><a href="sub-page.html">Länk</a></p>
-                            </div>
-                        </div>
-                        -->
+                            -->
                         </div>
                     </div>
 
@@ -149,36 +149,10 @@
                     </div>
                 </div>
                 <div class="content-2">
-                    
+
                     <div class="m m-list m-status-feed m-form m-10 m-about-me">
-                        <div class="m-h collapsable" data-collapsed="collapsed" data-collapsable-text="Inställningar" id="my-network-flow">
+                        <div class="m-h" id="my-network-flow">
                             <h2>Status</h2>
-                        </div>
-                        <div class="m-c status-settings collapsablecontent animated">
-                            <form method="post" action="/">
-                                <h3 class="structural">Ändra inställning för statusuppdateringar</h3>
-                                <div class="row cols-1 cf">
-                                    <div class="status col col-1 full">
-                                        <fieldset>
-                                            <legend class="wrap"><span>Visa statusuppdateringar från</span></legend>
-                                            <div class="fieldset-content">
-                                                <div class="radio">
-                                                    <input type="radio" value="ett" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" />
-                                                    <label for="radio2-<?php echo $id; ?>">Mitt nätverksflöde</label>
-                                                </div>
-                                                <div class="radio">
-                                                    <input type="radio" value="två" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" checked />
-                                                    <label for="radio2-<?php echo $id; ?>">Alla</label>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col col-1 submit-area">
-                                        <input type="submit" class="submit" value="Spara" name="submit-<?php echo $id = uniqid('id'); ?>" />
-                                    </div>
-                                </div>
-                                <a class="form-link" href="search-results-people.html">Lägg till personer i mitt nätverk</a>
-                            </form>
                         </div>
                         <div class="m-c cf">
                             <form method="post" action="/">
@@ -186,20 +160,44 @@
                                 <div class="row cols-1 cf">
                                     <div class="status col full col-1">
                                         <label for="status-update" class="structural">Statusuppdatering:</label>
-                                        <textarea name="status-update" id="status-update" cols="30" rows="3" maxlength="140" placeholder="Skriv en uppdatering till ditt nätverksflöde."></textarea>
+                                        <textarea name="status-update" id="status-update" cols="30" rows="3" maxlength="140" placeholder="Skriv något..."></textarea>
                                     </div>
                                     <div class="submit-area col col-1">
-                                        <span class="char-counter">Max <strong id="status-update-counter">140</strong> tecken</span>
-                                        <input type="submit" class="submit" value="Skicka" />
+                                        <!--<span class="char-counter">Max <strong id="status-update-counter">140</strong> tecken</span>-->
+                                        <input type="submit" class="submit" value="Dela status" />
                                     </div>
                                 </div>
                             </form>
-                            <div class="scrollable">
+                            <form method="post" action="/">
+                                <h3 class="structural">Ändra inställning för statusuppdateringar</h3>
+                                <div class="row cols-1 cf">
+                                    <div class="status col col-1 full">
+                                        <fieldset>
+                                            <!--<legend class="wrap"><span>Visa statusuppdateringar från</span></legend>-->
+                                            <div class="fieldset-content">
+                                                <div class="radio radio-green">
+                                                    <input type="radio" value="två" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" checked />
+                                                    <label for="radio2-<?php echo $id; ?>">Alla</label>
+                                                </div>
+                                                <div class="radio radio-green">
+                                                    <input type="radio" value="ett" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" />
+                                                    <label for="radio2-<?php echo $id; ?>">Mina kontakter</label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <!--<div class="col col-1 submit-area">
+                                        <input type="submit" class="submit" value="Spara" name="submit-<?php echo $id = uniqid('id'); ?>" />
+                                    </div>-->
+                                </div>
+                                <!--<a class="form-link" href="search-results-people.html">Lägg till personer i mitt nätverk</a>-->
+                            </form>
+                            <div>
                                 <?php include('includes/status-feed.html'); ?>
                             </div>
                         </div>
                         <div class="m-f">
-                            <p class="read-more"><a href="all-status-feeds.html">Se fler statusuppdateringar</a></p>
+                            <a href="javascript:void(0)" class="load-more">Visa fler</a>
                         </div>
                     </div>
 
@@ -208,22 +206,22 @@
                 </div>
             </div>
         </div>
-		<?php include('includes/footer.html'); ?>
-	</div>
-	<?php include('includes/scripts.html'); ?>
+        <?php include('includes/footer.html'); ?>
+    </div>
+    <?php include('includes/scripts.html'); ?>
 
-	<!-- Video specific scripts -->
-	<script src="gui/js/vendor/mediaelement/js/mediaelement-and-player.js?<?php echo $version; ?>"></script>
-	<script>
-	$('video').mediaelementplayer({
-		success: function(media, node, player) {
-			$('#' + node.id + '-mode').html('mode: ' + media.pluginType);
-		}
-	});
-	</script>
+    <!-- Video specific scripts -->
+    <script src="gui/js/vendor/mediaelement/js/mediaelement-and-player.js?<?php echo $version; ?>"></script>
+    <script>
+        $('video').mediaelementplayer({
+            success: function (media, node, player) {
+                $('#' + node.id + '-mode').html('mode: ' + media.pluginType);
+            }
+        });
+    </script>
 
-	<!-- Image Carousel specific scripts -->
-	<script src="gui/components/flexslider/jquery.flexslider-min.js?<?php echo $version; ?>"></script>
+    <!-- Image Carousel specific scripts -->
+    <script src="gui/components/flexslider/jquery.flexslider-min.js?<?php echo $version; ?>"></script>
 
 </body>
 </html>
