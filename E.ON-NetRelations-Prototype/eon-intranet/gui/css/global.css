@@ -98,7 +98,8 @@
     padding-top: 45px;
 }
 
-.layout-2 .content-1-2 .m {
+.layout-2 .content-1-2 .m,
+.layout-2 .content-2 .m {
     margin: 0 0 10px;
 }
 
