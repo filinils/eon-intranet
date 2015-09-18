@@ -52,6 +52,12 @@ $(function () {
 	image.src = 'gui/i/logo.png';
 
 
+	// Placeholder polyfill
+	//Modernizr.load({
+	//	test: Modernizr.input.placeholder,
+	//	nope: '/js/vendor/jquery.html5-placeholder-shim.min.js'
+	//});
+
 	// Mega menu
 	$('.mega-top-level').megaMenu();
 
@@ -705,6 +711,7 @@ $(function () {
 
 	// Enable html5 placeholder attributes for older browsers.
 	$('input[placeholder]').placeholder();
+	$('#status-update').placeholder();
 
 	// Add rel attribute to external links.
 	$('a:external').attr('rel', 'external');

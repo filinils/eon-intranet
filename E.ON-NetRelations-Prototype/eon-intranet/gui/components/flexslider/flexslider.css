@@ -276,6 +276,7 @@
     width: 50%;
     float: right;
     text-align: right;
+	padding-top: 2px;
 }
 .m-slider .tags li {
     display: inline-block;
