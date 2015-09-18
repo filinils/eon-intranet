@@ -12,6 +12,8 @@
 
 <body class="layout-2 start-page">
     <div id="body" data-off-canvas-text="mitt nätverk">
+
+		<!-- Header -->
         <?php include('includes/header.html'); ?>
 
         <div id="main" class="cf">
@@ -75,21 +77,6 @@
                                 </div>
                             </div>
 
-                            <!-- Teasers -->
-                            <!--<div class="m m-teaser m-9">
-                                <div class="m-i">
-                                    <img src="temp/teaser-4.jpg" alt="" width="510" height="286" />
-                                </div>
-                                <div class="m-h">
-                                    <h2><a href="sub-page.html">Koncernyta</a></h2>
-                                </div>
-                                <div class="m-c cf">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis nulla eu ligula.</p>
-                                </div>
-                                <div class="m-f">
-                                    <p class="read-more"><a href="sub-page.html">Länk</a></p>
-                                </div>
-                            </div>-->
                             <!-- Slider -->
                             <div class="m m-slider cf">
                                 <div class="flexslider flexslider-inline" data-transition="fade" data-paginate>
@@ -116,40 +103,31 @@
                                 </div>
                                 <div class="tags cf">
                                     <ul>
-                                        <li><a href="news-archive-single-source.html" class="tag tag-location">#Malmö</a></li>
-                                        <li><a href="news-archive-single-source.html" class="tag tag-company">#E.ON Gas</a></li>
+                                        <li><a href="news-archive-single-source.html" class="tag tag-location">Malmö</a></li>
+                                        <li><a href="news-archive-single-source.html" class="tag tag-company">E.ON Gas</a></li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <!--
-                            <div class="m m-teaser m-9">
-                                <div class="m-v">
-                                    <video id="player1" width="510" height="300" poster="temp/movie.jpg" preload="none">
-                                        <source src="temp/movie.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                                <div class="m-c">
-                                    <h2>Bolagsyta</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis nulla eu ligula.</p>
-                                </div>
-                                <div class="m-f">
-                                    <p class="read-more"><a href="sub-page.html">Länk</a></p>
-                                </div>
-                            </div>
-                            -->
                         </div>
                     </div>
 
                     <div class="content-1-2">
-                        <!--<?php include('includes/home-shortcuts-bookmarks.html'); ?>-->
+
+						<!-- Calendar -->
                         <?php include('includes/home-calendar.html'); ?>
+
+						<!-- News -->
                         <?php include('includes/eon-news.html'); ?>
+
+						<!-- Teaser without image -->
                         <?php include('includes/teaser-3.html'); ?>
+
                     </div>
                 </div>
                 <div class="content-2">
 
+					<!-- Status feed -->
                     <div class="m m-list m-status-feed m-form m-10 m-about-me">
                         <div class="m-h" id="my-network-flow">
                             <h2>Status</h2>
@@ -163,7 +141,6 @@
                                         <textarea name="status-update" id="status-update" cols="30" rows="3" maxlength="140" placeholder="Skriv något..."></textarea>
                                     </div>
                                     <div class="submit-area col col-1">
-                                        <!--<span class="char-counter">Max <strong id="status-update-counter">140</strong> tecken</span>-->
                                         <input type="submit" class="submit" value="Dela status" />
                                     </div>
                                 </div>
@@ -173,7 +150,6 @@
                                 <div class="row cols-1 cf">
                                     <div class="status col col-1 full">
                                         <fieldset>
-                                            <!--<legend class="wrap"><span>Visa statusuppdateringar från</span></legend>-->
                                             <div class="fieldset-content">
                                                 <div class="radio radio-green">
                                                     <input type="radio" value="två" name="radiogroup2" id="radio2-<?php echo $id = uniqid('id'); ?>" checked />
@@ -186,11 +162,7 @@
                                             </div>
                                         </fieldset>
                                     </div>
-                                    <!--<div class="col col-1 submit-area">
-                                        <input type="submit" class="submit" value="Spara" name="submit-<?php echo $id = uniqid('id'); ?>" />
-                                    </div>-->
                                 </div>
-                                <!--<a class="form-link" href="search-results-people.html">Lägg till personer i mitt nätverk</a>-->
                             </form>
                             <div>
                                 <?php include('includes/status-feed.html'); ?>
@@ -201,13 +173,18 @@
                         </div>
                     </div>
 
+					<!-- Teaser with image -->
                     <?php include('includes/teaser-4.html'); ?>
 
                 </div>
             </div>
         </div>
+
+		<!-- Footer -->
         <?php include('includes/footer.html'); ?>
+
     </div>
+
     <?php include('includes/scripts.html'); ?>
 
     <!-- Video specific scripts -->
@@ -222,11 +199,6 @@
 
     <!-- Image Carousel specific scripts -->
     <script src="gui/components/flexslider/jquery.flexslider-min.js?<?php echo $version; ?>"></script>
-
-	<!--<script src="gui/js/vendor/jquery.placeholder.js?<?php echo $version; ?>"></script>
-	<script>
-		$('#search').placeholder();
-	</script>-->
 
 </body>
 </html>

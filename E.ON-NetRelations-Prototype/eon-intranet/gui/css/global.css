@@ -1138,6 +1138,7 @@ button.link span {
 .m-9 a:active {
 	color:#eb1503;
 }
+
 /* E.ON White + White */
 .m-10 {
 	position: relative;
@@ -2462,7 +2463,6 @@ h1 + .create-news-btn {
 .m-news .m-f {
 	clear:both;
 	padding-top: 4px;
-	/*border-top:1px solid #dedede;*/
 }
 .m-news .m-f .read-more {
 	padding: 0;
@@ -2470,9 +2470,6 @@ h1 + .create-news-btn {
 }
 .m-news .m-f .read-more a {
 	padding: 0 0 0 18px;
-	/*border-radius:4px;
-	background-color:#e6e6e6;
-	background-position:12px 50%;*/
 	text-decoration:none;
     background: url(../i/arrow-simple.png) 0 2px no-repeat;
     color: #767676;
@@ -2482,8 +2479,6 @@ h1 + .create-news-btn {
 }
 .m-news .m-f .read-more a:hover,
 .m-news .m-f .read-more a:focus {
-	/*background-color:#cfcfcf;
-	color:#393939;*/
 	text-decoration: underline;
 }
 .m-news .m-c .col-2 {
@@ -3405,17 +3400,12 @@ span.tag-coworker {
 	position:relative;
 	float:right;
 	overflow:hidden;
-	/*margin:3px 0 6px 8px;*/
 	padding:0px 12px 0 0;
-	/*max-width:220px;*/
 	border:1px solid #c6000b;
-	/*border-radius:4px;
-	background-color:#de1709;*/
 	color:#fff;
 	text-overflow:ellipsis;
 	white-space:nowrap;
 	font: 400 14px "Polo", Arial, sans-serif;
-
     margin: 2px 0 7px 17px;
     width: 242px;
     max-width: 242px;
@@ -3423,11 +3413,9 @@ span.tag-coworker {
 }
 .user-details button img {
 	position:relative;
-	/*margin:-1px 5px 0 0;*/
 	width:39px;
 	height:39px;
 	vertical-align:middle;
-
     border-right: 1px solid #aa0602;
     margin:-1px 23px 0 0;
     float: left;
@@ -3436,14 +3424,8 @@ span.tag-coworker {
 	float:none;
 }
 .js .user-details button {
-	/*padding-right:31px;*/
 	min-height:29px;
-	/*background:#de1709 url(../i/icon-header-user-arrow.png) no-repeat;
-	background-position:94% 13px;
-	background-position:-webkit-calc(100% - 12px) -webkit-calc(50% + 1px);
-	background-position:calc(100% - 12px) calc(50% + 1px);*/
 	cursor:pointer;
-
     position: relative;
     padding-right: 61px;
     line-height: 38px;
@@ -3483,15 +3465,10 @@ span.tag-coworker {
 }
 .notifications .counter {
 	position:relative;
-	display:block;
-	/*min-width:27px;
-	height:24px;*/
-	border-radius:50%;
+	display:block;%;
 	background:#d30d01;
 	color:#fff;
 	font-weight:700;
-	/*line-height:24px;*/
-
     height: 29px;
     width: 29px;
     line-height:30px;
@@ -3502,18 +3479,6 @@ span.tag-coworker {
 .notifications .counter:active {
 	text-decoration:none;
 }
-/*.notifications .counter:after {
-	position:absolute;
-	top:50%;
-	left:100%;
-	margin-top:-3px;
-	width:0;
-	height:0;
-	border:solid transparent;
-	border:3px solid transparent;
-	border-left-color:#d30d01;
-	content:" ";
-}*/
 .notifications a.active-bottom:before {
 	position:absolute;
 	bottom:-8px;
@@ -3864,7 +3829,10 @@ span.tag-coworker {
 	padding-top: 12px;
 }
 .m-status-feed li {
-    padding: 24px 25px 4px 25px;
+    padding: 24px 0 4px 0;
+}
+.m-status-feed .status-feed-list > li {
+	margin: 0 25px;
 }
 .m-status-feed li > div {
 	position:relative;
@@ -4102,7 +4070,6 @@ span.tag-coworker {
 .nav-main li:last-child {
 	margin:0;
 	padding-right:0;
-	/*border:none;*/
 }
 .nav-main li:last-child a {
 	border:none;
@@ -4128,9 +4095,6 @@ span.tag-coworker {
     color: #767676;
     padding: 5px 15px 4px 15px;
 }
-/*.nav-main > ul > li:first-child > a {
-    padding-left: 0;
-}*/
 .nav-main li a:hover {
 	text-decoration: none;
 	color: #a7231c;
@@ -4994,9 +4958,6 @@ a.level-up:active {
 }
 .meta li {
 	display:inline;
-}
-.meta span {
-	/*font-weight:700;*/
 }
 .meta a {
 	color:#737373!important;
@@ -6365,16 +6326,6 @@ li a.file span {
 
 	/* Search
 	-------------------------------------------------------------- */
-	/*#search {
-		position:relative;
-		left:0;
-		margin:0;
-		width:auto;
-		font-size:16px;
-	}
-	.search-container {
-		display:none;
-	}*/
     #searchtext {
         padding: 0 20px;
         margin: 0 -40px 0 0;
@@ -6454,7 +6405,6 @@ li a.file span {
     .shortcuts .sub-menu .m-c-left,
     .shortcuts .sub-menu .m-c-right {
         width: 100%;
-        /*margin: 0;*/
     }
     .shortcuts .sub-menu .m-c-right { margin-top: 0; }
 
