@@ -822,6 +822,17 @@ $(function () {
 	    $('#search').toggleClass('open');
 	});
 
+	//Toggle edit profile information
+	$('.m-user-details .toggle-edit').on('click', function () {
+		var parent = $(this).parent();
+		$('.m-user-details .user-details-inner').removeClass('edit-mode');
+		$(parent).addClass('edit-mode');
+	});
+	$('.m-user-details .cancel').on('click', function () {
+		var grandparent = $(this).parent().parent();
+		$(grandparent).removeClass('edit-mode');
+	});
+
 });
 
 $(window).bind('load resize orientationchange', function() {

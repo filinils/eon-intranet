@@ -2885,33 +2885,44 @@ span.tag-coworker {
 -------------------------------------------------------------- */
 .profile-details {
 	position:relative;
-	margin-bottom:24px;
 	padding-bottom:16px;
-	border-bottom:1px solid #e6e6e6;
+	border-bottom: 1px solid #d7d7d7;
 }
 .profile-details h1 {
 	margin:0 0 10px;
+	padding: 0 0 21px 0;
+	border-bottom: 1px solid #d7d7d7;
 }
 .profile-details .expertise {
-	margin-bottom:8px;
-	font-style:italic;
-	font-size:16px;
-	line-height:24px;
+	padding: 3px 0 9px 0;
+	margin: 0;
+	color: #444;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 600;
 }
 .profile-photo {
 	float:left;
 	margin:0;
-	max-width:20%;
+	max-width:25%;
 	text-align:center;
+	position: relative;
 }
-.profile-photo a {
-	display:inline-block;
+.profile-photo img {
+	display: block;
 }
 .profile-details dl {
 	margin:0 0 8px;
 }
-.profile-details dt,
+.profile-details dt {
+	display: block;
+	float: left;
+	font-weight: 400;
+	margin:0;
+	clear: left;
+}
 .profile-details dd {
+	display: block;
 	margin:0;
 }
 /*.profile-details dt:after {
@@ -2919,15 +2930,21 @@ span.tag-coworker {
 }*/
 .profile-details .info {
 	float:right;
-	width:75%;
+	width:70%;
 }
-.profile-details .company-info {
+.profile-details .details-left {
 	float:left;
-	width:55%;
+	width:50%;
 }
-.profile-details .contact-wrap {
+.profile-details .details-right {
 	float:right;
-	width:40%;
+	width:45%;
+}
+.profile-details .details-left,
+.profile-details .details-right {
+	font-size: 14px;
+	line-height: 19px;
+	color: #767676;
 }
 .profile-details .contact-details {
 	margin:0;
@@ -2946,7 +2963,6 @@ span.tag-coworker {
 	color:#333;
 	font-weight:700;
 	font-size:13px;
-	font-family:Arial, Helvetica, sans-serif;
 }
 .profile-details .address p {
 	margin:0;
@@ -2964,7 +2980,22 @@ span.tag-coworker {
 	line-height: 16px;
 }
 .profile-details .button-edit-photo {
-	padding:4px 10px 5px;
+	display: block;
+	width: 100%;
+	height: 33px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: url(../i/icons/icon-edit-white.png) 97% 45% no-repeat;
+	background-color: rgba(0, 0, 0, 0.65);
+	padding: 0;
+	margin: 0;
+	border: none;
+	-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.profile-details .button-edit-photo:hover {
+	background-color: rgba(0, 0, 0, 1);
 }
 .profile-details .button:hover {
 	color:#333;
@@ -2998,13 +3029,98 @@ span.tag-coworker {
 .m-user-details {
 	margin:0 0 48px;
 }
-.m-user-details h3 {
-	color:#333;
+.m-user-details .user-details-inner {
+	position: relative;
+	border-bottom: 1px solid #d7d7d7;
+	padding-top: 35px;
+	padding-bottom: 30px;
+}
+.m-user-details .user-details-inner .edit {
+	display: none;
+}
+.m-user-details .user-details-inner .view {
+	display: block;
+}
+.m-user-details .user-details-inner.edit-mode .edit {
+	display: block;
+}
+.m-user-details .user-details-inner.edit-mode .view {
+	display: none;
+}
+.m-user-details h2 {
+	color: #767676;
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: 200;
+	margin: 0 0 13px 0;
+}
+.m-user-details .intro p,
+.m-user-details p {
+	max-width: 600px;
+	color: #444;
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 400;
+	margin: 0;
 }
 .m-user-details p,
 .m-user-details li a {
 	word-break:break-word;
 }
+
+.m-user-details .toggle-edit {
+	display: block;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 15px;
+	right: 0;
+	background: url(../i/icons/icon-edit-sprite.png) 0 0 no-repeat;
+}
+.m-user-details .toggle-edit:hover {
+	background-position: 0 -25px;
+}
+.m-user-details .user-details-inner.edit-mode .toggle-edit {
+	background-position: 0 -25px;
+}
+
+.m-user-details button {
+	display: block;
+	min-width: 160px;
+	float: right;
+	padding: 5px 25px;
+	text-decoration:none;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0 0 0 15px;
+	-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.m-user-details button.save {
+	background: #7fc3b4;
+	border: 1px solid #7fc3b4;
+	color: #fff;
+}
+.m-user-details button.save:hover { background: #3AA48D; border-color: #3AA48D; }
+.m-user-details button.cancel {
+	background: transparent;
+	border: 1px solid #7fc3b4;
+	color: #7fc3b4;
+}
+.m-user-details button.cancel:hover { background: #7fc3b4; color: #fff; }
+
+.m-user-details .tag-list {
+	background: transparent;
+}
+.m-user-details .tag-list li {
+	display: block;
+}
+.m-user-details .tag-list span.tag {
+    color: #444!important;
+    font-size: 14px;
+	line-height: 21px;
+}
+
 .m-user-details .manager {
 	line-height:24px;
 }
@@ -3020,9 +3136,40 @@ span.tag-coworker {
 .m-user-details .manager img {
 	vertical-align:baseline;
 }
-.user-details-edit h3 {
-	margin-bottom:8px;
+
+.user-details-edit textarea,
+.user-details-edit input[type="text"] {
+	width: 100%;
+	background: #fafafa;
+	border: 1px solid #444444;
+	outline: none!important;
+	color: #444;
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 400;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+.user-details-edit textarea {
+	padding: 20px 24px;
+	margin: 9px 0 5px 0;
+}
+.user-details-edit input[type="text"] {
+	padding: 5px 24px;
+	margin: 9px 0 15px 0;
+}
+.user-details-edit ::selection {
+  background: #d8e9f0; /* WebKit/Blink Browsers */
+}
+.user-details-edit ::-moz-selection {
+  background: #d8e9f0; /* Gecko Browsers */
+}
+
+.user-details-edit .tagsinput  {
+	margin: 9px 0 15px 0;
+}
+
 .user-details-edit .description {
 	margin:0;
 	padding-bottom:3px;
@@ -3465,7 +3612,8 @@ span.tag-coworker {
 }
 .notifications .counter {
 	position:relative;
-	display:block;%;
+	display:block;
+	border-radius: 29px;
 	background:#d30d01;
 	color:#fff;
 	font-weight:700;

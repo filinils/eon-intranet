@@ -2,15 +2,20 @@
 <?php $sel = "2"; ?>
 <?php include('includes/doctype-and-head.html'); ?>
 </head>
-<body class="layout-1">
+
+<body class="layout-4">
 	<div id="body">
+
+		<!-- Header -->
 		<?php include('includes/header.html'); ?>
+
 		<div id="main" class="cf">
 			<div id="content">
+
+				<!-- Main -->
 				<div class="content-1">
-					<?php include('includes/nav-sub-profile.html'); ?>
-				</div>
-				<div class="content-2">
+
+					<!-- Summary -->
 					<div id="content-primary" class="article cf" role="main">
 						<div class="content-2-0 profile-details cf">
 							<div class="profile-photo">
@@ -20,287 +25,309 @@
 							<div class="info">
 								<h1>Jakob Holmström</h1>
 								<a href="profile-page-user-edit.html" class="button button-alt button-edit">Redigera mina uppgifter</a>
-								<div class="company-info">
-									<p class="expertise">Kommunikationschef</p>
+								<p class="expertise">Kommunikationschef</p>
+								<div class="details-left">
 									<dl>
-										<dt class="structural">Bolag</dt>
+										<dt class="structural">Bolag:&nbsp;</dt>
 										<dd>E.ON Sverige</dd>
-										<dt class="structural">Avdelning</dt>
+										<dt>Avdelning:&nbsp;</dt>
 										<dd>Stakeholder Management</dd>
-										<dt class="structural">Enhet</dt>
+										<dt>Enhet:&nbsp;</dt>
 										<dd>Brand & Marketing</dd>
-										<dt class="structural">Grupp</dt>
+										<dt>Grupp:&nbsp;</dt>
 										<dd>Digital</dd>
+										<dt>Telefon:&nbsp;</dt>
+										<dd>040-25 50 00</dd>
 									</dl>
 								</div>
-								<div class="contact-wrap">
-									<ul class="contact-details">
-										<li class="phone"><span>040-25 50 00</span></li>
-										<li class="email"><a href="mailto:jakob.holmstrom@eon.se">jakob.holmstrom@eon.se</a></li>
-										<li class="kid"><span>KID:</span> 78314546</li>
-									</ul>
-									<div class="address">
-										<h2 class="structural">E.ON Sverige</h2>
-										<p>
-											<strong>Besöksadress</strong>
-											Carl Gustafs väg 1
-										</p>
-										<p>
-											<strong>Postadress</strong>
-											205 09, Malmö
-										</p>
-										<p class="room-number">
-											Besök mig i rum <span>520</span>
-										</p>
-									</div>
+								<div class="details-right">
+									<dl>
+										<dt>Mejl:&nbsp;</dt>
+										<dd><a href="mailto:jakob.holmstrom@eon.se">jakob.holmstrom@eon.se</a></dd>
+										<dt>KID:&nbsp;</dt>
+										<dd>78314546</dd>
+										<dt>Besöksadress:&nbsp;</dt>
+										<dd>Carl Gustafs väg 1</dd>
+										<dt>Postadress:&nbsp;</dt>
+										<dd>205 09, Malmö</dd>
+										<dt class="structural">Besöksrum:&nbsp;</dt>
+										<dd>Besök mig i rum 520</dd>
+									</dl>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="content-2-1">
-						<div class="m m-gamification">
-							<div class="progress">
-								<div class="bar" style="width:80%"></div>
-							</div>
-							<p class="amount"><strong>80%</strong> av din profil är färdig.</p>
-							<ul class="m-gamification progress-steps">
-                                <li><span class="checked">Färdig </span><h2>Profilbild</h2></li>
-								<li><span class="checked">Färdig </span><h2>Titel</h2></li>
-								<li><span class="checked">Färdig </span><h2>Besök mig i rum</h2></li>
-								<li><span class="checked">Färdig </span><h2>Mina kompetensområden</h2></li>
-								<li><span class="checked">Färdig </span><h2>Språk</h2></li>
-								<li><span class="unchecked">Ej påbörjad </span><h2>Intressen</h2></li>
-								<li><span class="unchecked">Ej påbörjad </span><h2>Om mig</h2></li>
-							</ul>
+
+					<!-- Progress bar -->
+					<div class="m m-gamification">
+						<div class="progress">
+							<div class="bar" style="width:80%"></div>
 						</div>
-						<div class="m-user-details">
-							<h2>Om mig</h2>
-							<div class="intro">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, voluptatum, iusto, suscipit, officia excepturi impedit alias maiores voluptas ipsam laboriosam quis aliquam accusantium culpa. Ipsum laudantium odit beatae optio laboriosam.</p>
-							</div>
-							<h3>Mina kompetensområden</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, illo, explicabo, ant.</p>
-							<h3>Språk</h3>
-							<div class="tag-list user-tags cf">
-								<ul>
-									<li><span class="tag tag-language">Svenska</span></li>
-									<li><span class="tag tag-language">Engelska</span></li>
-									<li><span class="tag tag-language">Spanska</span></li>
-								</ul>
-							</div>
-							<!--
-							<h3>Födelsedatum</h3>
-							<p>19 april</p>
-							-->
-							<h3>Intressen</h3>
-							<div class="tag-list user-tags cf">
-								<ul>
-									<li><span class="tag tag-interest">Hemkunskap</span></li>
-									<li><span class="tag tag-interest">Träslöjd</span></li>
-									<li><span class="tag tag-interest">Energi</span></li>
-								</ul>
-							</div>
-                            
-							<h3>Externa nätverk</h3>
-							<div class="tag-list user-tags cf user-social">
-								<ul>
-<?php
-    $social = [
-"500px",
-"8tracks",
-"airbnb",
-"amazon",
-"android",
-"apple",
-"appnet",
-"bebo",
-"behance",
-"blogger",
-"buffer",
-"chimein",
-"coderwall",
-"dailymotion",
-"delicious",
-"deviantart",
-"digg",
-"disqus",
-"dribbble",
-"drupal",
-"ello",
-"envato",
-"facebook",
-"feedburner",
-"flattr",
-"flickr",
-"forrst",
-"foursquare",
-"friendfeed",
-"github",
-"goodreads",
-"google",
-"grooveshark",
-"houzz",
-"identica",
-"instagram",
-"lanyrd",
-"lastfm",
-"linkedin",
-"mail",
-"meetup",
-"mixloud",
-"myspace",
-"newsvine",
-"odnoklassniki",
-"outlook",
-"patreon",
-"paypal",
-"persona",
-"pinterest",
-"play",
-"playstation",
-"pocket",
-"reddit",
-"rss",
-"skype",
-"slideshare",
-"smugmug",
-"soundcloud",
-"spotify",
-"stackoverflow",
-"steam",
-"stumbleupon",
-"swarm",
-"technorati",
-"tripadvisor",
-"tripit",
-"triplej",
-"tumblr",
-"twitch",
-"twitter",
-"viadeo",
-"vimeo",
-"vine",
-"vkontakte",
-"wikipedia",
-"windows",
-"wordpress",
-"xbox",
-"xing",
-"yahoo",
-"yammer",
-"yelp",
-"youtube",
-"zerply",
-"zynga"
-    ];
-    foreach ($social as $network) { ?>
-                                    <li>
-                                        <a href="#"><img title="<?php echo ucfirst($network); ?>" 
-                                                         src="gui/i/socicon/png/socicon-<?php echo $network; ?>.png"></a>
-                                    </li>
-<?php } ?>
-								</ul>
-							</div>                            
+						<p class="amount"><strong>80%</strong> av din profil är färdig.</p>
+						<ul class="m-gamification progress-steps">
+							<li><span class="checked">Färdig </span><h2>Profilbild</h2></li>
+							<li><span class="checked">Färdig </span><h2>Titel</h2></li>
+							<li><span class="checked">Färdig </span><h2>Besök mig i rum</h2></li>
+							<li><span class="checked">Färdig </span><h2>Mina kompetensområden</h2></li>
+							<li><span class="checked">Färdig </span><h2>Språk</h2></li>
+							<li><span class="unchecked">Ej påbörjad </span><h2>Intressen</h2></li>
+							<li><span class="unchecked">Ej påbörjad </span><h2>Om mig</h2></li>
+						</ul>
+					</div>
+
+					<!-- User details -->
+					<div class="m-user-details">
+
+						<!-- About -->
+						<h2>Om mig</h2>
+						<div class="intro">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, voluptatum, iusto, suscipit, officia excepturi impedit alias maiores voluptas ipsam laboriosam quis aliquam accusantium culpa. Ipsum laudantium odit beatae optio laboriosam.</p>
 						</div>
-						<div class="article-actions cf">
-							<h2 class="structural">Verktyg</h2>
+
+						<!-- Skills -->
+						<h3>Mina kompetensområden</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, illo, explicabo, ant.</p>
+						
+						<!-- Language -->
+						<h3>Språk</h3>
+						<div class="tag-list user-tags cf">
 							<ul>
-								<?php include('includes/article-buttons-1.html'); ?>
+								<li><span class="tag tag-language">Svenska</span></li>
+								<li><span class="tag tag-language">Engelska</span></li>
+								<li><span class="tag tag-language">Spanska</span></li>
+							</ul>
+						</div>
+
+						<!-- Interests -->
+						<h3>Intressen</h3>
+						<div class="tag-list user-tags cf">
+							<ul>
+								<li><span class="tag tag-interest">Hemkunskap</span></li>
+								<li><span class="tag tag-interest">Träslöjd</span></li>
+								<li><span class="tag tag-interest">Energi</span></li>
+							</ul>
+						</div>
+
+						<!-- Social networks -->
+						<h3>Externa nätverk</h3>
+						<div class="tag-list user-tags cf user-social">
+							<ul>
+								<?php
+								$social = [
+								"500px",
+								"8tracks",
+								"airbnb",
+								"amazon",
+								"android",
+								"apple",
+								"appnet",
+								"bebo",
+								"behance",
+								"blogger",
+								"buffer",
+								"chimein",
+								"coderwall",
+								"dailymotion",
+								"delicious",
+								"deviantart",
+								"digg",
+								"disqus",
+								"dribbble",
+								"drupal",
+								"ello",
+								"envato",
+								"facebook",
+								"feedburner",
+								"flattr",
+								"flickr",
+								"forrst",
+								"foursquare",
+								"friendfeed",
+								"github",
+								"goodreads",
+								"google",
+								"grooveshark",
+								"houzz",
+								"identica",
+								"instagram",
+								"lanyrd",
+								"lastfm",
+								"linkedin",
+								"mail",
+								"meetup",
+								"mixloud",
+								"myspace",
+								"newsvine",
+								"odnoklassniki",
+								"outlook",
+								"patreon",
+								"paypal",
+								"persona",
+								"pinterest",
+								"play",
+								"playstation",
+								"pocket",
+								"reddit",
+								"rss",
+								"skype",
+								"slideshare",
+								"smugmug",
+								"soundcloud",
+								"spotify",
+								"stackoverflow",
+								"steam",
+								"stumbleupon",
+								"swarm",
+								"technorati",
+								"tripadvisor",
+								"tripit",
+								"triplej",
+								"tumblr",
+								"twitch",
+								"twitter",
+								"viadeo",
+								"vimeo",
+								"vine",
+								"vkontakte",
+								"wikipedia",
+								"windows",
+								"wordpress",
+								"xbox",
+								"xing",
+								"yahoo",
+								"yammer",
+								"yelp",
+								"youtube",
+								"zerply",
+								"zynga"
+								];
+								foreach ($social as $network) { ?>
+								<li>
+									<a href="#">
+										<img title="<?php echo ucfirst($network); ?>"
+											 src="gui/i/socicon/png/socicon-<?php echo $network; ?>.png">
+									</a>
+								</li>
+								<?php } ?>
 							</ul>
 						</div>
 					</div>
-					<div class="content-2-2">
-						<div role="complementary">
-							<div class="m m-list m-status-feed m-form m-9">
-								<div class="m-h" data-collapsable-text="Dölj nätverksflöde" id="my-network-flow">
-									<h2>Mitt nätverksflöde</h2>
-								</div>
-								<div class="m-c cf">
-									<form method="post" action="/">
-										<h3 class="structural">Skriv en uppdatering till ditt nätverksflöde.</h3>
-										<div class="row cols-1 cf">
-											<div class="status col full col-1">
-												<label for="status-update" class="structural">Statusuppdatering:</label>
-												<textarea name="status-update" id="status-update" cols="30" rows="3" placeholder="Skriv en uppdatering till ditt nätverksflöde."></textarea>
-											</div>
-											<div class="submit-area col col-1">
-												<span class="char-counter">Max <strong id="status-update-counter">140</strong> tecken</span>
-												<input type="submit" class="submit" value="Skicka" />
-											</div>
+
+					<!-- Share & print -->
+					<div class="article-actions cf">
+						<h2 class="structural">Verktyg</h2>
+						<ul>
+							<?php include('includes/article-buttons-1.html'); ?>
+						</ul>
+					</div>
+
+				</div>
+
+				<!-- Sidebar -->
+				<div class="content-2">
+					<div role="complementary">
+
+						<!-- Status feed -->
+						<div class="m m-list m-status-feed m-form m-10 m-about-me">
+							<div class="m-h" data-collapsable-text="Dölj nätverksflöde" id="my-network-flow">
+								<h2>Mitt nätverksflöde</h2>
+							</div>
+							<div class="m-c cf">
+								<form method="post" action="/">
+									<h3 class="structural">Skriv en uppdatering till ditt nätverksflöde.</h3>
+									<div class="row cols-1 cf">
+										<div class="status col full col-1">
+											<label for="status-update" class="structural">Statusuppdatering:</label>
+											<textarea name="status-update" id="status-update" cols="30" rows="3" placeholder="Skriv en uppdatering till ditt nätverksflöde."></textarea>
 										</div>
-									</form>
-									<div class="scrollable">
-										<?php include('includes/status-feed.html'); ?>
+										<div class="submit-area col col-1">
+											<span class="char-counter">Max <strong id="status-update-counter">140</strong> tecken</span>
+											<input type="submit" class="submit" value="Skicka" />
+										</div>
 									</div>
-								</div>
-								<div class="m-f">
-									<p class="read-more"><a href="all-status-feeds.html">Se fler statusuppdateringar</a></p>
+								</form>
+								<div class="">
+									<?php include('includes/status-feed.html'); ?>
 								</div>
 							</div>
-							<div class="m m-list m-coworkers m-1">
-								<div class="m-h">
-									<h2>Mina kollegor</h2>
-								</div>
-								<div class="m-c cf">
-									<h3>Min närmsta chef</h3>
+							<div class="m-f">
+								<a href="javascript:void(0)" class="load-more">Visa fler</a>
+							</div>
+						</div>
+
+						<!-- Coworkers -->
+						<div class="m m-list m-coworkers m-10 m-about-me">
+							<div class="m-h">
+								<h2>Mina kollegor</h2>
+							</div>
+							<div class="m-c cf">
+								<h3>Min närmsta chef</h3>
+								<ol>
+									<li class="cf">
+										<img src="temp/notification-user-1.jpg" width="30" height="30" alt="Profilbild på Paula Renaye" class="left" />
+										<a href="user-profile.html">Paula Renaye</a>
+										<p class="expertise">Press Officer</p>
+									</li>
+								</ol>
+								<h3>Mina närmsta kollegor</h3>
+								<div class="">
 									<ol>
 										<li class="cf">
-											<img src="temp/notification-user-1.jpg" width="30" height="30" alt="Profilbild på Paula Renaye" class="left" />
-											<a href="user-profile.html">Paula Renaye</a>
+											<img src="temp/notification-user-2.jpg" width="30" height="30" alt="Profilbild på Roger Strandahl" class="left" />
+											<a href="user-profile.html">Roger Strandahl</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
+										<li class="cf">
+											<img src="temp/notification-user-3.jpg" width="30" height="30" alt="Profilbild på Louise Gudmundson" class="left" />
+											<a href="user-profile.html">Louise Gudmundson</a>
 											<p class="expertise">Press Officer</p>
 										</li>
+										<li class="cf">
+											<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
+											<a href="user-profile.html">Maria Swartling-Jung</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
+										<li class="cf">
+											<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
+											<a href="user-profile.html">Maria Swartling-Jung</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
+										<li class="cf">
+											<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
+											<a href="user-profile.html">Maria Swartling-Jung</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
+										<li class="cf">
+											<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
+											<a href="user-profile.html">Maria Swartling-Jung</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
+										<li class="cf">
+											<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
+											<a href="user-profile.html">Maria Swartling-Jung</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
 									</ol>
-									<h3>Mina närmsta kollegor</h3>
-									<div class="scrollable">
-										<ol>
-											<li class="cf">
-												<img src="temp/notification-user-2.jpg" width="30" height="30" alt="Profilbild på Roger Strandahl" class="left" />
-												<a href="user-profile.html">Roger Strandahl</a>
-												<p class="expertise">Kommunikationschef</p>
-											</li>
-											<li class="cf">
-												<img src="temp/notification-user-3.jpg" width="30" height="30" alt="Profilbild på Louise Gudmundson" class="left" />
-												<a href="user-profile.html">Louise Gudmundson</a>
-												<p class="expertise">Press Officer</p>
-											</li>
-											<li class="cf">
-												<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
-												<a href="user-profile.html">Maria Swartling-Jung</a>
-												<p class="expertise">Kommunikationschef</p>
-											</li>
-											<li class="cf">
-												<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
-												<a href="user-profile.html">Maria Swartling-Jung</a>
-												<p class="expertise">Kommunikationschef</p>
-											</li>
-											<li class="cf">
-												<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
-												<a href="user-profile.html">Maria Swartling-Jung</a>
-												<p class="expertise">Kommunikationschef</p>
-											</li>
-											<li class="cf">
-												<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
-												<a href="user-profile.html">Maria Swartling-Jung</a>
-												<p class="expertise">Kommunikationschef</p>
-											</li>
-											<li class="cf">
-												<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
-												<a href="user-profile.html">Maria Swartling-Jung</a>
-												<p class="expertise">Kommunikationschef</p>
-											</li>
-										</ol>
-									</div>
 								</div>
 							</div>
+							<div class="m-f">
+								<a href="javascript:void(0)" class="load-more">Visa fler</a>
+							</div>
 						</div>
+
 					</div>
 				</div>
+
 			</div>
-			
+
 		</div>
+
         <?php include('includes/breadcrumbs.html'); ?>
 		<?php include('includes/footer.html'); ?>
+
 	</div>
+
 	<?php include('includes/scripts.html'); ?>
+
 </body>
 </html>

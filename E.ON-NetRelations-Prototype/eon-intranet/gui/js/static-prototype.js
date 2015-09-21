@@ -14,20 +14,10 @@ $(function () {
 		} catch (e) {}
 	});
 
-	//Show more
-	//$(".m-eon-news .m-c li").hide();
-	//$(".m-eon-news .m-c li").slice(0, 3).show();
-	//$('.m-eon-news .load-more').on('click', function () {
-	//	var showing = $(this).parent().siblings(".m-c").find("li:visible").length;
-	//	$(this).parent().siblings(".m-c").find("li").slice(showing - 1, showing + 3).slideDown('slow');
-	//});
-
 	//Show more news
 	var ajaxcontent = '<li class="cf"><span class="time"><time datetime="2013-03-29">17 januari 2013</time></span><a href="sub-page.html">Lorem ipsum dolor sit</a></li><li class="cf"><span class="time"><time datetime="2013-03-29">17 januari 2013</time></span><a href="sub-page.html">Lorem ipsum dolor sit</a></li><li class="cf"><span class="time"><time datetime="2013-03-29">17 januari 2013</time></span><a href="sub-page.html">Lorem ipsum dolor sit</a></li>';
 	$('.m-eon-news .load-more, .m-calendar .load-more').on('click', function () {
 		var list = $(this).parent().siblings(".m-c").find("ul");
-		//$(ajaxcontent).hide().appendTo(list).slideDown('slow';
-		//$(list).append(ajaxcontent).hide().each(function (i) {
 		$(ajaxcontent).appendTo(list).hide().each(function (i) {
 			$(this).delay(50 * i).animate({
 				"height": "show",
