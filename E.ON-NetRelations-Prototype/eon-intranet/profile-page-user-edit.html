@@ -60,7 +60,21 @@
 					</div>
 
 					<!-- Progress bar -->
-
+					<div class="m m-gamification cf">
+						<h2 class="amount">80% av din profil är färdig</h2>
+						<div class="progress">
+							<div class="bar" style="width:80%"></div>
+						</div>
+						<ul class="m-gamification progress-steps">
+							<li class="checked"><h3>Profilbild</h3></li>
+							<li class="checked"><h3>Titel</h3></li>
+							<li class="checked"><h3>Besöksrum</h3></li>
+							<li class="checked"><h3>Mina kunskapsområden</h3></li>
+							<li class="checked"><h3>Språk</h3></li>
+							<li class="unchecked"><h3>Intressen</h3></li>
+							<li class="unchecked"><h3>Om mig</h3></li>
+						</ul>
+					</div>
 
 					<!-- User details -->
 					<form action="/" class="m-user-details cms user-details-edit" method="post">
@@ -81,14 +95,6 @@
 								<button type="button" class="cancel">Avbryt</button>
 							</div>
 						</div>
-
-						<!--<div class="row cols-1 cf">
-							<div class="text col full col-1">
-								<h3>Titel</h3>
-								<label for="<?php echo $id = uniqid('id'); ?>" class="structural">Titel</label>
-								<input type="text" name="<?php echo $id; ?>" value="Kommunikationschef" id="<?php echo $id; ?>" />
-							</div>
-						</div>-->
 
 						<!-- Working with -->
 						<div class="user-details-inner cf">
@@ -126,18 +132,10 @@
 							</div>
 						</div>
 
-						<!--<div class="row cols-1 cf">
-							<div class="text col small col-1">
-								<h3>Rumsnummer</h3>
-								<label for="<?php echo $id = uniqid('id'); ?>" class="structural">Rumsnummer</label>
-								<input type="text" name="<?php echo $id; ?>" value="520" id="<?php echo $id; ?>" />
-							</div>
-						</div>-->
-
 						<!-- Intrests -->
 						<div class="user-details-inner cf">
 							<a href="javascript:void(0)" class="toggle-edit"></a>
-							<h2>Intressen</h2>
+							<h2>Jag är intresserad av</h2>
 							<div class="view">
 								<div class="tag-list user-tags cf">
 									<ul>
@@ -170,164 +168,31 @@
 							</div>
 						</div>
 
-						<!--<div class="row cols-1 cf">
-							<div class="col col-1">
-								<h3>Lync</h3>
-								<fieldset>
-									<legend class="wrap"><span>Visa Lync-status i min profil</span></legend>
-									<div class="fieldset-content">
-										<div class="radio alt">
-											<input type="radio" value="ja" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" checked />
-											<label for="radio1-<?php echo $id; ?>">Ja</label>
-										</div>
-										<div class="radio alt">
-											<input type="radio" value="nej" name="radiogroup1" id="radio1-<?php echo $id = uniqid('id'); ?>" />
-											<label for="radio1-<?php echo $id; ?>">Nej</label>
-										</div>
-									</div>
-								</fieldset>
+						<!-- Notifications -->
+						<div class="user-details-inner cf">
+							<a href="javascript:void(0)" class="toggle-edit"></a>
+							<h2>Statusuppdateringar</h2>
+							<div class="view">
+								
 							</div>
-						</div>-->
-
-						<!--<div class="row cols-1 cf">
-							<div class="col col-1">
-								<h3>Externa nätverk</h3>
-								<legend class="wrap"><span>Lägg till länkar till externa nätverk som du vill ska synas på din profil.</span></legend>
-								<?php
-								$social = [
-								"500px",
-								"8tracks",
-								"airbnb",
-								"amazon",
-								"android",
-								"apple",
-								"appnet",
-								"bebo",
-								"behance",
-								"blogger",
-								"buffer",
-								"chimein",
-								"coderwall",
-								"dailymotion",
-								"delicious",
-								"deviantart",
-								"digg",
-								"disqus",
-								"dribbble",
-								"drupal",
-								"ello",
-								"envato",
-								"facebook",
-								"feedburner",
-								"flattr",
-								"flickr",
-								"forrst",
-								"foursquare",
-								"friendfeed",
-								"github",
-								"goodreads",
-								"google",
-								"grooveshark",
-								"houzz",
-								"identica",
-								"instagram",
-								"lanyrd",
-								"lastfm",
-								"linkedin",
-								"mail",
-								"meetup",
-								"mixloud",
-								"myspace",
-								"newsvine",
-								"odnoklassniki",
-								"outlook",
-								"patreon",
-								"paypal",
-								"persona",
-								"pinterest",
-								"play",
-								"playstation",
-								"pocket",
-								"reddit",
-								"rss",
-								"skype",
-								"slideshare",
-								"smugmug",
-								"soundcloud",
-								"spotify",
-								"stackoverflow",
-								"steam",
-								"stumbleupon",
-								"swarm",
-								"technorati",
-								"tripadvisor",
-								"tripit",
-								"triplej",
-								"tumblr",
-								"twitch",
-								"twitter",
-								"viadeo",
-								"vimeo",
-								"vine",
-								"vkontakte",
-								"wikipedia",
-								"windows",
-								"wordpress",
-								"xbox",
-								"xing",
-								"yahoo",
-								"yammer",
-								"yelp",
-								"youtube",
-								"zerply",
-								"zynga",
-								];
-								?>
-
-								<fieldset>
-									<div class="social-list cf user-social">
-										<ul>
-											<?php foreach ($social as $network) { ?>
-											<li data-field="<?= $network; ?>-link">
-												<a href="#">
-													<img class="small" title="<?= ucfirst($network); ?>"
-														 src="gui/i/socicon/png/socicon-<?= $network; ?>.png" />
-												</a>
-											</li>
-											<?php } ?>
-										</ul>
-									</div>
-
-									<div class="row cols-1 cf user-social">
-										<ul class="edit-user-social">
-											<?php foreach ($social as $network) { ?>
-											<li>
-												<label for="<?= $network; ?>-link" class="<?= $network; ?>">
-													<img class="small" title="<?= $network; ?>"
-														 src="gui/i/socicon/png/socicon-<?= $network; ?>.png" />
-												</label>
-												<input type="text" name="<?= $network; ?>-link" value="" id="<?= $network; ?>-link" />
-											</li>
-											<?php } ?>
-										</ul>
-									</div>
-								</fieldset>
+							<div class="edit">
+								
 							</div>
-						</div>-->
+						</div>
 
-						<!--<div class="row cols-1 cf">
-							<div class="col col-1 submit-area">
-								<div class="col col-1 submit-area">
-									<input type="submit" class="submit" value="Spara" name="submit-<?php echo $id = uniqid('id'); ?>" />
-									<span class="or">eller</span>
-									<button type="reset" class="reset confirm-button" title="Avbryt dina ändringar"><span>Avbryt</span></button>
-								</div>
+						<!-- News -->
+						<div class="user-details-inner cf">
+							<a href="javascript:void(0)" class="toggle-edit"></a>
+							<h2>Mina nyhetskällor</h2>
+							<div class="view">
+
 							</div>
-						</div>-->
+							<div class="edit">
+
+							</div>
+						</div>
 
 					</form>
-
-
 
 				</div>
 
@@ -335,10 +200,70 @@
 				<div class="content-2">
 					<div role="complementary">
 
+						<!-- Coworkers -->
+						<div class="m m-list m-coworkers m-10 m-about-me">
+							<div class="m-h">
+								<h2>Mina kollegor</h2>
+							</div>
+							<div class="m-c cf">
+								<h3>Min närmsta chef</h3>
+								<ol>
+									<li class="cf">
+										<img src="temp/notification-user-1.jpg" width="30" height="30" alt="Profilbild på Paula Renaye" class="left" />
+										<a href="user-profile.html">Paula Renaye</a>
+										<p class="expertise">Press Officer</p>
+									</li>
+								</ol>
+								<h3>Mina närmsta kollegor</h3>
+								<div class="">
+									<ol>
+										<li class="cf">
+											<img src="temp/notification-user-2.jpg" width="30" height="30" alt="Profilbild på Roger Strandahl" class="left" />
+											<a href="user-profile.html">Roger Strandahl</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
+										<li class="cf">
+											<img src="temp/notification-user-3.jpg" width="30" height="30" alt="Profilbild på Louise Gudmundson" class="left" />
+											<a href="user-profile.html">Louise Gudmundson</a>
+											<p class="expertise">Press Officer</p>
+										</li>
+										<li class="cf">
+											<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
+											<a href="user-profile.html">Maria Swartling-Jung</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
+										<li class="cf">
+											<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
+											<a href="user-profile.html">Maria Swartling-Jung</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
+										<li class="cf">
+											<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
+											<a href="user-profile.html">Maria Swartling-Jung</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
+										<li class="cf">
+											<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
+											<a href="user-profile.html">Maria Swartling-Jung</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
+										<li class="cf">
+											<img src="temp/notification-user-6.jpg" width="30" height="30" alt="Profilbild på Maria Swartling-Jung" class="left" />
+											<a href="user-profile.html">Maria Swartling-Jung</a>
+											<p class="expertise">Kommunikationschef</p>
+										</li>
+									</ol>
+								</div>
+							</div>
+							<div class="m-f">
+								<a href="javascript:void(0)" class="load-more">Visa fler</a>
+							</div>
+						</div>
+
 						<!-- Status feed -->
-						<div class="m m-list m-status-feed m-form m-9">
+						<div class="m m-list m-status-feed m-form m-10 m-about-me">
 							<div class="m-h" data-collapsable-text="Dölj nätverksflöde" id="my-network-flow">
-								<h2>Mitt nätverksflöde</h2>
+								<h2>Status</h2>
 							</div>
 							<div class="m-c cf">
 								<form method="post" action="/">
@@ -354,12 +279,12 @@
 										</div>
 									</div>
 								</form>
-								<div class="scrollable">
+								<div class="">
 									<?php include('includes/status-feed.html'); ?>
 								</div>
 							</div>
 							<div class="m-f">
-								<p class="read-more"><a href="all-status-feeds.html">Se fler statusuppdateringar</a></p>
+								<a class="load-more" href="all-status-feeds.html">Visa fler</a>
 							</div>
 						</div>
 

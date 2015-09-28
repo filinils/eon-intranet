@@ -24,6 +24,8 @@ $(function () {
 				"padding": "show"
 			}, 50);
 		});
+		//$(this).hide();
+		//$(this).parent().find('.see-all').show();
 	});
 
 	//Show more status feed items
@@ -36,6 +38,8 @@ $(function () {
 				"padding": "show"
 			}, 50);
 		});
+		//$(this).hide();
+		//$(this).parent().find('.see-all').show();
 	});
 
 });

@@ -50,7 +50,8 @@ a.tag:visited,
 .nav-main,
 .button-alt,
 .flex-control-paging li a,
-.nav-main li {
+.nav-main li,
+.m-gamification .bar {
 	position:relative;
 	behavior:url(gui/js/pie.htc);
 }

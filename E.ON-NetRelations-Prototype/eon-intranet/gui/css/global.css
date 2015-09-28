@@ -253,11 +253,12 @@
 .m-0 a.read-more {
 	background-image:url(../i/arrow-inverted-dark.png);
 }
-.m-10 {
-	background:#737373;
-}
 .m-11 {
 	background:#8b8b8b;
+}
+.m-12 {
+	background:#eaeaea;
+	color: #767676;
 }
 .message.m-0 a:link,
 .message.m-0 a:visited,
@@ -267,22 +268,55 @@
 	color:inherit;
 }
 /* Critical */
+.critical {
+	padding: 22px 25px 1px;
+	margin-bottom: 20px;
+	margin-top: -35px;
+}
 .critical h2 {
-	margin-bottom:1px;
-	line-height:24px;
+	margin-bottom:4px;
+	margin-right: 0;
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #444;
 }
 .critical p {
 	margin-bottom:16px;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	color: #444;
+}
+.critical a.read-more {
+	background: url(../i/arrow-simple-small.png) center right no-repeat;
+	background-size: 4px 8px;
+	padding: 0 12px 0 0;
+	color: #444;
 }
 /* Major */
+.major {
+	padding: 22px 25px 6px;
+	margin-top: 45px;
+	color: #767676;
+	text-align: center;
+	margin-bottom: 23px;
+}
 .major h2 {
 	margin-top:1px;
-	margin-bottom:2px;
-	font-size:20px;
+	margin-bottom:5px;
+	font-size: 24px;
+	line-height: 24px;
 }
 .major p {
 	margin-bottom:17px;
-	font-size:13px;
+	font-size: 14px;
+	line-height: 16px;
+}
+.major a.read-more {
+	background: url(../i/arrow-simple-small.png) center right no-repeat;
+	padding: 0 12px 0 0;
+	color: #767676;
 }
 /* Minor */
 .minor h2 {
@@ -1426,6 +1460,9 @@ button.link span {
     content: "+";
     padding-left: 10px;
     text-decoration: none!important;
+}
+.m-list .m-f .load-more:hover {
+	text-decoration: none;
 }
 .m-comments li,
 .m-likes li,
@@ -2925,6 +2962,16 @@ span.tag-coworker {
 	display: block;
 	margin:0;
 }
+.profile-details dd a {
+	color: #767676;
+	text-decoration: none;
+}
+.profile-details dd a:hover {
+	color: #767676;
+}
+.profile-details dd a:after {
+	display: none!important;
+}
 /*.profile-details dt:after {
 	content:": ";
 }*/
@@ -3186,25 +3233,29 @@ span.tag-coworker {
 -------------------------------------------------------------- */
 .m-gamification {
 	position:relative;
-	margin:0 0 24px;
-	padding:12px 9px 7px;
-	border:1px solid #e6e6e6;
-	background:#f7f7f7;
+	margin: 0;
+	padding: 48px 0 33px 0;
+	border-bottom: 1px solid #d7d7d7;
 }
 .m-gamification .progress {
 	margin-bottom:8px;
-	padding:2px;
-	height:16px;
-	border:1px solid #e6e6e6;
-	background:#fff;
+	height: 3px;
+	background: #d7d7d7;
+	width: 100%;
+	max-width: 650px;
 }
 .m-gamification .bar {
-	height:16px;
-	background:red;
+	height: 3px;
+	background: #7fc3b4;
+	-webkit-transition: width 0.5s ease-out;
+    transition: width 0.5s ease-out; 
 }
 .m-gamification .amount {
-	padding-left:4px;
-	font-size:14px;
+	color: #767676;
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: 200;
+	margin: 0 0 13px 0;
 }
 .m-gamification ul {
 	margin-top:16px;
@@ -3217,12 +3268,13 @@ span.tag-coworker {
 .m-gamification .unchecked {
 	float:left;
 	overflow:hidden;
-	margin-right:8px;
-	width:21px;
-	height:21px;
-	background:url(../i/checklist-sprite.png) 0 -164px no-repeat;
-	text-indent:100%;
-	white-space:nowrap;
+	margin-right: 40px;
+}
+.m-gamification .checked h3,
+.m-gamification .unchecked h3 {
+	color: #767676;
+	font-size: 14px;
+	line-height: 27px;
 }
 .m-gamification .checked {
 	background-position:0 0;
@@ -3557,6 +3609,7 @@ span.tag-coworker {
     width: 242px;
     max-width: 242px;
     background-color: #f21c0a;
+	outline: none!important;
 }
 .user-details button img {
 	position:relative;
@@ -6607,7 +6660,7 @@ li a.file span {
 	/*.m-list .m-c a,*/
 	.nav-sub li a,
 	.m-listing li a,
-	.nav-user li a,
+	/*.nav-user li a,*/
 	.paging a.next-page span,
 	.paging a.next-week {
 		background-image:url(../i/arrow-default@2x.png);
