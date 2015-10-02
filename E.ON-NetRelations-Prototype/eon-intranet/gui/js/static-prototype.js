@@ -1,4 +1,3 @@
-// Prototype specific startup scripts
 
 // Prototype specific startup scripts
 $(function () {

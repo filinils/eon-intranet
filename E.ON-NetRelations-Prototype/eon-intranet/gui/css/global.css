@@ -3034,6 +3034,7 @@ span.tag-coworker {
 	left: 0;
 	bottom: 0;
 	background: url(../i/icons/icon-edit-white.png) 97% 45% no-repeat;
+	background-color: #000;
 	background-color: rgba(0, 0, 0, 0.65);
 	padding: 0;
 	margin: 0;
@@ -3134,8 +3135,9 @@ span.tag-coworker {
 .m-user-details button {
 	display: block;
 	min-width: 160px;
+	max-width: 45%;
 	float: right;
-	padding: 5px 25px;
+	padding: 12px 25px;
 	text-decoration:none;
 	font-size: 18px;
 	line-height: 24px;
@@ -3203,7 +3205,7 @@ span.tag-coworker {
 	margin: 9px 0 5px 0;
 }
 .user-details-edit input[type="text"] {
-	padding: 5px 24px;
+	padding: 10px 24px;
 	margin: 9px 0 15px 0;
 }
 .user-details-edit ::selection {
@@ -6204,6 +6206,15 @@ li a.file span {
 		margin-left:-34%;
 	}
 
+	.profile-details .details-left,
+	.profile-details .details-right {
+		width: 100%;
+	}
+
+	.m-user-details button {
+		min-width: 1%;
+	}
+
 /* End @media only screen and (max-width:800px) */
 }
 
@@ -6234,8 +6245,9 @@ li a.file span {
 	.layout-6 .content-1,
 	.layout-6 .content-1-1,
 	.layout-6 .content-1-2,
+	.layout-4 .content-1,
+	.layout-4 .content-2,
 	.news-criterias div,
-	.profile-photo,
 	.profile-details .info,
 	.profile-details .contact-details,
 	.profile-details .address {
@@ -6244,6 +6256,13 @@ li a.file span {
 		margin:0;
 		width:100%;
 	}
+	.profile-details .info {
+		clear: both;
+	}
+	.profile-photo {
+		margin-bottom: 30px;
+	}
+
 	.news-criterias div,
 	.profile-photo {
 		max-width:100%;

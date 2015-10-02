@@ -60,6 +60,10 @@ a.tag:visited,
 	border: 1px solid #dedede;
 }
 
+.m-user-details button {
+	margin-top: 7px;
+}
+
 .user-details h2 {
 	min-width:160px;
 }
