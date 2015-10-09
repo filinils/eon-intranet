@@ -2322,62 +2322,6 @@ h1 + .create-news-btn {
 	padding-top:40px;
 }
 
-/* News Sources
--------------------------------------------------------------- */
-.m-news-list ul {
-	padding:12px 12px;
-	background:#f5f5f5;
-}
-.m-news-list ul {
-	margin:0 0 19px;
-	list-style:none;
-}
-.m-news-list li {
-	float:left;
-	position:relative;
-	padding-bottom:12px;
-	width:50%;
-	font-size:14px;
-}
-.m-news-list label {
-	display:inline;
-}
-.m-news-list .row {
-	padding-bottom:24px;
-}
-.m-news-list h3 {
-	position:relative;
-	margin:0;
-	padding:6px 0 5px 30px;
-	background:#5d5d5d;
-	color:#fff;
-	font-size:20px;
-	line-height:1.25;
-}
-.m-news-list h3:before {
-	position:absolute;
-	top:10px;
-	left:8px;
-	display:block;
-	width:14px;
-	height:14px;
-	border:1px solid #fff;
-	content:"";
-}
-.m-news-list .m-subject h3:before {
-	background:#cc6997;
-}
-.m-news-list .m-company h3:before {
-	background:#7dabc3;
-}
-.m-news-list .m-location h3:before {
-	background:#a2a454;
-}
-/* Capgemini fix starts for displaying no result found message for news*/
-.m-news-noResult h3 {
-	color:#767676;
-}
-/* Capgemini fix ends for displaying no result found message for news*/
 
 /* News Sources in lightbox
 -------------------------------------------------------------- */
@@ -3102,6 +3046,26 @@ span.tag-coworker {
 	font-weight: 200;
 	margin: 0 0 13px 0;
 }
+.m-user-details h3 {
+	border-bottom: 2px solid #767676;
+	font-size: 24px;
+	font-weight: 200;
+	color: #767676;
+	padding: 10px 0;
+	margin: 35px 0 45px 0;
+}
+
+.m-user-details h4 {	
+	background-color: #e7e7e7;
+	color: #767676;
+	font-size: 18px;
+	font-weight: 200;
+	margin: 0;
+	min-height: 20px;
+	padding: 15px 40px;
+	border-bottom: 0;
+}
+
 .m-user-details .intro p,
 .m-user-details p {
 	max-width: 600px;
@@ -3221,15 +3185,64 @@ span.tag-coworker {
 
 .user-details-edit .description {
 	margin:0;
-	padding-bottom:3px;
-	color:#767676;
-	font-size:14px;
-	line-height:18px;
+	color: #444;
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0;
+	padding-bottom: 20px;
 }
 .user-details-edit .char-counter {
 	float:right;
 	font-size:12px;
 }
+
+/* News Sources
+-------------------------------------------------------------- */
+ 
+.m-news-list ul {
+	padding: 40px;
+	background: #f7f7f7;
+	margin:0 0 20px;
+	list-style:none;
+}
+.m-news-list li {
+	float:left;
+	position:relative;
+	padding-bottom: 35px;
+	width: 33%;
+	font-size: 14px;
+}
+.m-news-list label {
+	display:inline;
+}
+.m-news-list .row {
+	padding-bottom:24px;
+}
+.m-news-list h3 {	
+	background-color: #e7e7e7;
+	color: #767676;
+	font-size: 18px;
+	font-weight: 200;
+	margin: 0;
+	min-height: 20px;
+	padding: 15px 40px;
+	border-bottom: 0;
+}
+.m-news-list .m-subject h3:before {
+	background:#cc6997;
+}
+.m-news-list .m-company h3:before {
+	background:#7dabc3;
+}
+.m-news-list .m-location h3:before {
+	background:#a2a454;
+}
+/* Capgemini fix starts for displaying no result found message for news*/
+.m-news-noResult h3 {
+	color:#767676;
+}
+/* Capgemini fix ends for displaying no result found message for news*/
+
 
 /* Gamification
 -------------------------------------------------------------- */
@@ -6899,9 +6912,7 @@ li a.file span {
 		background-size:24px 24px;
 	}
 	.img input[type="checkbox"] + label:before,
-	.img input[type="radio"] + label:before,
-	.m-gamification .checked,
-	.m-gamification .unchecked {
+	.img input[type="radio"] + label:before {
 		background-image:url(../i/radio-checkbox@2x.png);
 		background-size:21px 372px;
 	}
@@ -6926,12 +6937,13 @@ li a.file span {
 	.img .radio-green input[type="radio"]:disabled:checked ~ label:before {
 		background-position: 0 -373px;
 	}
-
+	.m-gamification .checked,
+	.m-gamification .unchecked {
+		background-image: none;
+	}
 	.m-gamification.progress-steps .checked,
 	.m-gamification.progress-steps .unchecked {
-        background-image: url(../i/checklist-sprite.png);
-        background-size: auto;
-        background-color: #fff;
+        
 	}    
     
 	.m-gamification.progress-steps .unchecked + h2 {
