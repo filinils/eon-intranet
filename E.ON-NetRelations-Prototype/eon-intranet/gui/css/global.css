@@ -4192,8 +4192,8 @@ span.tag-coworker {
 .m-status-feed .submit {
     display: inline-block;
     background: #fff;
-    border: 1px solid #7fc3b4;
-    color: #7fc3b4;
+    border: 1px solid #0d896e;
+    color: #0d896e;
     border-radius: 0;
     min-width: 100%;
     font-family: "Polo", Arial, sans-serif;
@@ -4203,6 +4203,7 @@ span.tag-coworker {
 }
 .m-status-feed .submit:hover {
 	background: #0d896e;
+	color: #fff;
 }
 
 
