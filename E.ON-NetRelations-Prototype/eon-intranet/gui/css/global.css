@@ -28,7 +28,7 @@
 	margin:0 auto;
 	max-width:95%;
 	width: 1050px;
-    margin-top: 58px;
+    margin-top: 40px;
 }
 #header {
 	position:relative;
@@ -3721,8 +3721,15 @@ span.tag-coworker {
 	border-left-color:#a7231c;
 }
 .new-notifications .counter {
-	background:#fff;
-	color:#600;
+	background:#a7231c;
+	color:#fff;
+	border-radius: 0;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 23px;
+	height: 24px;
+	width: 24px;
+	margin-top: 5px; 
 }
 .new-notifications .counter:after {
 	border-left-color:#fff;
@@ -4129,14 +4136,19 @@ span.tag-coworker {
 }
 .m-status-feed .meta .comments a {
 	padding: 4px 10px 4px 22px;
-    font-size: 14px;
+    font-size: 12px;
     color: #767676;
 }
 .m-status-feed .meta .likes {
 	padding: 4px 0 4px 19px;
     margin-right: 14px;
-    font-size: 14px;
+    font-size: 12px;
     color: #767676;
+}
+
+.m-status-feed .meta .comments .structural,
+.m-status-feed .meta .likes .structural {
+	position: static;
 }
 /*
 .m-status-feed .meta .likes-link a {
@@ -4179,13 +4191,14 @@ span.tag-coworker {
 }
 .m-status-feed .submit {
     display: inline-block;
-    background: #7fc3b4;
-    border: none;
+    background: #fff;
+    border: 1px solid #7fc3b4;
+    color: #7fc3b4;
     border-radius: 0;
-    min-width: 84%;
+    min-width: 100%;
     font-family: "Polo", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 28px;
     margin-bottom: 8px;
 }
 .m-status-feed .submit:hover {
