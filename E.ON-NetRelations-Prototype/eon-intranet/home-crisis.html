@@ -143,7 +143,7 @@
 					<!-- Status feed -->
 					<div class="m m-list m-status-feed m-form m-10 m-about-me">
 						<div class="m-h" id="my-network-flow">
-							<h2>Status</h2>
+							<h2>Statusuppdateringar</h2>
 						</div>
 						<div class="m-c cf">
 							<form method="post" action="/">
@@ -151,10 +151,11 @@
 								<div class="row cols-1 cf">
 									<div class="status col full col-1">
 										<label for="status-update" class="structural">Statusuppdatering:</label>
-										<textarea name="status-update" id="status-update" cols="30" rows="3" maxlength="140" placeholder="Skriv något..."></textarea>
+										<textarea name="status-update" id="status-update" cols="30" rows="3" maxlength="140" placeholder="Skriv en uppdatering till ditt nätverksflöde."></textarea>
 									</div>
 									<div class="submit-area col col-1">
-										<input type="submit" class="submit" value="Dela status" />
+										<span class="char-counter">Max <strong id="status-update-counter">140</strong> tecken</span>
+										<input type="submit" class="submit" value="Skicka" />
 									</div>
 								</div>
 							</form>
