@@ -27,7 +27,7 @@
 	position:relative;
 	margin:0 auto;
 	max-width:95%;
-	width: 1050px;
+	width: 1190px;
     margin-top: 40px;
 }
 #header {
@@ -47,7 +47,7 @@
 .inner {
 	margin:0 auto;
 	max-width:95%;
-	width: 1050px;
+	width: 1190px;
 }
 
 /* Layout-1
@@ -76,19 +76,23 @@
 -------------------------------------------------------------- */
 .layout-2 .content-1 {
 	float:left;
-	width:74.2857143%;
+	/*width:74.2857143%;*/
+	width: 74.9%;
 }
 .layout-2 .content-1-1 {
 	float:left;
-	width:65.3846154%;
+	/*width:65.3846154%;*/
+	width: 66.3%;
 }
 .layout-2 .content-1-2 {
 	float:right;
-	width:30.7692308%;
+	/*width:30.7692308%;*/
+	width: 32.4%;
 }
 .layout-2 .content-2 {
 	float:right;
-	width:22.8571429%;
+	/*width:22.8571429%;*/
+	width: 24.2%;
 }
 .layout-2.start-page #footer {
     padding-top: 43px;
@@ -4063,11 +4067,14 @@ span.tag-coworker {
     margin-right: 29px;
     /*margin-left: 13px;*/
 }
-.form-link {margin:20px 0 10px}
+.form-link {
+	margin:20px 0 10px
+}
+
 .m-status-feed img {
-	margin:2px 12px 3px 0;
-	width:30px;
-	height:30px;
+	margin: 2px 10px 3px 0;
+	width: 30px;
+	height: 30px;
 }
 .m-status-feed li:first-child {
 	padding-top: 12px;
@@ -4186,13 +4193,14 @@ span.tag-coworker {
 .m-status-feed.m-form form {
     background: #fff;
     border-bottom: 1px solid #e7e7e7;
+    padding: 20px 15px 8px 15px;
 }
 .m-status-feed textarea {
     border: 1px solid #e7e7e7;
     -webkit-box-shadow: none;
     box-shadow: none;
     font-size: 14px;
-    margin: 6px 0 11px 0;
+    margin: 6px 0 4px 0;
 }
 .m-status-feed textarea.placeholder { color: #aaa; font-style: italic; }
 .m-status-feed textarea::-webkit-input-placeholder {
@@ -4209,6 +4217,10 @@ span.tag-coworker {
 }
 .m-status-feed .submit-area {
     text-align: center;
+}
+.m-status-feed .char-counter{
+	display: inline-block;
+	margin-bottom: 8px;
 }
 .m-status-feed .submit {
     display: inline-block;
