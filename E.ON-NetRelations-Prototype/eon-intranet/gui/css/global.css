@@ -3849,6 +3849,11 @@ span.tag-coworker {
 	line-height:18px;
 	margin-top: -4px;
 }
+
+.m-notifications .m-c li p strong {
+	font-weight: normal;
+}
+
 .m-notifications .m-c li a {
 	display:inline;
 	padding:0;
