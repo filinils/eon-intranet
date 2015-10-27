@@ -82,7 +82,7 @@
 .layout-2 .content-1-1 {
 	float:left;
 	/*width:65.3846154%;*/
-	width: 66.3%;
+	width: 64.6%;
 }
 .layout-2 .content-1-2 {
 	float:right;
@@ -1496,45 +1496,45 @@ button.link span {
 /* Coworkers module
 -------------------------------------------------------------- */
 .m-coworkers h3 {
-	padding:8px 10px 6px;
-	background:#e6e6e6;
-	color:#333;
-	font-family:Arial, Helvetica, sans-serif;
+	padding: 20px 28px 6px;
+	color: #767676;
+	font-size: 16px;
+	font-weight: 300;
 }
 .m-coworkers .m-c {
-	padding:0;
+	padding: 16px 0 22px;
 }
 .m-coworkers h3 + p {
-	padding-right:10px;
-	padding-left:10px;
+	padding: 0 28px;
+	font-size: 14px;
 }
 .m-coworkers ol {
 	margin:0;
 	list-style:none;
 }
 .m-coworkers li {
-	padding:11px 10px 8px;
+	padding: 12px 28px 10px;
 }
 .m-coworkers .scrollable {
 	border-bottom:1px solid #e6e6e6;
 }
 .m-coworkers li img.left {
 	margin:0 10px 0 0;
-	width:30px;
-	height:30px;
+	width: 55px;
+	height: 55px;
 }
 .m-coworkers ol li:first-child {
 	padding-top:8px;
-	border-top:1px solid #e6e6e6;
 }
 .m-coworkers .m-c a {
+	color: #7fc3b4;
+	font-size: 14px;
 	padding:0;
 	background:none;
-	text-decoration:underline;
 }
 .m-coworkers .m-c p.expertise {
 	padding:0;
-	font-style:italic;
+	font-size: 14px;
 }
 
 /* Social feed
@@ -3034,11 +3034,16 @@ span.tag-coworker {
 	padding-top: 35px;
 	padding-bottom: 30px;
 }
+
 .m-user-details .user-details-inner .edit {
 	display: none;
 }
 .m-user-details .user-details-inner .view {
 	display: block;
+}
+.m-user-details .user-details-inner .edit,
+.m-user-details .user-details-inner .view {
+	padding-top: 10px;	
 }
 .m-user-details .user-details-inner.edit-mode .edit {
 	display: block;
@@ -3081,6 +3086,7 @@ span.tag-coworker {
 	line-height: 19px;
 	font-weight: 400;
 	margin: 0;
+	padding-top: 15px;
 }
 .m-user-details p,
 .m-user-details li a {
@@ -3131,6 +3137,7 @@ span.tag-coworker {
 
 .m-user-details .tag-list {
 	background: transparent;
+	padding-top: 15px;
 }
 .m-user-details .tag-list li {
 	display: block;
@@ -5387,6 +5394,7 @@ a.level-up:active {
 	box-sizing:border-box;
 	/*max-width:34em;*/
 	margin:9px 0 18px;
+	float: right;
 }
 .article-actions ul {
 	margin:0;
@@ -5403,34 +5411,31 @@ a.level-up:active {
 	margin-left:0;
 }
 .article-actions button {
-	position:relative;
-	padding:6px 10px 5px;
-	border:0;
-	border:1px solid #dedede;
-	border-radius:2px;
-	background:#e6e6e6;
-	background-position:10px 50%;
-	background-repeat:no-repeat;
-	color:#393939;
-	font-size:15px;
-	font-family:"Polo", Arial, sans-serif;
-	-webkit-transition:background .15s linear,border .15s linear;
-	transition:background .15s linear,border .15s linear;
+	display: block;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0 0 0 15px;
+	max-width: 45%;
+	min-width: 160px;
+	padding: 12px 25px;
+	text-decoration: none;
+	transition: all 0.3s ease-out 0s;
+	background: #7fc3b4 none repeat scroll 0 0;
+	border: 1px solid #7fc3b4;
+	color: #fff;
 }
 .article-actions button:hover,
 .article-actions button:focus,
 .article-actions button:active {
-	border:1px solid #919191;
-	background-color:#b3b3b3;
+	background: #3AA48D; 
+	border-color: #3AA48D;
 }
 .article-actions #bookmark,
 .article-actions #subscribe {
 	float:right;
 }
-#share button {
-	padding-left:35px;
-	background-image:url(../i/icon-share.png);
-}
+
+/*
 #share button.active-top:before {
 	position:absolute;
 	top:-10px;
@@ -5442,10 +5447,11 @@ a.level-up:active {
 	border-left:8px solid transparent;
 	content:" ";
 }
+*/
 #print button {
-	padding-left:35px;
-	background-image:url(../i/icon-print.png);
+	display: none;
 }
+/*
 #subscribe button {
 	padding-left:35px;
 	background-image:url(../i/icon-subscribe.png);
@@ -5454,6 +5460,7 @@ a.level-up:active {
 	padding-left:35px;
 	background-image:url(../i/icon-bookmark.png);
 }
+*/
 .share-box {
 	position:absolute;
 	display:none;
@@ -6874,6 +6881,7 @@ li a.file span {
 		background-image:url(../i/icons/outdated@2x.png);
 		background-size:24px 24px;
 	}
+	/*
 	#share button {
 		background-image:url(../i/icon-share@2x.png);
 		background-size:20px 16px;
@@ -6890,6 +6898,7 @@ li a.file span {
 		background-image:url(../i/icon-bookmark@2x.png);
 		background-size:16px 20px;
 	}
+	*/
 	.js .m-accordion .m-c button {
 		background-image:url(../i/accordion-arrow@2x.png);
 		background-size:4px 8px;
