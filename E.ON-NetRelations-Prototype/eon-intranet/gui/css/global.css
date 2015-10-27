@@ -1967,12 +1967,10 @@ button.link span {
 }
 .m-content-list ul {
 	margin-bottom:23px;
-	border-top:1px solid #e6e6e6;
 }
 .m-content-list ul > li {
-	padding:11px 0 12px;
-	border-bottom:1px solid #e6e6e6;
-	font-size:13px;
+	padding: 8px 0 10px;	
+	font-size: 14px;
 	line-height:16px;
 }
 .m .note {
@@ -3072,7 +3070,7 @@ span.tag-coworker {
 	color: #767676;
 	font-size: 18px;
 	font-weight: 200;
-	margin: 0;
+	margin: 0 0 24px 0;
 	min-height: 20px;
 	padding: 15px 40px;
 	border-bottom: 0;
@@ -3107,6 +3105,39 @@ span.tag-coworker {
 }
 .m-user-details .user-details-inner.edit-mode .toggle-edit {
 	background-position: 0 -25px;
+}
+
+.m-user-details .user-details-section {
+	position: relative;
+	background-color: #f7f7f7;
+}
+
+.m-user-details .user-details-section .toggle-section {
+	display: block;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 40px;
+	background: url(../i/expand.png) right center no-repeat;	
+}
+
+.m-user-details .user-details-section.is-expanded .toggle-section {
+	background-image: url(../i/contract.png);	
+}
+
+.m-user-details .user-details-section .user-details-section-inner {
+	display: none;
+} 
+
+.m-user-details .user-details-section.is-expanded .user-details-section-inner {
+	display: block;
+	padding: 12px 40px 30px;
+}
+
+.m-user-details .submit-area {
+	border-top: 1px solid #e7e7e7;
+	padding-top: 26px;
 }
 
 .m-user-details button {

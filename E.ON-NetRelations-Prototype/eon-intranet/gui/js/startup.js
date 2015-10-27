@@ -833,6 +833,12 @@ $(function () {
 		$(grandparent).removeClass('edit-mode');
 	});
 
+	// Toggle edit profile section
+	$('.user-details-section .toggle-section').on('click', function () {
+		var parent = $(this).parent();
+		$(parent).toggleClass('is-expanded');
+	});
+
 });
 
 $(window).bind('load resize orientationchange', function() {

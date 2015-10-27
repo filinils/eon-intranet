@@ -1,40 +1,49 @@
 <div class="m m-content-list">
-	<h4>Statusuppdateringar</h4>
-	<p class="description">Meddela mig via Intranätet eller e-post när någon:</p>
-	<ul>
-		<li class="cf">
-			<div class="note">
-				Kommenterar eller gillar min statusuppdatering
+	<div class="user-details-section">
+		<h4>Statusuppdateringar</h4>
+		<a class="toggle-section" href="javascript:void(0)"></a>
+		<div class="user-details-section-inner">
+			<p class="description">Meddela mig via Intranätet eller e-post när någon:</p>
+			<ul>
+				<li class="cf">
+					<div class="note">
+						Kommenterar eller gillar min statusuppdatering
+					</div>
+					<div class="tools">
+						<div class="notification checkbox">
+							<input type="checkbox" value="avisering-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" checked />
+							<input type="hidden" />
+							<label for="checkbox1-<?php echo $id; ?>">Intranätet</label>
+						</div>
+						<div class="email">
+							<input type="checkbox" value="email-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+							<input type="hidden" />
+							<label for="checkbox1-<?php echo $id; ?>">E-post</label>
+						</div>
+					</div>
+				</li>
+				<li class="cf">
+					<div class="note">
+						Kommenterar en statusppdatering där jag varit aktiv
+					</div>
+					<div class="tools">
+						<div class="notification">
+							<input type="checkbox" value="avisering-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" checked />
+							<label for="checkbox1-<?php echo $id; ?>">Intranätet</label>
+						</div>
+						<div class="email">
+							<input type="checkbox" value="email-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox1-<?php echo $id; ?>">E-post</label>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="cf submit-area">
+				<button type="submit" class="save">Spara</button>
+				<button type="button" class="cancel">Avbryt</button>
 			</div>
-			<div class="tools">
-				<div class="notification checkbox">
-					<input type="checkbox" value="avisering-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" checked />
-					<input type="hidden" />
-					<label for="checkbox1-<?php echo $id; ?>">Intranätet</label>
-				</div>
-				<div class="email">
-					<input type="checkbox" value="email-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
-					<input type="hidden" />
-					<label for="checkbox1-<?php echo $id; ?>">E-post</label>
-				</div>
-			</div>
-		</li>
-		<li class="cf">
-			<div class="note">
-				Kommenterar en statusppdatering där jag varit aktiv
-			</div>
-			<div class="tools">
-				<div class="notification">
-					<input type="checkbox" value="avisering-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" checked />
-					<label for="checkbox1-<?php echo $id; ?>">Intranätet</label>
-				</div>
-				<div class="email">
-					<input type="checkbox" value="email-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
-					<label for="checkbox1-<?php echo $id; ?>">E-post</label>
-				</div>
-			</div>
-		</li>
-	</ul>
+		</div>
+	</div>
 	<!--
 	<h4>Blogg</h4>
 	<p class="description">Meddela mig via Intranätet eller e-post när någon:</p>
@@ -71,40 +80,49 @@
 		</li>
 	</ul>
 	-->
-	<h4>Nyheter</h4>
-	<p class="description">Meddela mig via Intranätet eller e-post när någon:</p>
-	<ul>
-		<li class="cf">
-			<div class="note">
-				Kommenterar eller gillar min nyhet
+	<div class="user-details-section">
+		<h4>Nyheter</h4>
+		<a class="toggle-section" href="javascript:void(0)"></a>
+		<div class="user-details-section-inner">
+			<p class="description">Meddela mig via Intranätet eller e-post när någon:</p>
+			<ul>
+				<li class="cf">
+					<div class="note">
+						Kommenterar eller gillar min nyhet
+					</div>
+					<div class="tools">
+						<div class="notification">
+							<input type="checkbox" value="avisering-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" checked disabled />
+							<label for="checkbox1-<?php echo $id; ?>">Intranätet</label>
+						</div>
+						<div class="email">
+							<input type="checkbox" value="email-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox1-<?php echo $id; ?>">E-post</label>
+						</div>
+					</div>
+				</li>
+				<li class="cf">
+					<div class="note">
+						Kommenterar en nyhet där jag varit aktiv
+					</div>
+					<div class="tools">
+						<div class="notification">
+							<input type="checkbox" value="avisering-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" checked disabled />
+							<label for="checkbox1-<?php echo $id; ?>">Intranätet</label>
+						</div>
+						<div class="email">
+							<input type="checkbox" value="email-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
+							<label for="checkbox1-<?php echo $id; ?>">E-post</label>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="cf submit-area">
+				<button type="submit" class="save">Spara</button>
+				<button type="button" class="cancel">Avbryt</button>
 			</div>
-			<div class="tools">
-				<div class="notification">
-					<input type="checkbox" value="avisering-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" checked disabled />
-					<label for="checkbox1-<?php echo $id; ?>">Intranätet</label>
-				</div>
-				<div class="email">
-					<input type="checkbox" value="email-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
-					<label for="checkbox1-<?php echo $id; ?>">E-post</label>
-				</div>
-			</div>
-		</li>
-		<li class="cf">
-			<div class="note">
-				Kommenterar en nyhet där jag varit aktiv
-			</div>
-			<div class="tools">
-				<div class="notification">
-					<input type="checkbox" value="avisering-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" checked disabled />
-					<label for="checkbox1-<?php echo $id; ?>">Intranätet</label>
-				</div>
-				<div class="email">
-					<input type="checkbox" value="email-1" name="checkboxgroup1" id="checkbox1-<?php echo $id = uniqid('id'); ?>" />
-					<label for="checkbox1-<?php echo $id; ?>">E-post</label>
-				</div>
-			</div>
-		</li>
-	</ul>
+		</div>
+	</div>
 	<!--
 	<h4>Sidor</h4>
 	<p class="description">Meddela mig via Intranätet eller e-post när någon:</p>
