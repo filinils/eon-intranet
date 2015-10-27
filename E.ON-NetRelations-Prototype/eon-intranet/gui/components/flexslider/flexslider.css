@@ -137,7 +137,7 @@
 	-webkit-border-radius: 14px; 
 	-moz-border-radius: 14px; 
 	border-radius: 14px; 
-	background: #767676; 
+	background: #e7e7e7;
 	background: rgba(0,0,0,0.25); 
 	/*box-shadow: inset 0 0 3px rgba(0,0,0,0.3);*/ 
 	text-indent: -9999px; 
@@ -145,10 +145,10 @@
 	-o-border-radius: 14px;
 }
 .flex-control-paging li a:hover { 
-	background: #eb1503; 
+	background: #565656;
 }
 .flex-control-paging li a.flex-active { 
-    background: rgba(0,0,0,1);
+    background: #868686;
 	cursor: default; 
 }
 
