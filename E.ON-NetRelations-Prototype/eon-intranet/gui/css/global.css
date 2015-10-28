@@ -3092,18 +3092,18 @@ span.tag-coworker {
 
 .m-user-details .toggle-edit {
 	display: block;
-	width: 25px;
-	height: 25px;
+	width: 17px;
+	height: 17px;
 	position: absolute;
 	top: 15px;
 	right: 0;
-	background: url(../i/icons/icon-edit-sprite.png) 0 0 no-repeat;
+	background: url(../i/icon-edit-sprite.png) 0px -17px no-repeat;
 }
 .m-user-details .toggle-edit:hover {
-	background-position: 0 -25px;
+	background-position: 0 -34px;
 }
 .m-user-details .user-details-inner.edit-mode .toggle-edit {
-	background-position: 0 -25px;
+	background-position: 0 -34px;
 }
 
 .m-user-details .user-details-section {
@@ -3117,12 +3117,22 @@ span.tag-coworker {
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: 40px;
-	background: url(../i/expand.png) right center no-repeat;	
+	right: 0;	
 }
 
-.m-user-details .user-details-section.is-expanded .toggle-section {
-	background-image: url(../i/contract.png);	
+.m-user-details .user-details-section .toggle-section:after {
+	content: "";
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	top: 16px;
+	right: 18px;
+	background: url(../i/icon-edit-sprite.png) 0 -17px no-repeat;	
+}
+
+.m-user-details .user-details-section .toggle-section:hover:after,
+.m-user-details .user-details-section.is-expanded .toggle-section:after {
+	background-position: 0 -34px;	
 }
 
 .m-user-details .user-details-section .user-details-section-inner {
