@@ -1372,7 +1372,7 @@ button.link span {
 	text-align: center;
 }
 .m-list .m-c {
-	padding:1px 10px 0;
+	padding:1px 0 0 0;
 	border:1px solid #dedede;
 	border-top:0;
 	background:#fff;
@@ -1386,6 +1386,7 @@ button.link span {
 	position:relative;
 	padding: 4px 0 4px;
 	word-wrap:break-word;
+	margin: 0 25px;
 }
 .m-list li:first-child {
 	padding-top: 11px;
@@ -1396,8 +1397,7 @@ button.link span {
     color: #767676;
     font-size: 16px;
     line-height: 22px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0;
 }
 .m-list a:hover {
 	color: #767676;
@@ -1419,8 +1419,6 @@ button.link span {
 }
 .m.m-list .time {
 	display: block;
-	margin-left: 15px;
-    margin-right: 15px;
     margin-bottom: 2px;
     color: #b8b8b8;
     font-size: 12px;
@@ -1505,7 +1503,7 @@ button.link span {
 	padding: 16px 0 22px;
 }
 .m-coworkers h3 + p {
-	padding: 0 28px;
+	padding: 0 25px;
 	font-size: 14px;
 }
 .m-coworkers ol {
@@ -1513,7 +1511,8 @@ button.link span {
 	list-style:none;
 }
 .m-coworkers li {
-	padding: 12px 28px 10px;
+	padding: 12px 0 10px;
+	margin: 0 25px;
 }
 .m-coworkers .scrollable {
 	border-bottom:1px solid #e6e6e6;
@@ -4024,16 +4023,16 @@ span.tag-coworker {
 /* NETWORK MODULES
 ================================================================================ */
 .m-status-feed .m-c,
-/*.m-calendar .m-c,*/
+.m-calendar .m-c,
 .m-filter .m-c  {
 	padding:0;
 }
 .m-status-feed .scrollable > ul > li,
 .m-filter .scrollable > ul > li,
 .m-calendar .scrollable > ul > li {
-	margin-right:10px;
+	margin-right:25px;
 	margin-bottom:-1px;
-	margin-left:10px;
+	margin-left:25px;
 	padding-right:0;
 	padding-left:0;
 }
