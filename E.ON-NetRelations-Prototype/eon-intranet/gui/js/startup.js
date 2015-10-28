@@ -838,6 +838,10 @@ $(function () {
 		var parent = $(this).parent();
 		$(parent).toggleClass('is-expanded');
 	});
+	$('.user-details-section  .cancel').on('click', function () {
+		var wrapper = $(this).closest('.user-details-section');
+		$(wrapper).removeClass('is-expanded');
+	});
 
 });
 
