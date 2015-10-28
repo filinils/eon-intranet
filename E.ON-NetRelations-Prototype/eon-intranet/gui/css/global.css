@@ -4213,6 +4213,7 @@ span.tag-coworker {
 	border-top:0;
 	font-size:11px;
 	margin-left: 0;
+	margin-right: 10px;
 }
 .m-status-feed .meta li > a {
 	display:inline;
@@ -5633,7 +5634,6 @@ div.tagsinput {
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	padding:9px 10px 0 10px;
-	height: auto;
 	min-height:60px !important;
 	border:1px solid #dedede;
 	background:transparent;
