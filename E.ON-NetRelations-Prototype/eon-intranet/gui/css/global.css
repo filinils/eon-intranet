@@ -3061,7 +3061,7 @@ span.tag-coworker {
 	font-weight: 200;
 	color: #767676;
 	padding: 10px 0;
-	margin: 35px 0 45px 0;
+	margin: 35px 0;
 }
 
 .m-user-details h4 {	
@@ -3291,6 +3291,12 @@ span.tag-coworker {
 .m-news-list .m-location h3:before {
 	background:#a2a454;
 }
+
+.m-news-list .filter .radio {
+	display: inline-block;
+	margin: 0 10px 35px 0;
+}
+
 /* Capgemini fix starts for displaying no result found message for news*/
 .m-news-noResult h3 {
 	color:#767676;
@@ -4206,6 +4212,7 @@ span.tag-coworker {
 .m-status-feed .meta li {
 	border-top:0;
 	font-size:11px;
+	margin-left: 0;
 }
 .m-status-feed .meta li > a {
 	display:inline;
