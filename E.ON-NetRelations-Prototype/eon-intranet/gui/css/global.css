@@ -4164,6 +4164,11 @@ span.tag-coworker {
 	background:none;
 	text-decoration:underline;
 }
+.m-status-feed .m-c p > a {
+    text-decoration: none;
+    font-size: inherit;
+    line-height: inherit;
+} 
 .m-status-feed .m-c .user,
 .m-status-feed .user {
 	padding-bottom:0;
