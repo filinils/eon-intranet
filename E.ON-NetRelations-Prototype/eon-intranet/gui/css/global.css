@@ -2532,12 +2532,12 @@ h1 + .create-news-btn {
 .m-news .top-news:before {
     content: "";
     display: block;
-    width: 17px;
+    width: 18px;
     height: 33px;
     position: absolute;
-    top: -16px;
-    right: 20px;
-	background: url(../i/top-news.png) top right no-repeat;
+    top: -6px;
+    right: 0;
+	background: url(../i/pin.png) top right no-repeat;
 }
 .m-news .top-news h3 {
 	font-size:24px;
@@ -3877,6 +3877,7 @@ span.tag-coworker {
 }
 .m-notifications .m-c li {
 	padding:16px 18px;
+	margin: 0;
 }
 .m-notifications li img {
 	width: 40px;
@@ -5698,8 +5699,9 @@ div.tagsinput div {
 	width:100%;
 	height:0;
 }
-.not_valid {
-	background-color:#eb1503 !important;
+div.tagsinput input.not_valid {
+	background-color:#FFB4A0 !important;
+	border-bottom: 1px dotted #eb1503 !important;
 }
 /*
 #autocomplete-language_tagsinput span.tag {
@@ -7099,6 +7101,10 @@ li a.file span {
 	.lync-status-inacall,
 	.lync-status-donotdisturb {
 		background-image:url(../i/icons/lync-busy@2x.png);
+	}
+	.m-news .top-news:before {
+		background-image: url(../i/pin@2x.png);
+		background-size: 25px 25px;
 	}
 
 
